@@ -1,0 +1,103 @@
+<!DOCTYPE HTML>
+<html>
+  <head>
+    <style>
+      body {
+        margin: 0px;
+        padding: 0px;
+      }
+      #buttons {
+        position: absolute;
+        top: 5px;
+        left: 10px;
+      }
+      #buttons > input {
+        padding: 10px;
+        display: block;
+        margin-top: 5px;
+      }
+      canvas {
+        border: 1px solid #9C9898;
+      }
+    </style>
+    <script src="JS/kinetic-v3.10.1.min.js"></script>
+    <script>
+      window.onload = function() {
+        var stage = new Kinetic.Stage({
+          container: "container",
+          width: 578,
+          height: 200
+        });
+        var layer = new Kinetic.Layer();
+        var rect = new Kinetic.Rect({
+          x: 100,
+          y: 100,
+          width: 100,
+          height: 50,
+          fill: 'red',
+          stroke: 'black',
+          strokeWidth: 2,
+          alpha: 0.2
+        });
+
+        layer.add(rect);
+        stage.add(layer);
+
+        var trans = null;
+
+        // start transition
+        document.getElementById('start').addEventListener('click', function() {
+
+          // restore initial state
+          rect.setAttrs({
+            x: 100,
+            y: 100,
+            fill: 'green',
+            rotation: 0,
+            alpha: 0.9,
+            strokeWidth: 2,
+            scale: 1
+          });
+
+          // store reference to transition
+          trans = rect.transitionTo({
+            x: 400,
+            y: 30,
+            rotation: Math.PI * 20,
+            alpha: 1,
+            strokeWidth: 6,
+            scale: {
+              x: 1.3,
+              y: 1.3
+            },
+            duration: 20
+          });
+
+        }, false);
+        // stop transition
+        document.getElementById('stop').addEventListener('click', function() {
+          if(trans) {
+            trans.stop();
+          }
+
+        }, false);
+        // resume transition
+        document.getElementById('resume').addEventListener('click', function() {
+          if(trans) {
+            trans.resume();
+          }
+
+        }, false);
+      };
+
+    </script>
+  </head>
+  <body>
+    <div id="container"></div>
+    <div id="buttons">
+      <input type="button" id="start" value="Start / Restart">
+      <input type="button" id="stop" value="Stop">
+      <input type="button" id="resume" value="Resume">
+    </div>
+  </body>
+</html>

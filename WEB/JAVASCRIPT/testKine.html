@@ -1,0 +1,58 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+</head>
+    <script src="JS/kinetic-v3.10.1.min.js" ></script>
+    <script>
+
+     window.onload = function() {
+       var stage = new Kinetic.Stage({
+            container:  "container",
+            width:      500,
+            height:     500
+        });       
+
+        var layer = new Kinetic.Layer();
+      
+        var group1 = new Kinetic.Group();
+        var group2 = new Kinetic.Group();
+
+ 
+        var circle = new Kinetic.Circle({
+            radius:         100,
+            strokeWidth:    20,
+            stroke:         "red",
+            lineJoin:       "round",
+            x:              250,
+            y:              250,
+            id:             "circle1",
+        });
+
+        var dot = new Kinetic.Line({
+            points: [1,1],
+            stroke: 'white',
+        });
+        group1.add( circle );
+
+        var circle2 = new Kinetic.Circle({
+            radius:         78,
+            strokeWidth:    20,
+            stroke:         "orange",
+            lineJoin:       "round",
+            x:              250,
+            y:              250,
+            id:             "circler2",
+        });
+        group2.add(circle2);
+
+        layer.add( group1 );
+        layer.add( group2 );
+
+        stage.add( layer );
+    }
+    </script>
+
+<body >
+   <div id="container"></div> 
+</body>
+</html>

@@ -1,0 +1,45 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+</head>
+    <script>
+
+    function rdots() {
+             var allowedColor = new Array( '#0000FF', '#FF0000', '#000055', '#550000' );
+             canvas = document.getElementById('container');
+             gc = canvas.getContext('2d');
+             
+             if ( gc ) {
+                
+                for ( i = 0; i< 780000; i++ ) {
+                    px = Math.random()*800;
+                    py = Math.random()*800;
+                    gc.beginPath();
+                    gc.moveTo( px, py ); 
+                    gc.lineTo( px, py+1 ); 
+                    gc.lineCaps='square'; 
+                    gc.lineWidth =0.5; 
+                    gc.strokeStyle = allowedColor[ Math.round( Math.random() * 4 ) ], 
+                    gc.stroke();
+                }
+                alert("Done");
+             }
+             else {
+                alert("no graphic context, exiting");
+             }
+    }
+
+    window.onload=function() {
+        rdots();
+    }
+    </script>
+
+    <style>
+        .container { background-color: #444444;  }
+    </style>
+<body >
+   <canvas id="container" class ="container" width="800" height="800" ></canvas> 
+</body>
+</html>
+
+
