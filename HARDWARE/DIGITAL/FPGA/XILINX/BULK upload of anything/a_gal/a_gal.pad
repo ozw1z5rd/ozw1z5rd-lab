@@ -1,0 +1,73 @@
+Release 8.1i - Fit O.76xd
+Copyright(c) 1995-2003 Xilinx Inc. All rights reserved
+
+12- 7-2011  5:31PM
+
+NOTE: This file is designed to be imported into a spreadsheet program
+such as Microsoft Excel for viewing, printing and sorting. The pipe '|'
+character is used as the data field separator.
+This file is also designed to support parsing.
+
+Input file:  a_gal.ngd
+output file: a_gal.pad
+Part type:   xc2c32a
+Speed grade: -4
+Package:     pc44
+
+Pinout by Pin Number:
+
+-----|-----|-----|-----|-----|-----|-----|-----|-----|-----|
+Pin Number|Signal Name|Pin Usage|Pin Name|Direction|IO Standard|IO Bank Number|{blank}|Slew Rate|Termination|{blank}|Voltage|Constraint|
+P1|A<7>|I|I/O|INPUT|LVCMOS18|1||FAST||||
+P2|A<8>|I|I/O|INPUT|LVCMOS18|1||FAST||||
+P3|A<9>|I|I/O|INPUT|LVCMOS18|1||FAST||||
+P4|M1|I|I/O|INPUT|LVCMOS18|1||FAST||||
+P5|CLOCK|GCK|I/O/GCK0||LVCMOS18|1||FAST||||
+P6|romacc|I|I/O/GCK1|INPUT|LVCMOS18|1||FAST||||
+P7|KPR||I/O/GCK2|||1|||||||
+P8|KPR||I/O|||1|||||||
+P9|KPR||I/O|||1|||||||
+P10|GND||GND||||||||||
+P11|KPR||I/O|||1|||||||
+P12|KPR||I/O|||1|||||||
+P13||VCCIO-1.8|VCCIO|||1|||||||
+P14|KPR||I/O|||1|||||||
+P15|TDI||TDI||||||||||
+P16|TMS||TMS||||||||||
+P17|TCK||TCK||||||||||
+P18|KPR||I/O|||1|||||||
+P19|KPR||I/O|||1|||||||
+P20|KPR||I/O|||1|||||||
+P21||VCC|VCC||||||||||
+P22|KPR||I/O|||1|||||||
+P23|GND||GND||||||||||
+P24|KPR||I|||2|||||||
+P25|A<6>|I|I/O|INPUT|LVCMOS18|2||FAST||||
+P26|A<5>|I|I/O|INPUT|LVCMOS18|2||FAST||||
+P27|A<4>|I|I/O|INPUT|LVCMOS18|2||FAST||||
+P28|A<3>|I|I/O|INPUT|LVCMOS18|2||FAST||||
+P29|A<2>|I|I/O|INPUT|LVCMOS18|2||FAST||||
+P30|TDO||TDO||||||||||
+P31|GND||GND||||||||||
+P32||VCCIO-1.8|VCCIO|||2|||||||
+P33|A<1>|I|I/O|INPUT|LVCMOS18|2||FAST||||
+P34|A<13>|I|I/O|INPUT|LVCMOS18|2||FAST||||
+P35|A<12>|I|I/O|INPUT|LVCMOS18|2||FAST||||
+P36|A<11>|I|I/O/GSR|INPUT|LVCMOS18|2||FAST||||
+P37|A<10>|I|I/O/GTS2|INPUT|LVCMOS18|2||FAST||||
+P38|A<0>|I|I/O/GTS3|INPUT|LVCMOS18|2||FAST||||
+P39|mapcond|O|I/O/GTS0|OUTPUT|LVCMOS18|2||FAST||||
+P40|automap|O|I/O/GTS1|OUTPUT|LVCMOS18|2||FAST||||
+P41||VCCAUX|VAUX||||||||||
+P42|ideio1|O|I/O|OUTPUT|LVCMOS18|2||FAST||||
+P43|ideio0|O|I/O|OUTPUT|LVCMOS18|2||FAST||||
+P44|mapterm|O|I/O|OUTPUT|LVCMOS18|2||FAST||||
+
+To preserve the pinout above for future design iterations in
+Project Navigator simply execute the (Lock Pins) process
+located under the (Implement Design) process in a toolbox named
+(Optional Implementation Tools) or invoke PIN2UCF from the
+command line. The location constraints will be written into your
+specified UCF file
+
+

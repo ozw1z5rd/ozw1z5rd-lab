@@ -1,0 +1,247 @@
+Release 13.3 - xst O.76xd (lin64)
+Copyright (c) 1995-2011 Xilinx, Inc.  All rights reserved.
+--> 
+Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.08 secs
+ 
+--> 
+Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.08 secs
+ 
+--> 
+Reading design: CPLD.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Compilation
+  3) Design Hierarchy Analysis
+  4) HDL Analysis
+  5) HDL Synthesis
+     5.1) HDL Synthesis Report
+  6) Advanced HDL Synthesis
+     6.1) Advanced HDL Synthesis Report
+  7) Low Level Synthesis
+  8) Partition Report
+  9) Final Report
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "CPLD.prj"
+Input Format                       : mixed
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "CPLD"
+Output Format                      : NGC
+Target Device                      : CoolRunner2 CPLDs
+
+---- Source Options
+Top Module Name                    : CPLD
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+Mux Extraction                     : Yes
+Resource Sharing                   : YES
+
+---- Target Options
+Add IO Buffers                     : YES
+MACRO Preserve                     : YES
+XOR Preserve                       : YES
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Keep Hierarchy                     : Yes
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Verilog 2001                       : YES
+
+---- Other Options
+Clock Enable                       : YES
+wysiwyg                            : NO
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Compilation                              *
+=========================================================================
+Compiling vhdl file "/home/apalma/Garage/vhdl/divNET/divnet/CPLD.vhd" in Library work.
+Entity <cpld> compiled.
+Entity <cpld> (Architecture <behavioral>) compiled.
+
+=========================================================================
+*                     Design Hierarchy Analysis                         *
+=========================================================================
+Analyzing hierarchy for entity <CPLD> in library <work> (architecture <behavioral>).
+
+
+=========================================================================
+*                            HDL Analysis                               *
+=========================================================================
+Analyzing Entity <CPLD> in library <work> (Architecture <behavioral>).
+Entity <CPLD> analyzed. Unit <CPLD> generated.
+
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Performing bidirectional port resolution...
+
+Synthesizing Unit <CPLD>.
+    Related source file is "/home/apalma/Garage/vhdl/divNET/divnet/CPLD.vhd".
+WARNING:Xst:2565 - Inout <H<13>> is never assigned.
+WARNING:Xst:1306 - Output <RAMOE> is never assigned.
+WARNING:Xst:2565 - Inout <H<2>> is never assigned.
+WARNING:Xst:1306 - Output <MAPRAM_LED> is never assigned.
+WARNING:Xst:2565 - Inout <H<14>> is never assigned.
+WARNING:Xst:2565 - Inout <H<3>> is never assigned.
+WARNING:Xst:2565 - Inout <H<15>> is never assigned.
+WARNING:Xst:2565 - Inout <H<4>> is never assigned.
+WARNING:Xst:1306 - Output <ROMOE> is never assigned.
+WARNING:Xst:2565 - Inout <H<5>> is never assigned.
+WARNING:Xst:1306 - Output <HDWR> is never assigned.
+WARNING:Xst:2565 - Inout <H<6>> is never assigned.
+WARNING:Xst:2565 - Inout <H<7>> is never assigned.
+WARNING:Xst:2565 - Inout <H<8>> is never assigned.
+WARNING:Xst:2565 - Inout <H<9>> is never assigned.
+WARNING:Xst:647 - Input <M1> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:1306 - Output <RAMWR> is never assigned.
+WARNING:Xst:647 - Input <EPROM> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <A<12:8>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:1306 - Output <CONMEM> is never assigned.
+WARNING:Xst:1306 - Output <ROMWR> is never assigned.
+WARNING:Xst:647 - Input <IOREQ> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:1306 - Output <HDRST> is never assigned.
+WARNING:Xst:2565 - Inout <D<2>> is never assigned.
+WARNING:Xst:2565 - Inout <D<3>> is never assigned.
+WARNING:Xst:647 - Input <RD> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:1306 - Output <NMI> is never assigned.
+WARNING:Xst:2565 - Inout <D<4>> is never assigned.
+WARNING:Xst:2565 - Inout <D<5>> is never assigned.
+WARNING:Xst:2565 - Inout <D<7>> is never assigned.
+WARNING:Xst:647 - Input <WR> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <MREQ> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:1306 - Output <ROMCS> is never assigned.
+WARNING:Xst:1306 - Output <HDRD> is never assigned.
+WARNING:Xst:2565 - Inout <H<10>> is never assigned.
+WARNING:Xst:2565 - Inout <H<11>> is never assigned.
+WARNING:Xst:2565 - Inout <H<0>> is never assigned.
+WARNING:Xst:2565 - Inout <H<12>> is never assigned.
+WARNING:Xst:2565 - Inout <H<1>> is never assigned.
+WARNING:Xst:1780 - Signal <romoff> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <romacc> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:653 - Signal <latch_r> is used but never assigned. This sourceless signal will be automatically connected to value 0.
+WARNING:Xst:646 - Signal <ideio1> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <ideio0> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:1780 - Signal <evenodd> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:1780 - Signal <clock1> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+    Register <ADDR1> equivalent to <ADDR0> has been removed
+    Found 1-bit register for signal <MAPRAM>.
+    Found 1-bit register for signal <BANK0>.
+    Found 1-bit register for signal <BANK1>.
+    Found 1-bit register for signal <ADDR0>.
+    Summary:
+	inferred   4 D-type flip-flop(s).
+Unit <CPLD> synthesized.
+
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# Registers                                            : 4
+ 1-bit register                                        : 4
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+WARNING:Xst:1710 - FF/Latch <0> (without init value) has a constant value of 0 in block <BANK0>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <0> (without init value) has a constant value of 0 in block <BANK1>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <0> (without init value) has a constant value of 0 in block <ADDR0>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <0> (without init value) has a constant value of 0 in block <MAPRAM>. This FF/Latch will be trimmed during the optimization process.
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# Registers                                            : 4
+ Flip-Flops                                            : 4
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+WARNING:Xst:1710 - FF/Latch <MAPRAM> (without init value) has a constant value of 0 in block <CPLD>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <ADDR0> (without init value) has a constant value of 0 in block <CPLD>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <BANK1> (without init value) has a constant value of 0 in block <CPLD>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <BANK0> (without init value) has a constant value of 0 in block <CPLD>. This FF/Latch will be trimmed during the optimization process.
+
+Optimizing unit <CPLD> ...
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Final Report                               *
+=========================================================================
+Final Results
+RTL Top Level Output File Name     : CPLD.ngr
+Top Level Output File Name         : CPLD
+Output Format                      : NGC
+Optimization Goal                  : Speed
+Keep Hierarchy                     : Yes
+Target Technology                  : CoolRunner2 CPLDs
+Macro Preserve                     : YES
+XOR Preserve                       : YES
+Clock Enable                       : YES
+wysiwyg                            : NO
+
+Design Statistics
+# IOs                              : 62
+
+Cell Usage :
+# BELS                             : 1
+#      GND                         : 1
+# IO Buffers                       : 5
+#      OBUF                        : 5
+=========================================================================
+
+
+Total REAL time to Xst completion: 6.00 secs
+Total CPU time to Xst completion: 5.39 secs
+ 
+--> 
+
+
+Total memory usage is 515804 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :   54 (   0 filtered)
+Number of infos    :    0 (   0 filtered)
+

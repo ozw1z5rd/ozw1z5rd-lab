@@ -1,0 +1,20 @@
+xst -intstyle ise -ifn "/home/apalma/Garage/vhdl/simple2/module.xst" -ofn "/home/apalma/Garage/vhdl/simple2/module.syr" 
+xst -intstyle ise -ifn "/home/apalma/Garage/vhdl/simple2/module.xst" -ofn "/home/apalma/Garage/vhdl/simple2/module.syr" 
+xst -intstyle ise -ifn "/home/apalma/Garage/vhdl/simple2/module.xst" -ofn "/home/apalma/Garage/vhdl/simple2/module.syr" 
+xst -intstyle ise -ifn "/home/apalma/Garage/vhdl/simple2/module.xst" -ofn "/home/apalma/Garage/vhdl/simple2/module.syr" 
+xst -intstyle ise -ifn "/home/apalma/Garage/vhdl/simple2/module.xst" -ofn "/home/apalma/Garage/vhdl/simple2/module.syr" 
+xst -intstyle ise -ifn "/home/apalma/Garage/vhdl/simple2/module.xst" -ofn "/home/apalma/Garage/vhdl/simple2/module.syr" 
+xst -intstyle ise -ifn "/home/apalma/Garage/vhdl/simple2/module.xst" -ofn "/home/apalma/Garage/vhdl/simple2/module.syr" 
+xst -intstyle ise -ifn "/home/apalma/Garage/vhdl/simple2/module.xst" -ofn "/home/apalma/Garage/vhdl/simple2/module.syr" 
+xst -intstyle ise -ifn "/home/apalma/Garage/vhdl/simple2/module.xst" -ofn "/home/apalma/Garage/vhdl/simple2/module.syr" 
+xst -intstyle ise -ifn "/home/apalma/Garage/vhdl/simple2/module.xst" -ofn "/home/apalma/Garage/vhdl/simple2/module.syr" 
+xst -intstyle ise -ifn "/home/apalma/Garage/vhdl/simple2/module.xst" -ofn "/home/apalma/Garage/vhdl/simple2/module.syr" 
+xst -intstyle ise -ifn "/home/apalma/Garage/vhdl/simple2/module.xst" -ofn "/home/apalma/Garage/vhdl/simple2/module.syr" 
+xst -intstyle ise -ifn "/home/apalma/Garage/vhdl/simple2/module.xst" -ofn "/home/apalma/Garage/vhdl/simple2/module.syr" 
+xst -intstyle ise -ifn "/home/apalma/Garage/vhdl/simple2/module.xst" -ofn "/home/apalma/Garage/vhdl/simple2/module.syr" 
+xst -intstyle ise -ifn "/home/apalma/Garage/vhdl/simple2/module.xst" -ofn "/home/apalma/Garage/vhdl/simple2/module.syr" 
+ngdbuild -intstyle ise -dd _ngo -i -p xc2c128-VQ100-6 module.ngc module.ngd  
+cpldfit -intstyle ise -p xc2c128-6-VQ100 -ofmt vhdl -optimize density -htmlrpt -loc on -slew fast -init low -inputs 32 -pterms 28 -unused keeper -terminate keeper -iostd LVCMOS18 module.ngd 
+tsim -intstyle ise module module.nga 
+taengine -intstyle ise -f module -w --format html1 -l module_html/tim/timing_report.htm 
+hprep6 -s IEEE1149 -i module 

@@ -1,0 +1,185 @@
+<html><head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<script src="paths.js"></script><script src="eqns.js"></script><script>
+      var design = "a_gal";
+      var device = "XC2C32A";
+      signals = new Array("automap","ideio0","ideio1","mapcond","mapterm","sig_mapcond");
+      sigNegs = new Array("OFF","OFF","OFF","OFF","OFF","OFF");
+      sigTypes = new Array("DFF","","","DFF","","TFF");
+
+      
+           iostyle["A0_SPECSIG"]=new Array("KPR");
+        
+           iostyle["A10_SPECSIG"]=new Array("KPR");
+        
+           iostyle["A11_SPECSIG"]=new Array("KPR");
+        
+           iostyle["A12_SPECSIG"]=new Array("KPR");
+        
+           iostyle["A13_SPECSIG"]=new Array("KPR");
+        
+           iostyle["A1_SPECSIG"]=new Array("KPR");
+        
+           iostyle["A2_SPECSIG"]=new Array("KPR");
+        
+           iostyle["A3_SPECSIG"]=new Array("KPR");
+        
+           iostyle["A4_SPECSIG"]=new Array("KPR");
+        
+           iostyle["A5_SPECSIG"]=new Array("KPR");
+        
+           iostyle["A6_SPECSIG"]=new Array("KPR");
+        
+           iostyle["A7_SPECSIG"]=new Array("KPR");
+        
+           iostyle["A8_SPECSIG"]=new Array("KPR");
+        
+           iostyle["A9_SPECSIG"]=new Array("KPR");
+        
+           iostyle["M1"]=new Array("KPR");
+        
+           iostyle["CLOCK"]=new Array("KPR");
+        
+           iostyle["romacc"]=new Array("KPR");
+        
+        specSig["A0_SPECSIG"]=new Array("A<0>");
+      
+        specSig["A10_SPECSIG"]=new Array("A<10>");
+      
+        specSig["A11_SPECSIG"]=new Array("A<11>");
+      
+        specSig["A12_SPECSIG"]=new Array("A<12>");
+      
+        specSig["A13_SPECSIG"]=new Array("A<13>");
+      
+        specSig["A1_SPECSIG"]=new Array("A<1>");
+      
+        specSig["A2_SPECSIG"]=new Array("A<2>");
+      
+        specSig["A3_SPECSIG"]=new Array("A<3>");
+      
+        specSig["A4_SPECSIG"]=new Array("A<4>");
+      
+        specSig["A5_SPECSIG"]=new Array("A<5>");
+      
+        specSig["A6_SPECSIG"]=new Array("A<6>");
+      
+        specSig["A7_SPECSIG"]=new Array("A<7>");
+      
+        specSig["A8_SPECSIG"]=new Array("A<8>");
+      
+        specSig["A9_SPECSIG"]=new Array("A<9>");
+      
+            pterms["FB1_0"]=new Array("A7_SPECSIG","/A5_SPECSIG","/A4_SPECSIG","/A3_SPECSIG","/A13_SPECSIG","/A12_SPECSIG","/A11_SPECSIG","A10_SPECSIG","romacc","M1","/A9_SPECSIG","/A8_SPECSIG","A6_SPECSIG","A1_SPECSIG","/A0_SPECSIG","A2_SPECSIG");
+          
+            pterms["FB1_1"]=new Array("/A7_SPECSIG","A5_SPECSIG","/A4_SPECSIG","/A3_SPECSIG","/A13_SPECSIG","/A12_SPECSIG","/A11_SPECSIG","/A10_SPECSIG","romacc","M1","/A9_SPECSIG","/A8_SPECSIG","A6_SPECSIG","A1_SPECSIG","/A0_SPECSIG","A2_SPECSIG");
+          
+            pterms["FB1_2"]=new Array("/A7_SPECSIG","A5_SPECSIG","/A4_SPECSIG","/A3_SPECSIG","/A13_SPECSIG","/A12_SPECSIG","/A11_SPECSIG","A10_SPECSIG","romacc","M1","/A9_SPECSIG","A8_SPECSIG","A6_SPECSIG","A1_SPECSIG","/A0_SPECSIG","/A2_SPECSIG");
+          
+            pterms["FB1_3"]=new Array("/A7_SPECSIG","/A5_SPECSIG","/A4_SPECSIG","/A13_SPECSIG","/A12_SPECSIG","/A11_SPECSIG","/A10_SPECSIG","romacc","M1","/A9_SPECSIG","/A8_SPECSIG","/A6_SPECSIG","/A1_SPECSIG","/A0_SPECSIG","/A2_SPECSIG");
+          
+            pterms["FB1_4"]=new Array("/A7_SPECSIG","A5_SPECSIG","A4_SPECSIG","A3_SPECSIG","/A13_SPECSIG","/A12_SPECSIG","/A11_SPECSIG","/A10_SPECSIG","romacc","M1","/A9_SPECSIG","/A8_SPECSIG","/A6_SPECSIG","/A1_SPECSIG","/A0_SPECSIG","/A2_SPECSIG");
+          
+            pterms["FB1_5"]=new Array("sig_mapcond","A7_SPECSIG","A5_SPECSIG","A4_SPECSIG","A3_SPECSIG","/A13_SPECSIG","A12_SPECSIG","A11_SPECSIG","A10_SPECSIG","romacc","M1","A9_SPECSIG","A8_SPECSIG","A6_SPECSIG");
+          
+            pterms["FB1_6"]=new Array("/sig_mapcond","A7_SPECSIG","/A5_SPECSIG","/A4_SPECSIG","/A3_SPECSIG","/A13_SPECSIG","/A12_SPECSIG","/A11_SPECSIG","A10_SPECSIG","romacc","M1","/A9_SPECSIG","/A8_SPECSIG","A6_SPECSIG","A1_SPECSIG","/A0_SPECSIG","A2_SPECSIG");
+          
+            pterms["FB1_7"]=new Array("/sig_mapcond","/A7_SPECSIG","A5_SPECSIG","/A4_SPECSIG","/A3_SPECSIG","/A13_SPECSIG","/A12_SPECSIG","/A11_SPECSIG","/A10_SPECSIG","romacc","M1","/A9_SPECSIG","/A8_SPECSIG","A6_SPECSIG","A1_SPECSIG","/A0_SPECSIG","A2_SPECSIG");
+          
+            pterms["FB1_8"]=new Array("/sig_mapcond","/A7_SPECSIG","A5_SPECSIG","/A4_SPECSIG","/A3_SPECSIG","/A13_SPECSIG","/A12_SPECSIG","/A11_SPECSIG","A10_SPECSIG","romacc","M1","/A9_SPECSIG","A8_SPECSIG","A6_SPECSIG","A1_SPECSIG","/A0_SPECSIG","/A2_SPECSIG");
+          
+            pterms["FB1_9"]=new Array("/sig_mapcond","/A7_SPECSIG","/A5_SPECSIG","/A4_SPECSIG","/A13_SPECSIG","/A12_SPECSIG","/A11_SPECSIG","/A10_SPECSIG","romacc","M1","/A9_SPECSIG","/A8_SPECSIG","/A6_SPECSIG","/A1_SPECSIG","/A0_SPECSIG","/A2_SPECSIG");
+          
+            pterms["FB1_10"]=new Array("/sig_mapcond","/A7_SPECSIG","A5_SPECSIG","A4_SPECSIG","A3_SPECSIG","/A13_SPECSIG","/A12_SPECSIG","/A11_SPECSIG","/A10_SPECSIG","romacc","M1","/A9_SPECSIG","/A8_SPECSIG","/A6_SPECSIG","/A1_SPECSIG","/A0_SPECSIG","/A2_SPECSIG");
+          
+            pterms["FB1_13"]=new Array("A7_SPECSIG","A5_SPECSIG","/A4_SPECSIG","/A3_SPECSIG","A1_SPECSIG","A0_SPECSIG","/A2_SPECSIG");
+          
+            pterms["FB1_16"]=new Array("A7_SPECSIG","A5_SPECSIG","/A6_SPECSIG","A1_SPECSIG","A0_SPECSIG");
+          
+            pterms["FB1_19"]=new Array("sig_mapcond");
+          
+            pterms["FB1_22"]=new Array("sig_mapcond");
+          
+          d2["mapterm"]=new Array("FB1_3","FB1_0","FB1_4","FB1_2","FB1_1");
+          
+          d1["ideio0"]=new Array("FB1_13");
+          
+          d1["ideio1"]=new Array("FB1_16");
+          
+          d1["automap"]=new Array("FB1_19");
+          
+              gblclk["automap"]=new Array("CLOCK");
+            prld["automap"]="GND";
+          d1["mapcond"]=new Array("FB1_19");
+          
+              gblclk["mapcond"]=new Array("CLOCK");
+            prld["mapcond"]="GND";
+          d2["sig_mapcond"]=new Array("FB1_5","FB1_9","FB1_6","FB1_10","FB1_8","FB1_7");
+          
+              gblclk["sig_mapcond"]=new Array("CLOCK");
+            prld["sig_mapcond"]="GND";
+
+      uimSignals = new Array();
+
+      uimSigNegs = new Array();
+
+      uimPterms = new Array();
+      
+
+      
+        function getEqnList() {
+          var str = "<html><head><link type='text/css' href='style.css' rel='stylesheet'></head><body class='pgBgnd'>";
+          str += "<center><h3>Equations</h3></center>";
+          str += "<table width='90%' align='center' border='1' cellpadding='0' cellspacing='0'>";
+          for (s=0; s<uimSignals.length; s++) {
+            str += "<tr><td>";
+            str += retUimEqn(uimSignals[s]);
+            str += "</td></tr>";
+          }
+          for (s=0; s<signals.length; s++) {
+            str += "<tr><td>";
+            str += retEqn(signals[s]);
+            str += "</td></tr>";
+          }
+
+          var legend = retLegend();
+		      if (legend != "") {
+		        str += "<tr><td>" + legend + "</td></tr>";
+		      }
+
+          str += "</table>";
+          str += "<form><span class='pgRef'>";
+
+          if (!parent.leftnav.IsNS()) {
+            str += "<table width='90%' align='center'>";
+            str += "<tr><td align='left'><input type='button' value='back to top' ";
+            str += "onclick='javascript:parent.leftnav.showEqnAll()' ";
+            str += "onmouseover=\"window.status='goto top of page'; return true;\" ";
+            str += "onmouseout=\"window.status=''\">";
+            str += "</td>";
+            str += "<td align='right'>";
+            str += "<input type='button' value='print page' ";
+            str += "onclick='javascript:window.print()' ";
+            str += "onmouseover=\"window.status='print page'; return true;\" ";
+            str += "onmouseout=\"window.status=''\">";
+            str += "</td>";
+            str += "</tr></table>";
+          }
+          else {
+            str += "<table width='90%' align='center'>";
+            str += "<tr><td align='left'><a href='javascript:parent.leftnav.showEqnAll()'>back to top</a>";
+            str += "</td>";
+            str += "<td align='right'>";
+            str += "<a href='javascript:window.print()'>";
+            str += "print page</a>";
+            str += "</td>";
+            str += "</tr></table>";
+          }
+
+          str += "</span></form>";
+          str += "</body></html>";
+          return str;
+        }
+      
+    </script>
+</head></html>

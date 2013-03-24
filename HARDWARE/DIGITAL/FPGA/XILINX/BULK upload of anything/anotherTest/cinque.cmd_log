@@ -1,0 +1,19 @@
+xst -intstyle ise -ifn "/home/apalma/Garage/vhdl/anotherTest/cinque.xst" -ofn "/home/apalma/Garage/vhdl/anotherTest/cinque.syr" 
+ngdbuild -intstyle ise -dd _ngo -i -p xc2c128-VQ100-6 cinque.ngc cinque.ngd  
+cpldfit -intstyle ise -p xc2c128-6-VQ100 -ofmt vhdl -optimize density -htmlrpt -loc on -slew fast -init low -inputs 32 -pterms 28 -unused keeper -terminate keeper -iostd LVCMOS18 cinque.ngd 
+XSLTProcess cinque_build.xml 
+tsim -intstyle ise cinque cinque.nga 
+taengine -intstyle ise -f cinque -w --format html1 -l cinque_html/tim/timing_report.htm 
+hprep6 -s IEEE1149 -i cinque 
+xst -intstyle ise -ifn "/home/apalma/Garage/vhdl/anotherTest/cinque.xst" -ofn "/home/apalma/Garage/vhdl/anotherTest/cinque.syr" 
+ngdbuild -intstyle ise -dd _ngo -i -p xc2c128-VQ100-6 cinque.ngc cinque.ngd  
+cpldfit -intstyle ise -p xc2c128-6-VQ100 -ofmt vhdl -optimize density -htmlrpt -loc on -slew fast -init low -inputs 32 -pterms 28 -unused keeper -terminate keeper -iostd LVCMOS18 cinque.ngd 
+XSLTProcess cinque_build.xml 
+tsim -intstyle ise cinque cinque.nga 
+hprep6 -s IEEE1149 -i cinque 
+xst -intstyle ise -ifn "/home/apalma/Garage/vhdl/anotherTest/cinque.xst" -ofn "/home/apalma/Garage/vhdl/anotherTest/cinque.syr" 
+ngdbuild -intstyle ise -dd _ngo -i -p xc2c128-VQ100-6 cinque.ngc cinque.ngd  
+cpldfit -intstyle ise -p xc2c128-6-VQ100 -ofmt vhdl -optimize density -htmlrpt -loc on -slew fast -init low -inputs 32 -pterms 28 -unused keeper -terminate keeper -iostd LVCMOS18 cinque.ngd 
+XSLTProcess cinque_build.xml 
+tsim -intstyle ise cinque cinque.nga 
+hprep6 -s IEEE1149 -i cinque 

@@ -1,0 +1,18 @@
+<?xml version='1.0' encoding='utf-8' ?>
+<!DOCTYPE ibis [
+<!ELEMENT ibis (part, pin+)>
+<!ELEMENT part EMPTY>
+<!ELEMENT pin EMPTY>
+<!ATTLIST part
+  arch   CDATA #REQUIRED
+  device CDATA #REQUIRED
+  spg    CDATA #REQUIRED
+  pkg    CDATA #REQUIRED>
+<!ATTLIST pin
+  nm     CDATA #REQUIRED
+  no     CDATA #REQUIRED
+  iostd  (TTL|LVTTL|LVCMOS2|NA) "NA"
+  sr     (SLOW|FAST|slow|fast) "SLOW"
+  dir    (BIDIR|bidir|INPUT|input|OUTPUT|output) "BIDIR">
+]>
+<ibis><part arch="xpla3" device="XCR3064XL" pkg="VQ100" spg="-6"/><pin dir="input" nm="A&lt;0&gt;" no="98"/><pin dir="input" nm="A&lt;1&gt;" no="99"/><pin dir="input" nm="A&lt;2&gt;" no="100"/><pin dir="input" nm="A&lt;3&gt;" no="6"/><pin dir="input" nm="A&lt;4&gt;" no="8"/><pin dir="input" nm="A&lt;5&gt;" no="9"/><pin dir="input" nm="A&lt;6&gt;" no="10"/><pin dir="input" nm="A&lt;7&gt;" no="12"/><pin dir="input" nm="D&lt;0&gt;" no="13"/><pin dir="input" nm="N_M1" no="54"/><pin dir="input" nm="N_WR" no="90"/><pin dir="input" nm="D&lt;1&gt;" no="14"/><pin dir="input" nm="JUMPER_COMP_MODE" no="56"/><pin dir="input" nm="D&lt;2&gt;" no="61"/><pin dir="input" nm="D&lt;3&gt;" no="60"/><pin dir="input" nm="D&lt;4&gt;" no="58"/><pin dir="input" nm="D&lt;5&gt;" no="57"/><pin dir="input" nm="JUMPER_EEPROM" no="94"/><pin dir="input" nm="N_MREQ" no="96"/><pin dir="input" nm="N_RD" no="97"/><pin dir="output" nm="BANK&lt;0&gt;" no="80" sr="fast"/><pin dir="output" nm="BANK&lt;1&gt;" no="79" sr="fast"/><pin dir="output" nm="BANK&lt;2&gt;" no="85" sr="fast"/><pin dir="output" nm="BANK&lt;3&gt;" no="84" sr="fast"/><pin dir="output" nm="BANK&lt;4&gt;" no="83" sr="fast"/><pin dir="output" nm="BANK&lt;5&gt;" no="81" sr="fast"/><pin dir="output" nm="CONMEM" no="71" sr="fast"/><pin dir="output" nm="MAPRAM" no="69" sr="fast"/><pin dir="output" nm="N_EEPROMCS" no="68" sr="fast"/><pin dir="output" nm="N_EEPROMOE" no="93" sr="fast"/><pin dir="output" nm="N_EEPROMWR" no="92" sr="fast"/><pin dir="output" nm="N_IORQEGDE" no="76" sr="fast"/><pin dir="output" nm="N_ROMCS" no="75" sr="fast"/><pin dir="output" nm="N_SRAMCS" no="67" sr="fast"/><pin dir="output" nm="N_SRAMEN" no="65" sr="fast"/><pin dir="output" nm="N_SRAMOE" no="64" sr="fast"/><pin dir="output" nm="N_SRAMWR" no="63" sr="fast"/></ibis>

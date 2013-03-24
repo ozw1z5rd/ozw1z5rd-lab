@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/!svn/ver/2/trunk/vhdl/a_gal/isim/testA_gal_isim_beh.exe.sim
+END
+isimcrash.log
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/!svn/ver/2/trunk/vhdl/a_gal/isim/testA_gal_isim_beh.exe.sim/isimcrash.log
+END
+isimkernel.log
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/!svn/ver/2/trunk/vhdl/a_gal/isim/testA_gal_isim_beh.exe.sim/isimkernel.log
+END
+testA_gal_isim_beh.exe
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/!svn/ver/2/trunk/vhdl/a_gal/isim/testA_gal_isim_beh.exe.sim/testA_gal_isim_beh.exe
+END
+ISimEngine-DesignHierarchy1.dbg
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svn/!svn/ver/2/trunk/vhdl/a_gal/isim/testA_gal_isim_beh.exe.sim/ISimEngine-DesignHierarchy1.dbg
+END
+netId1.dat
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/!svn/ver/2/trunk/vhdl/a_gal/isim/testA_gal_isim_beh.exe.sim/netId1.dat
+END

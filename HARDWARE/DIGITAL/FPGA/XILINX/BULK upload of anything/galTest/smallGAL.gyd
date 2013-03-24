@@ -1,0 +1,29 @@
+Pin Freeze File:  version O.76xd
+
+2C128100 XC2C128-6-VQ100
+c1 S:PIN8
+c2 S:PIN7
+c3 S:PIN6
+clock S:PIN22
+o1 S:PIN10
+o2 S:PIN9
+o3 S:PIN12
+s2 S:PIN13
+s3 S:PIN11
+
+
+;The remaining section of the .gyd file is for documentation purposes only.
+;It shows where your internal equations were placed in the last successful fit.
+
+PARTITION FB1_1 s2
+PARTITION FB1_3 o3 s3 o1 o2
+		
+
+
+
+
+
+
+
+
+

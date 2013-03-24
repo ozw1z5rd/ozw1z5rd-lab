@@ -1,0 +1,276 @@
+NDS Database:  version O.76xd
+
+NDS_INFO | xbr | 2C128100 | XC2C128-6-VQ100
+
+DEVICE | 2C128 | 2C128100 | 
+
+NETWORK | smallGAL | 0 | 0 | 1073758214 | 0
+
+INPUT_INSTANCE | 0 | 0 | NULL | c1_II | smallGAL_COPY_0_COPY_0 | 16 | 1 | 1
+INPUT_NODE_TYPE | 0 | 5 | II_IN
+NODE | c1 | 213 | PI | 0 | 0 | smallGAL_COPY_0_COPY_0 | NULL | NULL | NULL | 0 | 100 | NOTYPE
+OUTPUT_NODE_TYPE | 0 | 5 | II_IMUX
+NODE | c1_II/UIM | 222 | ? | 0 | 0 | smallGAL_COPY_0_COPY_0 | NULL | NULL | c1_II | 0 | 5 | II_IMUX
+
+INPUT_INSTANCE | 0 | 0 | NULL | c2_II | smallGAL_COPY_0_COPY_0 | 16 | 1 | 1
+INPUT_NODE_TYPE | 0 | 5 | II_IN
+NODE | c2 | 214 | PI | 0 | 0 | smallGAL_COPY_0_COPY_0 | NULL | NULL | NULL | 0 | 100 | NOTYPE
+OUTPUT_NODE_TYPE | 0 | 5 | II_IMUX
+NODE | c2_II/UIM | 221 | ? | 0 | 0 | smallGAL_COPY_0_COPY_0 | NULL | NULL | c2_II | 0 | 5 | II_IMUX
+
+INPUT_INSTANCE | 0 | 0 | NULL | c3_II | smallGAL_COPY_0_COPY_0 | 16 | 1 | 1
+INPUT_NODE_TYPE | 0 | 5 | II_IN
+NODE | c3 | 215 | PI | 0 | 0 | smallGAL_COPY_0_COPY_0 | NULL | NULL | NULL | 0 | 100 | NOTYPE
+OUTPUT_NODE_TYPE | 0 | 5 | II_IMUX
+NODE | c3_II/UIM | 220 | ? | 0 | 0 | smallGAL_COPY_0_COPY_0 | NULL | NULL | c3_II | 0 | 5 | II_IMUX
+
+INPUT_INSTANCE | 0 | 0 | NULL | clock_II | smallGAL_COPY_0_COPY_0 | 16 | 1 | 1
+INPUT_NODE_TYPE | 0 | 5 | II_IN
+NODE | clock | 216 | PI | 0 | 0 | smallGAL_COPY_0_COPY_0 | NULL | NULL | NULL | 0 | 100 | NOTYPE
+OUTPUT_NODE_TYPE | 3 | 5 | II_FCLK
+NODE | clock_II/FCLK | 241 | ? | 0 | 0 | smallGAL_COPY_0_COPY_0 | NULL | NULL | clock_II | 3 | 5 | II_FCLK
+
+MACROCELL_INSTANCE | NULL | o1_MC | smallGAL_COPY_0_COPY_0 | 0 | 3 | 1
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | c3_II/UIM | 220 | ? | 0 | 0 | smallGAL_COPY_0_COPY_0 | NULL | NULL | c3_II | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | c2_II/UIM | 221 | ? | 0 | 0 | smallGAL_COPY_0_COPY_0 | NULL | NULL | c2_II | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | c1_II/UIM | 222 | ? | 0 | 0 | smallGAL_COPY_0_COPY_0 | NULL | NULL | c1_II | 0 | 5 | II_IMUX
+OUTPUT_NODE_TYPE | 0 | 0 | MC_Q
+NODE | o1_MC.Q | 224 | ? | 0 | 0 | smallGAL_COPY_0_COPY_0 | NULL | o1_MC.Q | o1_MC | 0 | 0 | MC_Q
+
+SIGNAL_INSTANCE | o1_MC.SI | o1_MC | 0 | 3 | 2
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | c3_II/UIM | 220 | ? | 0 | 0 | smallGAL_COPY_0_COPY_0 | NULL | NULL | c3_II | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | c2_II/UIM | 221 | ? | 0 | 0 | smallGAL_COPY_0_COPY_0 | NULL | NULL | c2_II | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | c1_II/UIM | 222 | ? | 0 | 0 | smallGAL_COPY_0_COPY_0 | NULL | NULL | c1_II | 0 | 5 | II_IMUX
+OUTPUT_NODE_TYPE | 1 | 9 | MC_SI_D1
+SIGNAL | NODE | o1_MC.D1 | 218 | ? | 0 | 0 | o1_MC | NULL | NULL | o1_MC.SI | 1 | 9 | MC_SI_D1
+SPPTERM | 3 | IV_TRUE | c3_II/UIM | IV_TRUE | c2_II/UIM | IV_TRUE | c1_II/UIM
+OUTPUT_NODE_TYPE | 2 | 9 | MC_SI_D2
+SIGNAL | NODE | o1_MC.D2 | 219 | ? | 0 | 0 | o1_MC | NULL | NULL | o1_MC.SI | 2 | 9 | MC_SI_D2
+SPPTERM | 0 | IV_ZERO
+
+SRFF_INSTANCE | o1_MC.REG | o1_MC | 0 | 1 | 1
+INPUT_NODE_TYPE | 0 | 8 | SRFF_D
+NODE | o1_MC.D | 217 | ? | 0 | 0 | o1_MC | NULL | NULL | o1_MC.XOR | 0 | 7 | ALU_F
+OUTPUT_NODE_TYPE | 0 | 8 | SRFF_Q
+NODE | o1_MC.Q | 223 | ? | 0 | 0 | o1_MC | NULL | NULL | o1_MC.REG | 0 | 8 | SRFF_Q
+
+OUTPUT_INSTANCE | 0 | o1 | smallGAL_COPY_0_COPY_0 | 3 | 1 | 1
+INPUT_NODE_TYPE | 0 | 6 | OI_IN
+NODE | o1_MC.Q | 224 | ? | 0 | 0 | smallGAL_COPY_0_COPY_0 | NULL | o1_MC.Q | o1_MC | 0 | 0 | MC_Q
+OUTPUT_NODE_TYPE | 0 | 6 | OI_OUT
+NODE | o1 | 225 | PO | 0 | 0 | smallGAL_COPY_0_COPY_0 | NULL | NULL | o1 | 0 | 6 | OI_OUT
+
+MACROCELL_INSTANCE | NULL | o2_MC | smallGAL_COPY_0_COPY_0 | 0 | 2 | 1
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | c3_II/UIM | 220 | ? | 0 | 0 | smallGAL_COPY_0_COPY_0 | NULL | NULL | c3_II | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | c2_II/UIM | 221 | ? | 0 | 0 | smallGAL_COPY_0_COPY_0 | NULL | NULL | c2_II | 0 | 5 | II_IMUX
+OUTPUT_NODE_TYPE | 0 | 0 | MC_Q
+NODE | o2_MC.Q | 230 | ? | 0 | 0 | smallGAL_COPY_0_COPY_0 | NULL | o2_MC.Q | o2_MC | 0 | 0 | MC_Q
+
+SIGNAL_INSTANCE | o2_MC.SI | o2_MC | 0 | 2 | 2
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | c3_II/UIM | 220 | ? | 0 | 0 | smallGAL_COPY_0_COPY_0 | NULL | NULL | c3_II | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | c2_II/UIM | 221 | ? | 0 | 0 | smallGAL_COPY_0_COPY_0 | NULL | NULL | c2_II | 0 | 5 | II_IMUX
+OUTPUT_NODE_TYPE | 1 | 9 | MC_SI_D1
+SIGNAL | NODE | o2_MC.D1 | 227 | ? | 0 | 0 | o2_MC | NULL | NULL | o2_MC.SI | 1 | 9 | MC_SI_D1
+SPPTERM | 2 | IV_TRUE | c3_II/UIM | IV_TRUE | c2_II/UIM
+OUTPUT_NODE_TYPE | 2 | 9 | MC_SI_D2
+SIGNAL | NODE | o2_MC.D2 | 228 | ? | 0 | 0 | o2_MC | NULL | NULL | o2_MC.SI | 2 | 9 | MC_SI_D2
+SPPTERM | 0 | IV_ZERO
+
+SRFF_INSTANCE | o2_MC.REG | o2_MC | 0 | 1 | 1
+INPUT_NODE_TYPE | 0 | 8 | SRFF_D
+NODE | o2_MC.D | 226 | ? | 0 | 0 | o2_MC | NULL | NULL | o2_MC.XOR | 0 | 7 | ALU_F
+OUTPUT_NODE_TYPE | 0 | 8 | SRFF_Q
+NODE | o2_MC.Q | 229 | ? | 0 | 0 | o2_MC | NULL | NULL | o2_MC.REG | 0 | 8 | SRFF_Q
+
+OUTPUT_INSTANCE | 0 | o2 | smallGAL_COPY_0_COPY_0 | 3 | 1 | 1
+INPUT_NODE_TYPE | 0 | 6 | OI_IN
+NODE | o2_MC.Q | 230 | ? | 0 | 0 | smallGAL_COPY_0_COPY_0 | NULL | o2_MC.Q | o2_MC | 0 | 0 | MC_Q
+OUTPUT_NODE_TYPE | 0 | 6 | OI_OUT
+NODE | o2 | 231 | PO | 0 | 0 | smallGAL_COPY_0_COPY_0 | NULL | NULL | o2 | 0 | 6 | OI_OUT
+
+MACROCELL_INSTANCE | NULL | o3_MC | smallGAL_COPY_0_COPY_0 | 0 | 2 | 1
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | c2_II/UIM | 221 | ? | 0 | 0 | smallGAL_COPY_0_COPY_0 | NULL | NULL | c2_II | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | c1_II/UIM | 222 | ? | 0 | 0 | smallGAL_COPY_0_COPY_0 | NULL | NULL | c1_II | 0 | 5 | II_IMUX
+OUTPUT_NODE_TYPE | 0 | 0 | MC_Q
+NODE | o3_MC.Q | 236 | ? | 0 | 0 | smallGAL_COPY_0_COPY_0 | NULL | o3_MC.Q | o3_MC | 0 | 0 | MC_Q
+
+SIGNAL_INSTANCE | o3_MC.SI | o3_MC | 0 | 2 | 2
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | c2_II/UIM | 221 | ? | 0 | 0 | smallGAL_COPY_0_COPY_0 | NULL | NULL | c2_II | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | c1_II/UIM | 222 | ? | 0 | 0 | smallGAL_COPY_0_COPY_0 | NULL | NULL | c1_II | 0 | 5 | II_IMUX
+OUTPUT_NODE_TYPE | 1 | 9 | MC_SI_D1
+SIGNAL | NODE | o3_MC.D1 | 234 | ? | 0 | 0 | o3_MC | NULL | NULL | o3_MC.SI | 1 | 9 | MC_SI_D1
+SPPTERM | 0 | IV_ZERO
+OUTPUT_NODE_TYPE | 2 | 9 | MC_SI_D2
+SIGNAL | NODE | o3_MC.D2 | 233 | ? | 0 | 0 | o3_MC | NULL | NULL | o3_MC.SI | 2 | 9 | MC_SI_D2
+SPPTERM | 2 | IV_TRUE | c2_II/UIM | IV_FALSE | c1_II/UIM
+SPPTERM | 2 | IV_FALSE | c2_II/UIM | IV_TRUE | c1_II/UIM
+
+SRFF_INSTANCE | o3_MC.REG | o3_MC | 0 | 1 | 1
+INPUT_NODE_TYPE | 0 | 8 | SRFF_D
+NODE | o3_MC.D | 232 | ? | 0 | 0 | o3_MC | NULL | NULL | o3_MC.XOR | 0 | 7 | ALU_F
+OUTPUT_NODE_TYPE | 0 | 8 | SRFF_Q
+NODE | o3_MC.Q | 235 | ? | 0 | 0 | o3_MC | NULL | NULL | o3_MC.REG | 0 | 8 | SRFF_Q
+
+OUTPUT_INSTANCE | 0 | o3 | smallGAL_COPY_0_COPY_0 | 3 | 1 | 1
+INPUT_NODE_TYPE | 0 | 6 | OI_IN
+NODE | o3_MC.Q | 236 | ? | 0 | 0 | smallGAL_COPY_0_COPY_0 | NULL | o3_MC.Q | o3_MC | 0 | 0 | MC_Q
+OUTPUT_NODE_TYPE | 0 | 6 | OI_OUT
+NODE | o3 | 237 | PO | 0 | 0 | smallGAL_COPY_0_COPY_0 | NULL | NULL | o3 | 0 | 6 | OI_OUT
+
+MACROCELL_INSTANCE | PrldLow | s2_MC | smallGAL_COPY_0_COPY_0 | 1024 | 3 | 1
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | c2_II/UIM | 221 | ? | 0 | 0 | smallGAL_COPY_0_COPY_0 | NULL | NULL | c2_II | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | c1_II/UIM | 222 | ? | 0 | 0 | smallGAL_COPY_0_COPY_0 | NULL | NULL | c1_II | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | clock_II/FCLK | 241 | ? | 0 | 0 | smallGAL_COPY_0_COPY_0 | NULL | NULL | clock_II | 3 | 5 | II_FCLK
+OUTPUT_NODE_TYPE | 0 | 0 | MC_Q
+NODE | s2_MC.Q | 243 | ? | 0 | 0 | smallGAL_COPY_0_COPY_0 | NULL | s2_MC.Q | s2_MC | 0 | 0 | MC_Q
+
+SIGNAL_INSTANCE | s2_MC.SI | s2_MC | 0 | 2 | 2
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | c2_II/UIM | 221 | ? | 0 | 0 | smallGAL_COPY_0_COPY_0 | NULL | NULL | c2_II | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | c1_II/UIM | 222 | ? | 0 | 0 | smallGAL_COPY_0_COPY_0 | NULL | NULL | c1_II | 0 | 5 | II_IMUX
+OUTPUT_NODE_TYPE | 1 | 9 | MC_SI_D1
+SIGNAL | NODE | s2_MC.D1 | 240 | ? | 0 | 0 | s2_MC | NULL | NULL | s2_MC.SI | 1 | 9 | MC_SI_D1
+SPPTERM | 0 | IV_ZERO
+OUTPUT_NODE_TYPE | 2 | 9 | MC_SI_D2
+SIGNAL | NODE | s2_MC.D2 | 239 | ? | 0 | 0 | s2_MC | NULL | NULL | s2_MC.SI | 2 | 9 | MC_SI_D2
+SPPTERM | 2 | IV_TRUE | c2_II/UIM | IV_FALSE | c1_II/UIM
+SPPTERM | 2 | IV_FALSE | c2_II/UIM | IV_TRUE | c1_II/UIM
+
+SRFF_INSTANCE | s2_MC.REG | s2_MC | 0 | 2 | 1
+INPUT_NODE_TYPE | 0 | 8 | SRFF_D
+NODE | s2_MC.D | 238 | ? | 0 | 0 | s2_MC | NULL | NULL | s2_MC.XOR | 0 | 7 | ALU_F
+INPUT_NODE_TYPE | 1 | 8 | SRFF_C
+NODE | clock_II/FCLK | 241 | ? | 0 | 0 | smallGAL_COPY_0_COPY_0 | NULL | NULL | clock_II | 3 | 5 | II_FCLK
+OUTPUT_NODE_TYPE | 0 | 8 | SRFF_Q
+NODE | s2_MC.Q | 242 | ? | 0 | 0 | s2_MC | NULL | NULL | s2_MC.REG | 0 | 8 | SRFF_Q
+
+OUTPUT_INSTANCE | 0 | s2 | smallGAL_COPY_0_COPY_0 | 3 | 1 | 1
+INPUT_NODE_TYPE | 0 | 6 | OI_IN
+NODE | s2_MC.Q | 243 | ? | 0 | 0 | smallGAL_COPY_0_COPY_0 | NULL | s2_MC.Q | s2_MC | 0 | 0 | MC_Q
+OUTPUT_NODE_TYPE | 0 | 6 | OI_OUT
+NODE | s2 | 244 | PO | 0 | 0 | smallGAL_COPY_0_COPY_0 | NULL | NULL | s2 | 0 | 6 | OI_OUT
+
+MACROCELL_INSTANCE | PrldLow | s3_MC | smallGAL_COPY_0_COPY_0 | 1024 | 2 | 1
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | c1_II/UIM | 222 | ? | 0 | 0 | smallGAL_COPY_0_COPY_0 | NULL | NULL | c1_II | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | clock_II/FCLK | 241 | ? | 0 | 0 | smallGAL_COPY_0_COPY_0 | NULL | NULL | clock_II | 3 | 5 | II_FCLK
+OUTPUT_NODE_TYPE | 0 | 0 | MC_Q
+NODE | s3_MC.Q | 249 | ? | 0 | 0 | smallGAL_COPY_0_COPY_0 | NULL | s3_MC.Q | s3_MC | 0 | 0 | MC_Q
+
+SIGNAL_INSTANCE | s3_MC.SI | s3_MC | 0 | 1 | 2
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | c1_II/UIM | 222 | ? | 0 | 0 | smallGAL_COPY_0_COPY_0 | NULL | NULL | c1_II | 0 | 5 | II_IMUX
+OUTPUT_NODE_TYPE | 1 | 9 | MC_SI_D1
+SIGNAL | NODE | s3_MC.D1 | 246 | ? | 0 | 0 | s3_MC | NULL | NULL | s3_MC.SI | 1 | 9 | MC_SI_D1
+SPPTERM | 1 | IV_TRUE | c1_II/UIM
+OUTPUT_NODE_TYPE | 2 | 9 | MC_SI_D2
+SIGNAL | NODE | s3_MC.D2 | 247 | ? | 0 | 0 | s3_MC | NULL | NULL | s3_MC.SI | 2 | 9 | MC_SI_D2
+SPPTERM | 0 | IV_ZERO
+
+SRFF_INSTANCE | s3_MC.REG | s3_MC | 0 | 2 | 1
+INPUT_NODE_TYPE | 0 | 8 | SRFF_D
+NODE | s3_MC.D | 245 | ? | 0 | 0 | s3_MC | NULL | NULL | s3_MC.XOR | 0 | 7 | ALU_F
+INPUT_NODE_TYPE | 1 | 8 | SRFF_C
+NODE | clock_II/FCLK | 241 | ? | 0 | 0 | smallGAL_COPY_0_COPY_0 | NULL | NULL | clock_II | 3 | 5 | II_FCLK
+OUTPUT_NODE_TYPE | 0 | 8 | SRFF_Q
+NODE | s3_MC.Q | 248 | ? | 0 | 0 | s3_MC | NULL | NULL | s3_MC.REG | 0 | 8 | SRFF_Q
+
+OUTPUT_INSTANCE | 0 | s3 | smallGAL_COPY_0_COPY_0 | 3 | 1 | 1
+INPUT_NODE_TYPE | 0 | 6 | OI_IN
+NODE | s3_MC.Q | 249 | ? | 0 | 0 | smallGAL_COPY_0_COPY_0 | NULL | s3_MC.Q | s3_MC | 0 | 0 | MC_Q
+OUTPUT_NODE_TYPE | 0 | 6 | OI_OUT
+NODE | s3 | 250 | PO | 0 | 0 | smallGAL_COPY_0_COPY_0 | NULL | NULL | s3 | 0 | 6 | OI_OUT
+
+FB_INSTANCE | FOOBAR1_ | smallGAL_COPY_0_COPY_0 | 0 | 0 | 0
+FBPIN | 1 | s2_MC | 1 | NULL | 0 | s2 | 1 | 13 | 49152
+FBPIN | 3 | o3_MC | 1 | NULL | 0 | o3 | 1 | 12 | 49152
+FBPIN | 4 | s3_MC | 1 | NULL | 0 | s3 | 1 | 11 | 49152
+FBPIN | 5 | o1_MC | 1 | NULL | 0 | o1 | 1 | 10 | 49152
+FBPIN | 6 | o2_MC | 1 | NULL | 0 | o2 | 1 | 9 | 49152
+FBPIN | 11 | NULL | 0 | c1_II | 1 | NULL | 0 | 8 | 49152
+FBPIN | 12 | NULL | 0 | c2_II | 1 | NULL | 0 | 7 | 49152
+FBPIN | 13 | NULL | 0 | c3_II | 1 | NULL | 0 | 6 | 49152
+
+FB_INSTANCE | FOOBAR2_ | smallGAL_COPY_0_COPY_0 | 0 | 0 | 0
+FBPIN | 13 | NULL | 0 | clock_II | 1 | NULL | 0 | 22 | 57344
+
+FB_INSTANCE | FOOBAR3_ | smallGAL_COPY_0_COPY_0 | 0 | 0 | 0
+
+FB_INSTANCE | FOOBAR4_ | smallGAL_COPY_0_COPY_0 | 0 | 0 | 0
+
+FB_INSTANCE | FOOBAR5_ | smallGAL_COPY_0_COPY_0 | 0 | 0 | 0
+
+FB_INSTANCE | FOOBAR6_ | smallGAL_COPY_0_COPY_0 | 0 | 0 | 0
+
+FB_INSTANCE | FOOBAR7_ | smallGAL_COPY_0_COPY_0 | 0 | 0 | 0
+
+FB_INSTANCE | FOOBAR8_ | smallGAL_COPY_0_COPY_0 | 0 | 0 | 0
+
+FB_INSTANCE | INPUTPINS_FOOBAR9_ | smallGAL_COPY_0_COPY_0 | 0 | 0 | 0
+
+CT_INSTANCE | FOOBAR1_ | FOOBAR1__ctinst | smallGAL_COPY_0_COPY_0 | 0 | 0 | 0
+
+CT_INSTANCE | FOOBAR2_ | FOOBAR2__ctinst | smallGAL_COPY_0_COPY_0 | 0 | 0 | 0
+
+CT_INSTANCE | FOOBAR3_ | FOOBAR3__ctinst | smallGAL_COPY_0_COPY_0 | 0 | 0 | 0
+
+CT_INSTANCE | FOOBAR4_ | FOOBAR4__ctinst | smallGAL_COPY_0_COPY_0 | 0 | 0 | 0
+
+CT_INSTANCE | FOOBAR5_ | FOOBAR5__ctinst | smallGAL_COPY_0_COPY_0 | 0 | 0 | 0
+
+CT_INSTANCE | FOOBAR6_ | FOOBAR6__ctinst | smallGAL_COPY_0_COPY_0 | 0 | 0 | 0
+
+CT_INSTANCE | FOOBAR7_ | FOOBAR7__ctinst | smallGAL_COPY_0_COPY_0 | 0 | 0 | 0
+
+CT_INSTANCE | FOOBAR8_ | FOOBAR8__ctinst | smallGAL_COPY_0_COPY_0 | 0 | 0 | 0
+
+PLA | FOOBAR1_ | 5
+PLA_TERM | 0 | 
+SPPTERM | 2 | IV_FALSE | c2_II/UIM | IV_TRUE | c1_II/UIM
+PLA_TERM | 1 | 
+SPPTERM | 2 | IV_TRUE | c2_II/UIM | IV_FALSE | c1_II/UIM
+PLA_TERM | 19 | 
+SPPTERM | 1 | IV_TRUE | c1_II/UIM
+PLA_TERM | 22 | 
+SPPTERM | 3 | IV_TRUE | c3_II/UIM | IV_TRUE | c2_II/UIM | IV_TRUE | c1_II/UIM
+PLA_TERM | 25 | 
+SPPTERM | 2 | IV_TRUE | c3_II/UIM | IV_TRUE | c2_II/UIM
+
+
+IOSTD | LVCMOS18
+c1 | LVCMOS18
+c2 | LVCMOS18
+c3 | LVCMOS18
+clock | LVCMOS18
+o1 | LVCMOS18
+o2 | LVCMOS18
+o3 | LVCMOS18
+s2 | LVCMOS18
+s3 | LVCMOS18
+
+
+FB_ORDER_OF_INPUTS | FOOBAR1_ | 6 | c1 | 8 | 7 | c2 | 7 | 8 | c3 | 6
+
+FB_IMUX_INDEX | FOOBAR1_ | -1 | -1 | -1 | -1 | -1 | -1 | 6 | 7 | 8 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1
+
+
+GLOBAL_FCLK | clock | 0 | 0

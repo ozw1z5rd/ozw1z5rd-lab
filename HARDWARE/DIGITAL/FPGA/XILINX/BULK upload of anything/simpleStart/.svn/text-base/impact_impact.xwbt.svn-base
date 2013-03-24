@@ -1,0 +1,8 @@
+INTSTYLE=impact
+INFILE=/home/apalma/Garage/vhdl/simpleStart/impact.xsl
+OUTFILE=/home/apalma/Garage/vhdl/simpleStart/impact.xsl
+FAMILY=Single
+PART=Single
+WORKINGDIR=/home/apalma/Garage/vhdl/simpleStart
+LICENSE=iMPACT
+USER_INFO=iMPACT

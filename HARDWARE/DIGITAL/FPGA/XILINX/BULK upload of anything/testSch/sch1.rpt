@@ -1,0 +1,351 @@
+ 
+cpldfit:  version O.76xd                            Xilinx Inc.
+                                  Fitter Report
+Design Name: sch1                                Date:  2-10-2012,  5:54PM
+Device Used: XC2C64-5-VQ100
+Fitting Status: Successful
+
+*************************  Mapped Resource Summary  **************************
+
+Macrocells     Product Terms    Function Block   Registers      Pins           
+Used/Tot       Used/Tot         Inps Used/Tot    Used/Tot       Used/Tot       
+1  /64  (  2%) 1   /224  (  1%) 3   /160  (  2%) 0  /64  (  0%) 4  /64  (  6%)
+
+** Function Block Resources **
+
+Function Mcells   FB Inps  Pterms   IO       CTC      CTR      CTS      CTE     
+Block    Used/Tot Used/Tot Used/Tot Used/Tot Used/Tot Used/Tot Used/Tot Used/Tot
+FB1       1/16      3/40     1/56     1/16    0/1      0/1      0/1      0/1
+FB2       0/16      0/40     0/56     0/16    0/1      0/1      0/1      0/1
+FB3       0/16      0/40     0/56     0/16    0/1      0/1      0/1      0/1
+FB4       0/16      0/40     0/56     0/16    0/1      0/1      0/1      0/1
+         -----    -------  -------   -----    ---      ---      ---      ---
+Total     1/64      3/160    1/224    1/64    0/4      0/4      0/4      0/4 
+
+CTC - Control Term Clock
+CTR - Control Term Reset
+CTS - Control Term Set
+CTE - Control Term Output Enable
+
+* - Resource is exhausted
+
+** Global Control Resources **
+
+GCK         GSR         GTS         DGE         
+Used/Tot    Used/Tot    Used/Tot    Used/Tot    
+0/3         0/1         0/4         0/0
+
+
+** Pin Resources **
+
+Signal Type    Required     Mapped  |  Pin Type            Used    Total 
+------------------------------------|------------------------------------
+Input         :    3           3    |  I/O              :     4     56
+Output        :    1           1    |  GCK/IO           :     0      3
+Bidirectional :    0           0    |  GTS/IO           :     0      4
+GCK           :    0           0    |  GSR/IO           :     0      1
+GTS           :    0           0    |  
+GSR           :    0           0    |  
+                 ----        ----
+        Total      4           4
+
+End of Mapped Resource Summary
+**************************  Errors and Warnings  ***************************
+
+WARNING:Cpld - Unable to retrieve the path to the iSE Project Repository. Will
+   use the default filename of 'sch1.ise'.
+WARNING:Cpld:1257 - The XC2C64 device is not recommended for new designs. The
+   XC2C64A device is pin-compatible and is a functional superset of the XC2C64,
+   and should be used as a replacement.
+*************************  Summary of Mapped Logic  ************************
+
+** 1 Outputs **
+
+Signal              Total Total Bank Loc     Pin   Pin       Pin     I/O      I/O       Slew Reg     Reg Init
+Name                Pts   Inps               No.   Type      Use     STD      Style     Rate Use     State
+XLXN_6              1     3     1    FB1_1   13    I/O       O       LVCMOS18           FAST         
+
+** 3 Inputs **
+
+Signal              Bank Loc     Pin   Pin       Pin     I/O      I/O
+Name                             No.   Type      Use     STD      Style
+XLXN_3              1    FB1_2   12    I/O       I       LVCMOS18 KPR
+XLXN_4              1    FB1_3   11    I/O       I       LVCMOS18 KPR
+XLXN_5              1    FB1_4   10    I/O       I       LVCMOS18 KPR
+
+Legend:
+Pin No.   - ~     - User Assigned
+I/O Style - OD    - OpenDrain
+          - PU    - Pullup
+          - KPR   - Keeper
+          - S     - SchmittTrigger
+          - DG    - DataGate
+Reg Use   - LATCH - Transparent latch
+          - DFF   - D-flip-flop
+          - DEFF  - D-flip-flop with clock enable
+          - TFF   - T-flip-flop
+          - TDFF  - Dual-edge-triggered T-flip-flop
+          - DDFF  - Dual-edge-triggered flip-flop
+          - DDEFF - Dual-edge-triggered flip-flop with clock enable
+          /S (after any above flop/latch type) indicates initial state is Set
+**************************  Function Block Details  ************************
+Legend:
+Total Pt     - Total product terms used by the macrocell signal
+Loc          - Location where logic was mapped in device
+Pin Type/Use - I  - Input             GCK - Global clock
+               O  - Output            GTS - Global Output Enable
+              (b) - Buried macrocell  GSR - Global Set/Reset
+              VRF - Vref
+Pin No.      - ~  - User Assigned
+*********************************** FB1  ***********************************
+This function block is part of I/O Bank number:               1
+Number of function block inputs used/remaining:               3/37
+Number of function block control terms used/remaining:        0/4
+Number of PLA product terms used/remaining:                   1/55
+Signal                        Total Loc     Pin  Pin     Pin   CTC CTR CTS CTE
+Name                          Pt            No.  Type    Use   
+XLXN_6                        1     FB1_1   13   I/O     O                 
+(unused)                      0     FB1_2   12   I/O     I     
+(unused)                      0     FB1_3   11   I/O     I     
+(unused)                      0     FB1_4   10   I/O     I     
+(unused)                      0     FB1_5   9    I/O           
+(unused)                      0     FB1_6   8    I/O           
+(unused)                      0     FB1_7   7    I/O           
+(unused)                      0     FB1_8   6    I/O           
+(unused)                      0     FB1_9   4    GTS/I/O       
+(unused)                      0     FB1_10  3    GTS/I/O       
+(unused)                      0     FB1_11  2    GTS/I/O       
+(unused)                      0     FB1_12  1    GTS/I/O       
+(unused)                      0     FB1_13  99   GSR/I/O       
+(unused)                      0     FB1_14  97   I/O           
+(unused)                      0     FB1_15  94   I/O           
+(unused)                      0     FB1_16  92   I/O           
+
+Signals Used by Logic in Function Block
+  1: XLXN_3             2: XLXN_4             3: XLXN_5 
+
+Signal                     1         2         3         4 FB      
+Name             0----+----0----+----0----+----0----+----0 Inputs  
+XLXN_6            XXX..................................... 3       
+                 0----+----1----+----2----+----3----+----4
+                           0         0         0         0
+*********************************** FB2  ***********************************
+This function block is part of I/O Bank number:               1
+Number of function block inputs used/remaining:               0/40
+Number of function block control terms used/remaining:        0/4
+Number of PLA product terms used/remaining:                   0/56
+Signal                        Total Loc     Pin  Pin     Pin   CTC CTR CTS CTE
+Name                          Pt            No.  Type    Use   
+(unused)                      0     FB2_1   14   I/O           
+(unused)                      0     FB2_2   15   I/O           
+(unused)                      0     FB2_3   16   I/O           
+(unused)                      0     FB2_4   17   I/O           
+(unused)                      0     FB2_5   18   I/O           
+(unused)                      0     FB2_6   19   I/O           
+(unused)                      0     FB2_7   22   GCK/I/O       
+(unused)                      0     FB2_8   23   GCK/I/O       
+(unused)                      0     FB2_9   24   I/O           
+(unused)                      0     FB2_10  27   GCK/I/O       
+(unused)                      0     FB2_11  28   I/O           
+(unused)                      0     FB2_12  29   I/O           
+(unused)                      0     FB2_13  30   I/O           
+(unused)                      0     FB2_14  32   I/O           
+(unused)                      0     FB2_15  33   I/O           
+(unused)                      0     FB2_16  34   I/O           
+*********************************** FB3  ***********************************
+This function block is part of I/O Bank number:               1
+Number of function block inputs used/remaining:               0/40
+Number of function block control terms used/remaining:        0/4
+Number of PLA product terms used/remaining:                   0/56
+Signal                        Total Loc     Pin  Pin     Pin   CTC CTR CTS CTE
+Name                          Pt            No.  Type    Use   
+(unused)                      0     FB3_1   91   I/O           
+(unused)                      0     FB3_2   90   I/O           
+(unused)                      0     FB3_3   89   I/O           
+(unused)                      0     FB3_4   81   I/O           
+(unused)                      0     FB3_5   79   I/O           
+(unused)                      0     FB3_6   78   I/O           
+(unused)                      0     FB3_7   77   I/O           
+(unused)                      0     FB3_8   76   I/O           
+(unused)                      0     FB3_9   74   I/O           
+(unused)                      0     FB3_10  72   I/O           
+(unused)                      0     FB3_11  71   I/O           
+(unused)                      0     FB3_12  70   I/O           
+(unused)                      0     FB3_13  68   I/O           
+(unused)                      0     FB3_14  67   I/O           
+(unused)                      0     FB3_15  64   I/O           
+(unused)                      0     FB3_16  61   I/O           
+*********************************** FB4  ***********************************
+This function block is part of I/O Bank number:               1
+Number of function block inputs used/remaining:               0/40
+Number of function block control terms used/remaining:        0/4
+Number of PLA product terms used/remaining:                   0/56
+Signal                        Total Loc     Pin  Pin     Pin   CTC CTR CTS CTE
+Name                          Pt            No.  Type    Use   
+(unused)                      0     FB4_1   35   I/O           
+(unused)                      0     FB4_2   36   I/O           
+(unused)                      0     FB4_3   37   I/O           
+(unused)                      0     FB4_4   39   I/O           
+(unused)                      0     FB4_5   40   I/O           
+(unused)                      0     FB4_6   41   I/O           
+(unused)                      0     FB4_7   42   I/O           
+(unused)                      0     FB4_8   43   I/O           
+(unused)                      0     FB4_9   49   I/O           
+(unused)                      0     FB4_10  50   I/O           
+(unused)                      0     FB4_11  52   I/O           
+(unused)                      0     FB4_12  53   I/O           
+(unused)                      0     FB4_13  55   I/O           
+(unused)                      0     FB4_14  56   I/O           
+(unused)                      0     FB4_15  58   I/O           
+(unused)                      0     FB4_16  60   I/O           
+*******************************  Equations  ********************************
+
+********** Mapped Logic **********
+
+
+XLXN_6 <= (NOT XLXN_5 AND XLXN_4 AND XLXN_3);
+
+
+Register Legend:
+ FDCPE (Q,D,C,CLR,PRE,CE); 
+ FDDCPE (Q,D,C,CLR,PRE,CE); 
+ FTCPE (Q,D,C,CLR,PRE,CE); 
+ FTDCPE (Q,D,C,CLR,PRE,CE); 
+ LDCP  (Q,D,G,CLR,PRE); 
+
+******************************  Device Pin Out *****************************
+
+Device : XC2C64-5-VQ100
+
+
+   --------------------------------------------------  
+  /100 98  96  94  92  90  88  86  84  82  80  78  76  \
+ |   99  97  95  93  91  89  87  85  83  81  79  77    |
+ | 1                                               75  | 
+ | 2                                               74  | 
+ | 3                                               73  | 
+ | 4                                               72  | 
+ | 5                                               71  | 
+ | 6                                               70  | 
+ | 7                                               69  | 
+ | 8                                               68  | 
+ | 9                                               67  | 
+ | 10                                              66  | 
+ | 11                                              65  | 
+ | 12                                              64  | 
+ | 13                XC2C64-5-VQ100                63  | 
+ | 14                                              62  | 
+ | 15                                              61  | 
+ | 16                                              60  | 
+ | 17                                              59  | 
+ | 18                                              58  | 
+ | 19                                              57  | 
+ | 20                                              56  | 
+ | 21                                              55  | 
+ | 22                                              54  | 
+ | 23                                              53  | 
+ | 24                                              52  | 
+ | 25                                              51  | 
+ |   27  29  31  33  35  37  39  41  43  45  47  49    |
+  \26  28  30  32  34  36  38  40  42  44  46  48  50  /
+   --------------------------------------------------  
+
+
+Pin Signal                         Pin Signal                        
+No. Name                           No. Name                          
+  1 KPR                              51 VCCIO-1.8                     
+  2 KPR                              52 KPR                           
+  3 KPR                              53 KPR                           
+  4 KPR                              54 NC                            
+  5 VCCAUX                           55 KPR                           
+  6 KPR                              56 KPR                           
+  7 KPR                              57 VCC                           
+  8 KPR                              58 KPR                           
+  9 KPR                              59 NC                            
+ 10 XLXN_5                           60 KPR                           
+ 11 XLXN_4                           61 KPR                           
+ 12 XLXN_3                           62 GND                           
+ 13 XLXN_6                           63 NC                            
+ 14 KPR                              64 KPR                           
+ 15 KPR                              65 NC                            
+ 16 KPR                              66 NC                            
+ 17 KPR                              67 KPR                           
+ 18 KPR                              68 KPR                           
+ 19 KPR                              69 GND                           
+ 20 NC                               70 KPR                           
+ 21 GND                              71 KPR                           
+ 22 KPR                              72 KPR                           
+ 23 KPR                              73 NC                            
+ 24 KPR                              74 KPR                           
+ 25 NC                               75 NC                            
+ 26 VCC                              76 KPR                           
+ 27 KPR                              77 KPR                           
+ 28 KPR                              78 KPR                           
+ 29 KPR                              79 KPR                           
+ 30 KPR                              80 NC                            
+ 31 GND                              81 KPR                           
+ 32 KPR                              82 NC                            
+ 33 KPR                              83 TDO                           
+ 34 KPR                              84 GND                           
+ 35 KPR                              85 NC                            
+ 36 KPR                              86 NC                            
+ 37 KPR                              87 NC                            
+ 38 VCCIO-1.8                        88 VCCIO-1.8                     
+ 39 KPR                              89 KPR                           
+ 40 KPR                              90 KPR                           
+ 41 KPR                              91 KPR                           
+ 42 KPR                              92 KPR                           
+ 43 KPR                              93 NC                            
+ 44 NC                               94 KPR                           
+ 45 TDI                              95 NC                            
+ 46 NC                               96 NC                            
+ 47 TMS                              97 KPR                           
+ 48 TCK                              98 VCCIO-1.8                     
+ 49 KPR                              99 KPR                           
+ 50 KPR                             100 GND                           
+
+
+Legend :  NC  = Not Connected, unbonded pin
+        PGND  = Unused I/O configured as additional Ground pin
+         KPR  = Unused I/O with weak keeper (leave unconnected)
+         WPU  = Unused I/O with weak pull up (leave unconnected)
+         TIE  = Unused I/O floating -- must tie to VCC, GND or other signal
+         VCC  = Dedicated Power Pin
+      VCCAUX  = Power supply for JTAG pins
+   VCCIO-3.3  = I/O supply voltage for LVTTL, LVCMOS33, SSTL3_I
+   VCCIO-2.5  = I/O supply voltage for LVCMOS25, SSTL2_I
+   VCCIO-1.8  = I/O supply voltage for LVCMOS18
+   VCCIO-1.5  = I/O supply voltage for LVCMOS15, HSTL_I
+        VREF  = Reference voltage for indicated input standard
+       *VREF  = Reference voltage pin selected by software
+         GND  = Dedicated Ground Pin
+         TDI  = Test Data In, JTAG pin
+         TDO  = Test Data Out, JTAG pin
+         TCK  = Test Clock, JTAG pin
+         TMS  = Test Mode Select, JTAG pin
+  PROHIBITED  = User reserved pin
+****************************  Compiler Options  ****************************
+
+Following is a list of all global compiler options used by the fitter run.
+
+Device(s) Specified                         : xc2c64-5-VQ100
+Optimization Method                         : DENSITY
+Multi-Level Logic Optimization              : ON
+Ignore Timing Specifications                : OFF
+Default Register Power Up Value             : LOW
+Keep User Location Constraints              : ON
+What-You-See-Is-What-You-Get                : OFF
+Exhaustive Fitting                          : OFF
+Keep Unused Inputs                          : OFF
+Slew Rate                                   : FAST
+Set Unused I/O Pin Termination              : KEEPER
+Global Clock Optimization                   : ON
+Global Set/Reset Optimization               : ON
+Global Ouput Enable Optimization            : ON
+Enable Input Registers                      : ON
+Function Block Fan-in Limit                 : 38
+Use DATA_GATE Attribute                     : ON
+Set Tristate Outputs to Termination Mode    : KEEPER
+Default Voltage Standard for All Outputs    : LVCMOS18
+Input Limit                                 : 32
+Pterm Limit                                 : 28

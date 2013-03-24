@@ -1,0 +1,21 @@
+xst -intstyle ise -ifn "/home/apalma/Garage/vhdl/divNET/divnet/CPLD.xst" -ofn "/home/apalma/Garage/vhdl/divNET/divnet/CPLD.syr" 
+xst -intstyle ise -ifn "/home/apalma/Garage/vhdl/divNET/divnet/CPLD.xst" -ofn "/home/apalma/Garage/vhdl/divNET/divnet/CPLD.syr" 
+ngdbuild -intstyle ise -dd _ngo -i -p xbr CPLD.ngc CPLD.ngd  
+cpldfit -intstyle ise -p xc2c*-*-* -ofmt vhdl -optimize density -htmlrpt -loc on -slew fast -init low -inputs 32 -pterms 28 -unused keeper -terminate keeper -iostd LVCMOS18 CPLD.ngd 
+xst -intstyle ise -ifn "/home/apalma/Garage/vhdl/divNET/divnet/CPLD.xst" -ofn "/home/apalma/Garage/vhdl/divNET/divnet/CPLD.syr" 
+xst -intstyle ise -ifn "/home/apalma/Garage/vhdl/divNET/divnet/CPLD.xst" -ofn "/home/apalma/Garage/vhdl/divNET/divnet/CPLD.syr" 
+xst -intstyle ise -ifn "/home/apalma/Garage/vhdl/divNET/divnet/CPLD.xst" -ofn "/home/apalma/Garage/vhdl/divNET/divnet/CPLD.syr" 
+xst -intstyle ise -ifn "/home/apalma/Garage/vhdl/divNET/divnet/CPLD.xst" -ofn "/home/apalma/Garage/vhdl/divNET/divnet/CPLD.syr" 
+xst -intstyle ise -ifn "/home/apalma/Garage/vhdl/divNET/divnet/CPLD.xst" -ofn "/home/apalma/Garage/vhdl/divNET/divnet/CPLD.syr" 
+xst -intstyle ise -ifn "/home/apalma/Garage/vhdl/divNET/divnet/CPLD.xst" -ofn "/home/apalma/Garage/vhdl/divNET/divnet/CPLD.syr" 
+xst -intstyle ise -ifn "/home/apalma/Garage/vhdl/divNET/divnet/CPLD.xst" -ofn "/home/apalma/Garage/vhdl/divNET/divnet/CPLD.syr" 
+xst -intstyle ise -ifn "/home/apalma/Garage/vhdl/divNET/divnet/CPLD.xst" -ofn "/home/apalma/Garage/vhdl/divNET/divnet/CPLD.syr" 
+xst -intstyle ise -ifn "/home/apalma/Garage/vhdl/divNET/divnet/CPLD.xst" -ofn "/home/apalma/Garage/vhdl/divNET/divnet/CPLD.syr" 
+xst -intstyle ise -ifn "/home/apalma/Garage/vhdl/divNET/divnet/CPLD.xst" -ofn "/home/apalma/Garage/vhdl/divNET/divnet/CPLD.syr" 
+xst -intstyle ise -ifn "/home/apalma/Garage/vhdl/divNET/divnet/CPLD.xst" -ofn "/home/apalma/Garage/vhdl/divNET/divnet/CPLD.syr" 
+xst -intstyle ise -ifn "/home/apalma/Garage/vhdl/divNET/divnet/CPLD.xst" -ofn "/home/apalma/Garage/vhdl/divNET/divnet/CPLD.syr" 
+ngdbuild -intstyle ise -dd _ngo -i -p xbr CPLD.ngc CPLD.ngd  
+cpldfit -intstyle ise -p xc2c*-*-* -ofmt vhdl -optimize density -htmlrpt -loc on -slew fast -init low -inputs 32 -pterms 28 -unused keeper -terminate keeper -iostd LVCMOS18 CPLD.ngd 
+XSLTProcess CPLD_build.xml 
+tsim -intstyle ise CPLD CPLD.nga 
+hprep6 -s IEEE1149 -i CPLD 

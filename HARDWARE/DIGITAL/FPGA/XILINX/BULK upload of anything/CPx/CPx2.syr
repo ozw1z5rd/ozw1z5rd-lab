@@ -1,0 +1,219 @@
+Release 13.3 - xst O.76xd (lin64)
+Copyright (c) 1995-2011 Xilinx, Inc.  All rights reserved.
+--> 
+Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.08 secs
+ 
+--> 
+Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.08 secs
+ 
+--> 
+Reading design: CPx2.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Compilation
+  3) Design Hierarchy Analysis
+  4) HDL Analysis
+  5) HDL Synthesis
+     5.1) HDL Synthesis Report
+  6) Advanced HDL Synthesis
+     6.1) Advanced HDL Synthesis Report
+  7) Low Level Synthesis
+  8) Partition Report
+  9) Final Report
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "CPx2.prj"
+Input Format                       : mixed
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "CPx2"
+Output Format                      : NGC
+Target Device                      : CoolRunner2 CPLDs
+
+---- Source Options
+Top Module Name                    : CPx2
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+CASE Implementation Style          : Full-Parallel
+Mux Extraction                     : Yes
+Resource Sharing                   : YES
+
+---- Target Options
+Add IO Buffers                     : YES
+MACRO Preserve                     : YES
+XOR Preserve                       : YES
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Keep Hierarchy                     : Yes
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Verilog 2001                       : YES
+
+---- Other Options
+Clock Enable                       : YES
+wysiwyg                            : NO
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Compilation                              *
+=========================================================================
+Compiling vhdl file "/host/Garage/Garage/home-computer-group/vhdl/CPx/CPx2.vhd" in Library work.
+Entity <cpx2> compiled.
+Entity <cpx2> (Architecture <behavioral>) compiled.
+
+=========================================================================
+*                     Design Hierarchy Analysis                         *
+=========================================================================
+Analyzing hierarchy for entity <CPx2> in library <work> (architecture <behavioral>).
+
+
+=========================================================================
+*                            HDL Analysis                               *
+=========================================================================
+Analyzing Entity <CPx2> in library <work> (Architecture <behavioral>).
+INFO:Xst:1739 - HDL ADVISOR - "/host/Garage/Garage/home-computer-group/vhdl/CPx/CPx2.vhd" line 53: declaration of a buffer port will make it difficult for you to validate this design by simulation. It is preferable to declare it as output.
+INFO:Xst:1739 - HDL ADVISOR - "/host/Garage/Garage/home-computer-group/vhdl/CPx/CPx2.vhd" line 57: declaration of a buffer port will make it difficult for you to validate this design by simulation. It is preferable to declare it as output.
+Entity <CPx2> analyzed. Unit <CPx2> generated.
+
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Performing bidirectional port resolution...
+INFO:Xst:2561 - Always blocking tristate driving signal <D> in unit <CPx2> is removed.
+
+Synthesizing Unit <CPx2>.
+    Related source file is "/host/Garage/Garage/home-computer-group/vhdl/CPx/CPx2.vhd".
+WARNING:Xst:2565 - Inout <D<5>> is never assigned.
+WARNING:Xst:647 - Input <CLOCK> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:646 - Signal <S_SWITCH_CONMEM_ONOFF> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:1780 - Signal <S_SRAMCS> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <S_INTERFACECS> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+    Found 5-bit register for signal <BANK>.
+    Found 1-bit register for signal <S_CONMEM>.
+    Found 1-bit register for signal <S_MAPRAM>.
+    Summary:
+	inferred   2 D-type flip-flop(s).
+Unit <CPx2> synthesized.
+
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# Registers                                            : 3
+ 1-bit register                                        : 2
+ 5-bit register                                        : 1
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# Registers                                            : 2
+ Flip-Flops                                            : 2
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+
+Optimizing unit <CPx2> ...
+  implementation constraint: INIT=r	 : S_CONMEM
+  implementation constraint: INIT=r	 : BANK_4
+  implementation constraint: INIT=r	 : S_MAPRAM
+  implementation constraint: INIT=r	 : BANK_0
+  implementation constraint: INIT=r	 : BANK_1
+  implementation constraint: INIT=r	 : BANK_2
+  implementation constraint: INIT=r	 : BANK_3
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Final Report                               *
+=========================================================================
+Final Results
+RTL Top Level Output File Name     : CPx2.ngr
+Top Level Output File Name         : CPx2
+Output Format                      : NGC
+Optimization Goal                  : Speed
+Keep Hierarchy                     : Yes
+Target Technology                  : CoolRunner2 CPLDs
+Macro Preserve                     : YES
+XOR Preserve                       : YES
+Clock Enable                       : YES
+wysiwyg                            : NO
+
+Design Statistics
+# IOs                              : 40
+
+Cell Usage :
+# BELS                             : 100
+#      AND2                        : 21
+#      AND3                        : 13
+#      AND4                        : 4
+#      AND8                        : 1
+#      GND                         : 1
+#      INV                         : 47
+#      OR2                         : 12
+#      OR3                         : 1
+# FlipFlops/Latches                : 7
+#      FD                          : 1
+#      FDCE                        : 6
+# IO Buffers                       : 37
+#      IBUF                        : 25
+#      OBUF                        : 12
+=========================================================================
+
+
+Total REAL time to Xst completion: 5.00 secs
+Total CPU time to Xst completion: 5.56 secs
+ 
+--> 
+
+
+Total memory usage is 513496 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :    5 (   0 filtered)
+Number of infos    :    3 (   0 filtered)
+

@@ -1,0 +1,214 @@
+(DELAYFILE
+  (SDFVERSION "3.0")
+  (DESIGN "a")
+  (DATE "Thu Nov 24 17:22:26 2011")
+  (VENDOR "Xilinx")
+  (PROGRAM "Xilinx SDF Writer")
+  (VERSION "O.76xd")
+  (DIVIDER /)
+  (TIMESCALE 1 ps)
+  (CELL (CELLTYPE "X_BUF")
+    (INSTANCE F_0_Q)
+      (DELAY
+        (ABSOLUTE
+          (IOPATH I O ( 2300 )( 2300 ))
+        )
+      )
+  )
+  (CELL (CELLTYPE "X_BUF")
+    (INSTANCE F_1_Q)
+      (DELAY
+        (ABSOLUTE
+          (IOPATH I O ( 2300 )( 2300 ))
+        )
+      )
+  )
+  (CELL (CELLTYPE "X_BUF")
+    (INSTANCE F_2_Q)
+      (DELAY
+        (ABSOLUTE
+          (IOPATH I O ( 2300 )( 2300 ))
+        )
+      )
+  )
+  (CELL (CELLTYPE "X_BUF")
+    (INSTANCE F_3_Q)
+      (DELAY
+        (ABSOLUTE
+          (IOPATH I O ( 2300 )( 2300 ))
+        )
+      )
+  )
+  (CELL (CELLTYPE "X_BUF")
+    (INSTANCE F_0_MC_Q)
+      (DELAY
+        (ABSOLUTE
+          (IOPATH I O ( 0 )( 0 ))
+        )
+      )
+  )
+  (CELL (CELLTYPE "X_BUF")
+    (INSTANCE F_0_MC_Q_tsimrenamed_net_Q)
+      (DELAY
+        (ABSOLUTE
+          (IOPATH I O ( 900 )( 900 ))
+        )
+      )
+  )
+  (CELL (CELLTYPE "X_XOR2")
+    (INSTANCE F_0_MC_D)
+      (DELAY
+        (ABSOLUTE
+          (PORT I0 ( 0 )( 0 ))
+          (PORT I1 ( 0 )( 0 ))
+          (IOPATH I0 O ( 0 )( 0 ))
+          (IOPATH I1 O ( 0 )( 0 ))
+        )
+      )
+  )
+  (CELL (CELLTYPE "X_BUF")
+    (INSTANCE F_1_MC_Q)
+      (DELAY
+        (ABSOLUTE
+          (IOPATH I O ( 0 )( 0 ))
+        )
+      )
+  )
+  (CELL (CELLTYPE "X_BUF")
+    (INSTANCE F_1_MC_Q_tsimrenamed_net_Q)
+      (DELAY
+        (ABSOLUTE
+          (IOPATH I O ( 900 )( 900 ))
+        )
+      )
+  )
+  (CELL (CELLTYPE "X_XOR2")
+    (INSTANCE F_1_MC_D)
+      (DELAY
+        (ABSOLUTE
+          (PORT I0 ( 0 )( 0 ))
+          (PORT I1 ( 0 )( 0 ))
+          (IOPATH I0 O ( 0 )( 0 ))
+          (IOPATH I1 O ( 0 )( 0 ))
+        )
+      )
+  )
+  (CELL (CELLTYPE "X_BUF")
+    (INSTANCE F_2_MC_Q)
+      (DELAY
+        (ABSOLUTE
+          (IOPATH I O ( 0 )( 0 ))
+        )
+      )
+  )
+  (CELL (CELLTYPE "X_BUF")
+    (INSTANCE F_2_MC_Q_tsimrenamed_net_Q)
+      (DELAY
+        (ABSOLUTE
+          (IOPATH I O ( 900 )( 900 ))
+        )
+      )
+  )
+  (CELL (CELLTYPE "X_XOR2")
+    (INSTANCE F_2_MC_D)
+      (DELAY
+        (ABSOLUTE
+          (PORT I0 ( 0 )( 0 ))
+          (PORT I1 ( 0 )( 0 ))
+          (IOPATH I0 O ( 0 )( 0 ))
+          (IOPATH I1 O ( 0 )( 0 ))
+        )
+      )
+  )
+  (CELL (CELLTYPE "X_BUF")
+    (INSTANCE F_3_MC_Q)
+      (DELAY
+        (ABSOLUTE
+          (IOPATH I O ( 0 )( 0 ))
+        )
+      )
+  )
+  (CELL (CELLTYPE "X_BUF")
+    (INSTANCE F_3_MC_Q_tsimrenamed_net_Q)
+      (DELAY
+        (ABSOLUTE
+          (IOPATH I O ( 900 )( 900 ))
+        )
+      )
+  )
+  (CELL (CELLTYPE "X_XOR2")
+    (INSTANCE F_3_MC_D)
+      (DELAY
+        (ABSOLUTE
+          (PORT I0 ( 0 )( 0 ))
+          (PORT I1 ( 0 )( 0 ))
+          (IOPATH I0 O ( 0 )( 0 ))
+          (IOPATH I1 O ( 0 )( 0 ))
+        )
+      )
+  )
+  (CELL (CELLTYPE "X_BUF")
+    (INSTANCE NlwBufferBlock_F_0_MC_D_IN0)
+      (DELAY
+        (ABSOLUTE
+          (IOPATH I O ( 0 )( 0 ))
+        )
+      )
+  )
+  (CELL (CELLTYPE "X_BUF")
+    (INSTANCE NlwBufferBlock_F_0_MC_D_IN1)
+      (DELAY
+        (ABSOLUTE
+          (IOPATH I O ( 0 )( 0 ))
+        )
+      )
+  )
+  (CELL (CELLTYPE "X_BUF")
+    (INSTANCE NlwBufferBlock_F_1_MC_D_IN0)
+      (DELAY
+        (ABSOLUTE
+          (IOPATH I O ( 0 )( 0 ))
+        )
+      )
+  )
+  (CELL (CELLTYPE "X_BUF")
+    (INSTANCE NlwBufferBlock_F_1_MC_D_IN1)
+      (DELAY
+        (ABSOLUTE
+          (IOPATH I O ( 0 )( 0 ))
+        )
+      )
+  )
+  (CELL (CELLTYPE "X_BUF")
+    (INSTANCE NlwBufferBlock_F_2_MC_D_IN0)
+      (DELAY
+        (ABSOLUTE
+          (IOPATH I O ( 0 )( 0 ))
+        )
+      )
+  )
+  (CELL (CELLTYPE "X_BUF")
+    (INSTANCE NlwBufferBlock_F_2_MC_D_IN1)
+      (DELAY
+        (ABSOLUTE
+          (IOPATH I O ( 0 )( 0 ))
+        )
+      )
+  )
+  (CELL (CELLTYPE "X_BUF")
+    (INSTANCE NlwBufferBlock_F_3_MC_D_IN0)
+      (DELAY
+        (ABSOLUTE
+          (IOPATH I O ( 0 )( 0 ))
+        )
+      )
+  )
+  (CELL (CELLTYPE "X_BUF")
+    (INSTANCE NlwBufferBlock_F_3_MC_D_IN1)
+      (DELAY
+        (ABSOLUTE
+          (IOPATH I O ( 0 )( 0 ))
+        )
+      )
+  )
+)

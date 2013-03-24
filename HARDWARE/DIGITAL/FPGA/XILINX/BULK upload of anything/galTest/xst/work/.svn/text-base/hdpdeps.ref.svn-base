@@ -1,0 +1,6 @@
+V3 3
+FL /home/apalma/Garage/vhdl/galTest/smallGAL.vhd 2011/12/01.06:09:11 O.76xd
+EN work/smallGAL 1322719758 FL /home/apalma/Garage/vhdl/galTest/smallGAL.vhd \
+      PB ieee/std_logic_1164 1317710503
+AR work/smallGAL/Behavioral 1322719759 \
+      FL /home/apalma/Garage/vhdl/galTest/smallGAL.vhd EN work/smallGAL 1322719758

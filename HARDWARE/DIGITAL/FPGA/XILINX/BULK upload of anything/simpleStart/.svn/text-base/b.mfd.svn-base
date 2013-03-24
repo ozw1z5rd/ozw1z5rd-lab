@@ -1,0 +1,14 @@
+MDF Database:  version 1.0
+MDF_INFO | b | XC2C128-6-VQ100
+MACROCELL | 0 | 0 | XLXN_9_MC
+ATTRIBUTES | 1074004738 | 0
+INPUTS | 4 | XLXN_5  | XLXN_8  | XLXN_4  | XLXN_6
+INPUTP | 4 | 14 | 12 | 15 | 13
+EQ | 1 | 
+   XLXN_9 = !XLXN_5 & !XLXN_8 & XLXN_4 & !XLXN_6;	// (1 pt, 4 inp)
+
+PIN | XLXN_4 | 64 | 16 | LVCMOS18 | 15 | 1 | 0 | 0
+PIN | XLXN_5 | 64 | 16 | LVCMOS18 | 14 | 1 | 0 | 0
+PIN | XLXN_6 | 64 | 16 | LVCMOS18 | 13 | 1 | 0 | 0
+PIN | XLXN_8 | 64 | 16 | LVCMOS18 | 12 | 1 | 0 | 0
+PIN | XLXN_9 | 536871040 | 0 | LVCMOS18 | 17

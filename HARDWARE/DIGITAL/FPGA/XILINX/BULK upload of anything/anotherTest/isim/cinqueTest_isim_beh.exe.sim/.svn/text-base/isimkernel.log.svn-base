@@ -1,0 +1,29 @@
+Command line:
+   cinqueTest_isim_beh.exe
+     -simmode  gui
+     -simrunnum  0
+     -socket  47704
+
+Wed Nov 30 16:49:56 2011
+
+
+ Elaboration Time: 0.02 sec
+
+ Current Memory Usage: 180.863 Meg
+
+ Total Signals          : 13
+ Total Nets             : 7
+ Total Signal Drivers   : 7
+ Total Blocks           : 3
+ Total Primitive Blocks : 2
+ Total Processes        : 3
+ Total Traceable Variables  : 9
+ Total Scalar Nets and Variables : 368
+Total Line Count : 24
+
+ Total Simulation Time: 53.9 sec
+
+ Current Memory Usage: 189.256 Meg
+
+Wed Nov 30 16:52:19 2011
+

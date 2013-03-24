@@ -1,0 +1,106 @@
+----------------------------------------------------------------
+Release 13.3 - XPower Analysis Report SoftwareVersion:O.76xd (lin64)
+Copyright (c) 1995-2011 Xilinx, Inc.  All rights reserved.
+
+# NOTE:  This file is designed to facilitate import into a spreadsheet program
+# such as Microsoft Excel for viewing, printing and sorting.  The "|" character
+# should be selected as the data field separator.
+
+
+
+Design            | module                                                     |
+Part              | XC2C128-6VQ100                                             |
+Stepping          | 0                                                          |
+Vcc               | 1.80V                                                      |
+Default Ext. Load | 5.00pF                                                    |
+Data version      | ADVANCED,1.0                                               |
+
+XPower and Datasheet may have some Quiescent Current differences.
+This is due to the fact that the quiescent numbers in XPower are based
+on measurements of real designs with active functional elements
+reflecting real world design scenarios.
+
+
+
+Power summary                        |    I(uA)   |    P(uW)   |
+----------------------------------------------------------------
+Total estimated power consumption    |            |        34  |
+                               ---
+               Total Vcc      1.80V  |        19  |        34  |
+               Total Vccio    3.30V  |         0  |         0  |
+                               ---
+                           Clocks    |         0  |         0  |
+                  Function Blocks    |         0  |         0  |
+                 Global Resources    |         0  |         0  |
+                           Inputs    |         0  |         0  |
+                     Output Loads    |         0  |         0  |
+                          Signals    |         0  |         0  |
+                              ZIA    |         0  |         0  |
+                               ---
+           Quiescent Vcc      1.80V  |        19  |        34  |
+
+Thermal summary
+----------------------------------------------------------------
+Estimated junction temperature       |           25C           |
+             @ airflow of 250 LFM    |           25C           |
+                          500 LFM    |           25C           |
+                          750 LFM    |           25C           |
+                      Ambient temp   |           25C           |
+                         Case temp   |           25C           |
+                         Theta J-A   |          48C/W          |
+
+Power details
+-----------------------------------------------------------------------------
+Function Blocks:8                             |         |  I(uA)  |  P(uW)  |
+-----------------------------------------------------------------------------
+FB1                                           |         |         |         |
+  FB1_1 (o2)                                  |         |         |         |
+    FB1_1_AND                                 |         |   0.000 |   0.000 |
+    FB1_1_O                                   |         |   0.000 |   0.000 |
+  FB1_3 (o1)                                  |         |         |         |
+    FB1_3_O                                   |         |   0.000 |   0.000 |
+  FB1_4 (i1)                                  |         |         |         |
+    FB1_4_P                                   |         |   0.000 |   0.000 |
+  FB1_5 (i2)                                  |         |         |         |
+    FB1_5_P                                   |         |   0.000 |   0.000 |
+  FB1_PT10                                    |         |   0.000 |   0.000 |
+FB2                                           |         |         |         |
+FB3                                           |         |         |         |
+FB4                                           |         |         |         |
+FB5                                           |         |         |         |
+FB6                                           |         |         |         |
+FB7                                           |         |         |         |
+FB8                                           |         |         |         |
+-----------------------------------------------------------------------------
+Inputs                                        |  F(MHz) |  I(uA)  |  P(uW)  |
+-----------------------------------------------------------------------------
+FB1_1_I                                       |   0.000 |   0.000 |   0.000 |
+FB1_3_I                                       |   0.000 |   0.000 |   0.000 |
+FB1_4_I                                       |   0.000 |   0.000 |   0.000 |
+FB1_5_I                                       |   0.000 |   0.000 |   0.000 |
+-----------------------------------------------------------------------------
+Output Loads                                  |         |  I(uA)  |  P(uW)  |
+-----------------------------------------------------------------------------
+o1                                            |         |   0.000 |   0.000 |
+o2                                            |         |   0.000 |   0.000 |
+-----------------------------------------------------------------------------
+Signals                                       |  F(MHz) |  I(uA)  |  P(uW)  |
+-----------------------------------------------------------------------------
+FB1_4_I                                       |   0.000 |   0.000 |   0.000 |
+FB1_5_I                                       |   0.000 |   0.000 |   0.000 |
+FB1_PT10                                      |   0.000 |   0.000 |   0.000 |
+i1                                            |   0.000 |   0.000 |   0.000 |
+i2                                            |   0.000 |   0.000 |   0.000 |
+o1                                            |   0.000 |   0.000 |   0.000 |
+o2                                            |   0.000 |   0.000 |   0.000 |
+-----------------------------------------------------------------------------
+ZIA                                           |         |  I(uA)  |  P(uW)  |
+-----------------------------------------------------------------------------
+FB1_ZIA_FB1_4_I                               |         |   0.000 |   0.000 |
+FB1_ZIA_FB1_5_I                               |         |   0.000 |   0.000 |
+-----------------------------------------------------------------------------
+
+DataGATE and CoolCLOCK were not used in this design, see Xilinx Appnote XAPP377 to reduce power consumption!
+
+Analysis completed: Tue Nov 29 16:58:34 2011
+----------------------------------------------------------------

@@ -1,0 +1,30 @@
+MDF Database:  version 1.0
+MDF_INFO | a | XC2C128-6-VQ100
+MACROCELL | 0 | 0 | F<0>_MC
+ATTRIBUTES | 1074004738 | 0
+INPUTS | 0
+EQ | 1 | 
+   F<0> = Gnd;	// (0 pt, 0 inp)
+
+MACROCELL | 0 | 2 | F<1>_MC
+ATTRIBUTES | 1074004738 | 0
+INPUTS | 0
+EQ | 1 | 
+   F<1> = Gnd;	// (0 pt, 0 inp)
+
+MACROCELL | 0 | 3 | F<2>_MC
+ATTRIBUTES | 1074004738 | 0
+INPUTS | 0
+EQ | 1 | 
+   F<2> = Gnd;	// (0 pt, 0 inp)
+
+MACROCELL | 0 | 4 | F<3>_MC
+ATTRIBUTES | 1074004738 | 0
+INPUTS | 0
+EQ | 1 | 
+   F<3> = Gnd;	// (0 pt, 0 inp)
+
+PIN | F<0> | 536871040 | 0 | LVCMOS18 | 17
+PIN | F<1> | 536871040 | 0 | LVCMOS18 | 15
+PIN | F<2> | 536871040 | 0 | LVCMOS18 | 14
+PIN | F<3> | 536871040 | 0 | LVCMOS18 | 13

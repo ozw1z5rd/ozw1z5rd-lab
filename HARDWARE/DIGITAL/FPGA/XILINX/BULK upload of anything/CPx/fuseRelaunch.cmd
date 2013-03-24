@@ -1,0 +1,1 @@
+-intstyle "ise" -incremental -o "/host/Garage/Garage/home-computer-group/vhdl/CPx/test44pin_isim_beh.exe" -prj "/host/Garage/Garage/home-computer-group/vhdl/CPx/test44pin_beh.prj" "work.test44pin" 

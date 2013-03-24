@@ -1,0 +1,47 @@
+ISim log file
+Running: /host/Garage/Garage/home-computer-group/vhdl/CPx/test44pin_isim_beh.exe -intstyle ise -gui -tclbatch isim.cmd -wdb /host/Garage/Garage/home-computer-group/vhdl/CPx/test44pin_isim_beh.wdb 
+INFO: There is another simulation running in the same directory. Using database file name isim1.wdb.
+ISim O.76xd (signature 0x8ddf5b5d)
+WARNING: A WEBPACK license was found.
+WARNING: Please use Xilinx License Configuration Manager to check out a full ISim license.
+WARNING: ISim will run in Lite mode. Please refer to the ISim documentation for more information on the differences between the Lite and the Full version.
+This is a Lite version of ISim.
+Time resolution is 1 ps
+# onerror resume
+# wave add /
+# run 2000 Us
+Simulator is doing circuit initialization process.
+Finished circuit initialization process.
+# run 2.0us
+INFO: There is another simulation running in the same directory. Using database file name isim1.wdb.
+ISim O.76xd (signature 0x8ddf5b5d)
+WARNING: A WEBPACK license was found.
+WARNING: Please use Xilinx License Configuration Manager to check out a full ISim license.
+WARNING: ISim will run in Lite mode. Please refer to the ISim documentation for more information on the differences between the Lite and the Full version.
+This is a Lite version of ISim.
+# run 2000 Us
+Simulator is doing circuit initialization process.
+Finished circuit initialization process.
+# run 1.00us
+INFO: There is another simulation running in the same directory. Using database file name isim1.wdb.
+ISim O.76xd (signature 0x8ddf5b5d)
+WARNING: A WEBPACK license was found.
+WARNING: Please use Xilinx License Configuration Manager to check out a full ISim license.
+WARNING: ISim will run in Lite mode. Please refer to the ISim documentation for more information on the differences between the Lite and the Full version.
+This is a Lite version of ISim.
+# run 2000 Us
+Simulator is doing circuit initialization process.
+Finished circuit initialization process.
+# run 1.00us
+# run 1.00us
+INFO: There is another simulation running in the same directory. Using database file name isim1.wdb.
+ISim O.76xd (signature 0x8ddf5b5d)
+WARNING: A WEBPACK license was found.
+WARNING: Please use Xilinx License Configuration Manager to check out a full ISim license.
+WARNING: ISim will run in Lite mode. Please refer to the ISim documentation for more information on the differences between the Lite and the Full version.
+This is a Lite version of ISim.
+# run 2000 Us
+Simulator is doing circuit initialization process.
+Finished circuit initialization process.
+# run 1.00us
+# exit 0

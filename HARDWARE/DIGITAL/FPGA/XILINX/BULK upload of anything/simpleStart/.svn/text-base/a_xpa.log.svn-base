@@ -1,0 +1,16 @@
+Creating log file /home/apalma/Garage/vhdl/simpleStart/a_xpa.log.
+Design load 35% complete
+INFO:Power:1690 - 
+   --------------------------------------------------------------
+                         The power estimate will be calculated using ADVANCED
+   data.
+   --------------------------------------------------------------
+
+Design load 70% completeDesign load 100% complete
+Running Vector-less Activity Propagation
+......
+Finished Running Vector-less Activity Propagation
+Finished Running Vector-less Activity Propagation 0 secs 
+
+Design 'a.cxt' opened successfully
+

@@ -1,0 +1,18 @@
+<?xml version='1.0' encoding='utf-8' ?>
+<!DOCTYPE ibis [
+<!ELEMENT ibis (part, pin+)>
+<!ELEMENT part EMPTY>
+<!ELEMENT pin EMPTY>
+<!ATTLIST part
+  arch   CDATA #REQUIRED
+  device CDATA #REQUIRED
+  spg    CDATA #REQUIRED
+  pkg    CDATA #REQUIRED>
+<!ATTLIST pin
+  nm     CDATA #REQUIRED
+  no     CDATA #REQUIRED
+  iostd  (LVTTL|SSTL3_I|LVCMOS33|LVCMOS25|SSTL2_I|LVCMOS18|LVCMOS15|HSTL_I|NA) "NA"
+  sr     (SLOW|FAST|slow|fast) "SLOW"
+  dir    (BIDIR|bidir|INPUT|input|OUTPUT|output) "BIDIR">
+]>
+<ibis><part arch="xbr" device="XC2C128" pkg="VQ100" spg="-6"/><pin dir="input" iostd="LVCMOS18" nm="A&lt;0&gt;" no="19"/><pin dir="input" iostd="LVCMOS18" nm="A&lt;10&gt;" no="23"/><pin dir="input" iostd="LVCMOS18" nm="A&lt;11&gt;" no="24"/><pin dir="input" iostd="LVCMOS18" nm="A&lt;12&gt;" no="27"/><pin dir="input" iostd="LVCMOS18" nm="A&lt;13&gt;" no="2"/><pin dir="input" iostd="LVCMOS18" nm="A&lt;1&gt;" no="1"/><pin dir="input" iostd="LVCMOS18" nm="A&lt;2&gt;" no="99"/><pin dir="input" iostd="LVCMOS18" nm="A&lt;3&gt;" no="97"/><pin dir="input" iostd="LVCMOS18" nm="A&lt;4&gt;" no="96"/><pin dir="input" iostd="LVCMOS18" nm="A&lt;5&gt;" no="95"/><pin dir="input" iostd="LVCMOS18" nm="A&lt;6&gt;" no="94"/><pin dir="input" iostd="LVCMOS18" nm="A&lt;7&gt;" no="93"/><pin dir="input" iostd="LVCMOS18" nm="A&lt;8&gt;" no="92"/><pin dir="input" iostd="LVCMOS18" nm="A&lt;9&gt;" no="91"/><pin dir="input" iostd="LVCMOS18" nm="D&lt;0&gt;" no="90"/><pin dir="input" iostd="LVCMOS18" nm="N_M1" no="34"/><pin dir="input" iostd="LVCMOS18" nm="N_WR" no="22"/><pin dir="input" iostd="LVCMOS18" nm="D&lt;1&gt;" no="28"/><pin dir="input" iostd="LVCMOS18" nm="D&lt;2&gt;" no="29"/><pin dir="input" iostd="LVCMOS18" nm="D&lt;3&gt;" no="30"/><pin dir="input" iostd="LVCMOS18" nm="D&lt;4&gt;" no="32"/><pin dir="input" iostd="LVCMOS18" nm="JUMPER_EEPROM" no="33"/><pin dir="input" iostd="LVCMOS18" nm="N_MREQ" no="17"/><pin dir="input" iostd="LVCMOS18" nm="N_RD" no="18"/><pin dir="input" iostd="LVCMOS18" nm="D&lt;6&gt;" no="13"/><pin dir="output" iostd="LVCMOS18" nm="BANK&lt;0&gt;" no="12" sr="fast"/><pin dir="output" iostd="LVCMOS18" nm="BANK&lt;1&gt;" no="11" sr="fast"/><pin dir="output" iostd="LVCMOS18" nm="BANK&lt;2&gt;" no="10" sr="fast"/><pin dir="output" iostd="LVCMOS18" nm="BANK&lt;3&gt;" no="9" sr="fast"/><pin dir="output" iostd="LVCMOS18" nm="BANK&lt;4&gt;" no="8" sr="fast"/><pin dir="output" iostd="LVCMOS18" nm="N_EEPROMCS" no="7" sr="fast"/><pin dir="output" iostd="LVCMOS18" nm="N_EEPROMOE" no="14" sr="fast"/><pin dir="output" iostd="LVCMOS18" nm="N_EEPROMWR" no="3" sr="fast"/><pin dir="output" iostd="LVCMOS18" nm="N_ROMCS" no="16" sr="fast"/><pin dir="output" iostd="LVCMOS18" nm="N_SRAMCS" no="6" sr="fast"/><pin dir="output" iostd="LVCMOS18" nm="N_SRAMOE" no="15" sr="fast"/><pin dir="output" iostd="LVCMOS18" nm="N_SRAMWR" no="4" sr="fast"/></ibis>

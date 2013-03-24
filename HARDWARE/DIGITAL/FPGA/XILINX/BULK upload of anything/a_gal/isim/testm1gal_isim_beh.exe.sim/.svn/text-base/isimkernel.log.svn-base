@@ -1,0 +1,29 @@
+Command line:
+   testm1gal_isim_beh.exe
+     -simmode  gui
+     -simrunnum  0
+     -socket  44485
+
+Tue Dec  6 17:18:21 2011
+
+
+ Elaboration Time: 0.01 sec
+
+ Current Memory Usage: 180.867 Meg
+
+ Total Signals          : 50
+ Total Nets             : 29
+ Total Signal Drivers   : 27
+ Total Blocks           : 3
+ Total Primitive Blocks : 2
+ Total Processes        : 3
+ Total Traceable Variables  : 12
+ Total Scalar Nets and Variables : 393
+Total Line Count : 38
+
+ Total Simulation Time: 0.05 sec
+
+ Current Memory Usage: 189.26 Meg
+
+Tue Dec  6 17:18:56 2011
+

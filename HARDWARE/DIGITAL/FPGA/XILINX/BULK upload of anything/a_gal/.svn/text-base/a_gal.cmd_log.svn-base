@@ -1,0 +1,91 @@
+xst -intstyle ise -ifn "/home/apalma/Garage/vhdl/a_gal/a_gal.xst" -ofn "/home/apalma/Garage/vhdl/a_gal/a_gal.syr" 
+xst -intstyle ise -ifn "/home/apalma/Garage/vhdl/a_gal/a_gal.xst" -ofn "/home/apalma/Garage/vhdl/a_gal/a_gal.syr" 
+ngdbuild -intstyle ise -dd _ngo -i -p xbr a_gal.ngc a_gal.ngd  
+cpldfit -intstyle ise -p xc2c*-*-* -ofmt vhdl -optimize density -htmlrpt -loc on -slew fast -init low -inputs 32 -pterms 28 -unused keeper -terminate keeper -iostd LVCMOS18 a_gal.ngd 
+XSLTProcess a_gal_build.xml 
+tsim -intstyle ise a_gal a_gal.nga 
+taengine -intstyle ise -f a_gal -w --format html1 -l a_gal_html/tim/timing_report.htm 
+hprep6 -s IEEE1149 -i a_gal 
+xst -intstyle ise -ifn "/home/apalma/Garage/vhdl/a_gal/a_gal.xst" -ofn "/home/apalma/Garage/vhdl/a_gal/a_gal.syr" 
+ngdbuild -intstyle ise -dd _ngo -i -p xbr a_gal.ngc a_gal.ngd  
+cpldfit -intstyle ise -p xc2c*-*-* -ofmt vhdl -optimize density -htmlrpt -loc on -slew fast -init low -inputs 32 -pterms 28 -unused keeper -terminate keeper -iostd LVCMOS18 a_gal.ngd 
+XSLTProcess a_gal_build.xml 
+tsim -intstyle ise a_gal a_gal.nga 
+hprep6 -s IEEE1149 -i a_gal 
+xst -intstyle ise -ifn "/home/apalma/Garage/vhdl/a_gal/a_gal.xst" -ofn "/home/apalma/Garage/vhdl/a_gal/a_gal.syr" 
+xst -intstyle ise -ifn "/home/apalma/Garage/vhdl/a_gal/a_gal.xst" -ofn "/home/apalma/Garage/vhdl/a_gal/a_gal.syr" 
+xst -intstyle ise -ifn "/home/apalma/Garage/vhdl/a_gal/a_gal.xst" -ofn "/home/apalma/Garage/vhdl/a_gal/a_gal.syr" 
+xst -intstyle ise -ifn "/home/apalma/Garage/vhdl/a_gal/a_gal.xst" -ofn "/home/apalma/Garage/vhdl/a_gal/a_gal.syr" 
+xst -intstyle ise -ifn "/home/apalma/Garage/vhdl/a_gal/a_gal.xst" -ofn "/home/apalma/Garage/vhdl/a_gal/a_gal.syr" 
+xst -intstyle ise -ifn "/home/apalma/Garage/vhdl/a_gal/a_gal.xst" -ofn "/home/apalma/Garage/vhdl/a_gal/a_gal.syr" 
+xst -intstyle ise -ifn "/home/apalma/Garage/vhdl/a_gal/a_gal.xst" -ofn "/home/apalma/Garage/vhdl/a_gal/a_gal.syr" 
+xst -intstyle ise -ifn "/home/apalma/Garage/vhdl/a_gal/a_gal.xst" -ofn "/home/apalma/Garage/vhdl/a_gal/a_gal.syr" 
+ngdbuild -intstyle ise -dd _ngo -i -p xbr a_gal.ngc a_gal.ngd  
+cpldfit -intstyle ise -p xc2c*-*-* -ofmt vhdl -optimize density -htmlrpt -loc on -slew fast -init low -inputs 32 -pterms 28 -unused keeper -terminate keeper -iostd LVCMOS18 a_gal.ngd 
+XSLTProcess a_gal_build.xml 
+tsim -intstyle ise a_gal a_gal.nga 
+hprep6 -s IEEE1149 -i a_gal 
+xst -intstyle ise -ifn "/home/apalma/Garage/vhdl/a_gal/a_gal.xst" -ofn "/home/apalma/Garage/vhdl/a_gal/a_gal.syr" 
+xst -intstyle ise -ifn "/home/apalma/Garage/vhdl/a_gal/a_gal.xst" -ofn "/home/apalma/Garage/vhdl/a_gal/a_gal.syr" 
+xst -intstyle ise -ifn "/home/apalma/Garage/vhdl/a_gal/a_gal.xst" -ofn "/home/apalma/Garage/vhdl/a_gal/a_gal.syr" 
+ngdbuild -intstyle ise -dd _ngo -i -p xbr a_gal.ngc a_gal.ngd  
+cpldfit -intstyle ise -p xc2c*-*-* -ofmt vhdl -optimize density -htmlrpt -loc on -slew fast -init low -inputs 32 -pterms 28 -unused keeper -terminate keeper -iostd LVCMOS18 a_gal.ngd 
+XSLTProcess a_gal_build.xml 
+tsim -intstyle ise a_gal a_gal.nga 
+hprep6 -s IEEE1149 -i a_gal 
+xst -intstyle ise -ifn "/home/apalma/Garage/vhdl/a_gal/a_gal.xst" -ofn "/home/apalma/Garage/vhdl/a_gal/a_gal.syr" 
+ngdbuild -intstyle ise -dd _ngo -i -p xbr a_gal.ngc a_gal.ngd  
+cpldfit -intstyle ise -p xc2c*-*-* -ofmt vhdl -optimize density -htmlrpt -loc on -slew fast -init low -inputs 32 -pterms 28 -unused keeper -terminate keeper -iostd LVCMOS18 a_gal.ngd 
+XSLTProcess a_gal_build.xml 
+tsim -intstyle ise a_gal a_gal.nga 
+hprep6 -s IEEE1149 -i a_gal 
+xst -intstyle ise -ifn "/home/apalma/Garage/vhdl/a_gal/a_gal.xst" -ofn "/home/apalma/Garage/vhdl/a_gal/a_gal.syr" 
+ngdbuild -intstyle ise -dd _ngo -i -p xbr a_gal.ngc a_gal.ngd  
+cpldfit -intstyle ise -p xc2c*-*-* -ofmt vhdl -optimize density -htmlrpt -loc on -slew fast -init low -inputs 32 -pterms 28 -unused keeper -terminate keeper -iostd LVCMOS18 a_gal.ngd 
+XSLTProcess a_gal_build.xml 
+tsim -intstyle ise a_gal a_gal.nga 
+hprep6 -s IEEE1149 -i a_gal 
+xst -intstyle ise -ifn "/home/apalma/Garage/vhdl/a_gal/a_gal.xst" -ofn "/home/apalma/Garage/vhdl/a_gal/a_gal.syr" 
+ngdbuild -intstyle ise -dd _ngo -i -p xbr a_gal.ngc a_gal.ngd  
+cpldfit -intstyle ise -p xc2c*-*-* -ofmt vhdl -optimize density -htmlrpt -loc on -slew fast -init low -inputs 32 -pterms 28 -unused keeper -terminate keeper -iostd LVCMOS18 a_gal.ngd 
+XSLTProcess a_gal_build.xml 
+tsim -intstyle ise a_gal a_gal.nga 
+hprep6 -s IEEE1149 -i a_gal 
+xst -intstyle ise -ifn "/home/apalma/Garage/vhdl/a_gal/a_gal.xst" -ofn "/home/apalma/Garage/vhdl/a_gal/a_gal.syr" 
+ngdbuild -intstyle ise -dd _ngo -i -p xbr a_gal.ngc a_gal.ngd  
+cpldfit -intstyle ise -p xc2c*-*-* -ofmt vhdl -optimize density -htmlrpt -loc on -slew fast -init low -inputs 32 -pterms 28 -unused keeper -terminate keeper -iostd LVCMOS18 a_gal.ngd 
+XSLTProcess a_gal_build.xml 
+tsim -intstyle ise a_gal a_gal.nga 
+hprep6 -s IEEE1149 -i a_gal 
+xst -intstyle ise -ifn "/home/apalma/Garage/vhdl/a_gal/a_gal.xst" -ofn "/home/apalma/Garage/vhdl/a_gal/a_gal.syr" 
+ngdbuild -intstyle ise -dd _ngo -i -p xbr a_gal.ngc a_gal.ngd  
+cpldfit -intstyle ise -p xc2c*-*-* -ofmt vhdl -optimize density -htmlrpt -loc on -slew fast -init low -inputs 32 -pterms 28 -unused keeper -terminate keeper -iostd LVCMOS18 a_gal.ngd 
+XSLTProcess a_gal_build.xml 
+tsim -intstyle ise a_gal a_gal.nga 
+taengine -intstyle ise -f a_gal -w --format html1 -l a_gal_html/tim/timing_report.htm 
+hprep6 -s IEEE1149 -i a_gal 
+xst -intstyle ise -ifn "/home/apalma/Garage/vhdl/a_gal/a_gal.xst" -ofn "/home/apalma/Garage/vhdl/a_gal/a_gal.syr" 
+ngdbuild -intstyle ise -dd _ngo -i -p xbr a_gal.ngc a_gal.ngd  
+cpldfit -intstyle ise -p xc2c*-*-* -ofmt vhdl -optimize density -htmlrpt -loc on -slew fast -init low -inputs 32 -pterms 28 -unused keeper -terminate keeper -iostd LVCMOS18 a_gal.ngd 
+XSLTProcess a_gal_build.xml 
+tsim -intstyle ise a_gal a_gal.nga 
+hprep6 -s IEEE1149 -i a_gal 
+xst -intstyle ise -ifn "/home/apalma/Garage/vhdl/a_gal/a_gal.xst" -ofn "/home/apalma/Garage/vhdl/a_gal/a_gal.syr" 
+ngdbuild -intstyle ise -dd _ngo -i -p xbr a_gal.ngc a_gal.ngd  
+cpldfit -intstyle ise -p xc2c*-*-* -ofmt vhdl -optimize density -htmlrpt -loc on -slew fast -init low -inputs 32 -pterms 28 -unused keeper -terminate keeper -iostd LVCMOS18 a_gal.ngd 
+XSLTProcess a_gal_build.xml 
+tsim -intstyle ise a_gal a_gal.nga 
+hprep6 -s IEEE1149 -i a_gal 
+xst -intstyle ise -ifn "/home/apalma/Garage/vhdl/a_gal/a_gal.xst" -ofn "/home/apalma/Garage/vhdl/a_gal/a_gal.syr" 
+ngdbuild -intstyle ise -dd _ngo -i -p xbr a_gal.ngc a_gal.ngd  
+cpldfit -intstyle ise -p xc2c*-*-* -ofmt vhdl -optimize density -htmlrpt -loc on -slew fast -init low -inputs 32 -pterms 28 -unused keeper -terminate keeper -iostd LVCMOS18 a_gal.ngd 
+XSLTProcess a_gal_build.xml 
+tsim -intstyle ise a_gal a_gal.nga 
+taengine -intstyle ise -f a_gal -w --format html1 -l a_gal_html/tim/timing_report.htm 
+hprep6 -s IEEE1149 -i a_gal 
+xst -intstyle ise -ifn "/home/apalma/Garage/vhdl/a_gal/a_gal.xst" -ofn "/home/apalma/Garage/vhdl/a_gal/a_gal.syr" 
+ngdbuild -intstyle ise -dd _ngo -i -p xbr a_gal.ngc a_gal.ngd  
+cpldfit -intstyle ise -p xc2c*-*-* -ofmt vhdl -optimize density -htmlrpt -loc on -slew fast -init low -inputs 32 -pterms 28 -unused keeper -terminate keeper -iostd LVCMOS18 a_gal.ngd 
+XSLTProcess a_gal_build.xml 
+tsim -intstyle ise a_gal a_gal.nga 
+hprep6 -s IEEE1149 -i a_gal 

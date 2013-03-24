@@ -1,0 +1,52 @@
+----------------------------------------------------------------
+Release 13.3 - XPower Analysis Report SoftwareVersion:O.76xd (lin64)
+Copyright (c) 1995-2011 Xilinx, Inc.  All rights reserved.
+
+# NOTE:  This file is designed to facilitate import into a spreadsheet program
+# such as Microsoft Excel for viewing, printing and sorting.  The "|" character
+# should be selected as the data field separator.
+
+/host/Xilinx/13.3/ISE_DS/ISE/bin/lin64/unwrapped/xpwr -intstyle ise a.cxt -o a.pwr 
+
+Design            | a                                                          |
+Part              | XC2C128-6VQ100                                             |
+Stepping          | 0                                                          |
+Vcc               | 1.80V                                                      |
+Default Ext. Load | 5.00pF                                                    |
+Data version      | ADVANCED,1.0                                               |
+
+XPower and Datasheet may have some Quiescent Current differences.
+This is due to the fact that the quiescent numbers in XPower are based
+on measurements of real designs with active functional elements
+reflecting real world design scenarios.
+
+
+
+Power summary                        |    I(uA)   |    P(uW)   |
+----------------------------------------------------------------
+Total estimated power consumption    |            |        34  |
+                               ---
+               Total Vcc      1.80V  |        19  |        34  |
+               Total Vccio    3.30V  |         0  |         0  |
+                               ---
+                 Global Resources    |         0  |         0  |
+                              ZIA    |         0  |         0  |
+                           Clocks    |         0  |         0  |
+                          Signals    |         0  |         0  |
+                     Output Loads    |         0  |         0  |
+                           Inputs    |         0  |         0  |
+                  Function Blocks    |         0  |         0  |
+                               ---
+           Quiescent Vcc      1.80V  |        19  |        34  |
+
+Thermal summary
+----------------------------------------------------------------
+Estimated junction temperature       |           25C           |
+                      Ambient temp   |           25C           |
+                         Case temp   |           25C           |
+                         Theta J-A   |          48C/W          |
+
+DataGATE and CoolCLOCK were not used in this design, see Xilinx Appnote XAPP377 to reduce power consumption!
+
+Analysis completed: Thu Nov 24 17:21:38 2011
+----------------------------------------------------------------

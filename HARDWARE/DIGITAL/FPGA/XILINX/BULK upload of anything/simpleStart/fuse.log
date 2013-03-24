@@ -1,0 +1,9 @@
+Running: /host/Xilinx/13.3/ISE_DS/ISE/bin/lin64/unwrapped/fuse -intstyle ise -incremental -o /host/Garage/Garage/vhdl/simpleStart/test1_isim_beh.exe -prj /host/Garage/Garage/vhdl/simpleStart/test1_beh.prj work.test1 
+ISim O.76xd (signature 0x8ddf5b5d)
+Number of CPUs detected in this system: 2
+Turning on mult-threading, number of parallel sub-compilation jobs: 4 
+Determining compilation order of HDL files
+Parsing VHDL file "/host/Garage/Garage/vhdl/simpleStart/test1.vhd" into library work
+ERROR:HDLCompiler:580 - "/host/Garage/Garage/vhdl/simpleStart/test1.vhd" Line 50: Mismatch on label ; expected behv
+ERROR:HDLCompiler:854 - "/host/Garage/Garage/vhdl/simpleStart/test1.vhd" Line 46: Unit <behv> ignored due to previous errors.
+VHDL file /host/Garage/Garage/vhdl/simpleStart/test1.vhd ignored due to errors

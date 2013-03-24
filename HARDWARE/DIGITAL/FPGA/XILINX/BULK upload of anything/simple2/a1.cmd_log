@@ -1,0 +1,2 @@
+vhdtdtfi -lib work composite.vhd -prj simple2 -o a1.spl -module a1 -template /host/Xilinx/13.3/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+spl2sym -intstyle ise -family xbr a1.spl /home/apalma/Garage/vhdl/simple2/a1.sym 

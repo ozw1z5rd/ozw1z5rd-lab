@@ -1,0 +1,14 @@
+MDF Database:  version 1.0
+MDF_INFO | composite | XC2C128-6-VQ100
+MACROCELL | 0 | 0 | o1_MC
+ATTRIBUTES | 1074004738 | 0
+INPUTS | 3 | i3  | i2  | i1
+INPUTP | 3 | 13 | 14 | 15
+EQ | 2 | 
+   o1 = i3
+	# i2 & i1;	// (2 pt, 3 inp)
+
+PIN | i1 | 64 | 16 | LVCMOS18 | 15 | 1 | 0 | 0
+PIN | i2 | 64 | 16 | LVCMOS18 | 14 | 1 | 0 | 0
+PIN | i3 | 64 | 16 | LVCMOS18 | 13 | 1 | 0 | 0
+PIN | o1 | 536871040 | 0 | LVCMOS18 | 17

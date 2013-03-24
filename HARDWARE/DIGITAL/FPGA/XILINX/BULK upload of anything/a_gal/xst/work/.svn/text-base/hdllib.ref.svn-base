@@ -1,0 +1,7 @@
+EN a_gal NULL /home/apalma/Garage/vhdl/a_gal/a_gal.vhd sub00/vhpl00 1323279091
+AR a_gal behavioral /home/apalma/Garage/vhdl/a_gal/a_gal.vhd sub00/vhpl01 1323279092
+AR r_gal2 behavioral /home/apalma/Garage/vhdl/a_gal/r_gal2.vhd sub00/vhpl05 1323278364
+AR m1_gal behavioral /home/apalma/Garage/vhdl/a_gal/m1_gal.vhd sub00/vhpl03 1323237390
+EN m1_gal NULL /home/apalma/Garage/vhdl/a_gal/m1_gal.vhd sub00/vhpl02 1323237389
+EN r_gal2 NULL /home/apalma/Garage/vhdl/a_gal/r_gal2.vhd sub00/vhpl04 1323278363
+MO r_Gal NULL r_gal.v vlg75/r___gal.bin 1323238130

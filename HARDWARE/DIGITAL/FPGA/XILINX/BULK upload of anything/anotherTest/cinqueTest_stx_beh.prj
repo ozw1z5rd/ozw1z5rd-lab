@@ -1,0 +1,2 @@
+vhdl isim_temp "cinque.vhd"
+vhdl isim_temp "cinqueTest.vhd"

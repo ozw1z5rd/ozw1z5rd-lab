@@ -1,0 +1,10 @@
+V3 7
+FL /home/apalma/Garage/vhdl/fitTest/agal.vhd 2011/11/23.06:20:13 O.76xd
+EN work/agal 0 FL /home/apalma/Garage/vhdl/fitTest/agal.vhd PB ieee/std_logic_1164 1317710503
+AR work/agal/Behavioral 0 \
+      FL /home/apalma/Garage/vhdl/fitTest/agal.vhd EN work/agal 0 CP signal
+FL /home/apalma/Garage/vhdl/fitTest/fittest.vhd 2011/11/22.17:31:25 O.76xd
+EN work/fittest 0 FL /home/apalma/Garage/vhdl/fitTest/fittest.vhd \
+      PB ieee/std_logic_1164 1317710503
+AR work/fittest/Behavioral 0 \
+      FL /home/apalma/Garage/vhdl/fitTest/fittest.vhd EN work/fittest 0

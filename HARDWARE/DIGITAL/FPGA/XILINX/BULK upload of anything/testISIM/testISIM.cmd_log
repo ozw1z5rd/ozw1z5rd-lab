@@ -1,0 +1,10 @@
+xst -intstyle ise -ifn "/home/apalma/Garage/vhdl/testISIM/testISIM.xst" -ofn "/home/apalma/Garage/vhdl/testISIM/testISIM.syr" 
+ngdbuild -intstyle ise -dd _ngo -i -p xc2c128-VQ100-6 testISIM.ngc testISIM.ngd  
+cpldfit -intstyle ise -p xc2c128-6-VQ100 -ofmt vhdl -optimize density -htmlrpt -loc on -slew fast -init low -inputs 32 -pterms 28 -unused keeper -terminate keeper -iostd LVCMOS18 testISIM.ngd 
+XSLTProcess testISIM_build.xml 
+tsim -intstyle ise testISIM testISIM.nga 
+taengine -intstyle ise -f testISIM -w --format html1 -l testISIM_html/tim/timing_report.htm 
+hprep6 -s IEEE1149 -i testISIM 
+sch2vhdl -intstyle ise -family xbr -tionly -w /home/apalma/Garage/vhdl/testISIM/testISIM.sch testISIM.vhi 
+sch2sym -intstyle ise -family xbr -refsym testISIM /home/apalma/Garage/vhdl/testISIM/testISIM.sch /home/apalma/Garage/vhdl/testISIM/testISIM.sym 
+netgen -intstyle ise -rpw 100 -ar Structure -tm testISIM -w -dir netgen/fit -ofmt vhdl -sim testISIM.nga testISIM_timesim.vhd 

@@ -1,0 +1,12 @@
+V3 8
+FL /home/apalma/Garage/vhdl/simpleStart/a.vhd 2011/11/24.17:13:09 O.76xd
+EN work/a 1322155194 FL /home/apalma/Garage/vhdl/simpleStart/a.vhd \
+      PB ieee/std_logic_1164 1317710503
+AR work/a/Behavioral 1322155195 \
+      FL /home/apalma/Garage/vhdl/simpleStart/a.vhd EN work/a 1322155194
+FL /home/apalma/Garage/vhdl/simpleStart/b.vhf 2011/11/25.05:59:49 O.76xd
+EN work/b 1322200794 FL /home/apalma/Garage/vhdl/simpleStart/b.vhf \
+      PB ieee/std_logic_1164 1317710503 PB ieee/NUMERIC_STD 1317710508 LB UNISIM \
+      PH unisim/VCOMPONENTS 1317710510
+AR work/b/BEHAVIORAL 1322200795 \
+      FL /home/apalma/Garage/vhdl/simpleStart/b.vhf EN work/b 1322200794 CP AND2B1

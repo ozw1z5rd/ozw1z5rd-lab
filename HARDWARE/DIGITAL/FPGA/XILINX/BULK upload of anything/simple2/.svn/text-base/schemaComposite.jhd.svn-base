@@ -1,0 +1,3 @@
+MODULE schemaComposite
+	SUBMODULE a1
+		INSTANCE XLXI_2

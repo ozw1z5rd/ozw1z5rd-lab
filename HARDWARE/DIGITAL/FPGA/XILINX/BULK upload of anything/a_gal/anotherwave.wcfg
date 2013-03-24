@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="/home/apalma/Garage/vhdl/a_gal/testA_gal_isim_beh.wdb" id="1" type="auto">
+         <top_modules>
+            <top_module name="std_logic_1164" />
+            <top_module name="testa_gal" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <WVObjectSize size="10" />
+   <wvobject fp_name="/testa_gal/a" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">a[13:0]</obj_property>
+      <obj_property name="ObjectShortName">a[13:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testa_gal/clock" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">clock</obj_property>
+      <obj_property name="ObjectShortName">clock</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testa_gal/m1" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">m1</obj_property>
+      <obj_property name="ObjectShortName">m1</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testa_gal/romacc" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">romacc</obj_property>
+      <obj_property name="ObjectShortName">romacc</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testa_gal/mapcond" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">mapcond</obj_property>
+      <obj_property name="ObjectShortName">mapcond</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testa_gal/mapterm" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">mapterm</obj_property>
+      <obj_property name="ObjectShortName">mapterm</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+      <obj_property name="CustomSignalColor">#ff0000</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testa_gal/ideio0" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">ideio0</obj_property>
+      <obj_property name="ObjectShortName">ideio0</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+      <obj_property name="CustomSignalColor">#ffffff</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testa_gal/ideio1" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">ideio1</obj_property>
+      <obj_property name="ObjectShortName">ideio1</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+      <obj_property name="CustomSignalColor">#ffff00</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testa_gal/automap" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">automap</obj_property>
+      <obj_property name="ObjectShortName">automap</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testa_gal/clock_period" type="other" db_ref_id="1">
+      <obj_property name="ElementShortName">clock_period</obj_property>
+      <obj_property name="ObjectShortName">clock_period</obj_property>
+   </wvobject>
+</wave_config>

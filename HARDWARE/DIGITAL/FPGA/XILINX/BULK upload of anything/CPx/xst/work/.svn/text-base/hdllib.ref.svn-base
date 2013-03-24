@@ -1,0 +1,4 @@
+AR cpx2 behavioral /host/Garage/Garage/vhdl/CPx/CPx2.vhd sub00/vhpl03 1327471906
+EN cpx NULL /home/apalma/Garage/vhdl/CPx/CPx.vhd sub00/vhpl00 1327298398
+AR cpx behavioral /home/apalma/Garage/vhdl/CPx/CPx.vhd sub00/vhpl01 1327298399
+EN cpx2 NULL /host/Garage/Garage/vhdl/CPx/CPx2.vhd sub00/vhpl02 1327471905

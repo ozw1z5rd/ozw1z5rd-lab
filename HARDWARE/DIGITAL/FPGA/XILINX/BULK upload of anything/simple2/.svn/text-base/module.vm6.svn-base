@@ -1,0 +1,131 @@
+NDS Database:  version O.76xd
+
+NDS_INFO | xbr | 2C128100 | XC2C128-6-VQ100
+
+DEVICE | 2C128 | 2C128100 | 
+
+NETWORK | module | 0 | 0 | 1073758214 | 0
+
+INPUT_INSTANCE | 0 | 0 | NULL | i1_II | module_COPY_0_COPY_0 | 16 | 1 | 1
+INPUT_NODE_TYPE | 0 | 5 | II_IN
+NODE | i1 | 70 | PI | 0 | 0 | module_COPY_0_COPY_0 | NULL | NULL | NULL | 0 | 100 | NOTYPE
+OUTPUT_NODE_TYPE | 0 | 5 | II_IMUX
+NODE | i1_II/UIM | 82 | ? | 0 | 0 | module_COPY_0_COPY_0 | NULL | NULL | i1_II | 0 | 5 | II_IMUX
+
+INPUT_INSTANCE | 0 | 0 | NULL | i2_II | module_COPY_0_COPY_0 | 16 | 1 | 1
+INPUT_NODE_TYPE | 0 | 5 | II_IN
+NODE | i2 | 71 | PI | 0 | 0 | module_COPY_0_COPY_0 | NULL | NULL | NULL | 0 | 100 | NOTYPE
+OUTPUT_NODE_TYPE | 0 | 5 | II_IMUX
+NODE | i2_II/UIM | 81 | ? | 0 | 0 | module_COPY_0_COPY_0 | NULL | NULL | i2_II | 0 | 5 | II_IMUX
+
+MACROCELL_INSTANCE | Inv | o1_MC | module_COPY_0_COPY_0 | 256 | 0 | 1
+OUTPUT_NODE_TYPE | 0 | 0 | MC_Q
+NODE | o1_MC.Q | 76 | ? | 0 | 0 | module_COPY_0_COPY_0 | NULL | o1_MC.Q | o1_MC | 0 | 0 | MC_Q
+
+SIGNAL_INSTANCE | o1_MC.SI | o1_MC | 0 | 0 | 2
+OUTPUT_NODE_TYPE | 1 | 9 | MC_SI_D1
+SIGNAL | NODE | o1_MC.D1 | 74 | ? | 0 | 0 | o1_MC | NULL | NULL | o1_MC.SI | 1 | 9 | MC_SI_D1
+SPPTERM | 0 | IV_ZERO
+OUTPUT_NODE_TYPE | 2 | 9 | MC_SI_D2
+SIGNAL | NODE | o1_MC.D2 | 73 | ? | 0 | 0 | o1_MC | NULL | NULL | o1_MC.SI | 2 | 9 | MC_SI_D2
+SPPTERM | 0 | IV_ZERO
+
+SRFF_INSTANCE | o1_MC.REG | o1_MC | 0 | 1 | 1
+INPUT_NODE_TYPE | 0 | 8 | SRFF_D
+NODE | o1_MC.D | 72 | ? | 0 | 0 | o1_MC | NULL | NULL | o1_MC.XOR | 0 | 7 | ALU_F
+OUTPUT_NODE_TYPE | 0 | 8 | SRFF_Q
+NODE | o1_MC.Q | 75 | ? | 0 | 0 | o1_MC | NULL | NULL | o1_MC.REG | 0 | 8 | SRFF_Q
+
+OUTPUT_INSTANCE | 0 | o1 | module_COPY_0_COPY_0 | 3 | 1 | 1
+INPUT_NODE_TYPE | 0 | 6 | OI_IN
+NODE | o1_MC.Q | 76 | ? | 0 | 0 | module_COPY_0_COPY_0 | NULL | o1_MC.Q | o1_MC | 0 | 0 | MC_Q
+OUTPUT_NODE_TYPE | 0 | 6 | OI_OUT
+NODE | o1 | 77 | PO | 0 | 0 | module_COPY_0_COPY_0 | NULL | NULL | o1 | 0 | 6 | OI_OUT
+
+MACROCELL_INSTANCE | NULL | o2_MC | module_COPY_0_COPY_0 | 0 | 2 | 1
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | i2_II/UIM | 81 | ? | 0 | 0 | module_COPY_0_COPY_0 | NULL | NULL | i2_II | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | i1_II/UIM | 82 | ? | 0 | 0 | module_COPY_0_COPY_0 | NULL | NULL | i1_II | 0 | 5 | II_IMUX
+OUTPUT_NODE_TYPE | 0 | 0 | MC_Q
+NODE | o2_MC.Q | 84 | ? | 0 | 0 | module_COPY_0_COPY_0 | NULL | o2_MC.Q | o2_MC | 0 | 0 | MC_Q
+
+SIGNAL_INSTANCE | o2_MC.SI | o2_MC | 0 | 2 | 2
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | i2_II/UIM | 81 | ? | 0 | 0 | module_COPY_0_COPY_0 | NULL | NULL | i2_II | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | i1_II/UIM | 82 | ? | 0 | 0 | module_COPY_0_COPY_0 | NULL | NULL | i1_II | 0 | 5 | II_IMUX
+OUTPUT_NODE_TYPE | 1 | 9 | MC_SI_D1
+SIGNAL | NODE | o2_MC.D1 | 79 | ? | 0 | 0 | o2_MC | NULL | NULL | o2_MC.SI | 1 | 9 | MC_SI_D1
+SPPTERM | 2 | IV_TRUE | i2_II/UIM | IV_TRUE | i1_II/UIM
+OUTPUT_NODE_TYPE | 2 | 9 | MC_SI_D2
+SIGNAL | NODE | o2_MC.D2 | 80 | ? | 0 | 0 | o2_MC | NULL | NULL | o2_MC.SI | 2 | 9 | MC_SI_D2
+SPPTERM | 0 | IV_ZERO
+
+SRFF_INSTANCE | o2_MC.REG | o2_MC | 0 | 1 | 1
+INPUT_NODE_TYPE | 0 | 8 | SRFF_D
+NODE | o2_MC.D | 78 | ? | 0 | 0 | o2_MC | NULL | NULL | o2_MC.XOR | 0 | 7 | ALU_F
+OUTPUT_NODE_TYPE | 0 | 8 | SRFF_Q
+NODE | o2_MC.Q | 83 | ? | 0 | 0 | o2_MC | NULL | NULL | o2_MC.REG | 0 | 8 | SRFF_Q
+
+OUTPUT_INSTANCE | 0 | o2 | module_COPY_0_COPY_0 | 3 | 1 | 1
+INPUT_NODE_TYPE | 0 | 6 | OI_IN
+NODE | o2_MC.Q | 84 | ? | 0 | 0 | module_COPY_0_COPY_0 | NULL | o2_MC.Q | o2_MC | 0 | 0 | MC_Q
+OUTPUT_NODE_TYPE | 0 | 6 | OI_OUT
+NODE | o2 | 85 | PO | 0 | 0 | module_COPY_0_COPY_0 | NULL | NULL | o2 | 0 | 6 | OI_OUT
+
+FB_INSTANCE | FOOBAR1_ | module_COPY_0_COPY_0 | 0 | 0 | 0
+FBPIN | 1 | o2_MC | 1 | NULL | 0 | o2 | 1 | 13 | 49152
+FBPIN | 3 | o1_MC | 1 | NULL | 0 | o1 | 1 | 12 | 49152
+FBPIN | 4 | NULL | 0 | i1_II | 1 | NULL | 0 | 11 | 49152
+FBPIN | 5 | NULL | 0 | i2_II | 1 | NULL | 0 | 10 | 49152
+
+FB_INSTANCE | FOOBAR2_ | module_COPY_0_COPY_0 | 0 | 0 | 0
+
+FB_INSTANCE | FOOBAR3_ | module_COPY_0_COPY_0 | 0 | 0 | 0
+
+FB_INSTANCE | FOOBAR4_ | module_COPY_0_COPY_0 | 0 | 0 | 0
+
+FB_INSTANCE | FOOBAR5_ | module_COPY_0_COPY_0 | 0 | 0 | 0
+
+FB_INSTANCE | FOOBAR6_ | module_COPY_0_COPY_0 | 0 | 0 | 0
+
+FB_INSTANCE | FOOBAR7_ | module_COPY_0_COPY_0 | 0 | 0 | 0
+
+FB_INSTANCE | FOOBAR8_ | module_COPY_0_COPY_0 | 0 | 0 | 0
+
+FB_INSTANCE | INPUTPINS_FOOBAR9_ | module_COPY_0_COPY_0 | 0 | 0 | 0
+
+CT_INSTANCE | FOOBAR1_ | FOOBAR1__ctinst | module_COPY_0_COPY_0 | 0 | 0 | 0
+
+CT_INSTANCE | FOOBAR2_ | FOOBAR2__ctinst | module_COPY_0_COPY_0 | 0 | 0 | 0
+
+CT_INSTANCE | FOOBAR3_ | FOOBAR3__ctinst | module_COPY_0_COPY_0 | 0 | 0 | 0
+
+CT_INSTANCE | FOOBAR4_ | FOOBAR4__ctinst | module_COPY_0_COPY_0 | 0 | 0 | 0
+
+CT_INSTANCE | FOOBAR5_ | FOOBAR5__ctinst | module_COPY_0_COPY_0 | 0 | 0 | 0
+
+CT_INSTANCE | FOOBAR6_ | FOOBAR6__ctinst | module_COPY_0_COPY_0 | 0 | 0 | 0
+
+CT_INSTANCE | FOOBAR7_ | FOOBAR7__ctinst | module_COPY_0_COPY_0 | 0 | 0 | 0
+
+CT_INSTANCE | FOOBAR8_ | FOOBAR8__ctinst | module_COPY_0_COPY_0 | 0 | 0 | 0
+
+PLA | FOOBAR1_ | 1
+PLA_TERM | 10 | 
+SPPTERM | 2 | IV_TRUE | i2_II/UIM | IV_TRUE | i1_II/UIM
+
+
+IOSTD | LVCMOS18
+i1 | LVCMOS18
+i2 | LVCMOS18
+o1 | LVCMOS18
+o2 | LVCMOS18
+
+
+FB_ORDER_OF_INPUTS | FOOBAR1_ | 3 | i1 | 11 | 4 | i2 | 10
+
+FB_IMUX_INDEX | FOOBAR1_ | -1 | -1 | -1 | 3 | 4 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1
+
+

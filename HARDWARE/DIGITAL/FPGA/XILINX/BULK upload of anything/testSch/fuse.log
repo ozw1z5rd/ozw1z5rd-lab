@@ -1,0 +1,25 @@
+Running: /host/Xilinx/13.3/ISE_DS/ISE/bin/lin64/unwrapped/fuse -relaunch -intstyle "ise" -incremental -o "/host/Garage/Garage/home-computer-group/vhdl/testSch/sch1_sch1_sch_tb_isim_beh.exe" -prj "/host/Garage/Garage/home-computer-group/vhdl/testSch/sch1_sch1_sch_tb_beh.prj" "work.sch1_sch1_sch_tb" 
+ISim O.76xd (signature 0x8ddf5b5d)
+Number of CPUs detected in this system: 2
+Turning on mult-threading, number of parallel sub-compilation jobs: 4 
+Determining compilation order of HDL files
+Parsing VHDL file "/host/Garage/Garage/home-computer-group/vhdl/testSch/sch1.vhf" into library work
+Parsing VHDL file "/host/Garage/Garage/home-computer-group/vhdl/testSch/testSch1.vhd" into library work
+Starting static elaboration
+Completed static elaboration
+Fuse Memory Usage: 110560 KB
+Fuse CPU Usage: 1460 ms
+Compiling package standard
+Compiling package std_logic_1164
+Compiling package numeric_std
+Compiling package vcomponents
+Compiling architecture and3b1_v of entity AND3B1 [and3b1_default]
+Compiling architecture behavioral of entity sch1 [sch1_default]
+Compiling architecture behavioral of entity sch1_sch1_sch_tb
+Time Resolution for simulation is 1ps.
+Waiting for 2 sub-compilation(s) to finish...
+Compiled 9 VHDL Units
+Built simulation executable /host/Garage/Garage/home-computer-group/vhdl/testSch/sch1_sch1_sch_tb_isim_beh.exe
+Fuse Memory Usage: 159928 KB
+Fuse CPU Usage: 1600 ms
+GCC CPU Usage: 260 ms

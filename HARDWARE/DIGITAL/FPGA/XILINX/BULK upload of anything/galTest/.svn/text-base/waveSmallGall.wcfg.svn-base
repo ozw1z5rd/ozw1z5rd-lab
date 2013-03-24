@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="/home/apalma/Garage/vhdl/galTest/testSmallGal_isim_beh.wdb" id="1" type="auto">
+         <top_modules>
+            <top_module name="std_logic_1164" />
+            <top_module name="testsmallgal" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <WVObjectSize size="10" />
+   <wvobject fp_name="/testsmallgal/c1" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">c1</obj_property>
+      <obj_property name="ObjectShortName">c1</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testsmallgal/c2" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">c2</obj_property>
+      <obj_property name="ObjectShortName">c2</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testsmallgal/c3" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">c3</obj_property>
+      <obj_property name="ObjectShortName">c3</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testsmallgal/clock" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">clock</obj_property>
+      <obj_property name="ObjectShortName">clock</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+      <obj_property name="CustomSignalColor">#ff0000</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testsmallgal/s1" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">s1</obj_property>
+      <obj_property name="ObjectShortName">s1</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+      <obj_property name="CustomSignalColor">#ffff00</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testsmallgal/s2" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">s2</obj_property>
+      <obj_property name="ObjectShortName">s2</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+      <obj_property name="CustomSignalColor">#ffff00</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testsmallgal/s3" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">s3</obj_property>
+      <obj_property name="ObjectShortName">s3</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+      <obj_property name="CustomSignalColor">#ffff00</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testsmallgal/o1" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">o1</obj_property>
+      <obj_property name="ObjectShortName">o1</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+      <obj_property name="CustomSignalColor">#00ffff</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testsmallgal/o2" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">o2</obj_property>
+      <obj_property name="ObjectShortName">o2</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+      <obj_property name="CustomSignalColor">#00ffff</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testsmallgal/o3" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">o3</obj_property>
+      <obj_property name="ObjectShortName">o3</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+      <obj_property name="CustomSignalColor">#00ffff</obj_property>
+   </wvobject>
+</wave_config>

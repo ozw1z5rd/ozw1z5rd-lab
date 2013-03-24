@@ -1,0 +1,40 @@
+Pin Freeze File:  version O.76xd
+
+2C32A64 XC2C32A-4-CV64
+CLOCK S:PINF1
+N_M1 S:PING1
+N_MREQ S:PINF3
+N_RD S:PINH1
+N_RESET S:PINH2
+N_WR S:PING3
+BANK0 S:PIND2
+BANK1 S:PIND1
+D<0> S:PINC2
+D<1> S:PINB2
+D<2> S:PINA1
+D<3> S:PINC3
+D<4> S:PINA2
+D<5> S:PINB3
+D<6> S:PINC4
+D<7> S:PINB4
+INT S:PINC5
+NMAP S:PINB7
+N_NMI S:PINC6
+N_ROMCS S:PINB8
+SEL<0> S:PINC7
+SEL<1> S:PINC8
+SEL<2> S:PINE1
+SEL<3> S:PINE2
+
+
+;The remaining section of the .gyd file is for documentation purposes only.
+;It shows where your internal equations were placed in the last successful fit.
+
+PARTITION FB1_1 BANK0 BANK1 D<0> D<1>
+		 D<2> D<3> D<4> D<5>
+		 D<6> D<7> INT NMAP
+		 N_NMI N_ROMCS SEL<0> SEL<1>
+		
+PARTITION FB2_1 SEL<2> SEL<3>
+
+

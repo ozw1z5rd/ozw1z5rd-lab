@@ -1,0 +1,8 @@
+AR module behavioral /home/apalma/Garage/vhdl/simple2/module.vhd sub00/vhpl07 1322585672
+AR a1 behv /home/apalma/Garage/vhdl/simple2/composite.vhd sub00/vhpl01 1322499179
+AR a2 behv /home/apalma/Garage/vhdl/simple2/composite.vhd sub00/vhpl03 1322499181
+EN composite NULL /home/apalma/Garage/vhdl/simple2/composite.vhd sub00/vhpl04 1322499182
+AR composite structure /home/apalma/Garage/vhdl/simple2/composite.vhd sub00/vhpl05 1322499183
+EN module NULL /home/apalma/Garage/vhdl/simple2/module.vhd sub00/vhpl06 1322585671
+EN a1 NULL /home/apalma/Garage/vhdl/simple2/composite.vhd sub00/vhpl00 1322499178
+EN a2 NULL /home/apalma/Garage/vhdl/simple2/composite.vhd sub00/vhpl02 1322499180

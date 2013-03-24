@@ -1,0 +1,19 @@
+Design load 35% complete
+INFO:Power:1690 - 
+   --------------------------------------------------------------
+                         The power estimate will be calculated using ADVANCED
+   data.
+   --------------------------------------------------------------
+
+Design load 70% completeDesign load 100% complete
+WARNING:PowerEstimator:270 - Power estimate is considered inaccurate. To see
+   details, generate an advanced report with the "-v" switch.
+Running Vector-less Activity Propagation
+......
+Finished Running Vector-less Activity Propagation
+Finished Running Vector-less Activity Propagation 0 secs 
+
+Number of error messages: 0
+Number of warning messages: 1
+Number of info messages: 1
+

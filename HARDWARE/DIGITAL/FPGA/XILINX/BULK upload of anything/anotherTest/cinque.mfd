@@ -1,0 +1,38 @@
+MDF Database:  version 1.0
+MDF_INFO | cinque | XC2C128-6-VQ100
+MACROCELL | 0 | 2 | o1_MC
+ATTRIBUTES | 8684290 | 0
+INPUTS | 1 | test
+INPUTMC | 1 | 0 | 13
+EQ | 2 | 
+   o1 := test;	// (1 pt, 1 inp)
+   o1.CLK  =  clock;	// GCK	(0 pt, 0 inp)
+GLOBALS | 1 | 2 | clock
+
+MACROCELL | 0 | 13 | test_MC
+ATTRIBUTES | 2155905792 | 0
+OUTPUTMC | 2 | 0 | 2 | 0 | 0
+INPUTS | 2 | i2  | i1
+INPUTP | 2 | 13 | 14
+EQ | 2 | 
+   test := i2 & i1;	// (1 pt, 2 inp)
+   test.CLK  =  clock;	// GCK	(0 pt, 0 inp)
+GLOBALS | 1 | 2 | clock
+
+MACROCELL | 0 | 0 | o2_MC
+ATTRIBUTES | 8684290 | 0
+INPUTS | 2 | test  | i3
+INPUTMC | 1 | 0 | 13
+INPUTP | 1 | 12
+EQ | 3 | 
+   o2 := test & !i3
+	# !test & i3;	// (2 pt, 2 inp)
+   o2.CLK  =  clock;	// GCK	(0 pt, 0 inp)
+GLOBALS | 1 | 2 | clock
+
+PIN | clock | 4096 | 16 | LVCMOS18 | 28 | 3 | 0 | 13 | 0 | 2 | 0 | 0
+PIN | i1 | 64 | 16 | LVCMOS18 | 14 | 1 | 0 | 13
+PIN | i2 | 64 | 16 | LVCMOS18 | 13 | 1 | 0 | 13
+PIN | i3 | 64 | 16 | LVCMOS18 | 12 | 1 | 0 | 0
+PIN | o1 | 536871040 | 0 | LVCMOS18 | 15
+PIN | o2 | 536871040 | 0 | LVCMOS18 | 17

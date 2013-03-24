@@ -1,0 +1,52 @@
+MDF Database:  version 1.0
+MDF_INFO | smallGAL | XC2C128-6-VQ100
+MACROCELL | 0 | 4 | o1_MC
+ATTRIBUTES | 1074004738 | 0
+INPUTS | 3 | c3  | c2  | c1
+INPUTP | 3 | 9 | 10 | 11
+EQ | 1 | 
+   o1 = c3 & c2 & c1;	// (1 pt, 3 inp)
+
+MACROCELL | 0 | 5 | o2_MC
+ATTRIBUTES | 1074004738 | 0
+INPUTS | 2 | c3  | c2
+INPUTP | 2 | 9 | 10
+EQ | 1 | 
+   o2 = c3 & c2;	// (1 pt, 2 inp)
+
+MACROCELL | 0 | 2 | o3_MC
+ATTRIBUTES | 1074004738 | 0
+INPUTS | 2 | c2  | c1
+INPUTP | 2 | 10 | 11
+EQ | 2 | 
+   o3 = c2 & !c1
+	# !c2 & c1;	// (2 pt, 2 inp)
+
+MACROCELL | 0 | 0 | s2_MC
+ATTRIBUTES | 8684290 | 0
+INPUTS | 2 | c2  | c1
+INPUTP | 2 | 10 | 11
+EQ | 3 | 
+   s2 := c2 & !c1
+	# !c2 & c1;	// (2 pt, 2 inp)
+   s2.CLK  =  clock;	// GCK	(0 pt, 0 inp)
+GLOBALS | 1 | 2 | clock
+
+MACROCELL | 0 | 3 | s3_MC
+ATTRIBUTES | 8684290 | 0
+INPUTS | 1 | c1
+INPUTP | 1 | 11
+EQ | 2 | 
+   s3 := c1;	// (1 pt, 1 inp)
+   s3.CLK  =  clock;	// GCK	(0 pt, 0 inp)
+GLOBALS | 1 | 2 | clock
+
+PIN | c1 | 64 | 16 | LVCMOS18 | 11 | 4 | 0 | 4 | 0 | 2 | 0 | 0 | 0 | 3
+PIN | c2 | 64 | 16 | LVCMOS18 | 10 | 4 | 0 | 4 | 0 | 5 | 0 | 2 | 0 | 0
+PIN | c3 | 64 | 16 | LVCMOS18 | 9 | 2 | 0 | 4 | 0 | 5
+PIN | clock | 4096 | 16 | LVCMOS18 | 28 | 2 | 0 | 0 | 0 | 3
+PIN | o1 | 536871040 | 0 | LVCMOS18 | 13
+PIN | o2 | 536871040 | 0 | LVCMOS18 | 12
+PIN | o3 | 536871040 | 0 | LVCMOS18 | 15
+PIN | s2 | 536871040 | 0 | LVCMOS18 | 17
+PIN | s3 | 536871040 | 0 | LVCMOS18 | 14

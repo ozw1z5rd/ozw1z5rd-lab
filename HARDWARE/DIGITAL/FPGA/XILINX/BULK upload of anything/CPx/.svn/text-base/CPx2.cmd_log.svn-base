@@ -1,0 +1,66 @@
+xst -intstyle ise -ifn "/home/apalma/Garage/vhdl/CPx/CPx2.xst" -ofn "/home/apalma/Garage/vhdl/CPx/CPx2.syr" 
+xst -intstyle ise -ifn "/home/apalma/Garage/vhdl/CPx/CPx2.xst" -ofn "/home/apalma/Garage/vhdl/CPx/CPx2.syr" 
+xst -intstyle ise -ifn "/home/apalma/Garage/vhdl/CPx/CPx2.xst" -ofn "/home/apalma/Garage/vhdl/CPx/CPx2.syr" 
+xst -intstyle ise -ifn "/home/apalma/Garage/vhdl/CPx/CPx2.xst" -ofn "/home/apalma/Garage/vhdl/CPx/CPx2.syr" 
+xst -intstyle ise -ifn "/home/apalma/Garage/vhdl/CPx/CPx2.xst" -ofn "/home/apalma/Garage/vhdl/CPx/CPx2.syr" 
+ngdbuild -intstyle ise -dd _ngo -uc CPx.ucf -p xc2c32a-CV64-4 CPx2.ngc CPx2.ngd  
+cpldfit -intstyle ise -p xc2c32a-4-CV64 -ofmt vhdl -optimize density -htmlrpt -loc on -slew fast -init low -inputs 32 -pterms 28 -unused keeper -terminate keeper -iostd LVCMOS18 CPx2.ngd 
+tsim -intstyle ise CPx2 CPx2.nga 
+hprep6 -s IEEE1149 -i CPx2 
+xst -intstyle ise -ifn "/home/apalma/Garage/vhdl/CPx/CPx2.xst" -ofn "/home/apalma/Garage/vhdl/CPx/CPx2.syr" 
+ngdbuild -intstyle ise -dd _ngo -uc CPx.ucf -p xc2c32a-CV64-4 CPx2.ngc CPx2.ngd  
+cpldfit -intstyle ise -p xc2c32a-4-CV64 -ofmt vhdl -optimize density -htmlrpt -loc on -slew fast -init low -inputs 32 -pterms 28 -unused keeper -terminate keeper -iostd LVCMOS18 CPx2.ngd 
+XSLTProcess CPx2_build.xml 
+tsim -intstyle ise CPx2 CPx2.nga 
+taengine -intstyle ise -f CPx2 -w --format html1 -l CPx2_html/tim/timing_report.htm 
+hprep6 -s IEEE1149 -i CPx2 
+xst -intstyle ise -ifn "/home/apalma/Garage/vhdl/CPx/CPx2.xst" -ofn "/home/apalma/Garage/vhdl/CPx/CPx2.syr" 
+xst -intstyle ise -ifn "/home/apalma/Garage/vhdl/CPx/CPx2.xst" -ofn "/home/apalma/Garage/vhdl/CPx/CPx2.syr" 
+ngdbuild -intstyle ise -dd _ngo -uc CPx.ucf -p xc2c32a-CV64-4 CPx2.ngc CPx2.ngd  
+cpldfit -intstyle ise -p xc2c32a-4-CV64 -ofmt vhdl -optimize density -htmlrpt -loc on -slew fast -init low -inputs 32 -pterms 28 -unused keeper -terminate keeper -iostd LVCMOS18 CPx2.ngd 
+XSLTProcess CPx2_build.xml 
+tsim -intstyle ise CPx2 CPx2.nga 
+hprep6 -s IEEE1149 -i CPx2 
+xst -intstyle ise -ifn "/home/apalma/Garage/vhdl/CPx/CPx2.xst" -ofn "/home/apalma/Garage/vhdl/CPx/CPx2.syr" 
+xst -intstyle ise -ifn "/home/apalma/Garage/vhdl/CPx/CPx2.xst" -ofn "/home/apalma/Garage/vhdl/CPx/CPx2.syr" 
+ngdbuild -intstyle ise -dd _ngo -uc CPx.ucf -p xc2c32a-CV64-4 CPx2.ngc CPx2.ngd  
+cpldfit -intstyle ise -p xc2c32a-4-CV64 -ofmt vhdl -optimize density -htmlrpt -loc on -slew fast -init low -inputs 32 -pterms 28 -unused keeper -terminate keeper -iostd LVCMOS18 CPx2.ngd 
+tsim -intstyle ise CPx2 CPx2.nga 
+hprep6 -s IEEE1149 -i CPx2 
+xst -intstyle ise -ifn "/home/apalma/Garage/vhdl/CPx/CPx2.xst" -ofn "/home/apalma/Garage/vhdl/CPx/CPx2.syr" 
+xst -intstyle ise -ifn "/home/apalma/Garage/vhdl/CPx/CPx2.xst" -ofn "/home/apalma/Garage/vhdl/CPx/CPx2.syr" 
+xst -intstyle ise -ifn "/home/apalma/Garage/vhdl/CPx/CPx2.xst" -ofn "/home/apalma/Garage/vhdl/CPx/CPx2.syr" 
+ngdbuild -intstyle ise -dd _ngo -uc CPx.ucf -p xc2c32a-CV64-4 CPx2.ngc CPx2.ngd  
+cpldfit -intstyle ise -p xc2c32a-4-CV64 -ofmt vhdl -optimize density -htmlrpt -loc on -slew fast -init low -inputs 32 -pterms 28 -unused keeper -terminate keeper -iostd LVCMOS18 CPx2.ngd 
+xst -intstyle ise -ifn "/home/apalma/Garage/vhdl/CPx/CPx2.xst" -ofn "/home/apalma/Garage/vhdl/CPx/CPx2.syr" 
+ngdbuild -intstyle ise -dd _ngo -uc CPx.ucf -p xcr3064xl-PC44-6 CPx2.ngc CPx2.ngd  
+cpldfit -intstyle ise -p xcr3064xl-6-PC44 -ofmt vhdl -optimize density -htmlrpt -loc on -slew fast -init low -inputs 32 -unused pullup -terminate float -pterms 28 -nofbnand CPx2.ngd 
+xst -intstyle ise -ifn "/home/apalma/Garage/vhdl/CPx/CPx2.xst" -ofn "/home/apalma/Garage/vhdl/CPx/CPx2.syr" 
+ngdbuild -intstyle ise -dd _ngo -uc CPx.ucf -p xcr3064xl-VQ100-6 CPx2.ngc CPx2.ngd  
+cpldfit -intstyle ise -p xcr3064xl-6-VQ100 -ofmt vhdl -optimize density -htmlrpt -loc on -slew fast -init low -inputs 32 -unused pullup -terminate float -pterms 28 -nofbnand CPx2.ngd 
+tsim -intstyle ise CPx2 CPx2.nga 
+hprep6 -i CPx2 
+xst -intstyle ise -ifn "/home/apalma/Garage/vhdl/CPx/CPx2.xst" -ofn "/home/apalma/Garage/vhdl/CPx/CPx2.syr" 
+xst -intstyle ise -ifn "/home/apalma/Garage/vhdl/CPx/CPx2.xst" -ofn "/home/apalma/Garage/vhdl/CPx/CPx2.syr" 
+xst -intstyle ise -ifn "/home/apalma/Garage/vhdl/CPx/CPx2.xst" -ofn "/home/apalma/Garage/vhdl/CPx/CPx2.syr" 
+ngdbuild -intstyle ise -dd _ngo -uc CPx.ucf -p xcr3064xl-VQ100-6 CPx2.ngc CPx2.ngd  
+cpldfit -intstyle ise -p xcr3064xl-6-VQ100 -ofmt vhdl -optimize density -htmlrpt -loc on -slew fast -init low -inputs 32 -unused pullup -terminate float -pterms 28 -nofbnand CPx2.ngd 
+tsim -intstyle ise CPx2 CPx2.nga 
+hprep6 -i CPx2 
+xst -intstyle ise -ifn "/host/Garage/Garage/vhdl/CPx/CPx2.xst" -ofn "/host/Garage/Garage/vhdl/CPx/CPx2.syr" 
+xst -intstyle ise -ifn "/host/Garage/Garage/vhdl/CPx/CPx2.xst" -ofn "/host/Garage/Garage/vhdl/CPx/CPx2.syr" 
+xst -intstyle ise -ifn "/host/Garage/Garage/vhdl/CPx/CPx2.xst" -ofn "/host/Garage/Garage/vhdl/CPx/CPx2.syr" 
+xst -intstyle ise -ifn "/host/Garage/Garage/vhdl/CPx/CPx2.xst" -ofn "/host/Garage/Garage/vhdl/CPx/CPx2.syr" 
+xst -intstyle ise -ifn "/host/Garage/Garage/vhdl/CPx/CPx2.xst" -ofn "/host/Garage/Garage/vhdl/CPx/CPx2.syr" 
+xst -intstyle ise -ifn "/host/Garage/Garage/vhdl/CPx/CPx2.xst" -ofn "/host/Garage/Garage/vhdl/CPx/CPx2.syr" 
+xst -intstyle ise -ifn "/host/Garage/Garage/vhdl/CPx/CPx2.xst" -ofn "/host/Garage/Garage/vhdl/CPx/CPx2.syr" 
+xst -intstyle ise -ifn "/host/Garage/Garage/vhdl/CPx/CPx2.xst" -ofn "/host/Garage/Garage/vhdl/CPx/CPx2.syr" 
+ngdbuild -intstyle ise -dd _ngo -uc CPx.ucf -p xcr3064xl-VQ100-6 CPx2.ngc CPx2.ngd  
+cpldfit -intstyle ise -p xcr3064xl-6-VQ100 -ofmt vhdl -optimize density -htmlrpt -loc on -slew fast -init low -inputs 32 -unused pullup -terminate float -pterms 28 -nofbnand CPx2.ngd 
+tsim -intstyle ise CPx2 CPx2.nga 
+hprep6 -i CPx2 
+xst -intstyle ise -ifn "/host/Garage/Garage/vhdl/CPx/CPx2.xst" -ofn "/host/Garage/Garage/vhdl/CPx/CPx2.syr" 
+ngdbuild -intstyle ise -dd _ngo -uc CPx.ucf -p xcr3064xl-VQ100-6 CPx2.ngc CPx2.ngd  
+cpldfit -intstyle ise -p xcr3064xl-6-VQ100 -ofmt vhdl -optimize density -htmlrpt -loc on -slew fast -init low -inputs 32 -unused pullup -terminate float -pterms 28 -nofbnand CPx2.ngd 
+tsim -intstyle ise CPx2 CPx2.nga 
+hprep6 -i CPx2 

@@ -1,0 +1,106 @@
+MDF Database:  version 1.0
+MDF_INFO | a_gal | XC2C32A-4-PC44
+MACROCELL | 0 | 3 | automap_MC
+ATTRIBUTES | 8684290 | 0
+INPUTS | 1 | sig_mapcond
+INPUTMC | 1 | 0 | 15
+EQ | 2 | 
+   automap := sig_mapcond;	// (1 pt, 1 inp)
+   automap.CLK  =  CLOCK;	// GCK	(0 pt, 0 inp)
+GLOBALS | 1 | 2 | CLOCK
+
+MACROCELL | 0 | 15 | sig_mapcond_MC
+ATTRIBUTES | 2151711488 | 0
+OUTPUTMC | 3 | 0 | 15 | 0 | 3 | 0 | 4
+INPUTS | 17 | sig_mapcond  | A<7>  | A<5>  | A<4>  | A<3>  | A<13>  | A<12>  | A<11>  | A<10>  | romacc  | M1  | A<9>  | A<8>  | A<6>  | A<1>  | A<0>  | A<2>
+INPUTMC | 1 | 0 | 15
+INPUTP | 16 | 6 | 31 | 32 | 33 | 39 | 40 | 41 | 42 | 11 | 9 | 8 | 7 | 30 | 38 | 43 | 34
+EQ | 19 | 
+   sig_mapcond.T := sig_mapcond & A<7> & A<5> & A<4> & A<3> & 
+	!A<13> & A<12> & A<11> & A<10> & romacc & M1 & A<9> & 
+	A<8> & A<6>
+	# !sig_mapcond & !A<7> & !A<5> & !A<4> & !A<13> & 
+	!A<12> & !A<11> & !A<10> & romacc & M1 & !A<9> & !A<8> & 
+	!A<6> & !A<1> & !A<0> & !A<2>
+	# !sig_mapcond & A<7> & !A<5> & !A<4> & !A<3> & 
+	!A<13> & !A<12> & !A<11> & A<10> & romacc & M1 & !A<9> & 
+	!A<8> & A<6> & A<1> & !A<0> & A<2>
+	# !sig_mapcond & !A<7> & A<5> & A<4> & A<3> & 
+	!A<13> & !A<12> & !A<11> & !A<10> & romacc & M1 & !A<9> & 
+	!A<8> & !A<6> & !A<1> & !A<0> & !A<2>
+	# !sig_mapcond & !A<7> & A<5> & !A<4> & !A<3> & 
+	!A<13> & !A<12> & !A<11> & A<10> & romacc & M1 & !A<9> & 
+	A<8> & A<6> & A<1> & !A<0> & !A<2>
+	# !sig_mapcond & !A<7> & A<5> & !A<4> & !A<3> & 
+	!A<13> & !A<12> & !A<11> & !A<10> & romacc & M1 & !A<9> & 
+	!A<8> & A<6> & A<1> & !A<0> & A<2>;	// (6 pt, 17 inp)
+   sig_mapcond.CLK  =  CLOCK;	// GCK	(0 pt, 0 inp)
+GLOBALS | 1 | 2 | CLOCK
+
+MACROCELL | 0 | 1 | ideio0_MC
+ATTRIBUTES | 1074004738 | 0
+INPUTS | 7 | A<7>  | A<5>  | A<4>  | A<3>  | A<1>  | A<0>  | A<2>
+INPUTP | 7 | 6 | 31 | 32 | 33 | 38 | 43 | 34
+EQ | 2 | 
+   ideio0 = A<7> & A<5> & !A<4> & !A<3> & A<1> & A<0> & 
+	!A<2>;	// (1 pt, 7 inp)
+
+MACROCELL | 0 | 2 | ideio1_MC
+ATTRIBUTES | 1074004738 | 0
+INPUTS | 5 | A<7>  | A<5>  | A<6>  | A<1>  | A<0>
+INPUTP | 5 | 6 | 31 | 30 | 38 | 43
+EQ | 1 | 
+   ideio1 = A<7> & A<5> & !A<6> & A<1> & A<0>;	// (1 pt, 5 inp)
+
+MACROCELL | 0 | 4 | mapcond_MC
+ATTRIBUTES | 8684290 | 0
+INPUTS | 1 | sig_mapcond
+INPUTMC | 1 | 0 | 15
+EQ | 2 | 
+   mapcond := sig_mapcond;	// (1 pt, 1 inp)
+   mapcond.CLK  =  CLOCK;	// GCK	(0 pt, 0 inp)
+GLOBALS | 1 | 2 | CLOCK
+
+MACROCELL | 0 | 0 | mapterm_MC
+ATTRIBUTES | 1074004738 | 0
+INPUTS | 16 | A<7>  | A<5>  | A<4>  | A<13>  | A<12>  | A<11>  | A<10>  | romacc  | M1  | A<9>  | A<8>  | A<6>  | A<1>  | A<0>  | A<2>  | A<3>
+INPUTP | 16 | 6 | 31 | 32 | 39 | 40 | 41 | 42 | 11 | 9 | 8 | 7 | 30 | 38 | 43 | 34 | 33
+EQ | 15 | 
+   mapterm = !A<7> & !A<5> & !A<4> & !A<13> & !A<12> & !A<11> & 
+	!A<10> & romacc & M1 & !A<9> & !A<8> & !A<6> & !A<1> & 
+	!A<0> & !A<2>
+	# A<7> & !A<5> & !A<4> & !A<3> & !A<13> & !A<12> & 
+	!A<11> & A<10> & romacc & M1 & !A<9> & !A<8> & A<6> & 
+	A<1> & !A<0> & A<2>
+	# !A<7> & A<5> & A<4> & A<3> & !A<13> & !A<12> & 
+	!A<11> & !A<10> & romacc & M1 & !A<9> & !A<8> & !A<6> & 
+	!A<1> & !A<0> & !A<2>
+	# !A<7> & A<5> & !A<4> & !A<3> & !A<13> & !A<12> & 
+	!A<11> & A<10> & romacc & M1 & !A<9> & A<8> & A<6> & 
+	A<1> & !A<0> & !A<2>
+	# !A<7> & A<5> & !A<4> & !A<3> & !A<13> & !A<12> & 
+	!A<11> & !A<10> & romacc & M1 & !A<9> & !A<8> & A<6> & 
+	A<1> & !A<0> & A<2>;	// (5 pt, 16 inp)
+
+PIN | A<0> | 64 | 16 | LVCMOS18 | 43 | 4 | 0 | 15 | 0 | 1 | 0 | 2 | 0 | 0
+PIN | A<10> | 64 | 16 | LVCMOS18 | 42 | 2 | 0 | 15 | 0 | 0
+PIN | A<11> | 64 | 16 | LVCMOS18 | 41 | 2 | 0 | 15 | 0 | 0
+PIN | A<12> | 64 | 16 | LVCMOS18 | 40 | 2 | 0 | 15 | 0 | 0
+PIN | A<13> | 64 | 16 | LVCMOS18 | 39 | 2 | 0 | 15 | 0 | 0
+PIN | A<1> | 64 | 16 | LVCMOS18 | 38 | 4 | 0 | 15 | 0 | 1 | 0 | 2 | 0 | 0
+PIN | A<2> | 64 | 16 | LVCMOS18 | 34 | 3 | 0 | 15 | 0 | 1 | 0 | 0
+PIN | A<3> | 64 | 16 | LVCMOS18 | 33 | 3 | 0 | 15 | 0 | 1 | 0 | 0
+PIN | A<4> | 64 | 16 | LVCMOS18 | 32 | 3 | 0 | 15 | 0 | 1 | 0 | 0
+PIN | A<5> | 64 | 16 | LVCMOS18 | 31 | 4 | 0 | 15 | 0 | 1 | 0 | 2 | 0 | 0
+PIN | A<6> | 64 | 16 | LVCMOS18 | 30 | 3 | 0 | 15 | 0 | 2 | 0 | 0
+PIN | A<7> | 64 | 16 | LVCMOS18 | 6 | 4 | 0 | 15 | 0 | 1 | 0 | 2 | 0 | 0
+PIN | A<8> | 64 | 16 | LVCMOS18 | 7 | 2 | 0 | 15 | 0 | 0
+PIN | A<9> | 64 | 16 | LVCMOS18 | 8 | 2 | 0 | 15 | 0 | 0
+PIN | CLOCK | 4096 | 16 | LVCMOS18 | 10 | 3 | 0 | 15 | 0 | 3 | 0 | 4
+PIN | M1 | 64 | 16 | LVCMOS18 | 9 | 2 | 0 | 15 | 0 | 0
+PIN | romacc | 64 | 16 | LVCMOS18 | 11 | 2 | 0 | 15 | 0 | 0
+PIN | automap | 536871040 | 0 | LVCMOS18 | 1
+PIN | ideio0 | 536871040 | 0 | LVCMOS18 | 4
+PIN | ideio1 | 536871040 | 0 | LVCMOS18 | 3
+PIN | mapcond | 536871040 | 0 | LVCMOS18 | 44
+PIN | mapterm | 536871040 | 0 | LVCMOS18 | 5

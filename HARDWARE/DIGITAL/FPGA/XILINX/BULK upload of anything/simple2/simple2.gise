@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<generated_project xmlns="http://www.xilinx.com/XMLSchema" xmlns:xil_pn="http://www.xilinx.com/XMLSchema">
+
+  <!--                                                          -->
+
+  <!--             For tool use only. Do not edit.              -->
+
+  <!--                                                          -->
+
+  <!-- ProjectNavigator created generated project file.         -->
+
+  <!-- For use in tracking generated file and other information -->
+
+  <!-- allowing preservation of process status.                 -->
+
+  <!--                                                          -->
+
+  <!-- Copyright (c) 1995-2011 Xilinx, Inc.  All rights reserved. -->
+
+  <version xmlns="http://www.xilinx.com/XMLSchema">11.1</version>
+
+  <sourceproject xmlns="http://www.xilinx.com/XMLSchema" xil_pn:fileType="FILE_XISE" xil_pn:name="simple2.xise"/>
+
+  <files xmlns="http://www.xilinx.com/XMLSchema">
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_LSO" xil_pn:name=".lso"/>
+    <file xil_pn:fileType="FILE_DIRECTORY" xil_pn:name="_ngo"/>
+    <file xil_pn:fileType="FILE_XMSGS" xil_pn:name="_xmsgs/ngdbuild.xmsgs"/>
+    <file xil_pn:fileType="FILE_XMSGS" xil_pn:name="_xmsgs/xst.xmsgs"/>
+    <file xil_pn:fileType="FILE_SPL" xil_pn:name="a1.spl"/>
+    <file xil_pn:fileType="FILE_SYMBOL" xil_pn:name="a1.sym" xil_pn:origination="imported"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGDBUILD_LOG" xil_pn:name="composite.bld"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_CHK" xil_pn:name="composite.chk"/>
+    <file xil_pn:fileType="FILE_CMD_LOG" xil_pn:name="composite.cmd_log"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_CXT" xil_pn:name="composite.cxt"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_GYD" xil_pn:name="composite.gyd"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_JEDEC" xil_pn:name="composite.jed"/>
+    <file xil_pn:fileType="FILE_LOG" xil_pn:name="composite.log"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_LSO" xil_pn:name="composite.lso"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_MFD" xil_pn:name="composite.mfd"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGA" xil_pn:name="composite.nga"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGC" xil_pn:name="composite.ngc"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGD" xil_pn:name="composite.ngd"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGR" xil_pn:name="composite.ngr"/>
+    <file xil_pn:fileType="FILE_PAD_MISC" xil_pn:name="composite.pad"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_PNX" xil_pn:name="composite.pnx"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="composite.prj"/>
+    <file xil_pn:fileType="FILE_FITTER_REPORT" xil_pn:name="composite.rpt"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_STX" xil_pn:name="composite.stx"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_REPORT" xil_pn:name="composite.syr"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_VM6" xil_pn:name="composite.vm6"/>
+    <file xil_pn:fileType="FILE_FITTER_REPORT" xil_pn:name="composite.xml"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST" xil_pn:name="composite.xst"/>
+    <file xil_pn:fileType="FILE_FITTER_REPORT" xil_pn:name="composite_build.xml"/>
+    <file xil_pn:fileType="FILE_HTML" xil_pn:name="composite_envsettings.html"/>
+    <file xil_pn:fileType="FILE_DIRECTORY" xil_pn:name="composite_html"/>
+    <file xil_pn:fileType="FILE_XRPT" xil_pn:name="composite_ngdbuild.xrpt"/>
+    <file xil_pn:fileType="FILE_PAD_EXCEL_REPORT" xil_pn:name="composite_pad.csv"/>
+    <file xil_pn:fileType="FILE_HTML" xil_pn:name="composite_summary.html"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="composite_vhdl.prj"/>
+    <file xil_pn:fileType="FILE_XRPT" xil_pn:name="composite_xst.xrpt"/>
+    <file xil_pn:fileType="FILE_DIRECTORY" xil_pn:name="isim"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGDBUILD_LOG" xil_pn:name="module.bld"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_CHK" xil_pn:name="module.chk"/>
+    <file xil_pn:fileType="FILE_CMD_LOG" xil_pn:name="module.cmd_log"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_CXT" xil_pn:name="module.cxt"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_GYD" xil_pn:name="module.gyd"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_JEDEC" xil_pn:name="module.jed"/>
+    <file xil_pn:fileType="FILE_LOG" xil_pn:name="module.log"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_LSO" xil_pn:name="module.lso"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_MFD" xil_pn:name="module.mfd"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGA" xil_pn:name="module.nga"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGC" xil_pn:name="module.ngc"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGD" xil_pn:name="module.ngd"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGR" xil_pn:name="module.ngr"/>
+    <file xil_pn:fileType="FILE_PAD_MISC" xil_pn:name="module.pad"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_PNX" xil_pn:name="module.pnx"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="module.prj"/>
+    <file xil_pn:fileType="FILE_FITTER_REPORT" xil_pn:name="module.rpt"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_STX" xil_pn:name="module.stx"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_REPORT" xil_pn:name="module.syr"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_VM6" xil_pn:name="module.vm6"/>
+    <file xil_pn:fileType="FILE_FITTER_REPORT" xil_pn:name="module.xml"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST" xil_pn:name="module.xst"/>
+    <file xil_pn:fileType="FILE_FITTER_REPORT" xil_pn:name="module_build.xml"/>
+    <file xil_pn:fileType="FILE_HTML" xil_pn:name="module_envsettings.html"/>
+    <file xil_pn:fileType="FILE_DIRECTORY" xil_pn:name="module_html"/>
+    <file xil_pn:fileType="FILE_XRPT" xil_pn:name="module_ngdbuild.xrpt"/>
+    <file xil_pn:fileType="FILE_PAD_EXCEL_REPORT" xil_pn:name="module_pad.csv"/>
+    <file xil_pn:fileType="FILE_HTML" xil_pn:name="module_summary.html"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="module_vhdl.prj"/>
+    <file xil_pn:fileType="FILE_XRPT" xil_pn:name="module_xst.xrpt"/>
+    <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="testModule_stx_beh.prj"/>
+    <file xil_pn:fileType="FILE_FITTER_REPORT" xil_pn:name="webtalk_pn.xml"/>
+    <file xil_pn:fileType="FILE_INI" xil_pn:name="xilinxsim.ini"/>
+    <file xil_pn:fileType="FILE_DIRECTORY" xil_pn:name="xlnx_auto_0_xdb"/>
+    <file xil_pn:fileType="FILE_DIRECTORY" xil_pn:name="xst"/>
+  </files>
+
+  <transforms xmlns="http://www.xilinx.com/XMLSchema">
+    <transform xil_pn:end_ts="1322585827" xil_pn:name="TRANEXT_compLibraries_CPLD" xil_pn:prop_ck="635986081690273460" xil_pn:start_ts="1322585826">
+      <status xil_pn:value="FailedRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1322585761" xil_pn:name="TRAN_copyInitialToAbstractSimulation" xil_pn:start_ts="1322585761">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1327511416" xil_pn:in_ck="-3641960611580141460" xil_pn:name="TRAN_copyAbstractToPostAbstractSimulation" xil_pn:start_ts="1327511416">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <outfile xil_pn:name="module.vhd"/>
+      <outfile xil_pn:name="testModule.vhd"/>
+    </transform>
+    <transform xil_pn:end_ts="1327511419" xil_pn:in_ck="1321181855543978384" xil_pn:name="TRAN_schematicsToHdlSim" xil_pn:prop_ck="6725769144792923044" xil_pn:start_ts="1327511416">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1327511419" xil_pn:in_ck="-3641960611580141460" xil_pn:name="TRAN_copyPostAbstractToPreSimulation" xil_pn:start_ts="1327511419">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <outfile xil_pn:name="module.vhd"/>
+      <outfile xil_pn:name="testModule.vhd"/>
+    </transform>
+    <transform xil_pn:end_ts="1327511421" xil_pn:in_ck="-3641960611580141460" xil_pn:name="TRAN_ISimulateBehavioralModelRunFuse" xil_pn:prop_ck="4410173866628679106" xil_pn:start_ts="1327511419">
+      <status xil_pn:value="FailedRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1322240589" xil_pn:name="TRAN_copyInitialToXSTAbstractSynthesis" xil_pn:start_ts="1322240588">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1322586167" xil_pn:in_ck="1321181855543978384" xil_pn:name="TRAN_schematicsToHdl" xil_pn:prop_ck="-9022906839665290780" xil_pn:start_ts="1322586165">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForInputs"/>
+      <status xil_pn:value="OutOfDateForProperties"/>
+      <status xil_pn:value="InputChanged"/>
+    </transform>
+    <transform xil_pn:end_ts="1322585677" xil_pn:in_ck="5219380450673302" xil_pn:name="TRANEXT_xstsynthesize_xbr" xil_pn:prop_ck="123181884874490334" xil_pn:start_ts="1322585667">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="WarningsGenerated"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForProperties"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
+      <outfile xil_pn:name=".lso"/>
+      <outfile xil_pn:name="_xmsgs/xst.xmsgs"/>
+      <outfile xil_pn:name="module.lso"/>
+      <outfile xil_pn:name="module.ngc"/>
+      <outfile xil_pn:name="module.ngr"/>
+      <outfile xil_pn:name="module.prj"/>
+      <outfile xil_pn:name="module.stx"/>
+      <outfile xil_pn:name="module.syr"/>
+      <outfile xil_pn:name="module.xst"/>
+      <outfile xil_pn:name="module_xst.xrpt"/>
+      <outfile xil_pn:name="webtalk_pn.xml"/>
+      <outfile xil_pn:name="xst"/>
+    </transform>
+    <transform xil_pn:end_ts="1322585677" xil_pn:name="TRAN_compileBCD2" xil_pn:prop_ck="7184953330122499838" xil_pn:start_ts="1322585677">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForProperties"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
+    </transform>
+    <transform xil_pn:end_ts="1322585686" xil_pn:in_ck="-7652144144428874939" xil_pn:name="TRAN_ngdbuild" xil_pn:prop_ck="1688887409924995895" xil_pn:start_ts="1322585677">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
+      <outfile xil_pn:name="_ngo"/>
+      <outfile xil_pn:name="_xmsgs/ngdbuild.xmsgs"/>
+      <outfile xil_pn:name="module.bld"/>
+      <outfile xil_pn:name="module.ngd"/>
+      <outfile xil_pn:name="module_ngdbuild.xrpt"/>
+    </transform>
+    <transform xil_pn:end_ts="1322585700" xil_pn:in_ck="-7650612565443610489" xil_pn:name="TRANEXT_vm6File_xbr" xil_pn:prop_ck="8445348705289232209" xil_pn:start_ts="1322585686">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForProperties"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
+      <status xil_pn:value="OutOfDateForOutputs"/>
+      <status xil_pn:value="OutputChanged"/>
+      <outfile xil_pn:name="module.chk"/>
+      <outfile xil_pn:name="module.cxt"/>
+      <outfile xil_pn:name="module.gyd"/>
+      <outfile xil_pn:name="module.log"/>
+      <outfile xil_pn:name="module.mfd"/>
+      <outfile xil_pn:name="module.nga"/>
+      <outfile xil_pn:name="module.pad"/>
+      <outfile xil_pn:name="module.pnx"/>
+      <outfile xil_pn:name="module.rpt"/>
+      <outfile xil_pn:name="module.vm6"/>
+      <outfile xil_pn:name="module.xml"/>
+      <outfile xil_pn:name="module_build.xml"/>
+      <outfile xil_pn:name="module_html"/>
+      <outfile xil_pn:name="module_pad.csv"/>
+    </transform>
+    <transform xil_pn:end_ts="1322585703" xil_pn:in_ck="5925303559940474311" xil_pn:name="TRANEXT_crtProg_xbr" xil_pn:prop_ck="5245363024343" xil_pn:start_ts="1322585700">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
+      <outfile xil_pn:name="module.jed"/>
+    </transform>
+    <transform xil_pn:end_ts="1322585892" xil_pn:in_ck="-6666932081719317773" xil_pn:name="TRANEXT_XPower_xpla3" xil_pn:prop_ck="5712156572398865" xil_pn:start_ts="1322585892">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
+      <outfile xil_pn:name="module.cxt"/>
+    </transform>
+    <transform xil_pn:end_ts="1322585700" xil_pn:in_ck="5925303559940474311" xil_pn:name="TRAN_timRpt" xil_pn:prop_ck="111903974446" xil_pn:start_ts="1322585696">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="WarningsGenerated"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
+    </transform>
+  </transforms>
+
+</generated_project>

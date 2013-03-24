@@ -1,0 +1,216 @@
+MDF Database:  version 1.0
+MDF_INFO | CPx2 | XC2C128-6-VQ100
+MACROCELL | 0 | 2 | BANK<0>_MC
+ATTRIBUTES | 8684354 | 0
+INPUTS | 10 | D<0>  | A<7>  | A<6>  | A<5>  | A<4>  | A<3>  | N_M1  | A<1>  | A<0>  | A<2>
+INPUTP | 10 | 115 | 118 | 120 | 121 | 122 | 123 | 42 | 2 | 24 | 125
+EQ | 4 | 
+   BANK<0> := D<0>;	// (1 pt, 1 inp)
+   BANK<0>.CLK  =  N_WR;	// GCK	(0 pt, 0 inp)
+    BANK<0>.CE = A<7> & A<6> & A<5> & !A<4> & !A<3> & N_M1 & 
+	A<1> & A<0> & !A<2>;	// (1 pt, 9 inp)
+GLOBALS | 1 | 2 | N_WR
+
+MACROCELL | 0 | 3 | BANK<1>_MC
+ATTRIBUTES | 8684354 | 0
+INPUTS | 10 | D<1>  | A<7>  | A<6>  | A<5>  | A<4>  | A<3>  | N_M1  | A<1>  | A<0>  | A<2>
+INPUTP | 10 | 34 | 118 | 120 | 121 | 122 | 123 | 42 | 2 | 24 | 125
+EQ | 4 | 
+   BANK<1> := D<1>;	// (1 pt, 1 inp)
+   BANK<1>.CLK  =  N_WR;	// GCK	(0 pt, 0 inp)
+    BANK<1>.CE = A<7> & A<6> & A<5> & !A<4> & !A<3> & N_M1 & 
+	A<1> & A<0> & !A<2>;	// (1 pt, 9 inp)
+GLOBALS | 1 | 2 | N_WR
+
+MACROCELL | 0 | 4 | BANK<2>_MC
+ATTRIBUTES | 8684354 | 0
+INPUTS | 10 | D<2>  | A<7>  | A<6>  | A<5>  | A<4>  | A<3>  | N_M1  | A<1>  | A<0>  | A<2>
+INPUTP | 10 | 37 | 118 | 120 | 121 | 122 | 123 | 42 | 2 | 24 | 125
+EQ | 4 | 
+   BANK<2> := D<2>;	// (1 pt, 1 inp)
+   BANK<2>.CLK  =  N_WR;	// GCK	(0 pt, 0 inp)
+    BANK<2>.CE = A<7> & A<6> & A<5> & !A<4> & !A<3> & N_M1 & 
+	A<1> & A<0> & !A<2>;	// (1 pt, 9 inp)
+GLOBALS | 1 | 2 | N_WR
+
+MACROCELL | 0 | 5 | BANK<3>_MC
+ATTRIBUTES | 8684354 | 0
+INPUTS | 10 | D<3>  | A<7>  | A<6>  | A<5>  | A<4>  | A<3>  | N_M1  | A<1>  | A<0>  | A<2>
+INPUTP | 10 | 38 | 118 | 120 | 121 | 122 | 123 | 42 | 2 | 24 | 125
+EQ | 4 | 
+   BANK<3> := D<3>;	// (1 pt, 1 inp)
+   BANK<3>.CLK  =  N_WR;	// GCK	(0 pt, 0 inp)
+    BANK<3>.CE = A<7> & A<6> & A<5> & !A<4> & !A<3> & N_M1 & 
+	A<1> & A<0> & !A<2>;	// (1 pt, 9 inp)
+GLOBALS | 1 | 2 | N_WR
+
+MACROCELL | 0 | 10 | BANK<4>_MC
+ATTRIBUTES | 8684354 | 0
+INPUTS | 10 | D<4>  | A<7>  | A<6>  | A<5>  | A<4>  | A<3>  | N_M1  | A<1>  | A<0>  | A<2>
+INPUTP | 10 | 40 | 118 | 120 | 121 | 122 | 123 | 42 | 2 | 24 | 125
+EQ | 4 | 
+   BANK<4> := D<4>;	// (1 pt, 1 inp)
+   BANK<4>.CLK  =  N_WR;	// GCK	(0 pt, 0 inp)
+    BANK<4>.CE = A<7> & A<6> & A<5> & !A<4> & !A<3> & N_M1 & 
+	A<1> & A<0> & !A<2>;	// (1 pt, 9 inp)
+GLOBALS | 1 | 2 | N_WR
+
+MACROCELL | 0 | 11 | N_EEPROMCS_MC
+ATTRIBUTES | 1610875650 | 0
+OUTPUTMC | 3 | 1 | 3 | 1 | 1 | 0 | 15
+INPUTS | 4 | A<12>  | A<13>  | S_MAPRAM  | S_CONMEM
+INPUTMC | 2 | 0 | 0 | 0 | 13
+INPUTP | 2 | 33 | 3
+EQ | 1 | 
+   !N_EEPROMCS = !A<12> & !A<13> & !S_MAPRAM & S_CONMEM;	// (1 pt, 4 inp)
+
+MACROCELL | 0 | 0 | S_MAPRAM_MC
+ATTRIBUTES | 545293120 | 5
+OUTPUTMC | 3 | 0 | 11 | 0 | 12 | 0 | 14
+INPUTS | 16 | A<7>  | A<6>  | A<5>  | A<4>  | A<3>  | N_M1  | A<1>  | A<0>  | A<2>  | A<12>  | A<13>  | A<11>  | A<10>  | A<9>  | A<8>  | N_ROMCS
+INPUTMC | 1 | 1 | 3
+INPUTP | 15 | 118 | 120 | 121 | 122 | 123 | 42 | 2 | 24 | 125 | 33 | 3 | 30 | 29 | 116 | 117
+EQ | 26 | 
+   S_MAPRAM.COMB =  A<7> & A<6> & A<5> & A<4> & A<3> & !N_M1 & 
+	A<1> & A<0> & A<2> & A<12> & !A<13> & A<11> & A<10> & 
+	A<9> & A<8>
+	# A<7> & A<6> & A<5> & A<4> & A<3> & !N_M1 & 
+	!A<1> & !A<0> & !A<2> & A<12> & !A<13> & A<11> & A<10> & 
+	A<9> & A<8>
+	# !A<7> & !A<6> & !A<5> & !A<4> & !N_M1 & !A<1> & 
+	!A<0> & !A<2> & !A<12> & !A<13> & !A<11> & !A<10> & !A<9> & 
+	!A<8> & N_ROMCS
+	# A<7> & A<6> & !A<5> & !A<4> & !A<3> & !N_M1 & 
+	A<1> & !A<0> & A<2> & !A<12> & !A<13> & !A<11> & A<10> & 
+	!A<9> & !A<8> & N_ROMCS
+	# !A<7> & A<6> & A<5> & !A<4> & !A<3> & !N_M1 & 
+	A<1> & !A<0> & A<2> & !A<12> & !A<13> & !A<11> & !A<10> & 
+	!A<9> & !A<8> & N_ROMCS
+	# !A<7> & A<6> & A<5> & !A<4> & !A<3> & !N_M1 & 
+	A<1> & !A<0> & !A<2> & !A<12> & !A<13> & !A<11> & A<10> & 
+	!A<9> & A<8> & N_ROMCS
+	# !A<7> & !A<6> & A<5> & A<4> & A<3> & !N_M1 & 
+	!A<1> & !A<0> & !A<2> & !A<12> & !A<13> & !A<11> & !A<10> & 
+	!A<9> & !A<8> & N_ROMCS;	// (7 pt, 16 inp)
+// Direct Input Register
+S_MAPRAM := D<6>;	// (0 pt, 0 inp)
+   S_MAPRAM.CLK  =  N_WR;	// GCK	(0 pt, 0 inp)
+    S_MAPRAM.CE = A<7> & A<6> & A<5> & !A<4> & !A<3> & N_M1 & 
+	A<1> & A<0> & !A<2>;	// (1 pt, 9 inp)
+GLOBALS | 1 | 2 | N_WR
+
+MACROCELL | 0 | 13 | S_CONMEM_MC
+ATTRIBUTES | 2290090752 | 0
+OUTPUTMC | 5 | 1 | 3 | 0 | 11 | 0 | 15 | 0 | 12 | 0 | 14
+INPUTS | 16 | A<7>  | A<6>  | A<5>  | A<4>  | N_M1  | A<1>  | A<0>  | A<2>  | A<12>  | A<13>  | A<11>  | A<10>  | A<9>  | A<8>  | N_ROMCS  | A<3>
+INPUTMC | 1 | 1 | 3
+INPUTP | 15 | 118 | 120 | 121 | 122 | 42 | 2 | 24 | 125 | 33 | 3 | 30 | 29 | 116 | 117 | 123
+LCT | 1 | 2 | Internal_Name
+EQ | 16 | 
+   S_CONMEM := !A<7> & !A<6> & !A<5> & !A<4> & !N_M1 & !A<1> & 
+	!A<0> & !A<2> & !A<12> & !A<13> & !A<11> & !A<10> & !A<9> & 
+	!A<8> & N_ROMCS
+	# A<7> & A<6> & !A<5> & !A<4> & !A<3> & !N_M1 & 
+	A<1> & !A<0> & A<2> & !A<12> & !A<13> & !A<11> & A<10> & 
+	!A<9> & !A<8> & N_ROMCS
+	# !A<7> & A<6> & A<5> & !A<4> & !A<3> & !N_M1 & 
+	A<1> & !A<0> & A<2> & !A<12> & !A<13> & !A<11> & !A<10> & 
+	!A<9> & !A<8> & N_ROMCS
+	# !A<7> & A<6> & A<5> & !A<4> & !A<3> & !N_M1 & 
+	A<1> & !A<0> & !A<2> & !A<12> & !A<13> & !A<11> & A<10> & 
+	!A<9> & A<8> & N_ROMCS
+	# !A<7> & !A<6> & A<5> & A<4> & A<3> & !N_M1 & 
+	!A<1> & !A<0> & !A<2> & !A<12> & !A<13> & !A<11> & !A<10> & 
+	!A<9> & !A<8> & N_ROMCS;	// (5 pt, 16 inp)
+    S_CONMEM.CLK = S_MAPRAM.COMB;	// CTC	(1 pt, 1 inp)
+
+MACROCELL | 1 | 3 | N_ROMCS_MC
+ATTRIBUTES | 1610875650 | 0
+OUTPUTMC | 2 | 0 | 13 | 0 | 0
+INPUTS | 3 | S_CONMEM  | N_MREQ  | N_EEPROMCS
+INPUTMC | 2 | 0 | 13 | 0 | 11
+INPUTP | 1 | 22
+EQ | 2 | 
+   N_ROMCS = !S_CONMEM
+	# N_MREQ & N_EEPROMCS;	// (2 pt, 3 inp)
+
+MACROCELL | 1 | 1 | N_EEPROMOE_MC
+ATTRIBUTES | 1074004738 | 0
+INPUTS | 3 | N_MREQ  | N_EEPROMCS  | N_RD
+INPUTMC | 1 | 0 | 11
+INPUTP | 2 | 22 | 23
+EQ | 1 | 
+   !N_EEPROMOE = !N_MREQ & !N_EEPROMCS & !N_RD;	// (1 pt, 3 inp)
+
+MACROCELL | 0 | 15 | N_EEPROMWR_MC
+ATTRIBUTES | 1074004738 | 0
+INPUTS | 5 | S_CONMEM  | N_MREQ  | N_EEPROMCS  | N_WR  | JUMPER_EEPROM
+INPUTMC | 2 | 0 | 13 | 0 | 11
+INPUTP | 3 | 22 | 28 | 41
+EQ | 2 | 
+   !N_EEPROMWR = S_CONMEM & !N_MREQ & !N_EEPROMCS & !N_WR & 
+	!JUMPER_EEPROM;	// (1 pt, 5 inp)
+
+MACROCELL | 0 | 12 | N_SRAMCS_MC
+ATTRIBUTES | 1610875650 | 0
+OUTPUTMC | 1 | 1 | 2
+INPUTS | 4 | S_CONMEM  | A<12>  | A<13>  | S_MAPRAM
+INPUTMC | 2 | 0 | 13 | 0 | 0
+INPUTP | 2 | 33 | 3
+EQ | 2 | 
+   !N_SRAMCS = S_CONMEM
+	# A<12> & !A<13> & S_MAPRAM;	// (2 pt, 4 inp)
+
+MACROCELL | 1 | 2 | N_SRAMOE_MC
+ATTRIBUTES | 1074004738 | 0
+INPUTS | 3 | N_MREQ  | N_RD  | N_SRAMCS
+INPUTMC | 1 | 0 | 12
+INPUTP | 2 | 22 | 23
+EQ | 1 | 
+   N_SRAMOE = N_MREQ & !N_RD & N_SRAMCS;	// (1 pt, 3 inp)
+
+MACROCELL | 0 | 14 | N_SRAMWR_MC
+ATTRIBUTES | 1074004738 | 0
+INPUTS | 4 | S_MAPRAM  | S_CONMEM  | N_MREQ  | N_WR
+INPUTMC | 2 | 0 | 0 | 0 | 13
+INPUTP | 2 | 22 | 28
+EQ | 1 | 
+   N_SRAMWR = !S_MAPRAM & !S_CONMEM & N_MREQ & !N_WR;	// (1 pt, 4 inp)
+
+PIN | A<0> | 64 | 16 | LVCMOS18 | 24 | 7 | 0 | 2 | 0 | 3 | 0 | 4 | 0 | 5 | 0 | 10 | 0 | 0 | 0 | 13
+PIN | A<10> | 64 | 16 | LVCMOS18 | 29 | 2 | 0 | 13 | 0 | 0
+PIN | A<11> | 64 | 16 | LVCMOS18 | 30 | 2 | 0 | 13 | 0 | 0
+PIN | A<12> | 64 | 16 | LVCMOS18 | 33 | 4 | 0 | 13 | 0 | 11 | 0 | 12 | 0 | 0
+PIN | A<13> | 64 | 16 | LVCMOS18 | 3 | 4 | 0 | 13 | 0 | 11 | 0 | 12 | 0 | 0
+PIN | A<1> | 64 | 16 | LVCMOS18 | 2 | 7 | 0 | 2 | 0 | 3 | 0 | 4 | 0 | 5 | 0 | 10 | 0 | 0 | 0 | 13
+PIN | A<2> | 64 | 16 | LVCMOS18 | 125 | 7 | 0 | 2 | 0 | 3 | 0 | 4 | 0 | 5 | 0 | 10 | 0 | 0 | 0 | 13
+PIN | A<3> | 64 | 16 | LVCMOS18 | 123 | 7 | 0 | 2 | 0 | 3 | 0 | 4 | 0 | 5 | 0 | 10 | 0 | 0 | 0 | 13
+PIN | A<4> | 64 | 16 | LVCMOS18 | 122 | 7 | 0 | 2 | 0 | 3 | 0 | 4 | 0 | 5 | 0 | 10 | 0 | 0 | 0 | 13
+PIN | A<5> | 64 | 16 | LVCMOS18 | 121 | 7 | 0 | 2 | 0 | 3 | 0 | 4 | 0 | 5 | 0 | 10 | 0 | 0 | 0 | 13
+PIN | A<6> | 64 | 16 | LVCMOS18 | 120 | 7 | 0 | 2 | 0 | 3 | 0 | 4 | 0 | 5 | 0 | 10 | 0 | 0 | 0 | 13
+PIN | A<7> | 64 | 16 | LVCMOS18 | 118 | 7 | 0 | 2 | 0 | 3 | 0 | 4 | 0 | 5 | 0 | 10 | 0 | 0 | 0 | 13
+PIN | A<8> | 64 | 16 | LVCMOS18 | 117 | 2 | 0 | 13 | 0 | 0
+PIN | A<9> | 64 | 16 | LVCMOS18 | 116 | 2 | 0 | 13 | 0 | 0
+PIN | D<0> | 64 | 16 | LVCMOS18 | 115 | 1 | 0 | 2
+PIN | N_M1 | 64 | 16 | LVCMOS18 | 42 | 7 | 0 | 2 | 0 | 3 | 0 | 4 | 0 | 5 | 0 | 10 | 0 | 0 | 0 | 13
+PIN | N_WR | 4160 | 16 | LVCMOS18 | 28 | 8 | 0 | 15 | 0 | 14 | 0 | 2 | 0 | 3 | 0 | 4 | 0 | 5 | 0 | 10 | 0 | 0
+PIN | D<1> | 64 | 16 | LVCMOS18 | 34 | 1 | 0 | 3
+PIN | D<2> | 64 | 16 | LVCMOS18 | 37 | 1 | 0 | 4
+PIN | D<3> | 64 | 16 | LVCMOS18 | 38 | 1 | 0 | 5
+PIN | D<4> | 64 | 16 | LVCMOS18 | 40 | 1 | 0 | 10
+PIN | JUMPER_EEPROM | 64 | 16 | LVCMOS18 | 41 | 1 | 0 | 15
+PIN | N_MREQ | 64 | 16 | LVCMOS18 | 22 | 5 | 1 | 3 | 1 | 1 | 0 | 15 | 1 | 2 | 0 | 14
+PIN | N_RD | 64 | 16 | LVCMOS18 | 23 | 2 | 1 | 1 | 1 | 2
+PIN | D<6> | 64 | 16 | LVCMOS18 | 17 | 1 | 0 | 0
+PIN | BANK<0> | 536871040 | 0 | LVCMOS18 | 15
+PIN | BANK<1> | 536871040 | 0 | LVCMOS18 | 14
+PIN | BANK<2> | 536871040 | 0 | LVCMOS18 | 13
+PIN | BANK<3> | 536871040 | 0 | LVCMOS18 | 12
+PIN | BANK<4> | 536871040 | 0 | LVCMOS18 | 11
+PIN | N_EEPROMCS | 536871040 | 0 | LVCMOS18 | 10
+PIN | N_EEPROMOE | 536871040 | 0 | LVCMOS18 | 19
+PIN | N_EEPROMWR | 536871040 | 0 | LVCMOS18 | 5
+PIN | N_ROMCS | 536871040 | 0 | LVCMOS18 | 21
+PIN | N_SRAMCS | 536871040 | 0 | LVCMOS18 | 9
+PIN | N_SRAMOE | 536871040 | 0 | LVCMOS18 | 20
+PIN | N_SRAMWR | 536871040 | 0 | LVCMOS18 | 6

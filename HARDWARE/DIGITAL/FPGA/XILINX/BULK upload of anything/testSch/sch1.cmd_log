@@ -1,0 +1,7 @@
+xst -intstyle ise -ifn "/host/Garage/Garage/home-computer-group/vhdl/testSch/sch1.xst" -ofn "/host/Garage/Garage/home-computer-group/vhdl/testSch/sch1.syr" 
+ngdbuild -intstyle ise -dd _ngo -i -p xc2c64-VQ100-5 sch1.ngc sch1.ngd  
+cpldfit -intstyle ise -p xc2c64-5-VQ100 -ofmt vhdl -optimize density -htmlrpt -loc on -slew fast -init low -inputs 32 -pterms 28 -unused keeper -terminate keeper -iostd LVCMOS18 sch1.ngd 
+XSLTProcess sch1_build.xml 
+tsim -intstyle ise sch1 sch1.nga 
+taengine -intstyle ise -f sch1 -w --format html1 -l sch1_html/tim/timing_report.htm 
+hprep6 -s IEEE1149 -i sch1 

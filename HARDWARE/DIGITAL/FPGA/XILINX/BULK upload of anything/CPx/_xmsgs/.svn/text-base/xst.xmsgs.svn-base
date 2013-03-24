@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- IMPORTANT: This is an internal file that has been generated
+     by the Xilinx ISE software.  Any direct editing or
+     changes made to this file may result in unpredictable
+     behavior or data corruption.  It is strongly advised that
+     users do not edit the contents of this file. -->
+<messages>
+<msg type="info" file="Xst" num="1739" delta="old" >HDL ADVISOR - &quot;<arg fmt="%s" index="1">/host/Garage/Garage/vhdl/CPx/CPx2.vhd</arg>&quot; line <arg fmt="%d" index="2">56</arg>: declaration of a buffer port will make it difficult for you to validate this design by simulation. It is preferable to declare it as output.
+</msg>
+
+<msg type="info" file="Xst" num="1739" delta="old" >HDL ADVISOR - &quot;<arg fmt="%s" index="1">/host/Garage/Garage/vhdl/CPx/CPx2.vhd</arg>&quot; line <arg fmt="%d" index="2">85</arg>: declaration of a buffer port will make it difficult for you to validate this design by simulation. It is preferable to declare it as output.
+</msg>
+
+<msg type="info" file="Xst" num="1739" delta="old" >HDL ADVISOR - &quot;<arg fmt="%s" index="1">/host/Garage/Garage/vhdl/CPx/CPx2.vhd</arg>&quot; line <arg fmt="%d" index="2">86</arg>: declaration of a buffer port will make it difficult for you to validate this design by simulation. It is preferable to declare it as output.
+</msg>
+
+<msg type="info" file="Xst" num="2561" delta="old" >Always blocking tristate driving signal &lt;<arg fmt="%s" index="1">D</arg>&gt; in unit &lt;<arg fmt="%s" index="2">CPx2</arg>&gt; is removed.
+</msg>
+
+<msg type="info" file="Xst" num="2561" delta="old" >Always blocking tristate driving signal &lt;<arg fmt="%s" index="1">D</arg>&gt; in unit &lt;<arg fmt="%s" index="2">CPx2</arg>&gt; is removed.
+</msg>
+
+<msg type="warning" file="Xst" num="647" delta="old" >Input &lt;<arg fmt="%s" index="1">N_INT</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+</msg>
+
+<msg type="warning" file="Xst" num="647" delta="old" >Input &lt;<arg fmt="%s" index="1">RESET</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+</msg>
+
+<msg type="warning" file="Xst" num="647" delta="old" >Input &lt;<arg fmt="%s" index="1">N_IOREQ</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+</msg>
+
+<msg type="warning" file="Xst" num="1306" delta="old" >Output &lt;<arg fmt="%s" index="1">N_EEPROMEN</arg>&gt; is never assigned.
+</msg>
+
+<msg type="warning" file="Xst" num="1306" delta="old" >Output &lt;<arg fmt="%s" index="1">NMI</arg>&gt; is never assigned.
+</msg>
+
+<msg type="warning" file="Xst" num="647" delta="old" >Input &lt;<arg fmt="%s" index="1">CLOCK</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+</msg>
+
+<msg type="warning" file="Xst" num="647" delta="old" >Input &lt;<arg fmt="%s" index="1">N_NMI</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+</msg>
+
+<msg type="warning" file="Xst" num="1305" delta="old" >Output &lt;<arg fmt="%s" index="1">MAPRAM</arg>&gt; is never assigned. Tied to value <arg fmt="%s" index="2">0</arg>.
+</msg>
+
+<msg type="warning" file="Xst" num="1306" delta="old" >Output &lt;<arg fmt="%s" index="1">INT</arg>&gt; is never assigned.
+</msg>
+
+<msg type="warning" file="Xst" num="646" delta="old" >Signal &lt;<arg fmt="%s" index="1">S_MAPRAM</arg>&gt; is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="646" delta="old" >Signal &lt;<arg fmt="%s" index="1">S_INTERFACECS</arg>&gt; is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+</msg>
+
+</messages>
+

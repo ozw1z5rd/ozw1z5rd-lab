@@ -1,0 +1,5 @@
+set -tmpdir "/home/apalma/Garage/vhdl/a_gal/xst/projnav.tmp"
+set -xsthdpdir "/home/apalma/Garage/vhdl/a_gal/xst"
+elaborate
+-ifn r_Gal.prj
+-ifmt mixed

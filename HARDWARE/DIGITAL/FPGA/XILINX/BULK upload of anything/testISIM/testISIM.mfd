@@ -1,0 +1,13 @@
+MDF Database:  version 1.0
+MDF_INFO | testISIM | XC2C128-6-VQ100
+MACROCELL | 0 | 0 | XLXN_4_MC
+ATTRIBUTES | 1074004738 | 0
+INPUTS | 3 | XLXN_3  | XLXN_2  | XLXN_1
+INPUTP | 3 | 13 | 14 | 15
+EQ | 1 | 
+   XLXN_4 = XLXN_3 & XLXN_2 & XLXN_1;	// (1 pt, 3 inp)
+
+PIN | XLXN_1 | 64 | 16 | LVCMOS18 | 15 | 1 | 0 | 0
+PIN | XLXN_2 | 64 | 16 | LVCMOS18 | 14 | 1 | 0 | 0
+PIN | XLXN_3 | 64 | 16 | LVCMOS18 | 13 | 1 | 0 | 0
+PIN | XLXN_4 | 536871040 | 0 | LVCMOS18 | 17

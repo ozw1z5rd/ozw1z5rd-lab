@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="/host/Garage/Garage/home-computer-group/vhdl/CPx/test44pin_isim_beh.wdb" id="1" type="auto">
+         <top_modules>
+            <top_module name="std_logic_1164" />
+            <top_module name="test44pin" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <WVObjectSize size="22" />
+   <wvobject fp_name="/test44pin/a" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">a[13:0]</obj_property>
+      <obj_property name="ObjectShortName">a[13:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/test44pin/jumper_eeprom" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">jumper_eeprom</obj_property>
+      <obj_property name="ObjectShortName">jumper_eeprom</obj_property>
+   </wvobject>
+   <wvobject fp_name="/test44pin/clock" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">clock</obj_property>
+      <obj_property name="ObjectShortName">clock</obj_property>
+   </wvobject>
+   <wvobject fp_name="/test44pin/n_mreq" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">n_mreq</obj_property>
+      <obj_property name="ObjectShortName">n_mreq</obj_property>
+   </wvobject>
+   <wvobject fp_name="/test44pin/n_rd" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">n_rd</obj_property>
+      <obj_property name="ObjectShortName">n_rd</obj_property>
+   </wvobject>
+   <wvobject fp_name="/test44pin/n_wr" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">n_wr</obj_property>
+      <obj_property name="ObjectShortName">n_wr</obj_property>
+   </wvobject>
+   <wvobject fp_name="/test44pin/n_m1" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">n_m1</obj_property>
+      <obj_property name="ObjectShortName">n_m1</obj_property>
+   </wvobject>
+   <wvobject fp_name="/test44pin/n_romcs" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">n_romcs</obj_property>
+      <obj_property name="ObjectShortName">n_romcs</obj_property>
+   </wvobject>
+   <wvobject fp_name="/test44pin/n_sramcs" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">n_sramcs</obj_property>
+      <obj_property name="ObjectShortName">n_sramcs</obj_property>
+   </wvobject>
+   <wvobject fp_name="/test44pin/n_sramoe" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">n_sramoe</obj_property>
+      <obj_property name="ObjectShortName">n_sramoe</obj_property>
+   </wvobject>
+   <wvobject fp_name="/test44pin/n_sramwr" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">n_sramwr</obj_property>
+      <obj_property name="ObjectShortName">n_sramwr</obj_property>
+   </wvobject>
+   <wvobject fp_name="/test44pin/n_eepromwr" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">n_eepromwr</obj_property>
+      <obj_property name="ObjectShortName">n_eepromwr</obj_property>
+   </wvobject>
+   <wvobject fp_name="/test44pin/n_eepromoe" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">n_eepromoe</obj_property>
+      <obj_property name="ObjectShortName">n_eepromoe</obj_property>
+   </wvobject>
+   <wvobject fp_name="/test44pin/n_eepromcs" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">n_eepromcs</obj_property>
+      <obj_property name="ObjectShortName">n_eepromcs</obj_property>
+   </wvobject>
+   <wvobject fp_name="/test44pin/clock_period" type="other" db_ref_id="1">
+      <obj_property name="ElementShortName">clock_period</obj_property>
+      <obj_property name="ObjectShortName">clock_period</obj_property>
+   </wvobject>
+   <wvobject fp_name="/test44pin/uut/n_romcs" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">n_romcs</obj_property>
+      <obj_property name="ObjectShortName">n_romcs</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+      <obj_property name="CustomSignalColor">#ffff00</obj_property>
+   </wvobject>
+   <wvobject fp_name="/test44pin/uut/s_accessing_page0" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">s_accessing_page0</obj_property>
+      <obj_property name="ObjectShortName">s_accessing_page0</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+      <obj_property name="CustomSignalColor">#ffff00</obj_property>
+   </wvobject>
+   <wvobject fp_name="/test44pin/uut/s_accessing_page1" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">s_accessing_page1</obj_property>
+      <obj_property name="ObjectShortName">s_accessing_page1</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+      <obj_property name="CustomSignalColor">#ffff00</obj_property>
+   </wvobject>
+   <wvobject fp_name="/test44pin/uut/s_eepromcs" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">s_eepromcs</obj_property>
+      <obj_property name="ObjectShortName">s_eepromcs</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+      <obj_property name="CustomSignalColor">#ffff00</obj_property>
+   </wvobject>
+   <wvobject fp_name="/test44pin/uut/s_sramcs" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">s_sramcs</obj_property>
+      <obj_property name="ObjectShortName">s_sramcs</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+      <obj_property name="CustomSignalColor">#ffff00</obj_property>
+   </wvobject>
+   <wvobject fp_name="/test44pin/uut/s_mapram" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">s_mapram</obj_property>
+      <obj_property name="ObjectShortName">s_mapram</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+      <obj_property name="CustomSignalColor">#ffff00</obj_property>
+   </wvobject>
+   <wvobject fp_name="/test44pin/uut/s_conmem" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">s_conmem</obj_property>
+      <obj_property name="ObjectShortName">s_conmem</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+      <obj_property name="CustomSignalColor">#ffff00</obj_property>
+   </wvobject>
+</wave_config>

@@ -1,0 +1,21 @@
+Running: /host/Xilinx/13.3/ISE_DS/ISE/bin/lin64/unwrapped/fuse -relaunch -intstyle "ise" -incremental -o "/host/Garage/Garage/vhdl/CPx/CPX2T_isim_beh.exe" -prj "/host/Garage/Garage/vhdl/CPx/CPX2T_beh.prj" "work.CPX2T" 
+ISim O.76xd (signature 0x8ddf5b5d)
+Number of CPUs detected in this system: 2
+Turning on mult-threading, number of parallel sub-compilation jobs: 4 
+Determining compilation order of HDL files
+Parsing VHDL file "/host/Garage/Garage/vhdl/CPx/CPx2.vhd" into library work
+Parsing VHDL file "/host/Garage/Garage/vhdl/CPx/CPX2T.vhd" into library work
+Starting static elaboration
+Completed static elaboration
+Fuse Memory Usage: 95016 KB
+Fuse CPU Usage: 1380 ms
+Compiling package standard
+Compiling package std_logic_1164
+Compiling architecture behavioral of entity CPx2 [cpx2_default]
+Compiling architecture behavior of entity cpx2t
+Time Resolution for simulation is 1ps.
+Compiled 5 VHDL Units
+Built simulation executable /host/Garage/Garage/vhdl/CPx/CPX2T_isim_beh.exe
+Fuse Memory Usage: 136556 KB
+Fuse CPU Usage: 1430 ms
+GCC CPU Usage: 210 ms

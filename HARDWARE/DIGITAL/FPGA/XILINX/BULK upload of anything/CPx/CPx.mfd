@@ -1,0 +1,135 @@
+MDF Database:  version 1.0
+MDF_INFO | CPx | XC2C32A-4-CV64
+MACROCELL | 0 | 0 | BANK0_MC
+ATTRIBUTES | 1074004738 | 0
+INPUTS | 6 | N_WR  | N_RESET  | N_RD  | N_MREQ  | N_M1  | CLOCK
+INPUTP | 6 | 13 | 12 | 11 | 10 | 9 | 8
+EQ | 1 | 
+   BANK0 = N_WR & N_RESET & N_RD & N_MREQ & N_M1 & CLOCK;	// (1 pt, 6 inp)
+
+MACROCELL | 0 | 1 | BANK1_MC
+ATTRIBUTES | 1074004738 | 0
+INPUTS | 0
+EQ | 1 | 
+   BANK1 = Gnd;	// (0 pt, 0 inp)
+
+MACROCELL | 0 | 2 | D<0>_MC
+ATTRIBUTES | 1074004738 | 0
+INPUTS | 0
+EQ | 1 | 
+   D<0> = Gnd;	// (0 pt, 0 inp)
+
+MACROCELL | 0 | 3 | D<1>_MC
+ATTRIBUTES | 1074004738 | 0
+INPUTS | 0
+EQ | 1 | 
+   D<1> = Gnd;	// (0 pt, 0 inp)
+
+MACROCELL | 0 | 4 | D<2>_MC
+ATTRIBUTES | 1074004738 | 0
+INPUTS | 0
+EQ | 1 | 
+   D<2> = Gnd;	// (0 pt, 0 inp)
+
+MACROCELL | 0 | 5 | D<3>_MC
+ATTRIBUTES | 1074004738 | 0
+INPUTS | 0
+EQ | 1 | 
+   D<3> = Gnd;	// (0 pt, 0 inp)
+
+MACROCELL | 0 | 6 | D<4>_MC
+ATTRIBUTES | 1074004738 | 0
+INPUTS | 0
+EQ | 1 | 
+   D<4> = Gnd;	// (0 pt, 0 inp)
+
+MACROCELL | 0 | 7 | D<5>_MC
+ATTRIBUTES | 1074004738 | 0
+INPUTS | 0
+EQ | 1 | 
+   D<5> = Gnd;	// (0 pt, 0 inp)
+
+MACROCELL | 0 | 8 | D<6>_MC
+ATTRIBUTES | 1074004738 | 0
+INPUTS | 0
+EQ | 1 | 
+   D<6> = Gnd;	// (0 pt, 0 inp)
+
+MACROCELL | 0 | 9 | D<7>_MC
+ATTRIBUTES | 1074004738 | 0
+INPUTS | 0
+EQ | 1 | 
+   D<7> = Gnd;	// (0 pt, 0 inp)
+
+MACROCELL | 0 | 10 | INT_MC
+ATTRIBUTES | 1074004738 | 0
+INPUTS | 0
+EQ | 1 | 
+   INT = Gnd;	// (0 pt, 0 inp)
+
+MACROCELL | 0 | 11 | NMAP_MC
+ATTRIBUTES | 1074004738 | 0
+INPUTS | 0
+EQ | 1 | 
+   NMAP = Gnd;	// (0 pt, 0 inp)
+
+MACROCELL | 0 | 12 | N_NMI_MC
+ATTRIBUTES | 1074004738 | 0
+INPUTS | 0
+EQ | 1 | 
+   N_NMI = Gnd;	// (0 pt, 0 inp)
+
+MACROCELL | 0 | 13 | N_ROMCS_MC
+ATTRIBUTES | 1074004738 | 0
+INPUTS | 0
+EQ | 1 | 
+   N_ROMCS = Gnd;	// (0 pt, 0 inp)
+
+MACROCELL | 0 | 14 | SEL<0>_MC
+ATTRIBUTES | 1074004738 | 0
+INPUTS | 0
+EQ | 1 | 
+   SEL<0> = Gnd;	// (0 pt, 0 inp)
+
+MACROCELL | 0 | 15 | SEL<1>_MC
+ATTRIBUTES | 1074004738 | 0
+INPUTS | 0
+EQ | 1 | 
+   SEL<1> = Gnd;	// (0 pt, 0 inp)
+
+MACROCELL | 1 | 0 | SEL<2>_MC
+ATTRIBUTES | 1074004738 | 0
+INPUTS | 0
+EQ | 1 | 
+   SEL<2> = Gnd;	// (0 pt, 0 inp)
+
+MACROCELL | 1 | 1 | SEL<3>_MC
+ATTRIBUTES | 1074004738 | 0
+INPUTS | 0
+EQ | 1 | 
+   SEL<3> = Gnd;	// (0 pt, 0 inp)
+
+PIN | N_WR | 64 | 16 | LVCMOS18 | 13 | 1 | 0 | 0
+PIN | N_RESET | 64 | 16 | LVCMOS18 | 12 | 1 | 0 | 0
+PIN | N_RD | 64 | 16 | LVCMOS18 | 11 | 1 | 0 | 0
+PIN | N_MREQ | 64 | 16 | LVCMOS18 | 10 | 1 | 0 | 0
+PIN | N_M1 | 64 | 16 | LVCMOS18 | 9 | 1 | 0 | 0
+PIN | CLOCK | 64 | 16 | LVCMOS18 | 8 | 1 | 0 | 0
+PIN | BANK0 | 536871040 | 0 | LVCMOS18 | 5
+PIN | BANK1 | 536871040 | 0 | LVCMOS18 | 4
+PIN | D<0> | 536871040 | 0 | LVCMOS18 | 3
+PIN | D<1> | 536871040 | 0 | LVCMOS18 | 1
+PIN | D<2> | 536871040 | 0 | LVCMOS18 | 44
+PIN | D<3> | 536871040 | 0 | LVCMOS18 | 43
+PIN | D<4> | 536871040 | 0 | LVCMOS18 | 42
+PIN | D<5> | 536871040 | 0 | LVCMOS18 | 41
+PIN | D<6> | 536871040 | 0 | LVCMOS18 | 40
+PIN | D<7> | 536871040 | 0 | LVCMOS18 | 39
+PIN | INT | 536871040 | 0 | LVCMOS18 | 38
+PIN | NMAP | 536871040 | 0 | LVCMOS18 | 34
+PIN | N_NMI | 536871040 | 0 | LVCMOS18 | 33
+PIN | N_ROMCS | 536871040 | 0 | LVCMOS18 | 32
+PIN | SEL<0> | 536871040 | 0 | LVCMOS18 | 31
+PIN | SEL<1> | 536871040 | 0 | LVCMOS18 | 30
+PIN | SEL<2> | 536871040 | 0 | LVCMOS18 | 6
+PIN | SEL<3> | 536871040 | 0 | LVCMOS18 | 7

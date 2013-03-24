@@ -1,0 +1,44 @@
+xst -intstyle ise -ifn "/home/apalma/Garage/vhdl/simpleStart/a.xst" -ofn "/home/apalma/Garage/vhdl/simpleStart/a.syr" 
+xst -intstyle ise -ifn "/home/apalma/Garage/vhdl/simpleStart/a.xst" -ofn "/home/apalma/Garage/vhdl/simpleStart/a.syr" 
+xst -intstyle ise -ifn "/home/apalma/Garage/vhdl/simpleStart/a.xst" -ofn "/home/apalma/Garage/vhdl/simpleStart/a.syr" 
+xst -intstyle ise -ifn "/home/apalma/Garage/vhdl/simpleStart/a.xst" -ofn "/home/apalma/Garage/vhdl/simpleStart/a.syr" 
+xst -intstyle ise -ifn "/home/apalma/Garage/vhdl/simpleStart/a.xst" -ofn "/home/apalma/Garage/vhdl/simpleStart/a.syr" 
+xst -intstyle ise -ifn "/home/apalma/Garage/vhdl/simpleStart/a.xst" -ofn "/home/apalma/Garage/vhdl/simpleStart/a.syr" 
+ngdbuild -intstyle ise -dd _ngo -i -p xc2c128-VQ100-6 a.ngc a.ngd  
+cpldfit -intstyle ise -p xc2c128-6-VQ100 -ofmt vhdl -optimize density -htmlrpt -loc on -slew fast -init low -inputs 32 -pterms 28 -unused keeper -terminate keeper -iostd LVCMOS18 a.ngd 
+XSLTProcess a_build.xml 
+tsim -intstyle ise a a.nga 
+taengine -intstyle ise -f a -w --format html1 -l a_html/tim/timing_report.htm 
+hprep6 -s IEEE1149 -i a 
+xst -intstyle ise -ifn "/home/apalma/Garage/vhdl/simpleStart/a.xst" -ofn "/home/apalma/Garage/vhdl/simpleStart/a.syr" 
+ngdbuild -intstyle ise -dd _ngo -i -p xc2c128-VQ100-6 a.ngc a.ngd  
+cpldfit -intstyle ise -p xc2c128-6-VQ100 -ofmt vhdl -optimize density -htmlrpt -loc on -slew fast -init low -inputs 32 -pterms 28 -unused keeper -terminate keeper -iostd LVCMOS18 a.ngd 
+XSLTProcess a_build.xml 
+tsim -intstyle ise a a.nga 
+hprep6 -s IEEE1149 -i a 
+xst -intstyle ise -ifn "/home/apalma/Garage/vhdl/simpleStart/a.xst" -ofn "/home/apalma/Garage/vhdl/simpleStart/a.syr" 
+xst -intstyle ise -ifn "/home/apalma/Garage/vhdl/simpleStart/a.xst" -ofn "/home/apalma/Garage/vhdl/simpleStart/a.syr" 
+xst -intstyle ise -ifn "/home/apalma/Garage/vhdl/simpleStart/a.xst" -ofn "/home/apalma/Garage/vhdl/simpleStart/a.syr" 
+xst -intstyle ise -ifn "/home/apalma/Garage/vhdl/simpleStart/a.xst" -ofn "/home/apalma/Garage/vhdl/simpleStart/a.syr" 
+ngdbuild -intstyle ise -dd _ngo -i -p xc2c128-VQ100-6 a.ngc a.ngd  
+cpldfit -intstyle ise -p xc2c128-6-VQ100 -ofmt vhdl -optimize density -htmlrpt -loc on -slew fast -init low -inputs 32 -pterms 28 -unused keeper -terminate keeper -iostd LVCMOS18 a.ngd 
+XSLTProcess a_build.xml 
+tsim -intstyle ise a a.nga 
+taengine -intstyle ise -f a -w --format html1 -l a_html/tim/timing_report.htm 
+-cwd "/home/apalma/Garage/vhdl/simpleStart" timingan_cpld -intstyle ise "/home/apalma/Garage/vhdl/simpleStart/a.vm6" 
+hprep6 -s IEEE1149 -i a 
+xst -intstyle ise -ifn "/home/apalma/Garage/vhdl/simpleStart/a.xst" -ofn "/home/apalma/Garage/vhdl/simpleStart/a.syr" 
+xst -intstyle ise -ifn "/home/apalma/Garage/vhdl/simpleStart/a.xst" -ofn "/home/apalma/Garage/vhdl/simpleStart/a.syr" 
+ngdbuild -intstyle ise -dd _ngo -i -p xc2c128-VQ100-6 a.ngc a.ngd  
+cpldfit -intstyle ise -p xc2c128-6-VQ100 -ofmt vhdl -optimize density -htmlrpt -loc on -slew fast -init low -inputs 32 -pterms 28 -unused keeper -terminate keeper -iostd LVCMOS18 a.ngd 
+XSLTProcess a_build.xml 
+tsim -intstyle ise a a.nga 
+hprep6 -s IEEE1149 -i a 
+vhdtdtfi -prj simpleStart -o /home/apalma/Garage/vhdl/simpleStart/a.vhi -module a -template /host/Xilinx/13.3/ISE_DS/ISE//data/vhdlinst.tft -deleteonerror -lib work a.vhd 
+cpldfit -intstyle ise -p xc2c128-6-VQ100 -ofmt vhdl -optimize density -htmlrpt -loc on -slew fast -init low -inputs 32 -pterms 28 -unused keeper -terminate keeper -iostd LVCMOS18 a.ngd 
+XSLTProcess a_build.xml 
+tsim -intstyle ise a a.nga 
+xpwr -intstyle ise a.cxt -o a.pwr 
+ibiswriter -intstyle ise a.pnx a.ibs 
+netgen -intstyle ise -rpw 100 -ar Structure -tm a -w -dir netgen/fit -ofmt vhdl -sim a.nga a_timesim.vhd 
+taengine -intstyle ise -f a -w --format html1 -l a_html/tim/timing_report.htm 

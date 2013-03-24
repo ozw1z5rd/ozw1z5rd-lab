@@ -1,0 +1,557 @@
+NDS Database:  version O.76xd
+
+NDS_INFO | xbr | 2C32A44PC | XC2C32A-4-PC44
+
+DEVICE | 2C32A | 2C32A44PC | 
+
+NETWORK | a_gal | 0 | 0 | 1073758214 | 0
+
+INPUT_INSTANCE | 0 | 0 | NULL | A<0>_II | a_gal_COPY_0_COPY_0 | 16 | 1 | 1
+INPUT_NODE_TYPE | 0 | 5 | II_IN
+NODE | A<0> | 2058 | PI | 0 | 0 | a_gal_COPY_0_COPY_0 | NULL | NULL | NULL | 0 | 100 | NOTYPE
+OUTPUT_NODE_TYPE | 0 | 5 | II_IMUX
+NODE | A<0>_II/UIM | 2097 | ? | 0 | 0 | a_gal_COPY_0_COPY_0 | NULL | NULL | A<0>_II | 0 | 5 | II_IMUX
+
+INPUT_INSTANCE | 0 | 0 | NULL | A<10>_II | a_gal_COPY_0_COPY_0 | 16 | 1 | 1
+INPUT_NODE_TYPE | 0 | 5 | II_IN
+NODE | A<10> | 2059 | PI | 0 | 0 | a_gal_COPY_0_COPY_0 | NULL | NULL | NULL | 0 | 100 | NOTYPE
+OUTPUT_NODE_TYPE | 0 | 5 | II_IMUX
+NODE | A<10>_II/UIM | 2089 | ? | 0 | 0 | a_gal_COPY_0_COPY_0 | NULL | NULL | A<10>_II | 0 | 5 | II_IMUX
+
+INPUT_INSTANCE | 0 | 0 | NULL | A<11>_II | a_gal_COPY_0_COPY_0 | 16 | 1 | 1
+INPUT_NODE_TYPE | 0 | 5 | II_IN
+NODE | A<11> | 2060 | PI | 0 | 0 | a_gal_COPY_0_COPY_0 | NULL | NULL | NULL | 0 | 100 | NOTYPE
+OUTPUT_NODE_TYPE | 0 | 5 | II_IMUX
+NODE | A<11>_II/UIM | 2088 | ? | 0 | 0 | a_gal_COPY_0_COPY_0 | NULL | NULL | A<11>_II | 0 | 5 | II_IMUX
+
+INPUT_INSTANCE | 0 | 0 | NULL | A<12>_II | a_gal_COPY_0_COPY_0 | 16 | 1 | 1
+INPUT_NODE_TYPE | 0 | 5 | II_IN
+NODE | A<12> | 2061 | PI | 0 | 0 | a_gal_COPY_0_COPY_0 | NULL | NULL | NULL | 0 | 100 | NOTYPE
+OUTPUT_NODE_TYPE | 0 | 5 | II_IMUX
+NODE | A<12>_II/UIM | 2087 | ? | 0 | 0 | a_gal_COPY_0_COPY_0 | NULL | NULL | A<12>_II | 0 | 5 | II_IMUX
+
+INPUT_INSTANCE | 0 | 0 | NULL | A<13>_II | a_gal_COPY_0_COPY_0 | 16 | 1 | 1
+INPUT_NODE_TYPE | 0 | 5 | II_IN
+NODE | A<13> | 2062 | PI | 0 | 0 | a_gal_COPY_0_COPY_0 | NULL | NULL | NULL | 0 | 100 | NOTYPE
+OUTPUT_NODE_TYPE | 0 | 5 | II_IMUX
+NODE | A<13>_II/UIM | 2086 | ? | 0 | 0 | a_gal_COPY_0_COPY_0 | NULL | NULL | A<13>_II | 0 | 5 | II_IMUX
+
+INPUT_INSTANCE | 0 | 0 | NULL | A<1>_II | a_gal_COPY_0_COPY_0 | 16 | 1 | 1
+INPUT_NODE_TYPE | 0 | 5 | II_IN
+NODE | A<1> | 2063 | PI | 0 | 0 | a_gal_COPY_0_COPY_0 | NULL | NULL | NULL | 0 | 100 | NOTYPE
+OUTPUT_NODE_TYPE | 0 | 5 | II_IMUX
+NODE | A<1>_II/UIM | 2096 | ? | 0 | 0 | a_gal_COPY_0_COPY_0 | NULL | NULL | A<1>_II | 0 | 5 | II_IMUX
+
+INPUT_INSTANCE | 0 | 0 | NULL | A<2>_II | a_gal_COPY_0_COPY_0 | 16 | 1 | 1
+INPUT_NODE_TYPE | 0 | 5 | II_IN
+NODE | A<2> | 2064 | PI | 0 | 0 | a_gal_COPY_0_COPY_0 | NULL | NULL | NULL | 0 | 100 | NOTYPE
+OUTPUT_NODE_TYPE | 0 | 5 | II_IMUX
+NODE | A<2>_II/UIM | 2098 | ? | 0 | 0 | a_gal_COPY_0_COPY_0 | NULL | NULL | A<2>_II | 0 | 5 | II_IMUX
+
+INPUT_INSTANCE | 0 | 0 | NULL | A<3>_II | a_gal_COPY_0_COPY_0 | 16 | 1 | 1
+INPUT_NODE_TYPE | 0 | 5 | II_IN
+NODE | A<3> | 2065 | PI | 0 | 0 | a_gal_COPY_0_COPY_0 | NULL | NULL | NULL | 0 | 100 | NOTYPE
+OUTPUT_NODE_TYPE | 0 | 5 | II_IMUX
+NODE | A<3>_II/UIM | 2085 | ? | 0 | 0 | a_gal_COPY_0_COPY_0 | NULL | NULL | A<3>_II | 0 | 5 | II_IMUX
+
+INPUT_INSTANCE | 0 | 0 | NULL | A<4>_II | a_gal_COPY_0_COPY_0 | 16 | 1 | 1
+INPUT_NODE_TYPE | 0 | 5 | II_IN
+NODE | A<4> | 2066 | PI | 0 | 0 | a_gal_COPY_0_COPY_0 | NULL | NULL | NULL | 0 | 100 | NOTYPE
+OUTPUT_NODE_TYPE | 0 | 5 | II_IMUX
+NODE | A<4>_II/UIM | 2084 | ? | 0 | 0 | a_gal_COPY_0_COPY_0 | NULL | NULL | A<4>_II | 0 | 5 | II_IMUX
+
+INPUT_INSTANCE | 0 | 0 | NULL | A<5>_II | a_gal_COPY_0_COPY_0 | 16 | 1 | 1
+INPUT_NODE_TYPE | 0 | 5 | II_IN
+NODE | A<5> | 2067 | PI | 0 | 0 | a_gal_COPY_0_COPY_0 | NULL | NULL | NULL | 0 | 100 | NOTYPE
+OUTPUT_NODE_TYPE | 0 | 5 | II_IMUX
+NODE | A<5>_II/UIM | 2083 | ? | 0 | 0 | a_gal_COPY_0_COPY_0 | NULL | NULL | A<5>_II | 0 | 5 | II_IMUX
+
+INPUT_INSTANCE | 0 | 0 | NULL | A<6>_II | a_gal_COPY_0_COPY_0 | 16 | 1 | 1
+INPUT_NODE_TYPE | 0 | 5 | II_IN
+NODE | A<6> | 2068 | PI | 0 | 0 | a_gal_COPY_0_COPY_0 | NULL | NULL | NULL | 0 | 100 | NOTYPE
+OUTPUT_NODE_TYPE | 0 | 5 | II_IMUX
+NODE | A<6>_II/UIM | 2095 | ? | 0 | 0 | a_gal_COPY_0_COPY_0 | NULL | NULL | A<6>_II | 0 | 5 | II_IMUX
+
+INPUT_INSTANCE | 0 | 0 | NULL | A<7>_II | a_gal_COPY_0_COPY_0 | 16 | 1 | 1
+INPUT_NODE_TYPE | 0 | 5 | II_IN
+NODE | A<7> | 2069 | PI | 0 | 0 | a_gal_COPY_0_COPY_0 | NULL | NULL | NULL | 0 | 100 | NOTYPE
+OUTPUT_NODE_TYPE | 0 | 5 | II_IMUX
+NODE | A<7>_II/UIM | 2082 | ? | 0 | 0 | a_gal_COPY_0_COPY_0 | NULL | NULL | A<7>_II | 0 | 5 | II_IMUX
+
+INPUT_INSTANCE | 0 | 0 | NULL | A<8>_II | a_gal_COPY_0_COPY_0 | 16 | 1 | 1
+INPUT_NODE_TYPE | 0 | 5 | II_IN
+NODE | A<8> | 2070 | PI | 0 | 0 | a_gal_COPY_0_COPY_0 | NULL | NULL | NULL | 0 | 100 | NOTYPE
+OUTPUT_NODE_TYPE | 0 | 5 | II_IMUX
+NODE | A<8>_II/UIM | 2094 | ? | 0 | 0 | a_gal_COPY_0_COPY_0 | NULL | NULL | A<8>_II | 0 | 5 | II_IMUX
+
+INPUT_INSTANCE | 0 | 0 | NULL | A<9>_II | a_gal_COPY_0_COPY_0 | 16 | 1 | 1
+INPUT_NODE_TYPE | 0 | 5 | II_IN
+NODE | A<9> | 2071 | PI | 0 | 0 | a_gal_COPY_0_COPY_0 | NULL | NULL | NULL | 0 | 100 | NOTYPE
+OUTPUT_NODE_TYPE | 0 | 5 | II_IMUX
+NODE | A<9>_II/UIM | 2093 | ? | 0 | 0 | a_gal_COPY_0_COPY_0 | NULL | NULL | A<9>_II | 0 | 5 | II_IMUX
+
+INPUT_INSTANCE | 0 | 0 | NULL | CLOCK_II | a_gal_COPY_0_COPY_0 | 16 | 1 | 1
+INPUT_NODE_TYPE | 0 | 5 | II_IN
+NODE | CLOCK | 2072 | PI | 0 | 0 | a_gal_COPY_0_COPY_0 | NULL | NULL | NULL | 0 | 100 | NOTYPE
+OUTPUT_NODE_TYPE | 3 | 5 | II_FCLK
+NODE | CLOCK_II/FCLK | 2099 | ? | 0 | 0 | a_gal_COPY_0_COPY_0 | NULL | NULL | CLOCK_II | 3 | 5 | II_FCLK
+
+INPUT_INSTANCE | 0 | 0 | NULL | M1_II | a_gal_COPY_0_COPY_0 | 16 | 1 | 1
+INPUT_NODE_TYPE | 0 | 5 | II_IN
+NODE | M1 | 2073 | PI | 0 | 0 | a_gal_COPY_0_COPY_0 | NULL | NULL | NULL | 0 | 100 | NOTYPE
+OUTPUT_NODE_TYPE | 0 | 5 | II_IMUX
+NODE | M1_II/UIM | 2092 | ? | 0 | 0 | a_gal_COPY_0_COPY_0 | NULL | NULL | M1_II | 0 | 5 | II_IMUX
+
+MACROCELL_INSTANCE | PrldLow | automap_MC | a_gal_COPY_0_COPY_0 | 1024 | 2 | 1
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | sig_mapcond | 2077 | ? | 0 | 0 | a_gal_COPY_0_COPY_0 | NULL | sig_mapcond_MC.Q | sig_mapcond_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | CLOCK_II/FCLK | 2099 | ? | 0 | 0 | a_gal_COPY_0_COPY_0 | NULL | NULL | CLOCK_II | 3 | 5 | II_FCLK
+OUTPUT_NODE_TYPE | 0 | 0 | MC_Q
+NODE | automap_MC.Q | 2101 | ? | 0 | 0 | a_gal_COPY_0_COPY_0 | NULL | automap_MC.Q | automap_MC | 0 | 0 | MC_Q
+
+SIGNAL_INSTANCE | automap_MC.SI | automap_MC | 0 | 1 | 2
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | sig_mapcond | 2077 | ? | 0 | 0 | a_gal_COPY_0_COPY_0 | NULL | sig_mapcond_MC.Q | sig_mapcond_MC | 1 | 0 | MC_UIM
+OUTPUT_NODE_TYPE | 1 | 9 | MC_SI_D1
+SIGNAL | NODE | automap_MC.D1 | 2075 | ? | 0 | 0 | automap_MC | NULL | NULL | automap_MC.SI | 1 | 9 | MC_SI_D1
+SPPTERM | 1 | IV_TRUE | sig_mapcond
+OUTPUT_NODE_TYPE | 2 | 9 | MC_SI_D2
+SIGNAL | NODE | automap_MC.D2 | 2076 | ? | 0 | 0 | automap_MC | NULL | NULL | automap_MC.SI | 2 | 9 | MC_SI_D2
+SPPTERM | 0 | IV_ZERO
+
+SRFF_INSTANCE | automap_MC.REG | automap_MC | 0 | 2 | 1
+INPUT_NODE_TYPE | 0 | 8 | SRFF_D
+NODE | automap_MC.D | 2074 | ? | 0 | 0 | automap_MC | NULL | NULL | automap_MC.XOR | 0 | 7 | ALU_F
+INPUT_NODE_TYPE | 1 | 8 | SRFF_C
+NODE | CLOCK_II/FCLK | 2099 | ? | 0 | 0 | a_gal_COPY_0_COPY_0 | NULL | NULL | CLOCK_II | 3 | 5 | II_FCLK
+OUTPUT_NODE_TYPE | 0 | 8 | SRFF_Q
+NODE | automap_MC.Q | 2100 | ? | 0 | 0 | automap_MC | NULL | NULL | automap_MC.REG | 0 | 8 | SRFF_Q
+
+MACROCELL_INSTANCE | PrldLow+Tff | sig_mapcond_MC | a_gal_COPY_0_COPY_0 | 5120 | 18 | 1
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | sig_mapcond | 2077 | ? | 0 | 0 | a_gal_COPY_0_COPY_0 | NULL | sig_mapcond_MC.Q | sig_mapcond_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | A<7>_II/UIM | 2082 | ? | 0 | 0 | a_gal_COPY_0_COPY_0 | NULL | NULL | A<7>_II | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | A<5>_II/UIM | 2083 | ? | 0 | 0 | a_gal_COPY_0_COPY_0 | NULL | NULL | A<5>_II | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | A<4>_II/UIM | 2084 | ? | 0 | 0 | a_gal_COPY_0_COPY_0 | NULL | NULL | A<4>_II | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | A<3>_II/UIM | 2085 | ? | 0 | 0 | a_gal_COPY_0_COPY_0 | NULL | NULL | A<3>_II | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | A<13>_II/UIM | 2086 | ? | 0 | 0 | a_gal_COPY_0_COPY_0 | NULL | NULL | A<13>_II | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | A<12>_II/UIM | 2087 | ? | 0 | 0 | a_gal_COPY_0_COPY_0 | NULL | NULL | A<12>_II | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | A<11>_II/UIM | 2088 | ? | 0 | 0 | a_gal_COPY_0_COPY_0 | NULL | NULL | A<11>_II | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | A<10>_II/UIM | 2089 | ? | 0 | 0 | a_gal_COPY_0_COPY_0 | NULL | NULL | A<10>_II | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | romacc_II/UIM | 2091 | ? | 0 | 0 | a_gal_COPY_0_COPY_0 | NULL | NULL | romacc_II | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | M1_II/UIM | 2092 | ? | 0 | 0 | a_gal_COPY_0_COPY_0 | NULL | NULL | M1_II | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | A<9>_II/UIM | 2093 | ? | 0 | 0 | a_gal_COPY_0_COPY_0 | NULL | NULL | A<9>_II | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | A<8>_II/UIM | 2094 | ? | 0 | 0 | a_gal_COPY_0_COPY_0 | NULL | NULL | A<8>_II | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | A<6>_II/UIM | 2095 | ? | 0 | 0 | a_gal_COPY_0_COPY_0 | NULL | NULL | A<6>_II | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | A<1>_II/UIM | 2096 | ? | 0 | 0 | a_gal_COPY_0_COPY_0 | NULL | NULL | A<1>_II | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | A<0>_II/UIM | 2097 | ? | 0 | 0 | a_gal_COPY_0_COPY_0 | NULL | NULL | A<0>_II | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | A<2>_II/UIM | 2098 | ? | 0 | 0 | a_gal_COPY_0_COPY_0 | NULL | NULL | A<2>_II | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | CLOCK_II/FCLK | 2099 | ? | 0 | 0 | a_gal_COPY_0_COPY_0 | NULL | NULL | CLOCK_II | 3 | 5 | II_FCLK
+OUTPUT_NODE_TYPE | 1 | 0 | MC_UIM
+NODE | sig_mapcond | 2077 | ? | 0 | 0 | a_gal_COPY_0_COPY_0 | NULL | sig_mapcond_MC.Q | sig_mapcond_MC | 1 | 0 | MC_UIM
+
+SIGNAL_INSTANCE | sig_mapcond_MC.SI | sig_mapcond_MC | 0 | 17 | 2
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | sig_mapcond | 2077 | ? | 0 | 0 | a_gal_COPY_0_COPY_0 | NULL | sig_mapcond_MC.Q | sig_mapcond_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | A<7>_II/UIM | 2082 | ? | 0 | 0 | a_gal_COPY_0_COPY_0 | NULL | NULL | A<7>_II | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | A<5>_II/UIM | 2083 | ? | 0 | 0 | a_gal_COPY_0_COPY_0 | NULL | NULL | A<5>_II | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | A<4>_II/UIM | 2084 | ? | 0 | 0 | a_gal_COPY_0_COPY_0 | NULL | NULL | A<4>_II | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | A<3>_II/UIM | 2085 | ? | 0 | 0 | a_gal_COPY_0_COPY_0 | NULL | NULL | A<3>_II | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | A<13>_II/UIM | 2086 | ? | 0 | 0 | a_gal_COPY_0_COPY_0 | NULL | NULL | A<13>_II | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | A<12>_II/UIM | 2087 | ? | 0 | 0 | a_gal_COPY_0_COPY_0 | NULL | NULL | A<12>_II | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | A<11>_II/UIM | 2088 | ? | 0 | 0 | a_gal_COPY_0_COPY_0 | NULL | NULL | A<11>_II | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | A<10>_II/UIM | 2089 | ? | 0 | 0 | a_gal_COPY_0_COPY_0 | NULL | NULL | A<10>_II | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | romacc_II/UIM | 2091 | ? | 0 | 0 | a_gal_COPY_0_COPY_0 | NULL | NULL | romacc_II | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | M1_II/UIM | 2092 | ? | 0 | 0 | a_gal_COPY_0_COPY_0 | NULL | NULL | M1_II | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | A<9>_II/UIM | 2093 | ? | 0 | 0 | a_gal_COPY_0_COPY_0 | NULL | NULL | A<9>_II | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | A<8>_II/UIM | 2094 | ? | 0 | 0 | a_gal_COPY_0_COPY_0 | NULL | NULL | A<8>_II | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | A<6>_II/UIM | 2095 | ? | 0 | 0 | a_gal_COPY_0_COPY_0 | NULL | NULL | A<6>_II | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | A<1>_II/UIM | 2096 | ? | 0 | 0 | a_gal_COPY_0_COPY_0 | NULL | NULL | A<1>_II | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | A<0>_II/UIM | 2097 | ? | 0 | 0 | a_gal_COPY_0_COPY_0 | NULL | NULL | A<0>_II | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | A<2>_II/UIM | 2098 | ? | 0 | 0 | a_gal_COPY_0_COPY_0 | NULL | NULL | A<2>_II | 0 | 5 | II_IMUX
+OUTPUT_NODE_TYPE | 1 | 9 | MC_SI_D1
+SIGNAL | NODE | sig_mapcond_MC.D1 | 2081 | ? | 0 | 0 | sig_mapcond_MC | NULL | NULL | sig_mapcond_MC.SI | 1 | 9 | MC_SI_D1
+SPPTERM | 0 | IV_ZERO
+OUTPUT_NODE_TYPE | 2 | 9 | MC_SI_D2
+SIGNAL | NODE | sig_mapcond_MC.D2 | 2080 | ? | 0 | 0 | sig_mapcond_MC | NULL | NULL | sig_mapcond_MC.SI | 2 | 9 | MC_SI_D2
+SPPTERM | 14 | IV_TRUE | sig_mapcond | IV_TRUE | A<7>_II/UIM | IV_TRUE | A<5>_II/UIM | IV_TRUE | A<4>_II/UIM | IV_TRUE | A<3>_II/UIM | IV_FALSE | A<13>_II/UIM | IV_TRUE | A<12>_II/UIM | IV_TRUE | A<11>_II/UIM | IV_TRUE | A<10>_II/UIM | IV_TRUE | romacc_II/UIM | IV_TRUE | M1_II/UIM | IV_TRUE | A<9>_II/UIM | IV_TRUE | A<8>_II/UIM | IV_TRUE | A<6>_II/UIM
+SPPTERM | 16 | IV_FALSE | sig_mapcond | IV_FALSE | A<7>_II/UIM | IV_FALSE | A<5>_II/UIM | IV_FALSE | A<4>_II/UIM | IV_FALSE | A<13>_II/UIM | IV_FALSE | A<12>_II/UIM | IV_FALSE | A<11>_II/UIM | IV_FALSE | A<10>_II/UIM | IV_TRUE | romacc_II/UIM | IV_TRUE | M1_II/UIM | IV_FALSE | A<9>_II/UIM | IV_FALSE | A<8>_II/UIM | IV_FALSE | A<6>_II/UIM | IV_FALSE | A<1>_II/UIM | IV_FALSE | A<0>_II/UIM | IV_FALSE | A<2>_II/UIM
+SPPTERM | 17 | IV_FALSE | sig_mapcond | IV_TRUE | A<7>_II/UIM | IV_FALSE | A<5>_II/UIM | IV_FALSE | A<4>_II/UIM | IV_FALSE | A<3>_II/UIM | IV_FALSE | A<13>_II/UIM | IV_FALSE | A<12>_II/UIM | IV_FALSE | A<11>_II/UIM | IV_TRUE | A<10>_II/UIM | IV_TRUE | romacc_II/UIM | IV_TRUE | M1_II/UIM | IV_FALSE | A<9>_II/UIM | IV_FALSE | A<8>_II/UIM | IV_TRUE | A<6>_II/UIM | IV_TRUE | A<1>_II/UIM | IV_FALSE | A<0>_II/UIM | IV_TRUE | A<2>_II/UIM
+SPPTERM | 17 | IV_FALSE | sig_mapcond | IV_FALSE | A<7>_II/UIM | IV_TRUE | A<5>_II/UIM | IV_TRUE | A<4>_II/UIM | IV_TRUE | A<3>_II/UIM | IV_FALSE | A<13>_II/UIM | IV_FALSE | A<12>_II/UIM | IV_FALSE | A<11>_II/UIM | IV_FALSE | A<10>_II/UIM | IV_TRUE | romacc_II/UIM | IV_TRUE | M1_II/UIM | IV_FALSE | A<9>_II/UIM | IV_FALSE | A<8>_II/UIM | IV_FALSE | A<6>_II/UIM | IV_FALSE | A<1>_II/UIM | IV_FALSE | A<0>_II/UIM | IV_FALSE | A<2>_II/UIM
+SPPTERM | 17 | IV_FALSE | sig_mapcond | IV_FALSE | A<7>_II/UIM | IV_TRUE | A<5>_II/UIM | IV_FALSE | A<4>_II/UIM | IV_FALSE | A<3>_II/UIM | IV_FALSE | A<13>_II/UIM | IV_FALSE | A<12>_II/UIM | IV_FALSE | A<11>_II/UIM | IV_TRUE | A<10>_II/UIM | IV_TRUE | romacc_II/UIM | IV_TRUE | M1_II/UIM | IV_FALSE | A<9>_II/UIM | IV_TRUE | A<8>_II/UIM | IV_TRUE | A<6>_II/UIM | IV_TRUE | A<1>_II/UIM | IV_FALSE | A<0>_II/UIM | IV_FALSE | A<2>_II/UIM
+SPPTERM | 17 | IV_FALSE | sig_mapcond | IV_FALSE | A<7>_II/UIM | IV_TRUE | A<5>_II/UIM | IV_FALSE | A<4>_II/UIM | IV_FALSE | A<3>_II/UIM | IV_FALSE | A<13>_II/UIM | IV_FALSE | A<12>_II/UIM | IV_FALSE | A<11>_II/UIM | IV_FALSE | A<10>_II/UIM | IV_TRUE | romacc_II/UIM | IV_TRUE | M1_II/UIM | IV_FALSE | A<9>_II/UIM | IV_FALSE | A<8>_II/UIM | IV_TRUE | A<6>_II/UIM | IV_TRUE | A<1>_II/UIM | IV_FALSE | A<0>_II/UIM | IV_TRUE | A<2>_II/UIM
+
+SRFF_INSTANCE | sig_mapcond_MC.REG | sig_mapcond_MC | 0 | 2 | 1
+INPUT_NODE_TYPE | 0 | 8 | SRFF_D
+NODE | sig_mapcond_MC.D | 2079 | ? | 0 | 0 | sig_mapcond_MC | NULL | NULL | sig_mapcond_MC.XOR | 0 | 7 | ALU_F
+INPUT_NODE_TYPE | 1 | 8 | SRFF_C
+NODE | CLOCK_II/FCLK | 2099 | ? | 0 | 0 | a_gal_COPY_0_COPY_0 | NULL | NULL | CLOCK_II | 3 | 5 | II_FCLK
+OUTPUT_NODE_TYPE | 0 | 8 | SRFF_Q
+NODE | sig_mapcond_MC.Q | 2078 | ? | 0 | 0 | sig_mapcond_MC | NULL | NULL | sig_mapcond_MC.REG | 0 | 8 | SRFF_Q
+
+INPUT_INSTANCE | 0 | 0 | NULL | romacc_II | a_gal_COPY_0_COPY_0 | 16 | 1 | 1
+INPUT_NODE_TYPE | 0 | 5 | II_IN
+NODE | romacc | 2090 | PI | 0 | 0 | a_gal_COPY_0_COPY_0 | NULL | NULL | NULL | 0 | 100 | NOTYPE
+OUTPUT_NODE_TYPE | 0 | 5 | II_IMUX
+NODE | romacc_II/UIM | 2091 | ? | 0 | 0 | a_gal_COPY_0_COPY_0 | NULL | NULL | romacc_II | 0 | 5 | II_IMUX
+
+OUTPUT_INSTANCE | 0 | automap | a_gal_COPY_0_COPY_0 | 3 | 1 | 1
+INPUT_NODE_TYPE | 0 | 6 | OI_IN
+NODE | automap_MC.Q | 2101 | ? | 0 | 0 | a_gal_COPY_0_COPY_0 | NULL | automap_MC.Q | automap_MC | 0 | 0 | MC_Q
+OUTPUT_NODE_TYPE | 0 | 6 | OI_OUT
+NODE | automap | 2102 | PO | 0 | 0 | a_gal_COPY_0_COPY_0 | NULL | NULL | automap | 0 | 6 | OI_OUT
+
+MACROCELL_INSTANCE | NULL | ideio0_MC | a_gal_COPY_0_COPY_0 | 0 | 7 | 1
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | A<7>_II/UIM | 2082 | ? | 0 | 0 | a_gal_COPY_0_COPY_0 | NULL | NULL | A<7>_II | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | A<5>_II/UIM | 2083 | ? | 0 | 0 | a_gal_COPY_0_COPY_0 | NULL | NULL | A<5>_II | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | A<4>_II/UIM | 2084 | ? | 0 | 0 | a_gal_COPY_0_COPY_0 | NULL | NULL | A<4>_II | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | A<3>_II/UIM | 2085 | ? | 0 | 0 | a_gal_COPY_0_COPY_0 | NULL | NULL | A<3>_II | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | A<1>_II/UIM | 2096 | ? | 0 | 0 | a_gal_COPY_0_COPY_0 | NULL | NULL | A<1>_II | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | A<0>_II/UIM | 2097 | ? | 0 | 0 | a_gal_COPY_0_COPY_0 | NULL | NULL | A<0>_II | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | A<2>_II/UIM | 2098 | ? | 0 | 0 | a_gal_COPY_0_COPY_0 | NULL | NULL | A<2>_II | 0 | 5 | II_IMUX
+OUTPUT_NODE_TYPE | 0 | 0 | MC_Q
+NODE | ideio0_MC.Q | 2107 | ? | 0 | 0 | a_gal_COPY_0_COPY_0 | NULL | ideio0_MC.Q | ideio0_MC | 0 | 0 | MC_Q
+
+SIGNAL_INSTANCE | ideio0_MC.SI | ideio0_MC | 0 | 7 | 2
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | A<7>_II/UIM | 2082 | ? | 0 | 0 | a_gal_COPY_0_COPY_0 | NULL | NULL | A<7>_II | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | A<5>_II/UIM | 2083 | ? | 0 | 0 | a_gal_COPY_0_COPY_0 | NULL | NULL | A<5>_II | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | A<4>_II/UIM | 2084 | ? | 0 | 0 | a_gal_COPY_0_COPY_0 | NULL | NULL | A<4>_II | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | A<3>_II/UIM | 2085 | ? | 0 | 0 | a_gal_COPY_0_COPY_0 | NULL | NULL | A<3>_II | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | A<1>_II/UIM | 2096 | ? | 0 | 0 | a_gal_COPY_0_COPY_0 | NULL | NULL | A<1>_II | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | A<0>_II/UIM | 2097 | ? | 0 | 0 | a_gal_COPY_0_COPY_0 | NULL | NULL | A<0>_II | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | A<2>_II/UIM | 2098 | ? | 0 | 0 | a_gal_COPY_0_COPY_0 | NULL | NULL | A<2>_II | 0 | 5 | II_IMUX
+OUTPUT_NODE_TYPE | 1 | 9 | MC_SI_D1
+SIGNAL | NODE | ideio0_MC.D1 | 2104 | ? | 0 | 0 | ideio0_MC | NULL | NULL | ideio0_MC.SI | 1 | 9 | MC_SI_D1
+SPPTERM | 7 | IV_TRUE | A<7>_II/UIM | IV_TRUE | A<5>_II/UIM | IV_FALSE | A<4>_II/UIM | IV_FALSE | A<3>_II/UIM | IV_TRUE | A<1>_II/UIM | IV_TRUE | A<0>_II/UIM | IV_FALSE | A<2>_II/UIM
+OUTPUT_NODE_TYPE | 2 | 9 | MC_SI_D2
+SIGNAL | NODE | ideio0_MC.D2 | 2105 | ? | 0 | 0 | ideio0_MC | NULL | NULL | ideio0_MC.SI | 2 | 9 | MC_SI_D2
+SPPTERM | 0 | IV_ZERO
+
+SRFF_INSTANCE | ideio0_MC.REG | ideio0_MC | 0 | 1 | 1
+INPUT_NODE_TYPE | 0 | 8 | SRFF_D
+NODE | ideio0_MC.D | 2103 | ? | 0 | 0 | ideio0_MC | NULL | NULL | ideio0_MC.XOR | 0 | 7 | ALU_F
+OUTPUT_NODE_TYPE | 0 | 8 | SRFF_Q
+NODE | ideio0_MC.Q | 2106 | ? | 0 | 0 | ideio0_MC | NULL | NULL | ideio0_MC.REG | 0 | 8 | SRFF_Q
+
+OUTPUT_INSTANCE | 0 | ideio0 | a_gal_COPY_0_COPY_0 | 3 | 1 | 1
+INPUT_NODE_TYPE | 0 | 6 | OI_IN
+NODE | ideio0_MC.Q | 2107 | ? | 0 | 0 | a_gal_COPY_0_COPY_0 | NULL | ideio0_MC.Q | ideio0_MC | 0 | 0 | MC_Q
+OUTPUT_NODE_TYPE | 0 | 6 | OI_OUT
+NODE | ideio0 | 2108 | PO | 0 | 0 | a_gal_COPY_0_COPY_0 | NULL | NULL | ideio0 | 0 | 6 | OI_OUT
+
+MACROCELL_INSTANCE | NULL | ideio1_MC | a_gal_COPY_0_COPY_0 | 0 | 5 | 1
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | A<7>_II/UIM | 2082 | ? | 0 | 0 | a_gal_COPY_0_COPY_0 | NULL | NULL | A<7>_II | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | A<5>_II/UIM | 2083 | ? | 0 | 0 | a_gal_COPY_0_COPY_0 | NULL | NULL | A<5>_II | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | A<6>_II/UIM | 2095 | ? | 0 | 0 | a_gal_COPY_0_COPY_0 | NULL | NULL | A<6>_II | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | A<1>_II/UIM | 2096 | ? | 0 | 0 | a_gal_COPY_0_COPY_0 | NULL | NULL | A<1>_II | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | A<0>_II/UIM | 2097 | ? | 0 | 0 | a_gal_COPY_0_COPY_0 | NULL | NULL | A<0>_II | 0 | 5 | II_IMUX
+OUTPUT_NODE_TYPE | 0 | 0 | MC_Q
+NODE | ideio1_MC.Q | 2113 | ? | 0 | 0 | a_gal_COPY_0_COPY_0 | NULL | ideio1_MC.Q | ideio1_MC | 0 | 0 | MC_Q
+
+SIGNAL_INSTANCE | ideio1_MC.SI | ideio1_MC | 0 | 5 | 2
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | A<7>_II/UIM | 2082 | ? | 0 | 0 | a_gal_COPY_0_COPY_0 | NULL | NULL | A<7>_II | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | A<5>_II/UIM | 2083 | ? | 0 | 0 | a_gal_COPY_0_COPY_0 | NULL | NULL | A<5>_II | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | A<6>_II/UIM | 2095 | ? | 0 | 0 | a_gal_COPY_0_COPY_0 | NULL | NULL | A<6>_II | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | A<1>_II/UIM | 2096 | ? | 0 | 0 | a_gal_COPY_0_COPY_0 | NULL | NULL | A<1>_II | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | A<0>_II/UIM | 2097 | ? | 0 | 0 | a_gal_COPY_0_COPY_0 | NULL | NULL | A<0>_II | 0 | 5 | II_IMUX
+OUTPUT_NODE_TYPE | 1 | 9 | MC_SI_D1
+SIGNAL | NODE | ideio1_MC.D1 | 2110 | ? | 0 | 0 | ideio1_MC | NULL | NULL | ideio1_MC.SI | 1 | 9 | MC_SI_D1
+SPPTERM | 5 | IV_TRUE | A<7>_II/UIM | IV_TRUE | A<5>_II/UIM | IV_FALSE | A<6>_II/UIM | IV_TRUE | A<1>_II/UIM | IV_TRUE | A<0>_II/UIM
+OUTPUT_NODE_TYPE | 2 | 9 | MC_SI_D2
+SIGNAL | NODE | ideio1_MC.D2 | 2111 | ? | 0 | 0 | ideio1_MC | NULL | NULL | ideio1_MC.SI | 2 | 9 | MC_SI_D2
+SPPTERM | 0 | IV_ZERO
+
+SRFF_INSTANCE | ideio1_MC.REG | ideio1_MC | 0 | 1 | 1
+INPUT_NODE_TYPE | 0 | 8 | SRFF_D
+NODE | ideio1_MC.D | 2109 | ? | 0 | 0 | ideio1_MC | NULL | NULL | ideio1_MC.XOR | 0 | 7 | ALU_F
+OUTPUT_NODE_TYPE | 0 | 8 | SRFF_Q
+NODE | ideio1_MC.Q | 2112 | ? | 0 | 0 | ideio1_MC | NULL | NULL | ideio1_MC.REG | 0 | 8 | SRFF_Q
+
+OUTPUT_INSTANCE | 0 | ideio1 | a_gal_COPY_0_COPY_0 | 3 | 1 | 1
+INPUT_NODE_TYPE | 0 | 6 | OI_IN
+NODE | ideio1_MC.Q | 2113 | ? | 0 | 0 | a_gal_COPY_0_COPY_0 | NULL | ideio1_MC.Q | ideio1_MC | 0 | 0 | MC_Q
+OUTPUT_NODE_TYPE | 0 | 6 | OI_OUT
+NODE | ideio1 | 2114 | PO | 0 | 0 | a_gal_COPY_0_COPY_0 | NULL | NULL | ideio1 | 0 | 6 | OI_OUT
+
+MACROCELL_INSTANCE | PrldLow | mapcond_MC | a_gal_COPY_0_COPY_0 | 1024 | 2 | 1
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | sig_mapcond | 2077 | ? | 0 | 0 | a_gal_COPY_0_COPY_0 | NULL | sig_mapcond_MC.Q | sig_mapcond_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | CLOCK_II/FCLK | 2099 | ? | 0 | 0 | a_gal_COPY_0_COPY_0 | NULL | NULL | CLOCK_II | 3 | 5 | II_FCLK
+OUTPUT_NODE_TYPE | 0 | 0 | MC_Q
+NODE | mapcond_MC.Q | 2119 | ? | 0 | 0 | a_gal_COPY_0_COPY_0 | NULL | mapcond_MC.Q | mapcond_MC | 0 | 0 | MC_Q
+
+SIGNAL_INSTANCE | mapcond_MC.SI | mapcond_MC | 0 | 1 | 2
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | sig_mapcond | 2077 | ? | 0 | 0 | a_gal_COPY_0_COPY_0 | NULL | sig_mapcond_MC.Q | sig_mapcond_MC | 1 | 0 | MC_UIM
+OUTPUT_NODE_TYPE | 1 | 9 | MC_SI_D1
+SIGNAL | NODE | mapcond_MC.D1 | 2116 | ? | 0 | 0 | mapcond_MC | NULL | NULL | mapcond_MC.SI | 1 | 9 | MC_SI_D1
+SPPTERM | 1 | IV_TRUE | sig_mapcond
+OUTPUT_NODE_TYPE | 2 | 9 | MC_SI_D2
+SIGNAL | NODE | mapcond_MC.D2 | 2117 | ? | 0 | 0 | mapcond_MC | NULL | NULL | mapcond_MC.SI | 2 | 9 | MC_SI_D2
+SPPTERM | 0 | IV_ZERO
+
+SRFF_INSTANCE | mapcond_MC.REG | mapcond_MC | 0 | 2 | 1
+INPUT_NODE_TYPE | 0 | 8 | SRFF_D
+NODE | mapcond_MC.D | 2115 | ? | 0 | 0 | mapcond_MC | NULL | NULL | mapcond_MC.XOR | 0 | 7 | ALU_F
+INPUT_NODE_TYPE | 1 | 8 | SRFF_C
+NODE | CLOCK_II/FCLK | 2099 | ? | 0 | 0 | a_gal_COPY_0_COPY_0 | NULL | NULL | CLOCK_II | 3 | 5 | II_FCLK
+OUTPUT_NODE_TYPE | 0 | 8 | SRFF_Q
+NODE | mapcond_MC.Q | 2118 | ? | 0 | 0 | mapcond_MC | NULL | NULL | mapcond_MC.REG | 0 | 8 | SRFF_Q
+
+OUTPUT_INSTANCE | 0 | mapcond | a_gal_COPY_0_COPY_0 | 3 | 1 | 1
+INPUT_NODE_TYPE | 0 | 6 | OI_IN
+NODE | mapcond_MC.Q | 2119 | ? | 0 | 0 | a_gal_COPY_0_COPY_0 | NULL | mapcond_MC.Q | mapcond_MC | 0 | 0 | MC_Q
+OUTPUT_NODE_TYPE | 0 | 6 | OI_OUT
+NODE | mapcond | 2120 | PO | 0 | 0 | a_gal_COPY_0_COPY_0 | NULL | NULL | mapcond | 0 | 6 | OI_OUT
+
+MACROCELL_INSTANCE | NULL | mapterm_MC | a_gal_COPY_0_COPY_0 | 0 | 16 | 1
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | A<7>_II/UIM | 2082 | ? | 0 | 0 | a_gal_COPY_0_COPY_0 | NULL | NULL | A<7>_II | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | A<5>_II/UIM | 2083 | ? | 0 | 0 | a_gal_COPY_0_COPY_0 | NULL | NULL | A<5>_II | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | A<4>_II/UIM | 2084 | ? | 0 | 0 | a_gal_COPY_0_COPY_0 | NULL | NULL | A<4>_II | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | A<13>_II/UIM | 2086 | ? | 0 | 0 | a_gal_COPY_0_COPY_0 | NULL | NULL | A<13>_II | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | A<12>_II/UIM | 2087 | ? | 0 | 0 | a_gal_COPY_0_COPY_0 | NULL | NULL | A<12>_II | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | A<11>_II/UIM | 2088 | ? | 0 | 0 | a_gal_COPY_0_COPY_0 | NULL | NULL | A<11>_II | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | A<10>_II/UIM | 2089 | ? | 0 | 0 | a_gal_COPY_0_COPY_0 | NULL | NULL | A<10>_II | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | romacc_II/UIM | 2091 | ? | 0 | 0 | a_gal_COPY_0_COPY_0 | NULL | NULL | romacc_II | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | M1_II/UIM | 2092 | ? | 0 | 0 | a_gal_COPY_0_COPY_0 | NULL | NULL | M1_II | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | A<9>_II/UIM | 2093 | ? | 0 | 0 | a_gal_COPY_0_COPY_0 | NULL | NULL | A<9>_II | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | A<8>_II/UIM | 2094 | ? | 0 | 0 | a_gal_COPY_0_COPY_0 | NULL | NULL | A<8>_II | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | A<6>_II/UIM | 2095 | ? | 0 | 0 | a_gal_COPY_0_COPY_0 | NULL | NULL | A<6>_II | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | A<1>_II/UIM | 2096 | ? | 0 | 0 | a_gal_COPY_0_COPY_0 | NULL | NULL | A<1>_II | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | A<0>_II/UIM | 2097 | ? | 0 | 0 | a_gal_COPY_0_COPY_0 | NULL | NULL | A<0>_II | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | A<2>_II/UIM | 2098 | ? | 0 | 0 | a_gal_COPY_0_COPY_0 | NULL | NULL | A<2>_II | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | A<3>_II/UIM | 2085 | ? | 0 | 0 | a_gal_COPY_0_COPY_0 | NULL | NULL | A<3>_II | 0 | 5 | II_IMUX
+OUTPUT_NODE_TYPE | 0 | 0 | MC_Q
+NODE | mapterm_MC.Q | 2125 | ? | 0 | 0 | a_gal_COPY_0_COPY_0 | NULL | mapterm_MC.Q | mapterm_MC | 0 | 0 | MC_Q
+
+SIGNAL_INSTANCE | mapterm_MC.SI | mapterm_MC | 0 | 16 | 2
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | A<7>_II/UIM | 2082 | ? | 0 | 0 | a_gal_COPY_0_COPY_0 | NULL | NULL | A<7>_II | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | A<5>_II/UIM | 2083 | ? | 0 | 0 | a_gal_COPY_0_COPY_0 | NULL | NULL | A<5>_II | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | A<4>_II/UIM | 2084 | ? | 0 | 0 | a_gal_COPY_0_COPY_0 | NULL | NULL | A<4>_II | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | A<13>_II/UIM | 2086 | ? | 0 | 0 | a_gal_COPY_0_COPY_0 | NULL | NULL | A<13>_II | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | A<12>_II/UIM | 2087 | ? | 0 | 0 | a_gal_COPY_0_COPY_0 | NULL | NULL | A<12>_II | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | A<11>_II/UIM | 2088 | ? | 0 | 0 | a_gal_COPY_0_COPY_0 | NULL | NULL | A<11>_II | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | A<10>_II/UIM | 2089 | ? | 0 | 0 | a_gal_COPY_0_COPY_0 | NULL | NULL | A<10>_II | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | romacc_II/UIM | 2091 | ? | 0 | 0 | a_gal_COPY_0_COPY_0 | NULL | NULL | romacc_II | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | M1_II/UIM | 2092 | ? | 0 | 0 | a_gal_COPY_0_COPY_0 | NULL | NULL | M1_II | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | A<9>_II/UIM | 2093 | ? | 0 | 0 | a_gal_COPY_0_COPY_0 | NULL | NULL | A<9>_II | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | A<8>_II/UIM | 2094 | ? | 0 | 0 | a_gal_COPY_0_COPY_0 | NULL | NULL | A<8>_II | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | A<6>_II/UIM | 2095 | ? | 0 | 0 | a_gal_COPY_0_COPY_0 | NULL | NULL | A<6>_II | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | A<1>_II/UIM | 2096 | ? | 0 | 0 | a_gal_COPY_0_COPY_0 | NULL | NULL | A<1>_II | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | A<0>_II/UIM | 2097 | ? | 0 | 0 | a_gal_COPY_0_COPY_0 | NULL | NULL | A<0>_II | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | A<2>_II/UIM | 2098 | ? | 0 | 0 | a_gal_COPY_0_COPY_0 | NULL | NULL | A<2>_II | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | A<3>_II/UIM | 2085 | ? | 0 | 0 | a_gal_COPY_0_COPY_0 | NULL | NULL | A<3>_II | 0 | 5 | II_IMUX
+OUTPUT_NODE_TYPE | 1 | 9 | MC_SI_D1
+SIGNAL | NODE | mapterm_MC.D1 | 2123 | ? | 0 | 0 | mapterm_MC | NULL | NULL | mapterm_MC.SI | 1 | 9 | MC_SI_D1
+SPPTERM | 0 | IV_ZERO
+OUTPUT_NODE_TYPE | 2 | 9 | MC_SI_D2
+SIGNAL | NODE | mapterm_MC.D2 | 2122 | ? | 0 | 0 | mapterm_MC | NULL | NULL | mapterm_MC.SI | 2 | 9 | MC_SI_D2
+SPPTERM | 15 | IV_FALSE | A<7>_II/UIM | IV_FALSE | A<5>_II/UIM | IV_FALSE | A<4>_II/UIM | IV_FALSE | A<13>_II/UIM | IV_FALSE | A<12>_II/UIM | IV_FALSE | A<11>_II/UIM | IV_FALSE | A<10>_II/UIM | IV_TRUE | romacc_II/UIM | IV_TRUE | M1_II/UIM | IV_FALSE | A<9>_II/UIM | IV_FALSE | A<8>_II/UIM | IV_FALSE | A<6>_II/UIM | IV_FALSE | A<1>_II/UIM | IV_FALSE | A<0>_II/UIM | IV_FALSE | A<2>_II/UIM
+SPPTERM | 16 | IV_TRUE | A<7>_II/UIM | IV_FALSE | A<5>_II/UIM | IV_FALSE | A<4>_II/UIM | IV_FALSE | A<3>_II/UIM | IV_FALSE | A<13>_II/UIM | IV_FALSE | A<12>_II/UIM | IV_FALSE | A<11>_II/UIM | IV_TRUE | A<10>_II/UIM | IV_TRUE | romacc_II/UIM | IV_TRUE | M1_II/UIM | IV_FALSE | A<9>_II/UIM | IV_FALSE | A<8>_II/UIM | IV_TRUE | A<6>_II/UIM | IV_TRUE | A<1>_II/UIM | IV_FALSE | A<0>_II/UIM | IV_TRUE | A<2>_II/UIM
+SPPTERM | 16 | IV_FALSE | A<7>_II/UIM | IV_TRUE | A<5>_II/UIM | IV_TRUE | A<4>_II/UIM | IV_TRUE | A<3>_II/UIM | IV_FALSE | A<13>_II/UIM | IV_FALSE | A<12>_II/UIM | IV_FALSE | A<11>_II/UIM | IV_FALSE | A<10>_II/UIM | IV_TRUE | romacc_II/UIM | IV_TRUE | M1_II/UIM | IV_FALSE | A<9>_II/UIM | IV_FALSE | A<8>_II/UIM | IV_FALSE | A<6>_II/UIM | IV_FALSE | A<1>_II/UIM | IV_FALSE | A<0>_II/UIM | IV_FALSE | A<2>_II/UIM
+SPPTERM | 16 | IV_FALSE | A<7>_II/UIM | IV_TRUE | A<5>_II/UIM | IV_FALSE | A<4>_II/UIM | IV_FALSE | A<3>_II/UIM | IV_FALSE | A<13>_II/UIM | IV_FALSE | A<12>_II/UIM | IV_FALSE | A<11>_II/UIM | IV_TRUE | A<10>_II/UIM | IV_TRUE | romacc_II/UIM | IV_TRUE | M1_II/UIM | IV_FALSE | A<9>_II/UIM | IV_TRUE | A<8>_II/UIM | IV_TRUE | A<6>_II/UIM | IV_TRUE | A<1>_II/UIM | IV_FALSE | A<0>_II/UIM | IV_FALSE | A<2>_II/UIM
+SPPTERM | 16 | IV_FALSE | A<7>_II/UIM | IV_TRUE | A<5>_II/UIM | IV_FALSE | A<4>_II/UIM | IV_FALSE | A<3>_II/UIM | IV_FALSE | A<13>_II/UIM | IV_FALSE | A<12>_II/UIM | IV_FALSE | A<11>_II/UIM | IV_FALSE | A<10>_II/UIM | IV_TRUE | romacc_II/UIM | IV_TRUE | M1_II/UIM | IV_FALSE | A<9>_II/UIM | IV_FALSE | A<8>_II/UIM | IV_TRUE | A<6>_II/UIM | IV_TRUE | A<1>_II/UIM | IV_FALSE | A<0>_II/UIM | IV_TRUE | A<2>_II/UIM
+
+SRFF_INSTANCE | mapterm_MC.REG | mapterm_MC | 0 | 1 | 1
+INPUT_NODE_TYPE | 0 | 8 | SRFF_D
+NODE | mapterm_MC.D | 2121 | ? | 0 | 0 | mapterm_MC | NULL | NULL | mapterm_MC.XOR | 0 | 7 | ALU_F
+OUTPUT_NODE_TYPE | 0 | 8 | SRFF_Q
+NODE | mapterm_MC.Q | 2124 | ? | 0 | 0 | mapterm_MC | NULL | NULL | mapterm_MC.REG | 0 | 8 | SRFF_Q
+
+OUTPUT_INSTANCE | 0 | mapterm | a_gal_COPY_0_COPY_0 | 3 | 1 | 1
+INPUT_NODE_TYPE | 0 | 6 | OI_IN
+NODE | mapterm_MC.Q | 2125 | ? | 0 | 0 | a_gal_COPY_0_COPY_0 | NULL | mapterm_MC.Q | mapterm_MC | 0 | 0 | MC_Q
+OUTPUT_NODE_TYPE | 0 | 6 | OI_OUT
+NODE | mapterm | 2126 | PO | 0 | 0 | a_gal_COPY_0_COPY_0 | NULL | NULL | mapterm | 0 | 6 | OI_OUT
+
+FB_INSTANCE | FOOBAR1_ | a_gal_COPY_0_COPY_0 | 0 | 0 | 0
+FBPIN | 1 | mapterm_MC | 1 | NULL | 0 | mapterm | 1 | 44 | 49152
+FBPIN | 2 | ideio0_MC | 1 | NULL | 0 | ideio0 | 1 | 43 | 49152
+FBPIN | 3 | ideio1_MC | 1 | NULL | 0 | ideio1 | 1 | 42 | 49152
+FBPIN | 4 | automap_MC | 1 | NULL | 0 | automap | 1 | 40 | 53248
+FBPIN | 5 | mapcond_MC | 1 | NULL | 0 | mapcond | 1 | 39 | 53248
+FBPIN | 6 | NULL | 0 | A<0>_II | 1 | NULL | 0 | 38 | 53248
+FBPIN | 7 | NULL | 0 | A<10>_II | 1 | NULL | 0 | 37 | 53248
+FBPIN | 8 | NULL | 0 | A<11>_II | 1 | NULL | 0 | 36 | 51200
+FBPIN | 9 | NULL | 0 | A<12>_II | 1 | NULL | 0 | 35 | 49152
+FBPIN | 10 | NULL | 0 | A<13>_II | 1 | NULL | 0 | 34 | 49152
+FBPIN | 11 | NULL | 0 | A<1>_II | 1 | NULL | 0 | 33 | 49152
+FBPIN | 12 | NULL | 0 | A<2>_II | 1 | NULL | 0 | 29 | 49152
+FBPIN | 13 | NULL | 0 | A<3>_II | 1 | NULL | 0 | 28 | 49152
+FBPIN | 14 | NULL | 0 | A<4>_II | 1 | NULL | 0 | 27 | 49152
+FBPIN | 15 | NULL | 0 | A<5>_II | 1 | NULL | 0 | 26 | 49152
+FBPIN | 16 | sig_mapcond_MC | 1 | A<6>_II | 1 | NULL | 0 | 25 | 49152
+
+FB_INSTANCE | FOOBAR2_ | a_gal_COPY_0_COPY_0 | 0 | 0 | 0
+FBPIN | 1 | NULL | 0 | A<7>_II | 1 | NULL | 0 | 1 | 49152
+FBPIN | 2 | NULL | 0 | A<8>_II | 1 | NULL | 0 | 2 | 49152
+FBPIN | 3 | NULL | 0 | A<9>_II | 1 | NULL | 0 | 3 | 49152
+FBPIN | 4 | NULL | 0 | M1_II | 1 | NULL | 0 | 4 | 49152
+FBPIN | 5 | NULL | 0 | CLOCK_II | 1 | NULL | 0 | 5 | 57344
+FBPIN | 6 | NULL | 0 | romacc_II | 1 | NULL | 0 | 6 | 57344
+
+FB_INSTANCE | INPUTPINS_FOOBAR3_ | a_gal_COPY_0_COPY_0 | 0 | 0 | 0
+
+CT_INSTANCE | FOOBAR1_ | FOOBAR1__ctinst | a_gal_COPY_0_COPY_0 | 0 | 0 | 0
+
+CT_INSTANCE | FOOBAR2_ | FOOBAR2__ctinst | a_gal_COPY_0_COPY_0 | 0 | 0 | 0
+
+PLA | FOOBAR1_ | 15
+PLA_TERM | 0 | 
+SPPTERM | 16 | IV_TRUE | A<7>_II/UIM | IV_FALSE | A<5>_II/UIM | IV_FALSE | A<4>_II/UIM | IV_FALSE | A<3>_II/UIM | IV_FALSE | A<13>_II/UIM | IV_FALSE | A<12>_II/UIM | IV_FALSE | A<11>_II/UIM | IV_TRUE | A<10>_II/UIM | IV_TRUE | romacc_II/UIM | IV_TRUE | M1_II/UIM | IV_FALSE | A<9>_II/UIM | IV_FALSE | A<8>_II/UIM | IV_TRUE | A<6>_II/UIM | IV_TRUE | A<1>_II/UIM | IV_FALSE | A<0>_II/UIM | IV_TRUE | A<2>_II/UIM
+PLA_TERM | 1 | 
+SPPTERM | 16 | IV_FALSE | A<7>_II/UIM | IV_TRUE | A<5>_II/UIM | IV_FALSE | A<4>_II/UIM | IV_FALSE | A<3>_II/UIM | IV_FALSE | A<13>_II/UIM | IV_FALSE | A<12>_II/UIM | IV_FALSE | A<11>_II/UIM | IV_FALSE | A<10>_II/UIM | IV_TRUE | romacc_II/UIM | IV_TRUE | M1_II/UIM | IV_FALSE | A<9>_II/UIM | IV_FALSE | A<8>_II/UIM | IV_TRUE | A<6>_II/UIM | IV_TRUE | A<1>_II/UIM | IV_FALSE | A<0>_II/UIM | IV_TRUE | A<2>_II/UIM
+PLA_TERM | 2 | 
+SPPTERM | 16 | IV_FALSE | A<7>_II/UIM | IV_TRUE | A<5>_II/UIM | IV_FALSE | A<4>_II/UIM | IV_FALSE | A<3>_II/UIM | IV_FALSE | A<13>_II/UIM | IV_FALSE | A<12>_II/UIM | IV_FALSE | A<11>_II/UIM | IV_TRUE | A<10>_II/UIM | IV_TRUE | romacc_II/UIM | IV_TRUE | M1_II/UIM | IV_FALSE | A<9>_II/UIM | IV_TRUE | A<8>_II/UIM | IV_TRUE | A<6>_II/UIM | IV_TRUE | A<1>_II/UIM | IV_FALSE | A<0>_II/UIM | IV_FALSE | A<2>_II/UIM
+PLA_TERM | 3 | 
+SPPTERM | 15 | IV_FALSE | A<7>_II/UIM | IV_FALSE | A<5>_II/UIM | IV_FALSE | A<4>_II/UIM | IV_FALSE | A<13>_II/UIM | IV_FALSE | A<12>_II/UIM | IV_FALSE | A<11>_II/UIM | IV_FALSE | A<10>_II/UIM | IV_TRUE | romacc_II/UIM | IV_TRUE | M1_II/UIM | IV_FALSE | A<9>_II/UIM | IV_FALSE | A<8>_II/UIM | IV_FALSE | A<6>_II/UIM | IV_FALSE | A<1>_II/UIM | IV_FALSE | A<0>_II/UIM | IV_FALSE | A<2>_II/UIM
+PLA_TERM | 4 | 
+SPPTERM | 16 | IV_FALSE | A<7>_II/UIM | IV_TRUE | A<5>_II/UIM | IV_TRUE | A<4>_II/UIM | IV_TRUE | A<3>_II/UIM | IV_FALSE | A<13>_II/UIM | IV_FALSE | A<12>_II/UIM | IV_FALSE | A<11>_II/UIM | IV_FALSE | A<10>_II/UIM | IV_TRUE | romacc_II/UIM | IV_TRUE | M1_II/UIM | IV_FALSE | A<9>_II/UIM | IV_FALSE | A<8>_II/UIM | IV_FALSE | A<6>_II/UIM | IV_FALSE | A<1>_II/UIM | IV_FALSE | A<0>_II/UIM | IV_FALSE | A<2>_II/UIM
+PLA_TERM | 5 | 
+SPPTERM | 14 | IV_TRUE | sig_mapcond | IV_TRUE | A<7>_II/UIM | IV_TRUE | A<5>_II/UIM | IV_TRUE | A<4>_II/UIM | IV_TRUE | A<3>_II/UIM | IV_FALSE | A<13>_II/UIM | IV_TRUE | A<12>_II/UIM | IV_TRUE | A<11>_II/UIM | IV_TRUE | A<10>_II/UIM | IV_TRUE | romacc_II/UIM | IV_TRUE | M1_II/UIM | IV_TRUE | A<9>_II/UIM | IV_TRUE | A<8>_II/UIM | IV_TRUE | A<6>_II/UIM
+PLA_TERM | 6 | 
+SPPTERM | 17 | IV_FALSE | sig_mapcond | IV_TRUE | A<7>_II/UIM | IV_FALSE | A<5>_II/UIM | IV_FALSE | A<4>_II/UIM | IV_FALSE | A<3>_II/UIM | IV_FALSE | A<13>_II/UIM | IV_FALSE | A<12>_II/UIM | IV_FALSE | A<11>_II/UIM | IV_TRUE | A<10>_II/UIM | IV_TRUE | romacc_II/UIM | IV_TRUE | M1_II/UIM | IV_FALSE | A<9>_II/UIM | IV_FALSE | A<8>_II/UIM | IV_TRUE | A<6>_II/UIM | IV_TRUE | A<1>_II/UIM | IV_FALSE | A<0>_II/UIM | IV_TRUE | A<2>_II/UIM
+PLA_TERM | 7 | 
+SPPTERM | 17 | IV_FALSE | sig_mapcond | IV_FALSE | A<7>_II/UIM | IV_TRUE | A<5>_II/UIM | IV_FALSE | A<4>_II/UIM | IV_FALSE | A<3>_II/UIM | IV_FALSE | A<13>_II/UIM | IV_FALSE | A<12>_II/UIM | IV_FALSE | A<11>_II/UIM | IV_FALSE | A<10>_II/UIM | IV_TRUE | romacc_II/UIM | IV_TRUE | M1_II/UIM | IV_FALSE | A<9>_II/UIM | IV_FALSE | A<8>_II/UIM | IV_TRUE | A<6>_II/UIM | IV_TRUE | A<1>_II/UIM | IV_FALSE | A<0>_II/UIM | IV_TRUE | A<2>_II/UIM
+PLA_TERM | 8 | 
+SPPTERM | 17 | IV_FALSE | sig_mapcond | IV_FALSE | A<7>_II/UIM | IV_TRUE | A<5>_II/UIM | IV_FALSE | A<4>_II/UIM | IV_FALSE | A<3>_II/UIM | IV_FALSE | A<13>_II/UIM | IV_FALSE | A<12>_II/UIM | IV_FALSE | A<11>_II/UIM | IV_TRUE | A<10>_II/UIM | IV_TRUE | romacc_II/UIM | IV_TRUE | M1_II/UIM | IV_FALSE | A<9>_II/UIM | IV_TRUE | A<8>_II/UIM | IV_TRUE | A<6>_II/UIM | IV_TRUE | A<1>_II/UIM | IV_FALSE | A<0>_II/UIM | IV_FALSE | A<2>_II/UIM
+PLA_TERM | 9 | 
+SPPTERM | 16 | IV_FALSE | sig_mapcond | IV_FALSE | A<7>_II/UIM | IV_FALSE | A<5>_II/UIM | IV_FALSE | A<4>_II/UIM | IV_FALSE | A<13>_II/UIM | IV_FALSE | A<12>_II/UIM | IV_FALSE | A<11>_II/UIM | IV_FALSE | A<10>_II/UIM | IV_TRUE | romacc_II/UIM | IV_TRUE | M1_II/UIM | IV_FALSE | A<9>_II/UIM | IV_FALSE | A<8>_II/UIM | IV_FALSE | A<6>_II/UIM | IV_FALSE | A<1>_II/UIM | IV_FALSE | A<0>_II/UIM | IV_FALSE | A<2>_II/UIM
+PLA_TERM | 10 | 
+SPPTERM | 17 | IV_FALSE | sig_mapcond | IV_FALSE | A<7>_II/UIM | IV_TRUE | A<5>_II/UIM | IV_TRUE | A<4>_II/UIM | IV_TRUE | A<3>_II/UIM | IV_FALSE | A<13>_II/UIM | IV_FALSE | A<12>_II/UIM | IV_FALSE | A<11>_II/UIM | IV_FALSE | A<10>_II/UIM | IV_TRUE | romacc_II/UIM | IV_TRUE | M1_II/UIM | IV_FALSE | A<9>_II/UIM | IV_FALSE | A<8>_II/UIM | IV_FALSE | A<6>_II/UIM | IV_FALSE | A<1>_II/UIM | IV_FALSE | A<0>_II/UIM | IV_FALSE | A<2>_II/UIM
+PLA_TERM | 13 | 
+SPPTERM | 7 | IV_TRUE | A<7>_II/UIM | IV_TRUE | A<5>_II/UIM | IV_FALSE | A<4>_II/UIM | IV_FALSE | A<3>_II/UIM | IV_TRUE | A<1>_II/UIM | IV_TRUE | A<0>_II/UIM | IV_FALSE | A<2>_II/UIM
+PLA_TERM | 16 | 
+SPPTERM | 5 | IV_TRUE | A<7>_II/UIM | IV_TRUE | A<5>_II/UIM | IV_FALSE | A<6>_II/UIM | IV_TRUE | A<1>_II/UIM | IV_TRUE | A<0>_II/UIM
+PLA_TERM | 19 | 
+SPPTERM | 1 | IV_TRUE | sig_mapcond
+PLA_TERM | 22 | 
+SPPTERM | 1 | IV_TRUE | sig_mapcond
+
+BUSINFO | A<13:0> | 14 | 0 | 0 | A<0> | 13 | A<10> | 3 | A<11> | 2 | A<12> | 1 | A<13> | 0 | A<1> | 12 | A<2> | 11 | A<3> | 10 | A<4> | 9 | A<5> | 8 | A<6> | 7 | A<7> | 6 | A<8> | 5 | A<9> | 4
+
+IOSTD | LVCMOS18
+A<0> | LVCMOS18
+A<10> | LVCMOS18
+A<11> | LVCMOS18
+A<12> | LVCMOS18
+A<13> | LVCMOS18
+A<1> | LVCMOS18
+A<2> | LVCMOS18
+A<3> | LVCMOS18
+A<4> | LVCMOS18
+A<5> | LVCMOS18
+A<6> | LVCMOS18
+A<7> | LVCMOS18
+A<8> | LVCMOS18
+A<9> | LVCMOS18
+CLOCK | LVCMOS18
+M1 | LVCMOS18
+romacc | LVCMOS18
+automap | LVCMOS18
+ideio0 | LVCMOS18
+ideio1 | LVCMOS18
+mapcond | LVCMOS18
+mapterm | LVCMOS18
+
+
+FB_ORDER_OF_INPUTS | FOOBAR1_ | 0 | romacc | 6 | 1 | sig_mapcond | NULL | 2 | A<3> | 28 | 3 | A<4> | 27 | 4 | A<5> | 26
+FB_ORDER_OF_INPUTS | FOOBAR1_ | 5 | A<6> | 25 | 6 | A<10> | 37 | 7 | A<7> | 1 | 8 | A<8> | 2 | 9 | A<9> | 3
+FB_ORDER_OF_INPUTS | FOOBAR1_ | 10 | M1 | 4 | 11 | A<2> | 29 | 16 | A<0> | 38 | 17 | A<1> | 33 | 18 | A<11> | 36
+FB_ORDER_OF_INPUTS | FOOBAR1_ | 19 | A<12> | 35 | 20 | A<13> | 34
+
+FB_IMUX_INDEX | FOOBAR1_ | 22 | 48 | 12 | 13 | 14 | 15 | 6 | 17 | 18 | 19 | 20 | 11 | -1 | -1 | -1 | -1 | 5 | 10 | 7 | 8 | 9 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1
+
+
+GLOBAL_FCLK | CLOCK | 0 | 0

@@ -1,0 +1,35 @@
+Pin Freeze File:  version O.76xd
+
+2C32A44PC XC2C32A-4-PC44
+A<0> S:PIN38
+A<1> S:PIN33
+A<2> S:PIN29
+A<3> S:PIN28
+A<4> S:PIN27
+A<5> S:PIN26
+A<6> S:PIN25
+A<7> S:PIN1
+A<8> S:PIN2
+A<9> S:PIN3
+A<10> S:PIN37
+A<11> S:PIN36
+A<12> S:PIN35
+A<13> S:PIN34
+CLOCK S:PIN5
+M1 S:PIN4
+romacc S:PIN6
+automap S:PIN40
+ideio0 S:PIN43
+ideio1 S:PIN42
+mapcond S:PIN39
+mapterm S:PIN44
+
+
+;The remaining section of the .gyd file is for documentation purposes only.
+;It shows where your internal equations were placed in the last successful fit.
+
+PARTITION FB1_1 mapterm ideio0 ideio1 automap
+		 mapcond
+PARTITION FB1_16 sig_mapcond
+
+

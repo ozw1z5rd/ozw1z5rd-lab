@@ -1,0 +1,111 @@
+CPU control lines 
+/HALT -- the CPU execute the HALT instruction and is waiting and Interrupt ( any type )
+/WAIT -- stop the process from accessing the addressed device ( if hold too long ruins the refresh cycle ) impact M1 cycle.
+/INT -- CPU severs the INT after the current instruction completes
+/NMI -- same as above but CPU can't ignore it, restart the CPU @ 0x0066
+/RESET -- need to be hold low at least for 3 clock cycles
+
+CPU BUS CONTROL 
+/BUSRQ => Request the busses, recognized at the end of the current machine cycle. ( to be used in DMA, stops the refreshing cycle )
+/BUSACK => BUS is released to the device, /MREQ, /IORQ, /RD and /WR and into Z state. External device can plot these lines.
+
+
+SYSTEM CONTROL
+/M1 -- ( /M1 and /IORQ ) => interrupt ack ( device can put interrupt vector on the data bus ). 
+       ( /M1 and /MREQ ) => fetch cycle is running.
+/MREQ -- AD bus has a valid address for the requested operation on memory.
+/IOREQ -- AD bus has a valid address for the requested operation on I/O.
+/WR -- data bus has valid data
+/RD -- device can expose data on DATA bus.
+/RFSH -- not used.
+
+
+
+Speccy's connector adds 2 lines:
+
+/ROMCS  -- this line is driven by the ULA, when it senses the CPU is accessing the ROM set it low. Forcing this line high will prevent the ULA from selecting the Speccy's Basic ROM. ROM swithcing 
+/IORQGE -- When the CPU is accessing the ULA this line goes low. Setting it high will prevent the cpu from accessing the ULA.
+
+DIVIDE uses all the following lines bus the /BUSRQ and /BUSACK, 
+ROM/RAM swithching involves only the first 16K of address space 0x0000 0x3fff . Spectranet is able to page up to 1Mbyte, divide less, limiting the RAM amount to 32K and 8K ROM. The page size usually is about 4K up to 8K, a piece of ROM is always present into the lower 18K address space.
+
+"ROM swithching" depends on some triggering conditions, each interface has its own.
+Make interface divide compatible means to keep the same paging/swapping method, how to implement this is defined into the divide programming model document ( ust 8 rows of text which describes how to switch on and switch out ). spectranet has also some trapping capabilities available due the large CPLD, whis allow easy debug.
+
+The venema ram expansion add up to 512K SRAM which should be selectable using the unused  ( on the standard divid interface ) bit 4 and 5 of .... 8 ( Complete me ). This expansion need also an extra GAL to implement some extra paging capability. Also the rswap divide+ interface add more than 32K ( 128K ) and backup them using a standard button battery making the RAM acting like a ROM. 
+
+RESIdos need RAM, and starting with 32K avoid to use it. In the 1st release the ram about is still 32K.
+
+First step is to expose the speccy's bus, the first release of the divNET is just a divide with a new PCB layout, it looks like the divide+ one where the bus is grabed just after the speccy connector, but is this case we don't reply it, we attach the network interface based on W5100 chip. Since this network interface is a SMD and a full build and working one costs about 10 $, the idea it to provide a motherboard where this prototype can be attached and where is the glue logic and address decoding.
+Of course, we can use this interface without having the divNET interface, just the driver is into the standard RAM ( 0x4000 0xffff ), this is for the 1st stage of testing.
+
+Doing this way we can allow existing divIDE users to expand their system with a simple bus duplicator. 
+And divide+ users can attach the newtork to exposed bus on the top of their expansion's box.
+
+The IDE interface is really simple, it's just a way to get 2 bytes from the ide's data bus. The simpler interfaces ( with uses the HD at its half capacity, don't need this extra logic ( just 3 74xx chips ) ), but we are going to have a full compability with the standard divide and 
+
+
+How the divide software interface works ? 
+theorically divide supports up to 512Kb, page size is 8k.
+The 3rd bank of sram can be used in the same address space of the  eeprom ( 0x0000 0x2000 )
+
+Ports are decoded using the low eight line of the address bus.
+IDE ports are mapped into the 
+
+xxxx xxxx  101r rr11 address-mask where rrr are addressing the 8 register.
+divide control register is located at xxxx xxxx 1110 0011.
+
+Divide has 8bit databus when the ide has 16bit data, this is where the trick comes.
+The logic glue define ODD and EVEN access.
+The "ODD/EVEN" state is set to ODD after any access to ANY but IDE DATA REGISTER. In this way the next access 
+is always an ODD access.
+
+When reading the 1st access returns the lower part of the IDE data, the 2nd will return the high part of the ide data.
+In reading the data are splitted ( where the high part is stored into a latch ) 
+In writing 
+
+
+
+When reading from this register, each ODD access will return low byte of 
+readed word (while high byte is stored into latch and buffer pointer is shifted
+to next word). Each EVEN access will return that high byte, stored in previous
+read access to DATA REGISTER.
+
+When writing to DATA REGISTER, each ODD access will store the byte into latch.
+Each EVEN access will join the previously stored low portion  with actual byte 
+(considered to be high portion), and this word is written into harddrive (and 
+next word in harddrive buffer is pointed).
+
+After any access to non-data command block registers (rrr=1..7) or to divIDE
+control register, following DATA REGISTER access is considered to be ODD.
+Accesses outside divIDE ports cannot change the EVEN/ODD state. After reset or 
+power-on, this state is unknown.
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+e che vol dì ? 
+
+When a
+Load Register A with Register I (LD A, I) instruction or a Load
+Register A with Register R (LD A, R) instruction is executed, the state
+of IFF2 is copied to the parity flag where it can be tested or stored.
+
+
+
+

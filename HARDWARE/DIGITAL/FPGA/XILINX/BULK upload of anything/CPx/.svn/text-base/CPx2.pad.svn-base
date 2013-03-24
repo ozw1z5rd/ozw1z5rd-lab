@@ -1,0 +1,129 @@
+Release 8.1i - Fit O.76xd
+Copyright(c) 1995-2003 Xilinx Inc. All rights reserved
+
+ 1-25-2012  6:12AM
+
+NOTE: This file is designed to be imported into a spreadsheet program
+such as Microsoft Excel for viewing, printing and sorting. The pipe '|'
+character is used as the data field separator.
+This file is also designed to support parsing.
+
+Input file:  CPx2.ngd
+output file: CPx2.pad
+Part type:   xcr3064xl
+Speed grade: -6
+Package:     vq100
+
+Pinout by Pin Number:
+
+-----|-----|-----|-----|-----|-----|-----|-----|-----|-----|
+Pin Number|Signal Name|Pin Usage|Pin Name|Direction|IO Standard|IO Bank Number|{blank}|Slew Rate|Termination|{blank}|Voltage|Constraint|
+P1|WPU||.||||||||||
+P2|WPU||.||||||||||
+P3|VCC||VCC||||||||||
+P4|TDI||I/O/TDI||||||||||
+P5|WPU||.||||||||||
+P6|A<3>|I|I/O|INPUT|||||||||
+P7|WPU||.||||||||||
+P8|A<4>|I|I/O|INPUT|||||||||
+P9|A<5>|I|I/O|INPUT|||||||||
+P10|A<6>|I|I/O|INPUT|||||||||
+P11|PE||PORT_EN||||||||||
+P12|A<7>|I|I/O|INPUT|||||||||
+P13|D<0>|I|I/O|INPUT|||||||||
+P14|D<1>|I|I/O|INPUT|||||||||
+P15|TMS||I/O/TMS||||||||||
+P16|WPU||I/O||||||||||
+P17|WPU||I/O||||||||||
+P18|VCC||VCC||||||||||
+P19|WPU||I/O||||||||||
+P20|WPU||I/O||||||||||
+P21|WPU||I/O||||||||||
+P22|WPU||.||||||||||
+P23|WPU||I/O||||||||||
+P24|WPU||.||||||||||
+P25|WPU||I/O||||||||||
+P26|GND||GND||||||||||
+P27|WPU||.||||||||||
+P28|WPU||.||||||||||
+P29|WPU||I/O||||||||||
+P30|WPU||I/O||||||||||
+P31|WPU||I/O||||||||||
+P32|WPU||I/O||||||||||
+P33|WPU||I/O||||||||||
+P34|VCC||VCC||||||||||
+P35|WPU||I/O||||||||||
+P36|WPU||I/O||||||||||
+P37|WPU||I/O||||||||||
+P38|GND||GND||||||||||
+P39|VCC||VCC||||||||||
+P40|WPU||I/O||||||||||
+P41|WPU||I/O||||||||||
+P42|WPU||I/O||||||||||
+P43|GND||GND||||||||||
+P44|WPU||I/O||||||||||
+P45|WPU||I/O||||||||||
+P46|WPU||I/O||||||||||
+P47|WPU||I/O||||||||||
+P48|WPU||I/O||||||||||
+P49|WPU||.||||||||||
+P50|WPU||.||||||||||
+P51|VCC||VCC||||||||||
+P52|WPU||I/O||||||||||
+P53|WPU||.||||||||||
+P54|N_M1|I|I/O|INPUT|||||||||
+P55|WPU||.||||||||||
+P56|JUMPER_COMP_MODE|I|I/O|INPUT|||||||||
+P57|D<5>|I|I/O|INPUT|||||||||
+P58|D<4>|I|I/O|INPUT|||||||||
+P59|GND||GND||||||||||
+P60|D<3>|I|I/O|INPUT|||||||||
+P61|D<2>|I|I/O|INPUT|||||||||
+P62|TCK||I/O/TCK||||||||||
+P63|N_SRAMWR|O|I/O|OUTPUT|||||||||
+P64|N_SRAMOE|O|I/O|OUTPUT|||||||||
+P65|N_SRAMEN|O|I/O|OUTPUT|||||||||
+P66|VCC||VCC||||||||||
+P67|N_SRAMCS|O|I/O|OUTPUT|||||||||
+P68|N_EEPROMCS|O|I/O|OUTPUT|||||||||
+P69|MAPRAM|O|I/O|OUTPUT|||||||||
+P70|WPU||.||||||||||
+P71|CONMEM|O|I/O|OUTPUT|||||||||
+P72|WPU||.||||||||||
+P73|TDO||I/O/TDO||||||||||
+P74|GND||GND||||||||||
+P75|N_ROMCS|O|I/O|OUTPUT|||||||||
+P76|N_IORQEGDE|O|I/O|OUTPUT|||||||||
+P77|WPU||.||||||||||
+P78|WPU||.||||||||||
+P79|BANK<1>|O|I/O|OUTPUT|||||||||
+P80|BANK<0>|O|I/O|OUTPUT|||||||||
+P81|BANK<5>|O|I/O|OUTPUT|||||||||
+P82|VCC||VCC||||||||||
+P83|BANK<4>|O|I/O|OUTPUT|||||||||
+P84|BANK<3>|O|I/O|OUTPUT|||||||||
+P85|BANK<2>|O|I/O|OUTPUT|||||||||
+P86|GND||GND||||||||||
+P87|WPU||IN3/GCK3||||||||||
+P88|WPU||IN2/GCK2||||||||||
+P89|WPU||IN1/GCK1||||||||||
+P90|N_WR|GCK/I|IN0/GCK0||||||||||
+P91|VCC||VCC||||||||||
+P92|N_EEPROMWR|O|I/O|OUTPUT|||||||||
+P93|N_EEPROMOE|O|I/O|OUTPUT|||||||||
+P94|JUMPER_EEPROM|I|I/O|INPUT|||||||||
+P95|GND||GND||||||||||
+P96|N_MREQ|I|I/O|INPUT|||||||||
+P97|N_RD|I|I/O|INPUT|||||||||
+P98|A<0>|I|I/O|INPUT|||||||||
+P99|A<1>|I|I/O|INPUT|||||||||
+P100|A<2>|I|I/O|INPUT|||||||||
+
+To preserve the pinout above for future design iterations in
+Project Navigator simply execute the (Lock Pins) process
+located under the (Implement Design) process in a toolbox named
+(Optional Implementation Tools) or invoke PIN2UCF from the
+command line. The location constraints will be written into your
+specified UCF file
+
+

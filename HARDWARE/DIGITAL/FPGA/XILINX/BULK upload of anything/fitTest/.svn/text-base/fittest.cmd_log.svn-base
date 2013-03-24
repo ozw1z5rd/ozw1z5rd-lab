@@ -1,0 +1,1 @@
+xst -intstyle ise -ifn "/home/apalma/Garage/vhdl/fitTest/fittest.xst" -ofn "/home/apalma/Garage/vhdl/fitTest/fittest.syr" 

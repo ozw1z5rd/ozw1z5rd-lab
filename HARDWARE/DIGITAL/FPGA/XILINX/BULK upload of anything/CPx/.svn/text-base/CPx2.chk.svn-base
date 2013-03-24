@@ -1,0 +1,52 @@
+
+----------------------------------------
+|  P a r t i t i o n    S u c c e e d  |
+----------------------------------------
+0 Group(s)
+
+ClkInput[1]: N_WR(90, sclk) 
+----------------- B l o c k 0 ------------------
+PLApt(7/48), Fanin(16/38), Clk(1/2), Bct(1/8), Pin(15/16), Mcell(15/16), FbNand(0/0)
+PLApts[7/19] () () () () 9 () () () 4 () 5 () 6 () 7 () 1 () 3
+Fanins[16] A<0>.p A<1>.p A<2>.p A<3>.p A<4>.p A<5>.p A<6>.p A<7>.p D<0>.p D<1>.p D<2>.p D<3>.p D<4>.p D<5>.p 
+           JUMPER_COMP_MODE.p N_M1.p
+clk[1/1] N_WR 
+BCTpts[1] ct0:-999 ct1:-999 ct2:-999 ct3:-999 ct4:9 ct5:-999 ct6:-999 ct7:-999 
+Signal[15] [BANK<0>(105),BANK<0>(80)] [BANK<1>(106),BANK<1>(79)] [BANK<2>(101),BANK<2>(85)]  
+           [BANK<3>(102),BANK<3>(84)] [BANK<4>(103),BANK<4>(83)] [BANK<5>(104),BANK<5>(81)]  
+           [CONMEM(110),CONMEM(71)] [MAPRAM(111),MAPRAM(69)] [N_EEPROMCS(112),N_EEPROMCS(68)]  
+           [N_IORQEGDE(107),N_IORQEGDE(76)] [N_ROMCS(108),N_ROMCS(75)] [N_SRAMCS(113),N_SRAMCS(67)]  
+           [N_SRAMEN(114),N_SRAMEN(65)] [N_SRAMOE(115),N_SRAMOE(64)] [N_SRAMWR(116),N_SRAMWR(63)] 
+Signal[15] [ 0: BANK<2>(101) BANK<2>(85)  ][ 1: BANK<3>(102) BANK<3>(84)  ][ 2: BANK<4>(103) BANK<4>(83)  ] 
+           [ 3: BANK<5>(104) BANK<5>(81)  ][ 4: BANK<0>(105) BANK<0>(80)  ][ 5: BANK<1>(106) BANK<1>(79)  ] 
+           [ 6: N_IORQEGDE(107) N_IORQEGDE(76)  ][ 7: N_ROMCS(108) N_ROMCS(75)  ][ 8: (73)  ][ 9:  
+           CONMEM(110) CONMEM(71)  ][ 10: MAPRAM(111) MAPRAM(69)  ][ 11: N_EEPROMCS(112) N_EEPROMCS(68)  ] 
+           [ 12: N_SRAMCS(113) N_SRAMCS(67)  ][ 13: N_SRAMEN(114) N_SRAMEN(65)  ][ 14: N_SRAMOE(115)  
+           N_SRAMOE(64)  ][ 15: N_SRAMWR(116) N_SRAMWR(63)  ]
+FbNand[ 0] 
+----------------- B l o c k 1 ------------------
+PLApt(2/48), Fanin(4/38), Clk(0/2), Bct(0/8), Pin(15/16), Mcell(2/16), FbNand(0/0)
+PLApts[2/11] () () () () () () () () 8 () 10
+Fanins[ 4] JUMPER_EEPROM.p N_MREQ.p N_RD.p N_WR.p
+clk[0/0] 
+BCTpts[0] ct0:-999 ct1:-999 ct2:-999 ct3:-999 ct4:-999 ct5:-999 ct6:-999 ct7:-999 
+Signal[15] [N_EEPROMOE(118),N_EEPROMOE(93)] [N_EEPROMWR(117),N_EEPROMWR(92)] [A<0>(98)] [A<1>(99)]  
+           [A<2>(100)] [A<3>(6)] [A<4>(8)] [A<5>(9)] [A<6>(10)] [A<7>(12)] [D<0>(13)] [D<1>(14)]  
+           [JUMPER_EEPROM(94)] [N_MREQ(96)] [N_RD(97)] 
+Signal[15] [ 0: N_EEPROMWR(117) N_EEPROMWR(92)  ][ 1: N_EEPROMOE(118) N_EEPROMOE(93)  ][ 2:  
+           JUMPER_EEPROM(94)  ][ 3: N_MREQ(96)  ][ 4: N_RD(97)  ][ 5: A<0>(98)  ][ 6: A<1>(99)  ][ 7:  
+           A<2>(100)  ][ 8: (4)  ][ 9: A<3>(6)  ][ 10: A<4>(8)  ][ 11: A<5>(9)  ][ 12: A<6>(10)  ][ 13:  
+           A<7>(12)  ][ 14: D<0>(13)  ][ 15: D<1>(14)  ]
+FbNand[ 0] 
+----------------- B l o c k 2 ------------------
+PLApt(0/48), Fanin(0/38), Clk(0/2), Bct(0/8), Pin(6/16), Mcell(0/16), FbNand(0/0)
+PLApts[0/0]
+Fanins[ 0]
+clk[0/0] 
+BCTpts[0] ct0:-999 ct1:-999 ct2:-999 ct3:-999 ct4:-999 ct5:-999 ct6:-999 ct7:-999 
+Signal[ 6] [D<2>(61)] [D<3>(60)] [D<4>(58)] [D<5>(57)] [JUMPER_COMP_MODE(56)] [N_M1(54)] 
+Signal[ 6] [ 0: (62)  ][ 1: D<2>(61)  ][ 2: D<3>(60)  ][ 3: D<4>(58)  ][ 4: D<5>(57)  ][ 5:  
+           JUMPER_COMP_MODE(56)  ][ 6: N_M1(54)  ][ 7: (52)  ][ 8: (48)  ][ 9: (47)  ][ 10: (46)  ][ 11:  
+           (45)  ][ 12: (44)  ][ 13: (42)  ][ 14: (41)  ][ 15: (40)  ]
+FbNand[ 0] 
+----------------- B l o c k 3 ------------------

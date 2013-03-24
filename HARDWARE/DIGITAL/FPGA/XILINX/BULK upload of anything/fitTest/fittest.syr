@@ -1,0 +1,195 @@
+Release 13.3 - xst O.76xd (lin64)
+Copyright (c) 1995-2011 Xilinx, Inc.  All rights reserved.
+--> 
+Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.06 secs
+ 
+--> 
+Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.06 secs
+ 
+--> 
+Reading design: fittest.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Compilation
+  3) Design Hierarchy Analysis
+  4) HDL Analysis
+  5) HDL Synthesis
+     5.1) HDL Synthesis Report
+  6) Advanced HDL Synthesis
+     6.1) Advanced HDL Synthesis Report
+  7) Low Level Synthesis
+  8) Partition Report
+  9) Final Report
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "fittest.prj"
+Input Format                       : mixed
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "fittest"
+Output Format                      : NGC
+Target Device                      : CoolRunner2 CPLDs
+
+---- Source Options
+Top Module Name                    : fittest
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+Mux Extraction                     : Yes
+Resource Sharing                   : YES
+
+---- Target Options
+Add IO Buffers                     : YES
+MACRO Preserve                     : YES
+XOR Preserve                       : YES
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Keep Hierarchy                     : Yes
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Verilog 2001                       : YES
+
+---- Other Options
+Clock Enable                       : YES
+wysiwyg                            : NO
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Compilation                              *
+=========================================================================
+Compiling vhdl file "/home/apalma/Garage/vhdl/fitTest/fittest.vhd" in Library work.
+Entity <fittest> compiled.
+ERROR:HDLParsers:3312 - "/home/apalma/Garage/vhdl/fitTest/fittest.vhd" Line 50. Undefined symbol 'CLK'.
+ERROR:HDLParsers:1209 - "/home/apalma/Garage/vhdl/fitTest/fittest.vhd" Line 50. CLK: Undefined symbol (last report in this block)
+ERROR:HDLParsers:3312 - "/home/apalma/Garage/vhdl/fitTest/fittest.vhd" Line 50. Undefined symbol 'not_WR'.
+ERROR:HDLParsers:1209 - "/home/apalma/Garage/vhdl/fitTest/fittest.vhd" Line 50. not_WR: Undefined symbol (last report in this block)
+ERROR:HDLParsers:1401 - "/home/apalma/Garage/vhdl/fitTest/fittest.vhd" Line 50. Object romoff of mode OUT can not be read.
+ERROR:HDLParsers:3312 - "/home/apalma/Garage/vhdl/fitTest/fittest.vhd" Line 50. Undefined symbol 'romacc'.
+ERROR:HDLParsers:1209 - "/home/apalma/Garage/vhdl/fitTest/fittest.vhd" Line 50. romacc: Undefined symbol (last report in this block)
+ERROR:HDLParsers:3312 - "/home/apalma/Garage/vhdl/fitTest/fittest.vhd" Line 50. Undefined symbol 'D0'.
+ERROR:HDLParsers:1209 - "/home/apalma/Garage/vhdl/fitTest/fittest.vhd" Line 50. D0: Undefined symbol (last report in this block)
+ERROR:HDLParsers:3312 - "/home/apalma/Garage/vhdl/fitTest/fittest.vhd" Line 50. Undefined symbol 'D1'.
+ERROR:HDLParsers:1209 - "/home/apalma/Garage/vhdl/fitTest/fittest.vhd" Line 50. D1: Undefined symbol (last report in this block)
+ERROR:HDLParsers:3312 - "/home/apalma/Garage/vhdl/fitTest/fittest.vhd" Line 50. Undefined symbol 'not_RD'.
+ERROR:HDLParsers:1209 - "/home/apalma/Garage/vhdl/fitTest/fittest.vhd" Line 50. not_RD: Undefined symbol (last report in this block)
+ERROR:HDLParsers:3312 - "/home/apalma/Garage/vhdl/fitTest/fittest.vhd" Line 50. Undefined symbol 'not_poweron'.
+ERROR:HDLParsers:1209 - "/home/apalma/Garage/vhdl/fitTest/fittest.vhd" Line 50. not_poweron: Undefined symbol (last report in this block)
+ERROR:HDLParsers:3312 - "/home/apalma/Garage/vhdl/fitTest/fittest.vhd" Line 50. Undefined symbol 'D7'.
+ERROR:HDLParsers:1209 - "/home/apalma/Garage/vhdl/fitTest/fittest.vhd" Line 50. D7: Undefined symbol (last report in this block)
+ERROR:HDLParsers:3312 - "/home/apalma/Garage/vhdl/fitTest/fittest.vhd" Line 50. Undefined symbol 'D6'.
+ERROR:HDLParsers:1209 - "/home/apalma/Garage/vhdl/fitTest/fittest.vhd" Line 50. D6: Undefined symbol (last report in this block)
+ERROR:HDLParsers:3312 - "/home/apalma/Garage/vhdl/fitTest/fittest.vhd" Line 50. Undefined symbol 'A13'.
+ERROR:HDLParsers:1209 - "/home/apalma/Garage/vhdl/fitTest/fittest.vhd" Line 50. A13: Undefined symbol (last report in this block)
+ERROR:HDLParsers:3312 - "/home/apalma/Garage/vhdl/fitTest/fittest.vhd" Line 50. Undefined symbol 'not_eprom'.
+ERROR:HDLParsers:1209 - "/home/apalma/Garage/vhdl/fitTest/fittest.vhd" Line 50. not_eprom: Undefined symbol (last report in this block)
+ERROR:HDLParsers:1401 - "/home/apalma/Garage/vhdl/fitTest/fittest.vhd" Line 50. Object romoff of mode OUT can not be read.
+ERROR:HDLParsers:3312 - "/home/apalma/Garage/vhdl/fitTest/fittest.vhd" Line 50. Undefined symbol 'not_romoe'.
+ERROR:HDLParsers:1209 - "/home/apalma/Garage/vhdl/fitTest/fittest.vhd" Line 50. not_romoe: Undefined symbol (last report in this block)
+ERROR:HDLParsers:3312 - "/home/apalma/Garage/vhdl/fitTest/fittest.vhd" Line 50. Undefined symbol 'bank0'.
+ERROR:HDLParsers:1209 - "/home/apalma/Garage/vhdl/fitTest/fittest.vhd" Line 50. bank0: Undefined symbol (last report in this block)
+ERROR:HDLParsers:3312 - "/home/apalma/Garage/vhdl/fitTest/fittest.vhd" Line 50. Undefined symbol 'bank1'.
+ERROR:HDLParsers:1209 - "/home/apalma/Garage/vhdl/fitTest/fittest.vhd" Line 50. bank1: Undefined symbol (last report in this block)
+ERROR:HDLParsers:3312 - "/home/apalma/Garage/vhdl/fitTest/fittest.vhd" Line 50. Undefined symbol 'not_ramoe'.
+ERROR:HDLParsers:1209 - "/home/apalma/Garage/vhdl/fitTest/fittest.vhd" Line 50. not_ramoe: Undefined symbol (last report in this block)
+ERROR:HDLParsers:3312 - "/home/apalma/Garage/vhdl/fitTest/fittest.vhd" Line 50. Undefined symbol 'addr1'.
+ERROR:HDLParsers:1209 - "/home/apalma/Garage/vhdl/fitTest/fittest.vhd" Line 50. addr1: Undefined symbol (last report in this block)
+ERROR:HDLParsers:3312 - "/home/apalma/Garage/vhdl/fitTest/fittest.vhd" Line 50. Undefined symbol 'addr0'.
+ERROR:HDLParsers:1209 - "/home/apalma/Garage/vhdl/fitTest/fittest.vhd" Line 50. addr0: Undefined symbol (last report in this block)
+ERROR:HDLParsers:3312 - "/home/apalma/Garage/vhdl/fitTest/fittest.vhd" Line 50. Undefined symbol 'not_ramwr'.
+ERROR:HDLParsers:1209 - "/home/apalma/Garage/vhdl/fitTest/fittest.vhd" Line 50. not_ramwr: Undefined symbol (last report in this block)
+ERROR:HDLParsers:3313 - "/home/apalma/Garage/vhdl/fitTest/fittest.vhd" Line 53. Undefined symbol 'clock'.  Should it be: block?
+ERROR:HDLParsers:1209 - "/home/apalma/Garage/vhdl/fitTest/fittest.vhd" Line 53. clock: Undefined symbol (last report in this block)
+ERROR:HDLParsers:808 - "/home/apalma/Garage/vhdl/fitTest/fittest.vhd" Line 55. * can not have such operands in this context.
+ERROR:HDLParsers:808 - "/home/apalma/Garage/vhdl/fitTest/fittest.vhd" Line 56. * can not have such operands in this context.
+ERROR:HDLParsers:3312 - "/home/apalma/Garage/vhdl/fitTest/fittest.vhd" Line 60. Undefined symbol 'not_A13'.
+ERROR:HDLParsers:1209 - "/home/apalma/Garage/vhdl/fitTest/fittest.vhd" Line 60. not_A13: Undefined symbol (last report in this block)
+ERROR:HDLParsers:3312 - "/home/apalma/Garage/vhdl/fitTest/fittest.vhd" Line 65. Undefined symbol 'not_romacc'.
+ERROR:HDLParsers:1209 - "/home/apalma/Garage/vhdl/fitTest/fittest.vhd" Line 65. not_romacc: Undefined symbol (last report in this block)
+ERROR:HDLParsers:3312 - "/home/apalma/Garage/vhdl/fitTest/fittest.vhd" Line 65. Undefined symbol 'not_conmem'.
+ERROR:HDLParsers:1209 - "/home/apalma/Garage/vhdl/fitTest/fittest.vhd" Line 65. not_conmem: Undefined symbol (last report in this block)
+ERROR:HDLParsers:3312 - "/home/apalma/Garage/vhdl/fitTest/fittest.vhd" Line 89. Undefined symbol 'mgalclk'.
+ERROR:HDLParsers:3312 - "/home/apalma/Garage/vhdl/fitTest/fittest.vhd" Line 89. Undefined symbol 'not_IORQ'.
+ERROR:HDLParsers:1209 - "/home/apalma/Garage/vhdl/fitTest/fittest.vhd" Line 89. not_IORQ: Undefined symbol (last report in this block)
+ERROR:HDLParsers:1209 - "/home/apalma/Garage/vhdl/fitTest/fittest.vhd" Line 90. mgalclk: Undefined symbol (last report in this block)
+ERROR:HDLParsers:3313 - "/home/apalma/Garage/vhdl/fitTest/fittest.vhd" Line 90. Undefined symbol 'WR'.  Should it be: oR, hR or cR?
+ERROR:HDLParsers:1209 - "/home/apalma/Garage/vhdl/fitTest/fittest.vhd" Line 90. WR: Undefined symbol (last report in this block)
+ERROR:HDLParsers:3312 - "/home/apalma/Garage/vhdl/fitTest/fittest.vhd" Line 91. Undefined symbol 'not_ideio0'.
+ERROR:HDLParsers:1209 - "/home/apalma/Garage/vhdl/fitTest/fittest.vhd" Line 91. not_ideio0: Undefined symbol (last report in this block)
+ERROR:HDLParsers:3312 - "/home/apalma/Garage/vhdl/fitTest/fittest.vhd" Line 91. Undefined symbol 'ideio1'.
+ERROR:HDLParsers:1209 - "/home/apalma/Garage/vhdl/fitTest/fittest.vhd" Line 91. ideio1: Undefined symbol (last report in this block)
+ERROR:HDLParsers:3312 - "/home/apalma/Garage/vhdl/fitTest/fittest.vhd" Line 92. Undefined symbol 'evenodd'.
+ERROR:HDLParsers:1209 - "/home/apalma/Garage/vhdl/fitTest/fittest.vhd" Line 92. evenodd: Undefined symbol (last report in this block)
+ERROR:HDLParsers:3312 - "/home/apalma/Garage/vhdl/fitTest/fittest.vhd" Line 92. Undefined symbol 'RD'.
+ERROR:HDLParsers:1209 - "/home/apalma/Garage/vhdl/fitTest/fittest.vhd" Line 92. RD: Undefined symbol (last report in this block)
+ERROR:HDLParsers:3312 - "/home/apalma/Garage/vhdl/fitTest/fittest.vhd" Line 92. Undefined symbol 'hdwr'.
+ERROR:HDLParsers:1209 - "/home/apalma/Garage/vhdl/fitTest/fittest.vhd" Line 92. hdwr: Undefined symbol (last report in this block)
+ERROR:HDLParsers:3312 - "/home/apalma/Garage/vhdl/fitTest/fittest.vhd" Line 93. Undefined symbol 'ideio0'.
+ERROR:HDLParsers:1209 - "/home/apalma/Garage/vhdl/fitTest/fittest.vhd" Line 93. ideio0: Undefined symbol (last report in this block)
+ERROR:HDLParsers:3312 - "/home/apalma/Garage/vhdl/fitTest/fittest.vhd" Line 94. Undefined symbol 'loe'.
+ERROR:HDLParsers:1209 - "/home/apalma/Garage/vhdl/fitTest/fittest.vhd" Line 94. loe: Undefined symbol (last report in this block)
+ERROR:HDLParsers:3313 - "/home/apalma/Garage/vhdl/fitTest/fittest.vhd" Line 95. Undefined symbol 'doe'.  Should it be: dle?
+ERROR:HDLParsers:1209 - "/home/apalma/Garage/vhdl/fitTest/fittest.vhd" Line 95. doe: Undefined symbol (last report in this block)
+ERROR:HDLParsers:3312 - "/home/apalma/Garage/vhdl/fitTest/fittest.vhd" Line 96. Undefined symbol 'hdrd'.
+ERROR:HDLParsers:1209 - "/home/apalma/Garage/vhdl/fitTest/fittest.vhd" Line 96. hdrd: Undefined symbol (last report in this block)
+ERROR:HDLParsers:3312 - "/home/apalma/Garage/vhdl/fitTest/fittest.vhd" Line 98. Undefined symbol 'rgalclk'.
+ERROR:HDLParsers:1209 - "/home/apalma/Garage/vhdl/fitTest/fittest.vhd" Line 99. rgalclk: Undefined symbol (last report in this block)
+ERROR:HDLParsers:3312 - "/home/apalma/Garage/vhdl/fitTest/fittest.vhd" Line 105. Undefined symbol 'not_A14'.
+ERROR:HDLParsers:1209 - "/home/apalma/Garage/vhdl/fitTest/fittest.vhd" Line 105. not_A14: Undefined symbol (last report in this block)
+ERROR:HDLParsers:3312 - "/home/apalma/Garage/vhdl/fitTest/fittest.vhd" Line 105. Undefined symbol 'A15'.
+ERROR:HDLParsers:1209 - "/home/apalma/Garage/vhdl/fitTest/fittest.vhd" Line 105. A15: Undefined symbol (last report in this block)
+ERROR:HDLParsers:3312 - "/home/apalma/Garage/vhdl/fitTest/fittest.vhd" Line 107. Undefined symbol 'not_romwr'.
+ERROR:HDLParsers:3312 - "/home/apalma/Garage/vhdl/fitTest/fittest.vhd" Line 110. Undefined symbol 'A14'.
+ERROR:HDLParsers:1209 - "/home/apalma/Garage/vhdl/fitTest/fittest.vhd" Line 110. A14: Undefined symbol (last report in this block)
+ERROR:HDLParsers:3312 - "/home/apalma/Garage/vhdl/fitTest/fittest.vhd" Line 114. Undefined symbol 'not_loe'.
+ERROR:HDLParsers:3312 - "/home/apalma/Garage/vhdl/fitTest/fittest.vhd" Line 116. Undefined symbol 'not_ideio1'.
+ERROR:HDLParsers:1209 - "/home/apalma/Garage/vhdl/fitTest/fittest.vhd" Line 116. not_ideio1: Undefined symbol (last report in this block)
+ERROR:HDLParsers:3312 - "/home/apalma/Garage/vhdl/fitTest/fittest.vhd" Line 119. Undefined symbol 'lclk'.
+ERROR:HDLParsers:1209 - "/home/apalma/Garage/vhdl/fitTest/fittest.vhd" Line 119. lclk: Undefined symbol (last report in this block)
+ERROR:HDLParsers:3312 - "/home/apalma/Garage/vhdl/fitTest/fittest.vhd" Line 121. Undefined symbol 'not_doe'.
+ERROR:HDLParsers:3312 - "/home/apalma/Garage/vhdl/fitTest/fittest.vhd" Line 128. Undefined symbol 'IORQ'.
+ERROR:HDLParsers:1209 - "/home/apalma/Garage/vhdl/fitTest/fittest.vhd" Line 128. IORQ: Undefined symbol (last report in this block)
+ERROR:HDLParsers:3312 - "/home/apalma/Garage/vhdl/fitTest/fittest.vhd" Line 134. Undefined symbol 'not_hdwr'.
+ERROR:HDLParsers:1209 - "/home/apalma/Garage/vhdl/fitTest/fittest.vhd" Line 138. not_loe: Undefined symbol (last report in this block)
+ERROR:HDLParsers:3312 - "/home/apalma/Garage/vhdl/fitTest/fittest.vhd" Line 141. Undefined symbol 'not_hdrd'.
+ERROR:HDLParsers:3312 - "/home/apalma/Garage/vhdl/fitTest/fittest.vhd" Line 147. Undefined symbol 'not_evenodd'.
+ERROR:HDLParsers:1209 - "/home/apalma/Garage/vhdl/fitTest/fittest.vhd" Line 147. not_evenodd: Undefined symbol (last report in this block)
+ERROR:HDLParsers:1209 - "/home/apalma/Garage/vhdl/fitTest/fittest.vhd" Line 155. not_hdwr: Undefined symbol (last report in this block)
+ERROR:HDLParsers:1209 - "/home/apalma/Garage/vhdl/fitTest/fittest.vhd" Line 158. not_doe: Undefined symbol (last report in this block)
+ERROR:HDLParsers:1209 - "/home/apalma/Garage/vhdl/fitTest/fittest.vhd" Line 159. not_hdrd: Undefined symbol (last report in this block)
+ERROR:HDLParsers:3312 - "/home/apalma/Garage/vhdl/fitTest/fittest.vhd" Line 168. Undefined symbol 'not_A15'.
+ERROR:HDLParsers:1209 - "/home/apalma/Garage/vhdl/fitTest/fittest.vhd" Line 168. not_A15: Undefined symbol (last report in this block)
+ERROR:HDLParsers:1209 - "/home/apalma/Garage/vhdl/fitTest/fittest.vhd" Line 170. not_romwr: Undefined symbol (last report in this block)
+ERROR:HDLParsers:3312 - "/home/apalma/Garage/vhdl/fitTest/fittest.vhd" Line 182. Undefined symbol 'not_lclk'.
+ERROR:HDLParsers:1209 - "/home/apalma/Garage/vhdl/fitTest/fittest.vhd" Line 182. not_lclk: Undefined symbol (last report in this block)
+ERROR:HDLParsers:3312 - "/home/apalma/Garage/vhdl/fitTest/fittest.vhd" Line 192. Undefined symbol 'not_mgalclk'.
+ERROR:HDLParsers:1209 - "/home/apalma/Garage/vhdl/fitTest/fittest.vhd" Line 192. not_mgalclk: Undefined symbol (last report in this block)
+--> 
+
+
+Total memory usage is 485600 kilobytes
+
+Number of errors   :  104 (   0 filtered)
+Number of warnings :    0 (   0 filtered)
+Number of infos    :    0 (   0 filtered)
+

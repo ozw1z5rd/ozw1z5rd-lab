@@ -1,0 +1,21 @@
+Running: /host/Xilinx/13.3/ISE_DS/ISE/bin/lin64/unwrapped/fuse -intstyle ise -incremental -lib secureip -o /host/Garage/Garage/vhdl/testDebug/testTest2_isim_beh.exe -prj /host/Garage/Garage/vhdl/testDebug/testTest2_beh.prj work.testTest2 
+ISim O.76xd (signature 0x8ddf5b5d)
+Number of CPUs detected in this system: 2
+Turning on mult-threading, number of parallel sub-compilation jobs: 4 
+Determining compilation order of HDL files
+Parsing VHDL file "/host/Garage/Garage/vhdl/testDebug/test.vhd" into library work
+Parsing VHDL file "/host/Garage/Garage/vhdl/testDebug/testTest2.vhd" into library work
+Starting static elaboration
+Completed static elaboration
+Fuse Memory Usage: 94876 KB
+Fuse CPU Usage: 1350 ms
+Compiling package standard
+Compiling package std_logic_1164
+Compiling architecture behavioral of entity test [test_default]
+Compiling architecture behavior of entity testtest2
+Time Resolution for simulation is 1ps.
+Compiled 5 VHDL Units
+Built simulation executable /host/Garage/Garage/vhdl/testDebug/testTest2_isim_beh.exe
+Fuse Memory Usage: 136296 KB
+Fuse CPU Usage: 1380 ms
+GCC CPU Usage: 290 ms

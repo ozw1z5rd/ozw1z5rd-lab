@@ -1,0 +1,18 @@
+<?xml version='1.0' encoding='utf-8' ?>
+<!DOCTYPE ibis [
+<!ELEMENT ibis (part, pin+)>
+<!ELEMENT part EMPTY>
+<!ELEMENT pin EMPTY>
+<!ATTLIST part
+  arch   CDATA #REQUIRED
+  device CDATA #REQUIRED
+  spg    CDATA #REQUIRED
+  pkg    CDATA #REQUIRED>
+<!ATTLIST pin
+  nm     CDATA #REQUIRED
+  no     CDATA #REQUIRED
+  iostd  (LVTTL|SSTL3_I|LVCMOS33|LVCMOS25|SSTL2_I|LVCMOS18|LVCMOS15|HSTL_I|NA) "NA"
+  sr     (SLOW|FAST|slow|fast) "SLOW"
+  dir    (BIDIR|bidir|INPUT|input|OUTPUT|output) "BIDIR">
+]>
+<ibis><part arch="xbr" device="XC2C32A" pkg="CV64" spg="-4"/><pin dir="input" iostd="LVCMOS18" nm="N_WR" no="G3"/><pin dir="input" iostd="LVCMOS18" nm="N_RESET" no="H2"/><pin dir="input" iostd="LVCMOS18" nm="N_RD" no="H1"/><pin dir="input" iostd="LVCMOS18" nm="N_MREQ" no="F3"/><pin dir="input" iostd="LVCMOS18" nm="N_M1" no="G1"/><pin dir="input" iostd="LVCMOS18" nm="CLOCK" no="F1"/><pin dir="output" iostd="LVCMOS18" nm="BANK0" no="D2" sr="fast"/><pin dir="output" iostd="LVCMOS18" nm="BANK1" no="D1" sr="fast"/><pin dir="output" iostd="LVCMOS18" nm="D&lt;0&gt;" no="C2" sr="fast"/><pin dir="output" iostd="LVCMOS18" nm="D&lt;1&gt;" no="B2" sr="fast"/><pin dir="output" iostd="LVCMOS18" nm="D&lt;2&gt;" no="A1" sr="fast"/><pin dir="output" iostd="LVCMOS18" nm="D&lt;3&gt;" no="C3" sr="fast"/><pin dir="output" iostd="LVCMOS18" nm="D&lt;4&gt;" no="A2" sr="fast"/><pin dir="output" iostd="LVCMOS18" nm="D&lt;5&gt;" no="B3" sr="fast"/><pin dir="output" iostd="LVCMOS18" nm="D&lt;6&gt;" no="C4" sr="fast"/><pin dir="output" iostd="LVCMOS18" nm="D&lt;7&gt;" no="B4" sr="fast"/><pin dir="output" iostd="LVCMOS18" nm="INT" no="C5" sr="fast"/><pin dir="output" iostd="LVCMOS18" nm="NMAP" no="B7" sr="fast"/><pin dir="output" iostd="LVCMOS18" nm="N_NMI" no="C6" sr="fast"/><pin dir="output" iostd="LVCMOS18" nm="N_ROMCS" no="B8" sr="fast"/><pin dir="output" iostd="LVCMOS18" nm="SEL&lt;0&gt;" no="C7" sr="fast"/><pin dir="output" iostd="LVCMOS18" nm="SEL&lt;1&gt;" no="C8" sr="fast"/><pin dir="output" iostd="LVCMOS18" nm="SEL&lt;2&gt;" no="E1" sr="fast"/><pin dir="output" iostd="LVCMOS18" nm="SEL&lt;3&gt;" no="E2" sr="fast"/></ibis>

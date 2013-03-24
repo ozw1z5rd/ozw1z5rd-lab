@@ -1,0 +1,81 @@
+<html><head><link type='text/css' href='style.css' rel='stylesheet'></head><body class='pgBgnd'>
+<h3 align='center'>Equations</h3>
+<table width='90%' align='center' border='1' cellpadding='0' cellspacing='0'>
+<tr><td>
+</td></tr><tr><td>
+********** Mapped Logic **********
+</td></tr><tr><td>
+FDCPE_BANK0: FDCPE port map (BANK(0),D(0),N_WR,'0','0',BANK_CE(0));
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;BANK_CE(0) <= (A(6) AND A(5) AND A(1) AND A(0) AND NOT A(4) AND N_M1 AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	A(7) AND NOT A(3) AND NOT A(2));
+</td></tr><tr><td>
+FDCPE_BANK1: FDCPE port map (BANK(1),D(1),N_WR,'0','0',BANK_CE(1));
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;BANK_CE(1) <= (A(6) AND A(5) AND A(1) AND A(0) AND NOT A(4) AND N_M1 AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	A(7) AND NOT A(3) AND NOT A(2));
+</td></tr><tr><td>
+FDCPE_BANK2: FDCPE port map (BANK(2),BANK_D(2),N_WR,'0','0',BANK_CE(2));
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;BANK_D(2) <= (JUMPER_COMP_MODE AND D(2));
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;BANK_CE(2) <= (A(6) AND A(5) AND A(1) AND A(0) AND NOT A(4) AND N_M1 AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	A(7) AND NOT A(3) AND NOT A(2));
+</td></tr><tr><td>
+FDCPE_BANK3: FDCPE port map (BANK(3),BANK_D(3),N_WR,'0','0',BANK_CE(3));
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;BANK_D(3) <= (JUMPER_COMP_MODE AND D(3));
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;BANK_CE(3) <= (A(6) AND A(5) AND A(1) AND A(0) AND NOT A(4) AND N_M1 AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	A(7) AND NOT A(3) AND NOT A(2));
+</td></tr><tr><td>
+FDCPE_BANK4: FDCPE port map (BANK(4),BANK_D(4),N_WR,'0','0',BANK_CE(4));
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;BANK_D(4) <= (JUMPER_COMP_MODE AND D(4));
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;BANK_CE(4) <= (A(6) AND A(5) AND A(1) AND A(0) AND NOT A(4) AND N_M1 AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	A(7) AND NOT A(3) AND NOT A(2));
+</td></tr><tr><td>
+FDCPE_BANK5: FDCPE port map (BANK(5),BANK_D(5),N_WR,'0','0',BANK_CE(5));
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;BANK_D(5) <= (JUMPER_COMP_MODE AND D(5));
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;BANK_CE(5) <= (A(6) AND A(5) AND A(1) AND A(0) AND NOT A(4) AND N_M1 AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	A(7) AND NOT A(3) AND NOT A(2));
+</td></tr><tr><td>
+</td></tr><tr><td>
+CONMEM <= '0';
+</td></tr><tr><td>
+</td></tr><tr><td>
+MAPRAM <= '0';
+</td></tr><tr><td>
+</td></tr><tr><td>
+N_EEPROMCS <= '0';
+</td></tr><tr><td>
+</td></tr><tr><td>
+N_EEPROMOE <= (N_MREQ AND N_RD);
+</td></tr><tr><td>
+</td></tr><tr><td>
+N_EEPROMWR <= (N_MREQ AND N_WR AND JUMPER_EEPROM);
+</td></tr><tr><td>
+</td></tr><tr><td>
+N_IORQEGDE <= '1';
+</td></tr><tr><td>
+</td></tr><tr><td>
+N_ROMCS <= '1';
+</td></tr><tr><td>
+</td></tr><tr><td>
+N_SRAMCS <= '0';
+</td></tr><tr><td>
+</td></tr><tr><td>
+N_SRAMEN <= '0';
+</td></tr><tr><td>
+</td></tr><tr><td>
+N_SRAMOE <= '0';
+</td></tr><tr><td>
+</td></tr><tr><td>
+N_SRAMWR <= '0';
+</td></tr><tr><td>
+</td></tr><tr><td>
+Register Legend:
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; FDCPE (Q,D,C,CLR,PRE,CE); 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; FTCPE (Q,D,C,CLR,PRE,CE); 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; LDCP  (Q,D,G,CLR,PRE); 
+</td></tr><tr><td>
+</td></tr>
+</table>
+<form><span class="pgRef"><table width="90%" align="center"><tr>
+<td align="left"><input type="button" onclick="javascript:parent.leftnav.showTop()" onmouseover="window.status='goto top of page'; return true;" onmouseout="window.status=''" value="back to top"></td>
+<td align="right"><input type="button" onclick="window.print()" onmouseover="window.status='print page'; return true;" onmouseout="window.status=''" value="print page"></td>
+</tr></table></span></form>
+</body></html>

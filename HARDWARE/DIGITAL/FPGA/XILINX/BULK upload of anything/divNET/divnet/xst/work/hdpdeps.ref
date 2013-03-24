@@ -1,0 +1,6 @@
+V3 3
+FL /home/apalma/Garage/vhdl/divNET/divnet/CPLD.vhd 2012/01/16.18:00:14 O.76xd
+EN work/CPLD 1326736822 FL /home/apalma/Garage/vhdl/divNET/divnet/CPLD.vhd \
+      PB ieee/std_logic_1164 1317710503
+AR work/CPLD/Behavioral 1326736823 \
+      FL /home/apalma/Garage/vhdl/divNET/divnet/CPLD.vhd EN work/CPLD 1326736822

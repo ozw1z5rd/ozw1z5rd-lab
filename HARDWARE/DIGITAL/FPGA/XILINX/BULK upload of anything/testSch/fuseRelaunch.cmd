@@ -1,0 +1,1 @@
+-intstyle "ise" -incremental -o "/host/Garage/Garage/home-computer-group/vhdl/testSch/sch1_sch1_sch_tb_isim_beh.exe" -prj "/host/Garage/Garage/home-computer-group/vhdl/testSch/sch1_sch1_sch_tb_beh.prj" "work.sch1_sch1_sch_tb" 

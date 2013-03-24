@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="/host/Garage/Garage/vhdl/CPx/CPx2_isim_beh.wdb" id="1" type="auto">
+         <top_modules>
+            <top_module name="cpx2" />
+            <top_module name="std_logic_1164" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <WVObjectSize size="47" />
+   <wvobject fp_name="/cpx2/a" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">a[15:0]</obj_property>
+      <obj_property name="ObjectShortName">a[15:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/cpx2/d" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">d[7:0]</obj_property>
+      <obj_property name="ObjectShortName">d[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/cpx2/jumper_comp_mode" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">jumper_comp_mode</obj_property>
+      <obj_property name="ObjectShortName">jumper_comp_mode</obj_property>
+   </wvobject>
+   <wvobject fp_name="/cpx2/jumper_eeprom" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">jumper_eeprom</obj_property>
+      <obj_property name="ObjectShortName">jumper_eeprom</obj_property>
+   </wvobject>
+   <wvobject fp_name="/cpx2/reset" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">reset</obj_property>
+      <obj_property name="ObjectShortName">reset</obj_property>
+   </wvobject>
+   <wvobject fp_name="/cpx2/clock" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">clock</obj_property>
+      <obj_property name="ObjectShortName">clock</obj_property>
+   </wvobject>
+   <wvobject fp_name="/cpx2/n_ioreq" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">n_ioreq</obj_property>
+      <obj_property name="ObjectShortName">n_ioreq</obj_property>
+   </wvobject>
+   <wvobject fp_name="/cpx2/n_mreq" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">n_mreq</obj_property>
+      <obj_property name="ObjectShortName">n_mreq</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+      <obj_property name="CustomSignalColor">#00ffff</obj_property>
+   </wvobject>
+   <wvobject fp_name="/cpx2/n_rd" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">n_rd</obj_property>
+      <obj_property name="ObjectShortName">n_rd</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+      <obj_property name="CustomSignalColor">#00ffff</obj_property>
+   </wvobject>
+   <wvobject fp_name="/cpx2/n_eepromoe" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">n_eepromoe</obj_property>
+      <obj_property name="ObjectShortName">n_eepromoe</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+      <obj_property name="CustomSignalColor">#00ffff</obj_property>
+   </wvobject>
+   <wvobject fp_name="/cpx2/n_wr" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">n_wr</obj_property>
+      <obj_property name="ObjectShortName">n_wr</obj_property>
+   </wvobject>
+   <wvobject fp_name="/cpx2/n_m1" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">n_m1</obj_property>
+      <obj_property name="ObjectShortName">n_m1</obj_property>
+   </wvobject>
+   <wvobject fp_name="/cpx2/n_romcs" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">n_romcs</obj_property>
+      <obj_property name="ObjectShortName">n_romcs</obj_property>
+   </wvobject>
+   <wvobject fp_name="/cpx2/n_iorqegde" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">n_iorqegde</obj_property>
+      <obj_property name="ObjectShortName">n_iorqegde</obj_property>
+   </wvobject>
+   <wvobject fp_name="/cpx2/n_nmi" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">n_nmi</obj_property>
+      <obj_property name="ObjectShortName">n_nmi</obj_property>
+   </wvobject>
+   <wvobject fp_name="/cpx2/nmi" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">nmi</obj_property>
+      <obj_property name="ObjectShortName">nmi</obj_property>
+   </wvobject>
+   <wvobject fp_name="/cpx2/n_int" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">n_int</obj_property>
+      <obj_property name="ObjectShortName">n_int</obj_property>
+   </wvobject>
+   <wvobject fp_name="/cpx2/int" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">int</obj_property>
+      <obj_property name="ObjectShortName">int</obj_property>
+   </wvobject>
+   <wvobject fp_name="/cpx2/n_sramen" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">n_sramen</obj_property>
+      <obj_property name="ObjectShortName">n_sramen</obj_property>
+   </wvobject>
+   <wvobject fp_name="/cpx2/n_sramoe" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">n_sramoe</obj_property>
+      <obj_property name="ObjectShortName">n_sramoe</obj_property>
+   </wvobject>
+   <wvobject fp_name="/cpx2/n_sramwr" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">n_sramwr</obj_property>
+      <obj_property name="ObjectShortName">n_sramwr</obj_property>
+   </wvobject>
+   <wvobject fp_name="/cpx2/n_sramcs" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">n_sramcs</obj_property>
+      <obj_property name="ObjectShortName">n_sramcs</obj_property>
+   </wvobject>
+   <wvobject fp_name="/cpx2/bank" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">bank[5:0]</obj_property>
+      <obj_property name="ObjectShortName">bank[5:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/cpx2/n_eepromwr" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">n_eepromwr</obj_property>
+      <obj_property name="ObjectShortName">n_eepromwr</obj_property>
+   </wvobject>
+   <wvobject fp_name="/cpx2/n_eepromen" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">n_eepromen</obj_property>
+      <obj_property name="ObjectShortName">n_eepromen</obj_property>
+   </wvobject>
+   <wvobject fp_name="/cpx2/n_eepromcs" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">n_eepromcs</obj_property>
+      <obj_property name="ObjectShortName">n_eepromcs</obj_property>
+   </wvobject>
+   <wvobject fp_name="/cpx2/mapram" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">mapram</obj_property>
+      <obj_property name="ObjectShortName">mapram</obj_property>
+   </wvobject>
+   <wvobject fp_name="/cpx2/conmem" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">conmem</obj_property>
+      <obj_property name="ObjectShortName">conmem</obj_property>
+   </wvobject>
+   <wvobject fp_name="/cpx2/s_en0000" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">s_en0000</obj_property>
+      <obj_property name="ObjectShortName">s_en0000</obj_property>
+   </wvobject>
+   <wvobject fp_name="/cpx2/s_en0008" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">s_en0008</obj_property>
+      <obj_property name="ObjectShortName">s_en0008</obj_property>
+   </wvobject>
+   <wvobject fp_name="/cpx2/s_en0038" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">s_en0038</obj_property>
+      <obj_property name="ObjectShortName">s_en0038</obj_property>
+   </wvobject>
+   <wvobject fp_name="/cpx2/s_en0066" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">s_en0066</obj_property>
+      <obj_property name="ObjectShortName">s_en0066</obj_property>
+   </wvobject>
+   <wvobject fp_name="/cpx2/s_en04c6" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">s_en04c6</obj_property>
+      <obj_property name="ObjectShortName">s_en04c6</obj_property>
+   </wvobject>
+   <wvobject fp_name="/cpx2/s_en0562" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">s_en0562</obj_property>
+      <obj_property name="ObjectShortName">s_en0562</obj_property>
+   </wvobject>
+   <wvobject fp_name="/cpx2/s_en1ff8" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">s_en1ff8</obj_property>
+      <obj_property name="ObjectShortName">s_en1ff8</obj_property>
+   </wvobject>
+   <wvobject fp_name="/cpx2/s_en1fff" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">s_en1fff</obj_property>
+      <obj_property name="ObjectShortName">s_en1fff</obj_property>
+   </wvobject>
+   <wvobject fp_name="/cpx2/s_cfg_reg_en" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">s_cfg_reg_en</obj_property>
+      <obj_property name="ObjectShortName">s_cfg_reg_en</obj_property>
+   </wvobject>
+   <wvobject fp_name="/cpx2/s_ver_reg_en" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">s_ver_reg_en</obj_property>
+      <obj_property name="ObjectShortName">s_ver_reg_en</obj_property>
+   </wvobject>
+   <wvobject fp_name="/cpx2/s_interfacecs" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">s_interfacecs</obj_property>
+      <obj_property name="ObjectShortName">s_interfacecs</obj_property>
+   </wvobject>
+   <wvobject fp_name="/cpx2/s_auto_conmem_on" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">s_auto_conmem_on</obj_property>
+      <obj_property name="ObjectShortName">s_auto_conmem_on</obj_property>
+   </wvobject>
+   <wvobject fp_name="/cpx2/s_auto_conmem_off" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">s_auto_conmem_off</obj_property>
+      <obj_property name="ObjectShortName">s_auto_conmem_off</obj_property>
+   </wvobject>
+   <wvobject fp_name="/cpx2/s_switch_conmem_onoff" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">s_switch_conmem_onoff</obj_property>
+      <obj_property name="ObjectShortName">s_switch_conmem_onoff</obj_property>
+   </wvobject>
+   <wvobject fp_name="/cpx2/s_accessing_page0" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">s_accessing_page0</obj_property>
+      <obj_property name="ObjectShortName">s_accessing_page0</obj_property>
+   </wvobject>
+   <wvobject fp_name="/cpx2/s_accessing_page1" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">s_accessing_page1</obj_property>
+      <obj_property name="ObjectShortName">s_accessing_page1</obj_property>
+   </wvobject>
+   <wvobject fp_name="/cpx2/s_eepromcs" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">s_eepromcs</obj_property>
+      <obj_property name="ObjectShortName">s_eepromcs</obj_property>
+   </wvobject>
+   <wvobject fp_name="/cpx2/s_sramcs" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">s_sramcs</obj_property>
+      <obj_property name="ObjectShortName">s_sramcs</obj_property>
+   </wvobject>
+   <wvobject fp_name="/cpx2/s_mapram" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">s_mapram</obj_property>
+      <obj_property name="ObjectShortName">s_mapram</obj_property>
+   </wvobject>
+</wave_config>

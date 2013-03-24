@@ -1,0 +1,40 @@
+
+----------------------------------------
+|  P a r t i t i o n    S u c c e e d  |
+----------------------------------------
+0 Group(s)
+
+----------------- B l o c k 0 ------------------
+PLApt(1/56), Fanin(6/38), Clk(0/3), Bct(0/4), Pin(16/16), Mcell(16/16)
+PLApts[1/11] () () () () () () () () () () 0
+Fanins[ 6] CLOCK.p N_M1.p N_MREQ.p N_RD.p N_RESET.p N_WR.p
+clk[0] 
+CTC: 
+CTR: 
+CTS: 
+CTE: 
+vref: [0]
+Signal[16] [BANK0(65),BANK0(D2)] [BANK1(66),BANK1(D1)] [D<0>(67),D<0>(C2)] [D<1>(68),D<1>(B2)]  
+           [D<2>(69),D<2>(A1)] [D<3>(70),D<3>(C3)] [D<4>(71),D<4>(A2)] [D<5>(72),D<5>(B3)]  
+           [D<6>(73),D<6>(C4)] [D<7>(74),D<7>(B4)] [INT(75),INT(C5)] [NMAP(76),NMAP(B7)]  
+           [N_NMI(77),N_NMI(C6)] [N_ROMCS(78),N_ROMCS(B8)] [SEL<0>(79),SEL<0>(C7)] [SEL<1>(80),SEL<1>(C8)] 
+Signal[16] [ 0: BANK0(65) BANK0(D2)  ][ 1: BANK1(66) BANK1(D1)  ][ 2: D<0>(67) D<0>(C2)  ][ 3: D<1>(68)  
+           D<1>(B2)  ][ 4: D<2>(69) D<2>(A1)  ][ 5: D<3>(70) D<3>(C3)  ][ 6: D<4>(71) D<4>(A2)  ][ 7:  
+           D<5>(72) D<5>(B3)  ][ 8: D<6>(73) D<6>(C4)  ][ 9: D<7>(74) D<7>(B4)  ][ 10: INT(75) INT(C5)  ] 
+           [ 11: NMAP(76) NMAP(B7)  ][ 12: N_NMI(77) N_NMI(C6)  ][ 13: N_ROMCS(78) N_ROMCS(B8)  ][ 14:  
+           SEL<0>(79) SEL<0>(C7)  ][ 15: SEL<1>(80) SEL<1>(C8)  ]
+----------------- B l o c k 1 ------------------
+PLApt(0/56), Fanin(0/38), Clk(0/3), Bct(0/4), Pin(8/16), Mcell(2/16)
+PLApts[0/0]
+Fanins[ 0]
+clk[0] 
+CTC: 
+CTR: 
+CTS: 
+CTE: 
+vref: [0]
+Signal[ 8] [SEL<2>(81),SEL<2>(E1)] [SEL<3>(82),SEL<3>(E2)] [CLOCK(F1)] [N_M1(G1)] [N_MREQ(F3)] [N_RD(H1)]  
+           [N_RESET(H2)] [N_WR(G3)] 
+Signal[ 8] [ 0: SEL<2>(81) SEL<2>(E1)  ][ 1: SEL<3>(82) SEL<3>(E2)  ][ 2: CLOCK(F1)  ][ 3: N_M1(G1)  ][ 4:  
+           N_MREQ(F3)  ][ 5: N_RD(H1)  ][ 6: N_RESET(H2)  ][ 7: N_WR(G3)  ][ 8: (H3)  ][ 9: (G4)  ][ 10:  
+           (F4)  ][ 11: (H6)  ][ 12: (G7)  ][ 13: (G8)  ][ 14: (F7)  ][ 15: (E7)  ]

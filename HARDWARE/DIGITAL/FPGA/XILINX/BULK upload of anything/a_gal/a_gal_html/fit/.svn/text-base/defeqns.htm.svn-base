@@ -1,0 +1,70 @@
+<html><head><link type='text/css' href='style.css' rel='stylesheet'></head><body class='pgBgnd'>
+<h3 align='center'>Equations</h3>
+<table width='90%' align='center' border='1' cellpadding='0' cellspacing='0'>
+<tr><td>
+</td></tr><tr><td>
+********** Mapped Logic **********
+</td></tr><tr><td>
+FDCPE_automap: FDCPE port map (automap,sig_mapcond,CLOCK,'0','0','1');
+</td></tr><tr><td>
+</td></tr><tr><td>
+ideio0 <= (A(7) AND A(5) AND NOT A(4) AND NOT A(3) AND A(1) AND A(0) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT A(2));
+</td></tr><tr><td>
+</td></tr><tr><td>
+ideio1 <= (A(7) AND A(5) AND NOT A(6) AND A(1) AND A(0));
+</td></tr><tr><td>
+FDCPE_mapcond: FDCPE port map (mapcond,sig_mapcond,CLOCK,'0','0','1');
+</td></tr><tr><td>
+</td></tr><tr><td>
+mapterm <= ((NOT A(7) AND NOT A(5) AND NOT A(4) AND NOT A(13) AND NOT A(12) AND NOT A(11) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT A(10) AND romacc AND M1 AND NOT A(9) AND NOT A(8) AND NOT A(6) AND NOT A(1) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT A(0) AND NOT A(2))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (A(7) AND NOT A(5) AND NOT A(4) AND NOT A(3) AND NOT A(13) AND NOT A(12) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT A(11) AND A(10) AND romacc AND M1 AND NOT A(9) AND NOT A(8) AND A(6) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	A(1) AND NOT A(0) AND A(2))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT A(7) AND A(5) AND A(4) AND A(3) AND NOT A(13) AND NOT A(12) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT A(11) AND NOT A(10) AND romacc AND M1 AND NOT A(9) AND NOT A(8) AND NOT A(6) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT A(1) AND NOT A(0) AND NOT A(2))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT A(7) AND A(5) AND NOT A(4) AND NOT A(3) AND NOT A(13) AND NOT A(12) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT A(11) AND A(10) AND romacc AND M1 AND NOT A(9) AND A(8) AND A(6) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	A(1) AND NOT A(0) AND NOT A(2))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT A(7) AND A(5) AND NOT A(4) AND NOT A(3) AND NOT A(13) AND NOT A(12) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT A(11) AND NOT A(10) AND romacc AND M1 AND NOT A(9) AND NOT A(8) AND A(6) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	A(1) AND NOT A(0) AND A(2)));
+</td></tr><tr><td>
+FTCPE_sig_mapcond: FTCPE port map (sig_mapcond,sig_mapcond_T,CLOCK,'0','0','1');
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;sig_mapcond_T <= ((sig_mapcond AND A(7) AND A(5) AND A(4) AND A(3) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT A(13) AND A(12) AND A(11) AND A(10) AND romacc AND M1 AND A(9) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	A(8) AND A(6))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT sig_mapcond AND NOT A(7) AND NOT A(5) AND NOT A(4) AND NOT A(13) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT A(12) AND NOT A(11) AND NOT A(10) AND romacc AND M1 AND NOT A(9) AND NOT A(8) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT A(6) AND NOT A(1) AND NOT A(0) AND NOT A(2))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT sig_mapcond AND A(7) AND NOT A(5) AND NOT A(4) AND NOT A(3) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT A(13) AND NOT A(12) AND NOT A(11) AND A(10) AND romacc AND M1 AND NOT A(9) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT A(8) AND A(6) AND A(1) AND NOT A(0) AND A(2))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT sig_mapcond AND NOT A(7) AND A(5) AND A(4) AND A(3) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT A(13) AND NOT A(12) AND NOT A(11) AND NOT A(10) AND romacc AND M1 AND NOT A(9) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT A(8) AND NOT A(6) AND NOT A(1) AND NOT A(0) AND NOT A(2))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT sig_mapcond AND NOT A(7) AND A(5) AND NOT A(4) AND NOT A(3) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT A(13) AND NOT A(12) AND NOT A(11) AND A(10) AND romacc AND M1 AND NOT A(9) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	A(8) AND A(6) AND A(1) AND NOT A(0) AND NOT A(2))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT sig_mapcond AND NOT A(7) AND A(5) AND NOT A(4) AND NOT A(3) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT A(13) AND NOT A(12) AND NOT A(11) AND NOT A(10) AND romacc AND M1 AND NOT A(9) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT A(8) AND A(6) AND A(1) AND NOT A(0) AND A(2)));
+</td></tr><tr><td>
+</td></tr><tr><td>
+Register Legend:
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; FDCPE (Q,D,C,CLR,PRE,CE); 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; FDDCPE (Q,D,C,CLR,PRE,CE); 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; FTCPE (Q,D,C,CLR,PRE,CE); 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; FTDCPE (Q,D,C,CLR,PRE,CE); 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; LDCP  (Q,D,G,CLR,PRE); 
+</td></tr><tr><td>
+</td></tr>
+</table>
+<form><span class="pgRef"><table width="90%" align="center"><tr>
+<td align="left"><input type="button" onclick="javascript:parent.leftnav.showTop()" onmouseover="window.status='goto top of page'; return true;" onmouseout="window.status=''" value="back to top"></td>
+<td align="right"><input type="button" onclick="window.print()" onmouseover="window.status='print page'; return true;" onmouseout="window.status=''" value="print page"></td>
+</tr></table></span></form>
+</body></html>

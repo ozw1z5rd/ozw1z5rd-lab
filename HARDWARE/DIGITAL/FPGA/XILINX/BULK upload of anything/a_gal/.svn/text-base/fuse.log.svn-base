@@ -1,0 +1,19 @@
+Running: /host/Xilinx/13.3/ISE_DS/ISE/bin/lin64/unwrapped/fuse -intstyle ise -incremental -o /host/Garage/Garage/vhdl/a_gal/r_gal2_isim_beh.exe -prj /host/Garage/Garage/vhdl/a_gal/r_gal2_beh.prj work.r_gal2 
+ISim O.76xd (signature 0x8ddf5b5d)
+Number of CPUs detected in this system: 2
+Turning on mult-threading, number of parallel sub-compilation jobs: 4 
+Determining compilation order of HDL files
+Parsing VHDL file "/host/Garage/Garage/vhdl/a_gal/r_gal2.vhd" into library work
+Starting static elaboration
+Completed static elaboration
+Fuse Memory Usage: 94872 KB
+Fuse CPU Usage: 1350 ms
+Compiling package standard
+Compiling package std_logic_1164
+Compiling architecture behavioral of entity r_gal2
+Time Resolution for simulation is 1ps.
+Compiled 3 VHDL Units
+Built simulation executable /host/Garage/Garage/vhdl/a_gal/r_gal2_isim_beh.exe
+Fuse Memory Usage: 136284 KB
+Fuse CPU Usage: 1390 ms
+GCC CPU Usage: 290 ms

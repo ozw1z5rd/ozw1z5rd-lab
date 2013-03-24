@@ -1,0 +1,129 @@
+Release 8.1i - Fit O.76xd
+Copyright(c) 1995-2003 Xilinx Inc. All rights reserved
+
+11-30-2011  6:35AM
+
+NOTE: This file is designed to be imported into a spreadsheet program
+such as Microsoft Excel for viewing, printing and sorting. The comma ','
+character is used as the data field separator.
+This file is also designed to support parsing.
+
+Input file:  cinque.ngd
+output file: cinque_pad.csv
+Part type:   xc2c128
+Speed grade: -6
+Package:     vq100
+
+Pinout by Pin Number:
+
+-----,-----,-----,-----,-----,-----,-----,-----,-----,-----,
+Pin Number,Signal Name,Pin Usage,Pin Name,Direction,IO Standard,IO Bank Number,{blank},Slew Rate,Termination,{blank},Voltage,Constraint,
+P1,KPR,,I/O/GTS2,,,2,,,,,,,
+P2,KPR,,I/O/GTS3,,,2,,,,,,,
+P3,KPR,,I/O/GTS0,,,2,,,,,,,
+P4,KPR,,I/O/GTS1,,,2,,,,,,,
+P5,,VCCAUX,VAUX,,,,,,,,,,
+P6,KPR,,I/O,,,2,,,,,,,
+P7,KPR,,I/O,,,2,,,,,,,
+P8,KPR,,I/O,,,2,,,,,,,
+P9,i3,I,I/O,INPUT,LVCMOS18,2,,FAST,,,,
+P10,i2,I,I/O,INPUT,LVCMOS18,2,,FAST,,,,
+P11,i1,I,I/O,INPUT,LVCMOS18,2,,FAST,,,,
+P12,o1,O,I/O,OUTPUT,LVCMOS18,2,,FAST,,,,
+P13,o2,O,I/O,OUTPUT,LVCMOS18,2,,FAST,,,,
+P14,KPR,,I/O,,,1,,,,,,,
+P15,KPR,,I/O,,,1,,,,,,,
+P16,KPR,,I/O,,,1,,,,,,,
+P17,KPR,,I/O,,,1,,,,,,,
+P18,KPR,,I/O,,,1,,,,,,,
+P19,KPR,,I/O,,,1,,,,,,,
+P20,,VCCIO-1.8,VCCIO,,,1,,,,,,,
+P21,GND,,GND,,,,,,,,,,
+P22,clock,GCK,I/O/GCK0,,LVCMOS18,1,,FAST,,,,
+P23,KPR,,I/O/GCK1,,,1,,,,,,,
+P24,KPR,,I/O/CDR,,,1,,,,,,,
+P25,GND,,GND,,,,,,,,,,
+P26,,VCC,VCC,,,,,,,,,,
+P27,KPR,,I/O/GCK2,,,1,,,,,,,
+P28,KPR,,I/O/DGE0,,,1,,,,,,,
+P29,KPR,,I/O,,,1,,,,,,,
+P30,KPR,,I/O,,,1,,,,,,,
+P31,GND,,GND,,,,,,,,,,
+P32,KPR,,I/O,,,1,,,,,,,
+P33,KPR,,I/O,,,1,,,,,,,
+P34,KPR,,I/O,,,1,,,,,,,
+P35,KPR,,I/O,,,1,,,,,,,
+P36,KPR,,I/O,,,1,,,,,,,
+P37,KPR,,I/O,,,1,,,,,,,
+P38,,VCCIO-1.8,VCCIO,,,1,,,,,,,
+P39,KPR,,I/O,,,1,,,,,,,
+P40,KPR,,I/O,,,1,,,,,,,
+P41,KPR,,I/O,,,1,,,,,,,
+P42,KPR,,I/O,,,1,,,,,,,
+P43,KPR,,I/O,,,1,,,,,,,
+P44,KPR,,I/O,,,1,,,,,,,
+P45,TDI,,TDI,,,,,,,,,,
+P46,KPR,,I/O,,,1,,,,,,,
+P47,TMS,,TMS,,,,,,,,,,
+P48,TCK,,TCK,,,,,,,,,,
+P49,KPR,,I/O,,,1,,,,,,,
+P50,KPR,,I/O,,,1,,,,,,,
+P51,,VCCIO-1.8,VCCIO,,,1,,,,,,,
+P52,KPR,,I/O,,,1,,,,,,,
+P53,KPR,,I/O,,,1,,,,,,,
+P54,KPR,,I/O,,,1,,,,,,,
+P55,KPR,,I/O,,,1,,,,,,,
+P56,KPR,,I/O,,,1,,,,,,,
+P57,,VCC,VCC,,,,,,,,,,
+P58,KPR,,I/O,,,1,,,,,,,
+P59,KPR,,I/O,,,1,,,,,,,
+P60,KPR,,I/O,,,1,,,,,,,
+P61,KPR,,I/O,,,1,,,,,,,
+P62,GND,,GND,,,,,,,,,,
+P63,KPR,,I/O,,,1,,,,,,,
+P64,KPR,,I/O,,,1,,,,,,,
+P65,KPR,,I/O,,,2,,,,,,,
+P66,KPR,,I/O,,,2,,,,,,,
+P67,KPR,,I/O,,,2,,,,,,,
+P68,KPR,,I/O,,,2,,,,,,,
+P69,GND,,GND,,,,,,,,,,
+P70,KPR,,I/O,,,2,,,,,,,
+P71,KPR,,I/O,,,2,,,,,,,
+P72,KPR,,I/O,,,2,,,,,,,
+P73,KPR,,I/O,,,2,,,,,,,
+P74,KPR,,I/O,,,2,,,,,,,
+P75,GND,,GND,,,,,,,,,,
+P76,KPR,,I/O,,,2,,,,,,,
+P77,KPR,,I/O,,,2,,,,,,,
+P78,KPR,,I/O,,,2,,,,,,,
+P79,KPR,,I/O,,,2,,,,,,,
+P80,KPR,,I/O,,,2,,,,,,,
+P81,KPR,,I/O,,,2,,,,,,,
+P82,KPR,,I/O,,,2,,,,,,,
+P83,TDO,,TDO,,,,,,,,,,
+P84,GND,,GND,,,,,,,,,,
+P85,KPR,,I/O/DGE1,,,2,,,,,,,
+P86,KPR,,I/O,,,2,,,,,,,
+P87,KPR,,I/O,,,2,,,,,,,
+P88,,VCCIO-1.8,VCCIO,,,2,,,,,,,
+P89,KPR,,I/O,,,2,,,,,,,
+P90,KPR,,I/O,,,2,,,,,,,
+P91,KPR,,I/O,,,2,,,,,,,
+P92,KPR,,I/O,,,2,,,,,,,
+P93,KPR,,I/O,,,2,,,,,,,
+P94,KPR,,I/O,,,2,,,,,,,
+P95,KPR,,I/O,,,2,,,,,,,
+P96,KPR,,I/O,,,2,,,,,,,
+P97,KPR,,I/O,,,2,,,,,,,
+P98,,VCCIO-1.8,VCCIO,,,2,,,,,,,
+P99,KPR,,I/O/GSR,,,2,,,,,,,
+P100,GND,,GND,,,,,,,,,,
+
+To preserve the pinout above for future design iterations in
+Project Navigator simply execute the (Lock Pins) process
+located under the (Implement Design) process in a toolbox named
+(Optional Implementation Tools) or invoke PIN2UCF from the
+command line. The location constraints will be written into your
+specified UCF file
+
+

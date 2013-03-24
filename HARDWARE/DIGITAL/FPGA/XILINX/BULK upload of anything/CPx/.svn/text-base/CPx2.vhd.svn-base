@@ -1,0 +1,272 @@
+----------------------------------------------------------------------------------
+-- Company: 
+-- Engineer: 
+-- 
+-- Create Date:    16:58:10 01/20/2012 
+-- Design Name:    MEMORY CONTROLLER FOR BUS EXPANSION
+-- Module Name:    CPx2 - Behavioral 
+-- Project Name:   DIVIDE NG
+-- Target Devices: 
+-- Tool versions: 
+-- Description:  2ND CPLD IMPLEMENTATION
+--
+-- Dependencies: NONE
+--
+-- Revision: 0
+-- Revision 0.01 - File Created
+-- Additional Comments: 
+--
+----------------------------------------------------------------------------------
+library IEEE;
+use IEEE.STD_LOGIC_1164.ALL;
+
+entity CPx2 is
+    Port ( 
+--
+--  ######## A/D BUSSES #########
+--	 	 
+	        A : in  STD_LOGIC_VECTOR (15 downto 0);   
+           D : inout  STD_LOGIC_VECTOR (7 downto 0); 
+--
+--  ######## JUMPERS #########
+--			  
+
+-- COMPATIBILITY MODE ( NO 512K SRAM, JUST 32K )	  
+			  JUMPER_COMP_MODE : in STD_LOGIC; 
+-- FUSE / UNFUSE EEPROM
+           JUMPER_EEPROM : in STD_LOGIC; 
+
+--
+--  ######## CONTROL BUS #########
+--			  			  			 
+           RESET : in  STD_LOGIC;			  
+           CLOCK : in  STD_LOGIC;
+
+-- RAM / IO LINES
+			  N_IOREQ : IN STD_LOGIC; 		-- FROM Z80
+           N_MREQ : IN  STD_LOGIC; 		-- FROM Z80
+           N_RD : in  STD_LOGIC;			-- FROM Z80 
+           N_WR : in  STD_LOGIC;		 	-- FROM Z80
+           N_M1 : in  STD_LOGIC;			-- FROM Z80
+			  
+-- NO Z80 BUS CONTROL LINES, THE ONES WHICH BELONGS TO ZX BUS EXPANSION
+			  
+-- NO EXTERNAL DEVICE WHICH CAN ACCESS THE ROM MAPPING FUNCTION ( IE INTEFACE 2) 			  
+-- ADDRESSING LINE FOR ROM ARE A0-A13			  
+			  N_ROMCS   : BUFFER STD_LOGIC := '1'; -- SET TO DISABLE SPECCY'S ROM 
+			  N_IORQEGDE: OUT STD_LOGIC := '1'; -- SET TO DISABLE ULA CHIP SELECT
+		  
+-- INTERRUPTS ( NOT HANDLED IN TRUE )
+           N_NMI : IN  STD_LOGIC;     -- FROM EXTERNAL DEVICES
+			  NMI   : OUT STD_LOGIC;
+			  N_INT : IN STD_LOGIC;      -- FROM EXTERNAL DEVICES
+			  INT : OUT STD_LOGIC;
+
+---- SRAM CONTROL BUS			  
+ 			  N_SRAMEN  : OUT STD_LOGIC :='1';
+			  N_SRAMOE  : OUT STD_LOGIC :='1';
+			  N_SRAMWR  : OUT STD_LOGIC :='1';
+			  N_SRAMCS  : OUT STD_LOGIC :='1';
+--- ADDRESSING LINE FOR SRAM ( THESE LINE FILL UP THE MISSING PART OF THE SRAM ADDRESS BUS
+--- SRAM is attached to the A(0 to 13) 
+---      SRAM A(14-18) are connected to BANK() bus 
+			  BANK      : OUT STD_LOGIC_VECTOR (5 downto 0 ); -- 32 x 16 
+			  
+----	EEPROM CONTROL BUS
+			  N_EEPROMWR : OUT STD_LOGIC :='0';
+			  N_EEPROMOE : OUT STD_LOGIC :='0';
+			  N_EEPROMEN : OUT STD_LOGIC :='0'; -- DOVREBBE ESSSERE SEMPRE ATTIVO
+			  N_EEPROMCS : OUT STD_LOGIC :='0';
+			  
+-- SRAM is mapped as ROM and write is disabled 	
+-- BANK3 
+-- LEDS TOO
+
+           MAPRAM :    BUFFER STD_LOGIC;   --  "RAM AS EEPROM"
+           CONMEM :    BUFFER  STD_LOGIC   --   "STANDARD MAPPING ROM + SRAM"
+
+          );
+end CPx2;
+
+architecture Behavioral of CPx2 is
+
+	
+-- 
+-- DETECT WHEN ACCESSING THE ENTRY POINT FOR ROM SWITCHING 
+--
+   SIGNAL S_EN0000    :STD_LOGIC  :='0';
+   SIGNAL S_EN0008    :STD_LOGIC  :='0';
+   SIGNAL S_EN0038    :STD_LOGIC  :='0';
+   SIGNAL S_EN0066    :STD_LOGIC  :='0';
+   SIGNAL S_EN04C6    :STD_LOGIC  :='0';
+   SIGNAL S_EN0562    :STD_LOGIC  :='0';
+   SIGNAL S_EN1FF8    :STD_LOGIC  :='0';
+   SIGNAL S_EN1FFF    :STD_LOGIC  :='0';
+	
+-- SIGNAL TO CHECK THIS INTERFACE ACCESSING	
+   SIGNAL S_CFG_REG_EN :STD_LOGIC  :='0';
+   SIGNAL S_VER_REG_EN :STD_LOGIC  :='0';
+	
+-- WHEN Z80 IS ACCESSING ANY REGISTER OF THIS INTERFACE	
+   SIGNAL S_INTERFACECS :STD_LOGIC  :='0';
+
+   SIGNAL S_AUTO_CONMEM_ON : STD_LOGIC := '0'; -- MULTI SOURCE.
+   SIGNAL S_AUTO_CONMEM_OFF : STD_LOGIC := '0'; -- MULTI SOURCE.
+   SIGNAL S_SWITCH_CONMEM_ONOFF : STD_LOGIC := '0'; -- MULTI SOURCE.
+	
+-- Z80 IS ACCESSING THE PAGE0 ( 8K ) ( THE LOWER ROM ADDRESSING SPACE )
+	SIGNAL S_ACCESSING_PAGE0 : STD_LOGIC := '0';
+--  PAGE1 ( 8K ) UPPER ROM ADDRESSING SPACE
+	SIGNAL S_ACCESSING_PAGE1 : STD_LOGIC := '0';
+	
+	
+	SIGNAL S_EEPROMCS : STD_LOGIC := '0';
+	SIGNAL S_SRAMCS    : STD_LOGIC := '0';
+	
+	SIGNAL S_MAPRAM : STD_LOGIC := '0';
+	
+-- ##############################################################################	
+-- ##############################################################################	
+BEGIN -- Behavioral
+
+--
+-- SWITCHES FOR ENTRY POINTS ( CONMEM ON ) 
+--
+	S_EN0000 <= NOT A(0) AND NOT A(1) AND NOT A(2) AND NOT A(3) AND NOT A(4) AND NOT A(5) AND NOT A(6) AND NOT A(7) AND NOT A(8) AND NOT A(9) AND NOT A(10) AND NOT A(11) AND NOT A(12) AND NOT A(13) AND NOT N_ROMCS AND NOT N_M1;
+	S_EN0008 <= NOT A(0) AND NOT A(1) AND NOT A(2) AND     A(3) AND NOT A(4) AND NOT A(5) AND NOT A(6) AND NOT A(7) AND NOT A(8) AND NOT A(9) AND NOT A(10) AND NOT A(11) AND NOT A(12) AND NOT A(13) AND NOT N_ROMCS AND NOT N_M1;
+	S_EN0038 <= NOT A(0) AND NOT A(1) AND NOT A(2) AND     A(3) AND     A(4) AND NOT A(5) AND NOT A(6) AND NOT A(7) AND NOT A(8) AND NOT A(9) AND NOT A(10) AND NOT A(11) AND NOT A(12) AND NOT A(13) AND NOT N_ROMCS AND NOT N_M1;
+	S_EN0066 <= NOT A(0) AND     A(1) AND     A(2) AND NOT A(3) AND     A(4) AND     A(5) AND NOT A(6) AND NOT A(7) AND NOT A(8) AND NOT A(9) AND NOT A(10) AND NOT A(11) AND NOT A(12) AND NOT A(13) AND NOT N_ROMCS AND NOT N_M1;
+	S_EN04C6 <= NOT A(0) AND     A(1) AND     A(2) AND NOT A(3) AND NOT A(4) AND     A(5) AND     A(6) AND NOT A(7) AND NOT A(8) AND     A(9) AND NOT A(10) AND NOT A(11) AND NOT A(12) AND NOT A(13) AND NOT N_ROMCS AND NOT N_M1;
+	S_EN0562 <= NOT A(0) AND     A(1) AND NOT A(2) AND NOT A(3) AND NOT A(4) AND     A(5) AND     A(6) AND NOT A(7) AND     A(8) AND NOT A(9) AND     A(10) AND NOT A(11) AND NOT A(12) AND NOT A(13) AND NOT N_ROMCS AND NOT N_M1;		 
+--
+-- SWITCHES FOR ENTRY POINT ( CONMEM OFF )
+--
+
+-- 0X1FF8
+	S_EN1FF8 <= NOT A(0) AND NOT A(1) AND NOT A(2) AND A(3) AND A(4) AND A(5) AND A(6) AND A(7) AND A(8) AND A(9) AND A(10) AND A(11) AND A(12) AND NOT A(13) AND NOT A(14) AND NOT A(15); 
+-- 0X1FFF
+	S_EN1FFF <=     A(0) AND     A(1) AND     A(2) AND A(3) AND A(4) AND A(5) AND A(6) AND A(7) AND A(8) AND A(9) AND A(10) AND A(11) AND A(12) AND NOT A(13) AND NOT A(14) AND NOT A(15); 
+	S_AUTO_CONMEM_OFF  <= NOT ( S_EN1FF8 OR S_EN1FFF ); 
+
+--
+-- SWITCHES FOR PAGE0 AND PAGE1
+--
+   S_ACCESSING_PAGE0 <= NOT A(15) AND NOT A(14) AND NOT A(13) AND NOT A(12);
+   S_ACCESSING_PAGE1 <= NOT A(15) AND NOT A(14) AND NOT A(13) AND     A(12);
+
+-- 
+-- ACTIVATE THE CONMEM ( 2 CLOCK LATER... ) 
+--
+   S_AUTO_CONMEM_ON <= S_EN0000 OR S_EN0008 OR S_EN0038 OR S_EN0066 OR S_EN04C6 OR S_EN0562;
+
+
+-- ######################################################################
+-- POWER UP RESET FUNCTION
+-- ######################################################################
+    PROC_RESET : PROCESS ( RESET )--  N_IORQEGDE
+--
+--  qui ci passa.
+--	 
+	 BEGIN
+        S_EEPROMCS <= '1'; -- DISABLE EEPROM
+		  S_SRAMCS <= '1'; -- DISABLE SRAM
+		  N_ROMCS <= '1';  -- DISABLE FACTORY ROM
+		  
+--		  N_SRAMEN <= '1'; 
+--		  N_SRAMWR <= '1';
+--		  N_SRAMOE <= '1';
+--		  
+--		  N_EEPROMEN <= '1'; 
+--		  N_EEPROMWR <= '1';
+--		  N_EEPROMOE <= '1';
+		  
+   	  S_AUTO_CONMEM_ON <= '0';
+		  S_AUTO_CONMEM_OFF <= '0';
+		  S_SWITCH_CONMEM_ONOFF <= '0';
+		  
+		  S_MAPRAM <= '0';
+		  N_IORQEGDE <= '1'; -- DISABLE ULA ACCESSING
+		  D <= "ZZZZZZZZ"; -- DISCONNECT DATA BUS 		  
+--		  BANK <= "000000";
+		  
+	 END PROCESS;
+
+-- ACCESSING INTERFACE CONTROL REGISTER 8 on M1
+-- [ CONTROL REGISTER (READ/Write) ]
+-- xxxx xxxx 1110 0011, 0e3h, 227
+    S_CFG_REG_EN <= A(0) and A(1) and not A(2) and not A(3) and not A(4) and A(5)  and A(6) and A(7) and N_M1;
+--- [ VERSION REGISTER ]
+--- xxxx xxxx 1110 0111, 0e3h, 227
+    S_VER_REG_EN <= A(0) and A(1) and not A(2) and A(3) and not A(4) and A(5)  and A(6) and A(7) and N_M1;	
+	 S_INTERFACECS <= S_CFG_REG_EN OR S_VER_REG_EN;
+	 
+-- #########################################################################
+-- ACCESSING THIS INTERFACE LOGIC ( SEQ )
+-- #########################################################################
+
+    PROC_INTERFACE_EN : PROCESS( S_INTERFACECS, N_RD, N_WR, JUMPER_COMP_MODE ) 
+	 
+	 BEGIN
+			IF S_CFG_REG_EN = '1' AND rising_edge(N_WR) THEN -- CHECK WR Z80 CICLE
+			   S_SWITCH_CONMEM_ONOFF <= D(7);
+				S_MAPRAM <= D(6);
+				BANK( 5 DOWNTO 0 ) <= D( 5 downto 0 );
+-- PURGE LINE IS COMPATIBILITY MODE IS NOT ACTIVE
+				IF JUMPER_COMP_MODE = '0' THEN 
+					BANK(5 downto 2 ) <= "0000";
+				END IF;
+			
+			ELSIF S_VER_REG_EN = '1' AND RISING_EDGE(N_RD) THEN 
+			   D <= "00000000"; -- THIS INTERFACE VERSION
+		   END IF;
+			
+-- LEAVE D BUS IS HIGH IMPEDENCE STATE			
+		   D <= "ZZZZZZZZ";		
+	 END PROCESS;
+	 
+	 
+-- OUTPUTS THE SIGNALS 
+-- CONMEM IS TRUE IF ENTRY POINT ON IS ACTIVE, ENTRY POINT OFF IS NOT ACTIVE 
+--                AND THERE IS NO MANUAL SWITCH
+--
+	 CONMEM <= S_AUTO_CONMEM_ON AND NOT S_AUTO_CONMEM_OFF AND S_SWITCH_CONMEM_ONOFF;
+	 
+--	 MAPRAM <= S_MAPRAM; debug 
+	 
+-- ###########################################################
+-- SRAM ACCESS 
+-- ###########################################################
+--
+    N_SRAMEN <= CONMEM; -- DOVREBBE ESSERE SEMPRE ATTIVO A CHE PRO QUESTA LINEA ? 
+	 N_SRAMOE <= CONMEM AND N_RD AND N_MREQ; -- READ
+	 N_SRAMWR <= CONMEM AND N_WR AND N_MREQ AND NOT MAPRAM; -- WRITE ONLY IF MAPRAM IS OFF
+	 
+-- SRAM CHIP SELECT 
+--
+--  CONMEM    NMAP     CHIP_SELECT 
+--  TRUE      FALSE	  ON PAGE1 ACCESS, PAGE 0 IS EEPROM 
+--  TRUE      TRUE	  ON PAGE0,1 ACCESS.
+--  FALSE     FALSE	  OFF
+--  FALSE     TRUE     ON PAGE0,1 ACCESS.
+	 N_SRAMCS <= ( S_SRAMCS AND ( CONMEM AND NOT MAPRAM AND S_ACCESSING_PAGE1 ) )  OR (     CONMEM AND     MAPRAM AND ( S_ACCESSING_PAGE0 OR S_ACCESSING_PAGE1 ) )OR ( NOT CONMEM AND     MAPRAM AND ( S_ACCESSING_PAGE0 OR S_ACCESSING_PAGE1 ) ) ;
+
+-- ###########################################################
+-- EEPROM ACCESS 
+-- ###########################################################
+
+--  CONMEM    NMAP     CHIP_SELECT 
+--  TRUE      FALSE	  ON PAGE0 ACCESS
+--  TRUE      TRUE	  OFF ( NO EEPROM ACCESS IS DONE ) 
+--  FALSE     FALSE	  OFF ( NO EEPROM ACCESS IS DONE )
+--  FALSE     TRUE     OFF ( NO EEPROM ACCESS IS DONE 9
+
+	N_EEPROMCS <= CONMEM AND NOT MAPRAM AND S_EEPROMCS;
+--
+-- WRITE MODE IS AVAILABLE IF AND ONLY IF THE EEPROM JUMPER IS SET
+--   
+	N_EEPROMWR <= JUMPER_EEPROM AND N_WR AND N_MREQ;
+	N_EEPROMOE <= N_RD AND N_MREQ;
+	
+	
+end Behavioral;
+

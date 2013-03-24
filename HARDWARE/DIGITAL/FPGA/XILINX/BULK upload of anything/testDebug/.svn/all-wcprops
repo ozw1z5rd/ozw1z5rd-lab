@@ -1,0 +1,113 @@
+K 25
+svn:wc:ra_dav:version-url
+V 36
+/svn/!svn/ver/2/trunk/vhdl/testDebug
+END
+testTest2_isim_beh.exe
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svn/!svn/ver/2/trunk/vhdl/testDebug/testTest2_isim_beh.exe
+END
+testTest2.vhd
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/svn/!svn/ver/2/trunk/vhdl/testDebug/testTest2.vhd
+END
+isim.log
+K 25
+svn:wc:ra_dav:version-url
+V 45
+/svn/!svn/ver/2/trunk/vhdl/testDebug/isim.log
+END
+fuse.log
+K 25
+svn:wc:ra_dav:version-url
+V 45
+/svn/!svn/ver/2/trunk/vhdl/testDebug/fuse.log
+END
+fuseRelaunch.cmd
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/svn/!svn/ver/2/trunk/vhdl/testDebug/fuseRelaunch.cmd
+END
+testTest2_isim_beh1.wdb
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svn/!svn/ver/2/trunk/vhdl/testDebug/testTest2_isim_beh1.wdb
+END
+testDebug.xise
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/svn/!svn/ver/2/trunk/vhdl/testDebug/testDebug.xise
+END
+test.vhd
+K 25
+svn:wc:ra_dav:version-url
+V 45
+/svn/!svn/ver/2/trunk/vhdl/testDebug/test.vhd
+END
+test_summary.html
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/svn/!svn/ver/2/trunk/vhdl/testDebug/test_summary.html
+END
+testtest.vhd
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/svn/!svn/ver/2/trunk/vhdl/testDebug/testtest.vhd
+END
+fuse.xmsgs
+K 25
+svn:wc:ra_dav:version-url
+V 47
+/svn/!svn/ver/2/trunk/vhdl/testDebug/fuse.xmsgs
+END
+xilinxsim.ini
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/svn/!svn/ver/2/trunk/vhdl/testDebug/xilinxsim.ini
+END
+isim.cmd
+K 25
+svn:wc:ra_dav:version-url
+V 45
+/svn/!svn/ver/2/trunk/vhdl/testDebug/isim.cmd
+END
+testTest2_stx_beh.prj
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/svn/!svn/ver/2/trunk/vhdl/testDebug/testTest2_stx_beh.prj
+END
+testTest2_beh.prj
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/svn/!svn/ver/2/trunk/vhdl/testDebug/testTest2_beh.prj
+END
+pepExtractor.prj
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/svn/!svn/ver/2/trunk/vhdl/testDebug/pepExtractor.prj
+END
+testTest2_isim_beh.wdb
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svn/!svn/ver/2/trunk/vhdl/testDebug/testTest2_isim_beh.wdb
+END
+testDebug.gise
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/svn/!svn/ver/2/trunk/vhdl/testDebug/testDebug.gise
+END

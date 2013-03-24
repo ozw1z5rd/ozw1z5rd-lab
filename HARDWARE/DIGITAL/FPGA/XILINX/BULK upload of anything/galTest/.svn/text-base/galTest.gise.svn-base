@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<generated_project xmlns="http://www.xilinx.com/XMLSchema" xmlns:xil_pn="http://www.xilinx.com/XMLSchema">
+
+  <!--                                                          -->
+
+  <!--             For tool use only. Do not edit.              -->
+
+  <!--                                                          -->
+
+  <!-- ProjectNavigator created generated project file.         -->
+
+  <!-- For use in tracking generated file and other information -->
+
+  <!-- allowing preservation of process status.                 -->
+
+  <!--                                                          -->
+
+  <!-- Copyright (c) 1995-2011 Xilinx, Inc.  All rights reserved. -->
+
+  <version xmlns="http://www.xilinx.com/XMLSchema">11.1</version>
+
+  <sourceproject xmlns="http://www.xilinx.com/XMLSchema" xil_pn:fileType="FILE_XISE" xil_pn:name="galTest.xise"/>
+
+  <files xmlns="http://www.xilinx.com/XMLSchema">
+    <file xil_pn:fileType="FILE_DIRECTORY" xil_pn:name="_ngo"/>
+    <file xil_pn:fileType="FILE_XMSGS" xil_pn:name="_xmsgs/ngdbuild.xmsgs"/>
+    <file xil_pn:fileType="FILE_XMSGS" xil_pn:name="_xmsgs/xst.xmsgs"/>
+    <file xil_pn:fileType="FILE_LOG" xil_pn:name="fuse.log"/>
+    <file xil_pn:fileType="FILE_DIRECTORY" xil_pn:name="isim"/>
+    <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_CMD" xil_pn:name="isim.cmd"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGDBUILD_LOG" xil_pn:name="smallGAL.bld"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_CHK" xil_pn:name="smallGAL.chk"/>
+    <file xil_pn:fileType="FILE_CMD_LOG" xil_pn:name="smallGAL.cmd_log"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_CXT" xil_pn:name="smallGAL.cxt"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_GYD" xil_pn:name="smallGAL.gyd"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_JEDEC" xil_pn:name="smallGAL.jed"/>
+    <file xil_pn:fileType="FILE_LOG" xil_pn:name="smallGAL.log"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_LSO" xil_pn:name="smallGAL.lso"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_MFD" xil_pn:name="smallGAL.mfd"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGA" xil_pn:name="smallGAL.nga"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGC" xil_pn:name="smallGAL.ngc"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGD" xil_pn:name="smallGAL.ngd"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGR" xil_pn:name="smallGAL.ngr"/>
+    <file xil_pn:fileType="FILE_PAD_MISC" xil_pn:name="smallGAL.pad"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_PNX" xil_pn:name="smallGAL.pnx"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="smallGAL.prj"/>
+    <file xil_pn:fileType="FILE_FITTER_REPORT" xil_pn:name="smallGAL.rpt"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_STX" xil_pn:name="smallGAL.stx"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_REPORT" xil_pn:name="smallGAL.syr"/>
+    <file xil_pn:fileType="FILE_FITTER_REPORT" xil_pn:name="smallGAL.tim"/>
+    <file xil_pn:fileType="FILE_FITTER_REPORT" xil_pn:name="smallGAL.tspec"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_VM6" xil_pn:name="smallGAL.vm6"/>
+    <file xil_pn:fileType="FILE_FITTER_REPORT" xil_pn:name="smallGAL.xml"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST" xil_pn:name="smallGAL.xst"/>
+    <file xil_pn:fileType="FILE_FITTER_REPORT" xil_pn:name="smallGAL_build.xml"/>
+    <file xil_pn:fileType="FILE_HTML" xil_pn:name="smallGAL_envsettings.html"/>
+    <file xil_pn:fileType="FILE_DIRECTORY" xil_pn:name="smallGAL_html"/>
+    <file xil_pn:fileType="FILE_XRPT" xil_pn:name="smallGAL_ngdbuild.xrpt"/>
+    <file xil_pn:fileType="FILE_PAD_EXCEL_REPORT" xil_pn:name="smallGAL_pad.csv"/>
+    <file xil_pn:fileType="FILE_HTML" xil_pn:name="smallGAL_summary.html"/>
+    <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="smallGAL_vhdl.prj"/>
+    <file xil_pn:fileType="FILE_XRPT" xil_pn:name="smallGAL_xst.xrpt"/>
+    <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="testSmallGal_beh.prj"/>
+    <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_ISIM_EXE" xil_pn:name="testSmallGal_isim_beh.exe"/>
+    <file xil_pn:fileType="FILE_ISIM_MISC" xil_pn:name="testSmallGal_isim_beh.wdb"/>
+    <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="testSmallGal_stx_beh.prj"/>
+    <file xil_pn:fileType="FILE_FITTER_REPORT" xil_pn:name="webtalk_pn.xml"/>
+    <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_INI" xil_pn:name="xilinxsim.ini"/>
+    <file xil_pn:fileType="FILE_DIRECTORY" xil_pn:name="xlnx_auto_0_xdb"/>
+    <file xil_pn:fileType="FILE_DIRECTORY" xil_pn:name="xst"/>
+  </files>
+
+  <transforms xmlns="http://www.xilinx.com/XMLSchema">
+    <transform xil_pn:end_ts="1322719847" xil_pn:name="TRAN_copyInitialToAbstractSimulation" xil_pn:start_ts="1322719847">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1322720090" xil_pn:in_ck="1129585884301035258" xil_pn:name="TRAN_copyAbstractToPostAbstractSimulation" xil_pn:start_ts="1322720090">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForInputs"/>
+      <status xil_pn:value="OutOfDateForOutputs"/>
+      <status xil_pn:value="InputChanged"/>
+      <status xil_pn:value="OutputChanged"/>
+      <outfile xil_pn:name="smallGAL.vhd"/>
+      <outfile xil_pn:name="testSmallGal.vhd"/>
+    </transform>
+    <transform xil_pn:end_ts="1322720096" xil_pn:name="TRAN_schematicsToHdlSim" xil_pn:prop_ck="-163261659936556834" xil_pn:start_ts="1322720096">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1322720096" xil_pn:in_ck="1129585884301035258" xil_pn:name="TRAN_copyPostAbstractToPreSimulation" xil_pn:start_ts="1322720096">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForInputs"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
+      <status xil_pn:value="OutOfDateForOutputs"/>
+      <status xil_pn:value="InputChanged"/>
+      <status xil_pn:value="OutputChanged"/>
+      <outfile xil_pn:name="smallGAL.vhd"/>
+      <outfile xil_pn:name="testSmallGal.vhd"/>
+    </transform>
+    <transform xil_pn:end_ts="1322720099" xil_pn:in_ck="1129585884301035258" xil_pn:name="TRAN_ISimulateBehavioralModelRunFuse" xil_pn:prop_ck="-1064220810233428797" xil_pn:start_ts="1322720096">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForInputs"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
+      <status xil_pn:value="OutOfDateForOutputs"/>
+      <status xil_pn:value="InputChanged"/>
+      <status xil_pn:value="OutputChanged"/>
+      <outfile xil_pn:name="fuse.log"/>
+      <outfile xil_pn:name="isim"/>
+      <outfile xil_pn:name="testSmallGal_beh.prj"/>
+      <outfile xil_pn:name="testSmallGal_isim_beh.exe"/>
+      <outfile xil_pn:name="xilinxsim.ini"/>
+    </transform>
+    <transform xil_pn:end_ts="1322720100" xil_pn:in_ck="6704381702773053564" xil_pn:name="TRAN_ISimulateBehavioralModel" xil_pn:prop_ck="7434592541329233552" xil_pn:start_ts="1322720099">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
+      <status xil_pn:value="OutOfDateForOutputs"/>
+      <status xil_pn:value="OutputChanged"/>
+      <outfile xil_pn:name="isim.cmd"/>
+      <outfile xil_pn:name="testSmallGal_isim_beh.wdb"/>
+    </transform>
+    <transform xil_pn:end_ts="1322672652" xil_pn:name="TRAN_copyInitialToXSTAbstractSynthesis" xil_pn:start_ts="1322672652">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1322672652" xil_pn:name="TRAN_schematicsToHdl" xil_pn:prop_ck="-626359256053684277" xil_pn:start_ts="1322672652">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1322719763" xil_pn:in_ck="5983942861711951357" xil_pn:name="TRANEXT_xstsynthesize_xbr" xil_pn:prop_ck="-3551746022184985787" xil_pn:start_ts="1322719754">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="WarningsGenerated"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForInputs"/>
+      <status xil_pn:value="InputChanged"/>
+      <outfile xil_pn:name="_xmsgs/xst.xmsgs"/>
+      <outfile xil_pn:name="smallGAL.lso"/>
+      <outfile xil_pn:name="smallGAL.ngc"/>
+      <outfile xil_pn:name="smallGAL.ngr"/>
+      <outfile xil_pn:name="smallGAL.prj"/>
+      <outfile xil_pn:name="smallGAL.stx"/>
+      <outfile xil_pn:name="smallGAL.syr"/>
+      <outfile xil_pn:name="smallGAL.xst"/>
+      <outfile xil_pn:name="smallGAL_xst.xrpt"/>
+      <outfile xil_pn:name="webtalk_pn.xml"/>
+      <outfile xil_pn:name="xst"/>
+    </transform>
+    <transform xil_pn:end_ts="1322672941" xil_pn:name="TRAN_compileBCD2" xil_pn:prop_ck="316823822415676485" xil_pn:start_ts="1322672941">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1322719769" xil_pn:in_ck="5983942861711942611" xil_pn:name="TRAN_ngdbuild" xil_pn:prop_ck="1688887409924995895" xil_pn:start_ts="1322719763">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
+      <outfile xil_pn:name="_ngo"/>
+      <outfile xil_pn:name="_xmsgs/ngdbuild.xmsgs"/>
+      <outfile xil_pn:name="smallGAL.bld"/>
+      <outfile xil_pn:name="smallGAL.ngd"/>
+      <outfile xil_pn:name="smallGAL_ngdbuild.xrpt"/>
+    </transform>
+    <transform xil_pn:end_ts="1322719775" xil_pn:in_ck="5983942861711942612" xil_pn:name="TRANEXT_vm6File_xbr" xil_pn:prop_ck="7078033419976970207" xil_pn:start_ts="1322719769">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="WarningsGenerated"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
+      <outfile xil_pn:name="smallGAL.chk"/>
+      <outfile xil_pn:name="smallGAL.cxt"/>
+      <outfile xil_pn:name="smallGAL.gyd"/>
+      <outfile xil_pn:name="smallGAL.log"/>
+      <outfile xil_pn:name="smallGAL.mfd"/>
+      <outfile xil_pn:name="smallGAL.nga"/>
+      <outfile xil_pn:name="smallGAL.pad"/>
+      <outfile xil_pn:name="smallGAL.pnx"/>
+      <outfile xil_pn:name="smallGAL.rpt"/>
+      <outfile xil_pn:name="smallGAL.tim"/>
+      <outfile xil_pn:name="smallGAL.tspec"/>
+      <outfile xil_pn:name="smallGAL.vm6"/>
+      <outfile xil_pn:name="smallGAL.xml"/>
+      <outfile xil_pn:name="smallGAL_build.xml"/>
+      <outfile xil_pn:name="smallGAL_html"/>
+      <outfile xil_pn:name="smallGAL_pad.csv"/>
+    </transform>
+    <transform xil_pn:end_ts="1322719777" xil_pn:in_ck="5983942861711951476" xil_pn:name="TRANEXT_crtProg_xbr" xil_pn:prop_ck="5245363024343" xil_pn:start_ts="1322719775">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
+      <outfile xil_pn:name="smallGAL.jed"/>
+    </transform>
+    <transform xil_pn:end_ts="1322672963" xil_pn:in_ck="5983942861711951476" xil_pn:name="TRAN_timRpt" xil_pn:prop_ck="111903974446" xil_pn:start_ts="1322672960">
+      <status xil_pn:value="AbortedRun"/>
+      <status xil_pn:value="WarningsGenerated"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForInputs"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
+      <status xil_pn:value="InputChanged"/>
+    </transform>
+  </transforms>
+
+</generated_project>

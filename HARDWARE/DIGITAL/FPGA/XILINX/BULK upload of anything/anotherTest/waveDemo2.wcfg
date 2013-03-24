@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="/home/apalma/Garage/vhdl/anotherTest/cinqueTest_isim_beh2.wdb" id="1" type="auto">
+         <top_modules>
+            <top_module name="cinquetest" />
+            <top_module name="std_logic_1164" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <WVObjectSize size="6" />
+   <wave_markers>
+      <marker time="2880000000" label="" />
+   </wave_markers>
+   <wvobject fp_name="/cinquetest/i1" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">i1</obj_property>
+      <obj_property name="ObjectShortName">i1</obj_property>
+   </wvobject>
+   <wvobject fp_name="/cinquetest/i2" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">i2</obj_property>
+      <obj_property name="ObjectShortName">i2</obj_property>
+   </wvobject>
+   <wvobject fp_name="/cinquetest/i3" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">i3</obj_property>
+      <obj_property name="ObjectShortName">i3</obj_property>
+   </wvobject>
+   <wvobject fp_name="/cinquetest/tclock" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">tclock</obj_property>
+      <obj_property name="ObjectShortName">tclock</obj_property>
+   </wvobject>
+   <wvobject fp_name="/cinquetest/o1" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">o1</obj_property>
+      <obj_property name="ObjectShortName">o1</obj_property>
+   </wvobject>
+   <wvobject fp_name="/cinquetest/o2" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">o2</obj_property>
+      <obj_property name="ObjectShortName">o2</obj_property>
+   </wvobject>
+</wave_config>

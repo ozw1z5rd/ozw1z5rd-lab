@@ -1,0 +1,112 @@
+Release 13.3 - xst O.76xd (lin64)
+Copyright (c) 1995-2011 Xilinx, Inc.  All rights reserved.
+--> 
+Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 1.00 secs
+Total CPU time to Xst completion: 0.05 secs
+ 
+--> 
+Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 1.00 secs
+Total CPU time to Xst completion: 0.05 secs
+ 
+--> 
+Reading design: agal.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Compilation
+  3) Design Hierarchy Analysis
+  4) HDL Analysis
+  5) HDL Synthesis
+     5.1) HDL Synthesis Report
+  6) Advanced HDL Synthesis
+     6.1) Advanced HDL Synthesis Report
+  7) Low Level Synthesis
+  8) Partition Report
+  9) Final Report
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "agal.prj"
+Input Format                       : mixed
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "agal"
+Output Format                      : NGC
+Target Device                      : CoolRunner2 CPLDs
+
+---- Source Options
+Top Module Name                    : agal
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+Mux Extraction                     : Yes
+Resource Sharing                   : YES
+
+---- Target Options
+Add IO Buffers                     : YES
+MACRO Preserve                     : YES
+XOR Preserve                       : YES
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Keep Hierarchy                     : Yes
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Verilog 2001                       : YES
+
+---- Other Options
+Clock Enable                       : YES
+wysiwyg                            : NO
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Compilation                              *
+=========================================================================
+Compiling vhdl file "/home/apalma/Garage/vhdl/fitTest/agal.vhd" in Library work.
+Entity <agal> compiled.
+ERROR:HDLParsers:164 - "/home/apalma/Garage/vhdl/fitTest/agal.vhd" Line 57. parse error, unexpected SIGNAL
+ERROR:HDLParsers:164 - "/home/apalma/Garage/vhdl/fitTest/agal.vhd" Line 58. parse error, unexpected SIGNAL
+ERROR:HDLParsers:1401 - "/home/apalma/Garage/vhdl/fitTest/agal.vhd" Line 61. Object ideio0 of mode OUT can not be read.
+ERROR:HDLParsers:1401 - "/home/apalma/Garage/vhdl/fitTest/agal.vhd" Line 61. Object ideio1 of mode OUT can not be read.
+ERROR:HDLParsers:1401 - "/home/apalma/Garage/vhdl/fitTest/agal.vhd" Line 61. Object automap of mode OUT can not be read.
+ERROR:HDLParsers:808 - "/home/apalma/Garage/vhdl/fitTest/agal.vhd" Line 64. * can not have such operands in this context.
+ERROR:HDLParsers:808 - "/home/apalma/Garage/vhdl/fitTest/agal.vhd" Line 65. * can not have such operands in this context.
+ERROR:HDLParsers:3312 - "/home/apalma/Garage/vhdl/fitTest/agal.vhd" Line 67. Undefined symbol 'sg_mapterm'.
+ERROR:HDLParsers:808 - "/home/apalma/Garage/vhdl/fitTest/agal.vhd" Line 67. * can not have such operands in this context.
+ERROR:HDLParsers:3312 - "/home/apalma/Garage/vhdl/fitTest/agal.vhd" Line 68. Undefined symbol 'M1'.
+ERROR:HDLParsers:1209 - "/home/apalma/Garage/vhdl/fitTest/agal.vhd" Line 68. M1: Undefined symbol (last report in this block)
+ERROR:HDLParsers:808 - "/home/apalma/Garage/vhdl/fitTest/agal.vhd" Line 68. * can not have such operands in this context.
+ERROR:HDLParsers:808 - "/home/apalma/Garage/vhdl/fitTest/agal.vhd" Line 69. * can not have such operands in this context.
+ERROR:HDLParsers:808 - "/home/apalma/Garage/vhdl/fitTest/agal.vhd" Line 70. * can not have such operands in this context.
+ERROR:HDLParsers:808 - "/home/apalma/Garage/vhdl/fitTest/agal.vhd" Line 71. * can not have such operands in this context.
+ERROR:HDLParsers:808 - "/home/apalma/Garage/vhdl/fitTest/agal.vhd" Line 72. * can not have such operands in this context.
+ERROR:HDLParsers:3312 - "/home/apalma/Garage/vhdl/fitTest/agal.vhd" Line 74. Undefined symbol 'sg_mapcond'.
+ERROR:HDLParsers:1209 - "/home/apalma/Garage/vhdl/fitTest/agal.vhd" Line 75. sg_mapterm: Undefined symbol (last report in this block)
+ERROR:HDLParsers:3312 - "/home/apalma/Garage/vhdl/fitTest/agal.vhd" Line 75. Undefined symbol 'mapcond'.
+ERROR:HDLParsers:1209 - "/home/apalma/Garage/vhdl/fitTest/agal.vhd" Line 75. mapcond: Undefined symbol (last report in this block)
+ERROR:HDLParsers:1209 - "/home/apalma/Garage/vhdl/fitTest/agal.vhd" Line 90. sg_mapcond: Undefined symbol (last report in this block)
+--> 
+
+
+Total memory usage is 485628 kilobytes
+
+Number of errors   :   21 (   0 filtered)
+Number of warnings :    0 (   0 filtered)
+Number of infos    :    0 (   0 filtered)
+

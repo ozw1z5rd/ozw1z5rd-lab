@@ -1,0 +1,20 @@
+V3 12
+FL /home/apalma/Garage/vhdl/simple2/composite.vhd 2011/11/28.16:52:31 O.76xd
+EN work/a1 1322499178 FL /home/apalma/Garage/vhdl/simple2/composite.vhd \
+      PB ieee/std_logic_1164 1317710503
+AR work/a1/behv 1322499179 \
+      FL /home/apalma/Garage/vhdl/simple2/composite.vhd EN work/a1 1322499178
+EN work/a2 1322499180 \
+      FL /home/apalma/Garage/vhdl/simple2/composite.vhd PB ieee/std_logic_1164 1317710503
+AR work/a2/behv 1322499181 \
+      FL /home/apalma/Garage/vhdl/simple2/composite.vhd EN work/a2 1322499180
+EN work/composite 1322499182 \
+      FL /home/apalma/Garage/vhdl/simple2/composite.vhd PB ieee/std_logic_1164 1317710503
+AR work/composite/structure 1322499183 \
+      FL /home/apalma/Garage/vhdl/simple2/composite.vhd EN work/composite 1322499182 \
+      CP a1 CP a2
+FL /home/apalma/Garage/vhdl/simple2/module.vhd 2011/11/29.16:54:23 O.76xd
+EN work/module 1322585671 FL /home/apalma/Garage/vhdl/simple2/module.vhd \
+      PB ieee/std_logic_1164 1317710503
+AR work/module/Behavioral 1322585672 \
+      FL /home/apalma/Garage/vhdl/simple2/module.vhd EN work/module 1322585671

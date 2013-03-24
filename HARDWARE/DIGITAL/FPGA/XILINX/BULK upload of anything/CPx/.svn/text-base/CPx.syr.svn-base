@@ -1,0 +1,205 @@
+Release 13.3 - xst O.76xd (lin64)
+Copyright (c) 1995-2011 Xilinx, Inc.  All rights reserved.
+--> 
+Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 1.00 secs
+Total CPU time to Xst completion: 0.06 secs
+ 
+--> 
+Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 1.00 secs
+Total CPU time to Xst completion: 0.06 secs
+ 
+--> 
+Reading design: CPx.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Compilation
+  3) Design Hierarchy Analysis
+  4) HDL Analysis
+  5) HDL Synthesis
+     5.1) HDL Synthesis Report
+  6) Advanced HDL Synthesis
+     6.1) Advanced HDL Synthesis Report
+  7) Low Level Synthesis
+  8) Partition Report
+  9) Final Report
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "CPx.prj"
+Input Format                       : mixed
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "CPx"
+Output Format                      : NGC
+Target Device                      : CoolRunner2 CPLDs
+
+---- Source Options
+Top Module Name                    : CPx
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+Mux Extraction                     : Yes
+Resource Sharing                   : YES
+
+---- Target Options
+Add IO Buffers                     : YES
+MACRO Preserve                     : YES
+XOR Preserve                       : YES
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Keep Hierarchy                     : Yes
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Verilog 2001                       : YES
+
+---- Other Options
+Clock Enable                       : YES
+wysiwyg                            : NO
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Compilation                              *
+=========================================================================
+Compiling vhdl file "/home/apalma/Garage/vhdl/CPx/CPx.vhd" in Library work.
+Architecture behavioral of Entity cpx is up to date.
+
+=========================================================================
+*                     Design Hierarchy Analysis                         *
+=========================================================================
+Analyzing hierarchy for entity <CPx> in library <work> (architecture <behavioral>).
+
+
+=========================================================================
+*                            HDL Analysis                               *
+=========================================================================
+Analyzing Entity <CPx> in library <work> (Architecture <behavioral>).
+INFO:Xst:1739 - HDL ADVISOR - "/home/apalma/Garage/vhdl/CPx/CPx.vhd" line 66: declaration of a buffer port will make it difficult for you to validate this design by simulation. It is preferable to declare it as output.
+INFO:Xst:1739 - HDL ADVISOR - "/home/apalma/Garage/vhdl/CPx/CPx.vhd" line 75: declaration of a buffer port will make it difficult for you to validate this design by simulation. It is preferable to declare it as output.
+INFO:Xst:1739 - HDL ADVISOR - "/home/apalma/Garage/vhdl/CPx/CPx.vhd" line 78: declaration of a buffer port will make it difficult for you to validate this design by simulation. It is preferable to declare it as output.
+INFO:Xst:1739 - HDL ADVISOR - "/home/apalma/Garage/vhdl/CPx/CPx.vhd" line 96: declaration of a buffer port will make it difficult for you to validate this design by simulation. It is preferable to declare it as output.
+INFO:Xst:1739 - HDL ADVISOR - "/home/apalma/Garage/vhdl/CPx/CPx.vhd" line 102: declaration of a buffer port will make it difficult for you to validate this design by simulation. It is preferable to declare it as output.
+WARNING:Xst:819 - "/home/apalma/Garage/vhdl/CPx/CPx.vhd" line 239: One or more signals are missing in the process sensitivity list. To enable synthesis of FPGA/CPLD hardware, XST will assume that all necessary signals are present in the sensitivity list. Please note that the result of the synthesis may differ from the initial design specification. The missing signals are:
+   <N_WR>
+INFO:Xst:2679 - Register <S_NMI> in unit <CPx> has a constant value of 0 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <NMAP> in unit <CPx> has a constant value of 0 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <BANK> in unit <CPx> has a constant value of 000000 during circuit operation. The register is replaced by logic.
+Entity <CPx> analyzed. Unit <CPx> generated.
+
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Performing bidirectional port resolution...
+INFO:Xst:2679 - Register <D> in unit <CPx> has a constant value of 00000000 during circuit operation. The register is replaced by logic.
+
+Synthesizing Unit <CPx>.
+    Related source file is "/home/apalma/Garage/vhdl/CPx/CPx.vhd".
+WARNING:Xst:647 - Input <N_INT> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <N_BUSACK> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <N_RESET> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:1306 - Output <N_IOREQ> is never assigned.
+WARNING:Xst:1306 - Output <N_BUSREQ> is never assigned.
+WARNING:Xst:1306 - Output <LED_MAPRAM> is never assigned.
+WARNING:Xst:1306 - Output <NMI> is never assigned.
+WARNING:Xst:647 - Input <CLOCK> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <EEPROM> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <N_NMI> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:1306 - Output <N_EEPROM_EN> is never assigned.
+WARNING:Xst:1306 - Output <ROMCS> is never assigned.
+WARNING:Xst:1306 - Output <LED_COMP_MODE> is never assigned.
+WARNING:Xst:1306 - Output <INT> is never assigned.
+WARNING:Xst:646 - Signal <s_mapcond_off> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <S_ROMCS> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:1780 - Signal <S_RAMEN> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <S_NMI> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <S_MAPRAM> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <S_MAPCOND> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:1780 - Signal <S_IO_EN> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:1780 - Signal <S_CFREG> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <S_ACCESSING_P0> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+    Found 6-bit register for signal <BANK>.
+    Found 1-bit register for signal <S_CONMEM>.
+    Summary:
+	inferred   1 D-type flip-flop(s).
+Unit <CPx> synthesized.
+
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# Registers                                            : 2
+ 1-bit register                                        : 1
+ 6-bit register                                        : 1
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+WARNING:Xst:1293 - FF/Latch <0> has a constant value of 0 in block <S_CONMEM>. This FF/Latch will be trimmed during the optimization process.
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# Registers                                            : 1
+ Flip-Flops                                            : 1
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+WARNING:Xst:1293 - FF/Latch <S_CONMEM> has a constant value of 0 in block <CPx>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <BANK_5> (without init value) has a constant value of 0 in block <CPx>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <BANK_4> (without init value) has a constant value of 0 in block <CPx>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <BANK_3> (without init value) has a constant value of 0 in block <CPx>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <BANK_2> (without init value) has a constant value of 0 in block <CPx>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <BANK_1> (without init value) has a constant value of 0 in block <CPx>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <BANK_0> (without init value) has a constant value of 0 in block <CPx>. This FF/Latch will be trimmed during the optimization process.
+
+ERROR:Xst:528 - Multi-source in Unit <CPx> on signal <N0>; this signal is connected to multiple drivers.
+Drivers are: 
+   Signal <BANK<0>> in Unit <CPx> is assigned to GND
+   Signal <BANK<1>> in Unit <CPx> is assigned to GND
+   Signal <BANK<2>> in Unit <CPx> is assigned to GND
+   Signal <BANK<3>> in Unit <CPx> is assigned to GND
+   Signal <BANK<4>> in Unit <CPx> is assigned to GND
+   Signal <BANK<5>> in Unit <CPx> is assigned to GND
+   Signal <N_EEPROMWR> in Unit <CPx> is assigned to GND
+   Signal <N0> in Unit <LPM_DFF_2> is assigned to GND
+
+
+Total REAL time to Xst completion: 7.00 secs
+Total CPU time to Xst completion: 5.26 secs
+ 
+--> 
+
+
+Total memory usage is 516300 kilobytes
+
+Number of errors   :    1 (   0 filtered)
+Number of warnings :   32 (   0 filtered)
+Number of infos    :    9 (   0 filtered)
+

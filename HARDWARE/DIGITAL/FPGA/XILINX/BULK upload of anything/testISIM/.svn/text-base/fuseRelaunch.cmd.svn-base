@@ -1,0 +1,1 @@
+-intstyle "ise" -incremental -o "/host/Garage/Garage/vhdl/testISIM/testISIM_isim_beh.exe" -prj "/host/Garage/Garage/vhdl/testISIM/testISIM_beh.prj" "work.testISIM" 

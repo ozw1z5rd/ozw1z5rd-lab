@@ -1,0 +1,18 @@
+Pin Freeze File:  version O.76xd
+
+2C32A32 XC2C32A-4-QFG32
+ADDR0 S:PIN3
+ADDR1 S:PIN2
+BANK0 S:PIN1
+BANK1 S:PIN32
+MAPRAM S:PIN31
+
+
+;The remaining section of the .gyd file is for documentation purposes only.
+;It shows where your internal equations were placed in the last successful fit.
+
+PARTITION FB1_4 ADDR0 ADDR1 BANK0 BANK1
+		 MAPRAM
+
+
+
