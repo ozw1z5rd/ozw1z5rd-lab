@@ -1,0 +1,33 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<title>~/gnustep/Frazione.h.html</title>
+<meta name="Generator" content="Vim/7.2">
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+</head>
+<body bgcolor="#ffffff" text="#000000"><font face="monospace">
+<font color="#ff40ff">#import </font><font color="#ff6060">&lt;Foundation/NSObject.h&gt;</font><br>
+<br>
+<font color="#ffff00">@interface</font>&nbsp;Frazione : NSObject {<br>
+<br>
+<font color="#8080ff">// Variabili di instanza ( il default è PROTECTED )</font><br>
+&nbsp;&nbsp;&nbsp;&nbsp;<font color="#00ff00">int</font>&nbsp;_numeratore; <br>
+&nbsp;&nbsp;&nbsp;&nbsp;<font color="#00ff00">int</font>&nbsp;_denominatore; <br>
+}<br>
+<br>
+<font color="#8080ff">// Metodi di instanza ( sono preceduti da un &quot;-&quot; ) </font><br>
+<font color="#00ffff">-</font>(<font color="#00ff00">void</font>)&nbsp;&nbsp;print; <br>
+<font color="#00ffff">-</font>(<font color="#00ff00">void</font>)&nbsp;&nbsp;setNumeratore: (<font color="#00ff00">int</font>) n;<br>
+<font color="#00ffff">-</font>(<font color="#00ff00">void</font>)&nbsp;&nbsp;setDenominatore: (<font color="#00ff00">int</font>) d; <br>
+<font color="#00ffff">-</font>(<font color="#00ff00">void</font>)&nbsp;&nbsp;setNum:(<font color="#00ff00">int</font>) n setDen:(<font color="#00ff00">int</font>) d; <br>
+<font color="#00ffff">-</font>(<font color="#00ff00">int</font>)&nbsp;&nbsp; numeratore; <br>
+<font color="#00ffff">-</font>(<font color="#00ff00">int</font>)&nbsp;&nbsp; denominatore; <br>
+<font color="#00ffff">-</font>(<font color="#00ff00">float</font>) toFloat;<br>
+<font color="#00ffff">-</font>(<font color="#00ff00">id</font>)&nbsp;&nbsp;somma:&nbsp;&nbsp;&nbsp;&nbsp; (<font color="#00ff00">id</font>) frazione;<br>
+<font color="#00ffff">-</font>(<font color="#00ff00">id</font>)&nbsp;&nbsp;sottrai:&nbsp;&nbsp; (<font color="#00ff00">id</font>) frazione;<br>
+<font color="#00ffff">-</font>(<font color="#00ff00">id</font>)&nbsp;&nbsp;moltiplica:(<font color="#00ff00">id</font>) frazione; <br>
+<font color="#00ffff">-</font>(<font color="#00ff00">id</font>)&nbsp;&nbsp;dividi:&nbsp;&nbsp;&nbsp;&nbsp;(<font color="#00ff00">id</font>) frazione;<br>
+<font color="#00ffff">-</font>(<font color="#00ff00">id</font>)&nbsp;&nbsp;neg; <br>
+<font color="#ffff00">@end</font><br>
+</font></body>
+</html>
