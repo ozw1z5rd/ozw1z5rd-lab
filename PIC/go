@@ -1,0 +1,3 @@
+#!/bin/sh
+gpasm -I /usr/share/gputils/header -I ./ $1.asm 
+gpsim $1.hex -p pic12f675 -s $1.cod 
