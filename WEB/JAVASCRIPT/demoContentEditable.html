@@ -1,0 +1,60 @@
+<html>
+
+<head>
+
+
+<style>
+
+.cid {
+  font-family: Arial, Verdana;
+  font-size: 11pt;
+  color: red; 
+  background-color: yellow;
+  width: 400px; 
+  height: 400px;
+}
+
+</style>
+
+<script>
+   function swapContentEditable() {
+        alert("setting the content editable");
+        d = document.getElementById("dv");
+        d.contentEditable = ( d.contentEditable == 'true' ) ? 'false' : 'true' 
+        d.draggable= ( d.draggable == 'true' ) ? 'false' : 'true' 
+   } 
+
+
+   function pop() {
+      alert("il contenuto è variato ");
+   }
+</script>
+
+
+
+
+</head>
+
+<body onload="" >
+
+<input type="button" onclick="swapContentEditable()" value="set/unset editable" >
+<div id="dv" 
+     contenteditable="true" 
+     class="cid" 
+     onchange="pop()" > 
+ bla bla bla bla bla 
+ bla bla bla bla 
+
+</div>
+<div id="dv2" contenteditable="false" draggable="true" 
+     title="questo è il testo di popup per l'elemento sotto il mouse" 
+     class="cid" > 
+ bla bla bla bla bla 
+ bla bla bla bla 
+
+</div>
+
+</body>
+
+
+</html>

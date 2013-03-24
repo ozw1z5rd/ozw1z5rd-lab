@@ -1,0 +1,40 @@
+<html>
+
+<head>
+
+    <script src="JS/jquery-1.4.2.min.js"></script>
+
+<script>
+    
+  function start() {
+     alert("starting...");
+     canvas = document.getElementById("canvas");
+     ctx = canvas.getContext("2d");
+     if ( ctx ) {
+        ctx.fillStyle = "rgba(213, 127,127,.5)"
+        ctx.fillRect(20,20,380,380);
+        ctx.fillStyle = "rgba(213, 227,127,.5)"
+        ctx.fillRect(70,70,400,400);
+     }
+
+  }  
+
+</script>
+
+
+
+
+</head>
+
+<body onload="start()" >
+<canvas id="canvas" width="800" height="400">
+
+
+</canvas>
+
+
+
+</body>
+
+
+</html>

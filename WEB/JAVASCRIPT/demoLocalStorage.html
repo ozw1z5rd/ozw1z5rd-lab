@@ -1,0 +1,21 @@
+<html>
+<head>
+
+    <script>
+       function testLocalStorage() {
+            alert("entering test localstorage");
+            window.localStorage['demo'] = "test"
+            d = document.getElementById("d");
+            d.innerHTML = "prima del local storagre"
+            d.innerHTML = window.localStorage["demo"]
+        }
+
+    </script>
+
+</head>
+
+<body onLoad="testLocalStorage()" >
+    <div id="d" name="d">
+    </div>
+</body>
+<html>
