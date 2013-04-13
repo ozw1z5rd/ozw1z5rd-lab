@@ -1,0 +1,725 @@
+<html>
+
+<head>
+<title>VisualCasa di Sergio</title>
+
+<!-- GOOGLE -->  
+<script src="http://maps.google.com/maps?file=api&amp;v=2&amp;key=ABQIAAAAg-WVcB-LDOiYHUnRgA30JhRi_j0U6kJrkFvY4-OX2XYmEAa76BRiKMOvBG9Epi2uqHGAqCWYAM2d_Q" type="text/javascript"></script>
+
+<!-- YAHOO -->
+
+<!-- locale -->
+<script src="yui/build/yahoo/yahoo.js"></script>
+<script src="yui/build/event/event.js"></script>
+<script src="yui/build/connection/connection.js"></script>
+<script src="yui/build/imageloader/imageloader.js"></script>
+<script src="yui/build/animation/animation-min.js"></script>
+
+<!-- remote -->
+<script type="text/javascript" src="http://yui.yahooapis.com/combo?2.7.0/build/yahoo-dom-event/yahoo-dom-event.js&2.7.0/build/element/element-min.js&2.7.0/build/selector/selector-min.js&2.7.0/build/layout/layout-min.js"></script>
+<link rel="stylesheet" type="text/css" href="http://yui.yahooapis.com/combo?2.7.0/build/reset-fonts-grids/reset-fonts-grids.css&2.7.0/build/layout/assets/skins/sam/layout.css">
+
+
+
+<script type="text/javascript">
+
+//  it's used to track the used cap value
+    var current_cap="00000";
+
+// gloabal vars for defined service URIs
+    var sUrl_base = "http://127.0.0.1/rest/"
+    var sUrl_get_buildings_n        =  sUrl_base + "get_buildings_n/";
+    var sUrl_get_buildings_by_query =  sUrl_base + "get_buildings_by_query/";
+    var sUrl_get_banners_by_cap     =  sUrl_base + "get_banners_by_cap/";
+    var sUrl_get_building_by_video  =  sUrl_base + "get_building_info_by_videoid/";
+
+// Animation def points
+    var video_start  = [  25, 700];
+    var video_end    = [  25, 187];
+    var slider_start = [ -250, 232];
+    var slider_end   = [  20,  232];
+    var bg_start     = [   0,  600];
+    var bg_end       = [   0,  268];
+
+    var attr_tv         = { points: { from: video_start,  to: video_end    } };
+    var attr_tv_r       = { points: { from: video_end,    to: video_start  } };
+    var attr_slider     = { points: { from: slider_start, to: slider_end   } };
+    var attr_slider_r   = { points: { from: slider_end,   to: slider_start } };
+    var attr_bg         = { points: { from: bg_start,     to: bg_end       } };
+    var attr_bg_r       = { points: { from: bg_end,       to: bg_start     } };
+
+    var s_start = 10;
+    var s_end   = 400;
+    var s_y     = 520;
+    var s_attrib   = { points : { from: [s_start, s_y] , to: [s_end, s_y ] } };
+    var s_attrib_r = { points : { from: [s_end, s_y ] ,  to: [s_start, s_y]} };
+
+    var obj_sl          = undefined;
+    var obj_tv          = undefined;
+    var obj_bg          = undefined;
+    var obj_gallery     = undefined;
+    var obj_overlay     = undefined;
+    var obj_bg_overlay  = undefined;
+    var obj_player      = undefined;
+    var obj_slbl        = undefined;
+
+    var animation_is_running = false;
+    var animation_is_playing = false; 
+
+    var anim_pass_1   = undefined;
+    var anim_pass_2   = undefined;
+    var anim_pass_3   = undefined;
+    var anim_pass_3_r = undefined;
+    var anim_pass_2_r = undefined;
+    var anim_pass_1_r = undefined;
+
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////
+///////////////////////////////////////////////// PUBLIC INTERFACE ///////////////////////////////////////////
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////
+// Play the selected video
+//  opens the playes if is't not open
+//  sets the video name in oder to start the movie after the player is opened
+//  load the build description doing and async call
+
+
+function fn_playVideo( videoid ) {
+    opening(); // open the player if required
+    var transaction = YAHOO.util.Connect.asyncRequest(
+                                'GET',
+                                sUrl_get_building_by_video + videoid,
+                                {  success: paint_pannel, 
+                                   failure: handleKo
+                                } );
+
+}
+
+// Do a building search
+function fn_search( queryString ) {
+
+    var callBack = { success: paint_map,
+                     failure: handleKo,
+                     cache: false  }
+
+    var transaction = YAHOO.util.Connect.asyncRequest(
+                                'GET',
+                                sUrl_get_buildings_by_query +"?" + queryString,
+                                callBack );
+
+    var callBack = { success: paint_banner,
+                     failure: handleKo,
+                     cache: false  }
+
+    current_cap = queryString.match("comune=\w*").replace("comune","");
+
+    alert( current_cap )
+
+    var transaction = YAHOO.util.Connect.asyncRequest(
+                                'GET',
+                                sUrl_get_banners_by_cap + "/" + current_cap,
+                                callBack );
+}
+// put online an advise
+function fn_publish() {
+    anim_open_form_layer("./rest/frm_categorieMerceologiche")
+}
+// user login
+function fn_login() {
+    anim_open_form_layer("./rest/frm_loginUser")
+}
+
+function fn_popup( url ) {
+    window.open( url );
+}
+    
+function fn_play_region( who ) {
+    alert("uno")
+   
+}
+
+function fn_play_provincia( who ) {
+    paint_provincia( who )
+    
+}
+
+function fn_set_region( who ) {
+    alert("tre")
+    
+}
+
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////// ANIMATIONS  ///////////////////////////////////////////////
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+
+function init_anim () {
+    
+    obj_sl          = document.getElementById('slider');
+    obj_tv          = document.getElementById('tv');
+    obj_bg          = document.getElementById('bg');
+    obj_gallery     = document.getElementById('gallery');
+    obj_overlay     = document.getElementById("map_container");
+    obj_bg_overlay  = document.getElementById("bg_container");
+    obj_player      = document.getElementById("player");
+    obj_slbl        = document.getElementById("building_list");
+    obj_slbd        = document.getElementById("building_description");
+    obj_slbc        = document.getElementById("building_counter");
+    obj_pannel      = document.getElementById("building_description");
+    obj_form_overlay= document.getElementById("form_overlay");
+    obj_form_iframe = document.getElementById("inner_iframe");
+    obj_bg_regioni  = document.getElementById("bg_regioni");
+    obj_header      = document.getElementById("header");
+    obj_frame_prov  = document.getElementById("provincia")
+    
+    
+    anim_pass_1= new YAHOO.util.Motion( obj_tv, attr_tv,1);
+    anim_pass_1.onComplete.subscribe( anim_pass_1_handle );
+    anim_pass_2 = new YAHOO.util.Motion( obj_sl, attr_slider,1);
+    anim_pass_2.onComplete.subscribe( anim_pass_2_handle );
+    anim_pass_3 = new YAHOO.util.Motion( obj_bg, attr_bg );
+    anim_pass_3.onComplete.subscribe( anim_pass_3_handle );
+
+    anim_pass_3_r = new YAHOO.util.Motion( obj_tv, attr_tv_r,1);
+    anim_pass_3_r.onComplete.subscribe( anim_pass_3_handle_r );
+    anim_pass_2_r = new YAHOO.util.Motion( obj_sl, attr_slider_r,1);
+    anim_pass_2_r.onComplete.subscribe( anim_pass_2_handle_r );
+    anim_pass_1_r = new YAHOO.util.Motion( obj_bg, attr_bg_r );
+    anim_pass_1_r.onComplete.subscribe( anim_pass_1_handle_r );
+
+
+    gallery_left  = new YAHOO.util.Motion( obj_gallery, s_attrib )
+    gallery_right = new YAHOO.util.Motion( obj_gallery, s_attrib_r )
+    gallery_left.onComplete.subscribe( s_reload_attrib );
+    gallery_right.onComplete.subscribe( s_reload_attrib );
+
+    YAHOO.util.Event.on('demo-run-2', 'click', closing ); //CLOSE
+    
+    YAHOO.util.Event.on('demo-run-a', 'click', show_room_left ); //CLOSE
+    YAHOO.util.Event.on('demo-run-a-2', 'click', show_room_right ); //CLOSE    
+}
+
+
+/////////////////////////////////////////////////////////////
+
+
+// opening anim ///////////////////////////////////////////////////////////////
+//
+//  1. draw the container
+//  2. pullup the tv
+//  3. draw the slider
+//  4. move the slider
+//  5. pullup the bg
+//  6. draw the player
+//  7. start the player
+//  8. draw the list box
+//
+
+function opening() {
+    if ( animation_is_running ) { return }
+    if ( animation_is_playing ) {
+        alert("caricato il nuovo filmato nel player")
+        return ; 
+    }
+    
+    animation_is_running = true;
+    obj_overlay.style.display = "inline";
+    anim_pass_1.animate();
+}
+
+function anim_pass_1_handle () {
+    obj_sl.style.visibility ="visible";
+    anim_pass_2.animate();
+}
+
+function anim_pass_2_handle () {
+    obj_bg_overlay.style.display="inline";
+    anim_pass_3.animate();
+}
+
+function anim_pass_3_handle () {
+    obj_player.style.display = "inline";
+    obj_slbl.style.display   = "inline";
+    obj_slbc.style.display   = "inline";
+    obj_slbd.style.display   = "inline";
+    animation_is_playing = true;
+    animation_is_running = false;    
+}
+
+// closing the anim ///////////////////////////////////////////////////////////
+//
+//  1. remove the player
+//  2. remove the list box
+//  3. pulldown the bg
+//  4. remove the bg box
+//  5. close the slider
+//  6. remove the slider
+//  7. pulldown the tv
+//  8. remove the container
+
+function closing() {
+    if ( animation_is_running ) { return }
+    animation_is_running = true;
+    obj_player.style.display = "none";
+    obj_slbl.style.display   = "none";
+    obj_slbc.style.display   = "none";
+    obj_slbd.style.display   = "none";
+    anim_pass_1_r.animate();
+}
+
+function anim_pass_1_handle_r () {
+    obj_bg_overlay.style.display = "none";
+    anim_pass_2_r.animate();
+}
+
+function anim_pass_2_handle_r () {
+    obj_sl.style.visibility ="hidden";
+    anim_pass_3_r.animate();
+}
+
+function anim_pass_3_handle_r () {
+    obj_overlay.style.display    = "none";
+    animation_is_running = false;
+    animation_is_playing = false;
+}
+
+
+function anim_open_form_layer ( src ) {
+    obj_form_iframe.src=src
+    obj_form_overlay.style.display = "inline";
+}
+
+////////////////////////////////////////////////////////////
+
+
+// showrom anim
+function show_room_left()  { gallery_left.animate();  }
+function show_room_right() { gallery_right.animate();  }
+function s_reload_attrib () { }
+
+
+function testKo () { alert("KO, nothing to do")}
+
+
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////// PAINTERS  /////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+function paint_provincia( who ) {
+    //obj_header.style.display = "none";
+    obj_bg_regioni.style.display = "inline";
+    obj_frame_prov.style.display = "inline";
+    obj_header.style.zIndex = 5;
+    obj_bg_regioni.style.zIndex = 100;
+    obj_frame_prov.style.zIndex = 110;
+    
+}
+
+
+
+function paint_banner( o ) {
+
+    response = new Array();
+    banner   = new Array();
+
+    banner_div = document.getElementById('banners');
+
+    // TODO REMOVE IMAGES in a better way
+    banner_div.innerHTML=""
+
+    response = o.responseText.split(";")
+    for ( i=0; i < response.length; i++ ) {
+        banner = response[i].split("|");
+
+        link = document.createElement('a');
+        // TODO THIS VALUE SHOULD BE MOVED ELSEWHERE AND MADE AVAILABLE VIA CONST
+        link.setAttribute("href", "javascript:fn_popup(\"/rest/redirect_to_banner/" + banner[1] + "\")" );
+
+        img = document.createElement('img');
+        img.setAttribute("src", banner[0] );
+
+        img_link = banner_div.appendChild(link)
+        img_link.appendChild(img);
+    }
+
+}
+
+function paint_pannel( o ) {
+
+    var ar_allItems = o.responseText.split("&");
+    var t = new Array;
+    var text = "";
+    
+    for ( i=0 ; i< ar_allItems.length; i++ ) {
+        t = ar_allItems[i].split("=");
+        t[0] = t[0].replace('"','').replace('"','');
+        t[1] = t[1].replace('"','').replace('"','');
+        text += "<b>" + t[0] + "</b>: " + t[1] + "<br>";
+    }
+    
+    obj_pannel.innerHTML = text; // appendChild( document.createTextNode(text) );
+}
+
+function paint_showRoom( o ) {}
+function paint_map( o ) {
+
+    response = new Array();
+    imm      = new Array();
+    b        = new Array();
+
+    response = o.responseText.split("[")
+
+    if ( response[0] != "" ) {
+        imm = response[0].split("#")
+    } else {
+        alert("Nessun Immobile trovato!")
+    }
+/*
+*  take care about coords
+*/
+    if ( response.length == 2 ) {
+        pos = response[1].replace(']','').split(',')
+    }
+    else {
+        pos = "42.4424572,14.2096282,5".split(',')
+    }
+
+
+    map = new GMap2(document.getElementById("map_canvas"));
+
+/*
+* centro sull'italia
+*/
+    point  = new GLatLng(parseFloat(pos[0]),parseFloat(pos[1]));
+    map.setCenter(point, parseInt(pos[2]) );
+
+/*
+* controlli per la mappa
+*/
+    var topRight = new GControlPosition(G_ANCHOR_TOP_RIGHT, new GSize(10,10));
+    var topLeft = new GControlPosition(G_ANCHOR_TOP_LEFT, new GSize(10,10));
+
+    map.addControl(new GMapTypeControl(),topRight);
+    map.addControl(new GLargeMapControl (),topLeft);
+    map.addControl(new GOverviewMapControl ());
+
+/*
+* marker personalizzato
+*/
+    markerIcon = new GIcon(G_DEFAULT_ICON);
+    markerIcon.image = "images/marker.png";
+    markerIcon.shadow = "images/shadow.png";
+    markerIcon.iconSize = new GSize(37,31);
+    markerOptions = { icon:markerIcon };
+
+
+/*
+* installa tutti gli immobili sulla mappa
+* before do this, remove anything...
+*/
+
+    for ( i = 0; i< imm.length; i++ ) {
+
+        b = imm[i].split(",")
+        for ( h = 0 ; h < b.length ; h++) { b[h] = b[h].replace('"','').replace('"','')}
+        
+        googleLat =   parseFloat(b[0]);
+        googleLan =   parseFloat(b[1]);
+
+        description = "MQ " + b[2]
+                            + b[3] + "Euro "
+                            + b[4] + "<br>"
+                            + "<a href='javascript:fn_playVideo(" + parseInt(b[5]) + ")'>click for video</a>";
+
+        mapPoint  = new GLatLng( googleLat, googleLan );
+
+        commonMapMarker = new GMarker(mapPoint, markerOptions);
+        commonMapMarker.title = description
+
+        map.addOverlay(commonMapMarker);
+        GEvent.addListener(commonMapMarker,"click",
+                           function () {
+                               this.openInfoWindowHtml(this.title)
+                           } );
+
+    }
+}
+
+function handleKo( o ) {
+    alert("Non è stato possibile cominicare con il server oppure " +
+          "il tuo navigatore internet è obsoleto, prova ad aggiornarlo " +
+          "quindi riprova a navigare ")
+}
+
+
+// Start painting the map with some data from the db and also display some random
+// banners
+
+function main() {
+
+    init_anim();
+    var callBack = { success: paint_map,
+                     failure: handleKo,
+                     cache: false  }
+
+    var div = document.getElementById('container');
+    var transaction = YAHOO.util.Connect.asyncRequest('GET', sUrl_get_buildings_n, callBack, null );
+
+    var callBack = { success: paint_banner,
+                     failure: handleKo,
+                     cache: false  }
+
+    var transaction = YAHOO.util.Connect.asyncRequest(
+                                'GET',
+                                 sUrl_get_banners_by_cap +"?" + current_cap,
+                                 callBack );
+
+}
+function start_all() {
+    if ( ! GBrowserIsCompatible()) {
+        alert("This browser is not google compatible")
+    }
+    main();
+}
+
+
+	</script>
+</head>
+
+<BODY onload="start_all()" onunload="GUnload()" bgcolor="#ffffff" TOPMARGIN="0" LEFTMARTGIN="0"  MARGINHEIGHT="0" MARGINWIDTH="0" >
+
+
+<!-- OVERLAY for REGIONS  -->
+
+<div id="bg_regioni" style="position: absolute;
+                              top: 0px; left: 0px;
+                              width: 1024px; height: 653px;
+                              margin: 0px;
+                              z-index: 50;
+                              display: none;
+                              opacity : 0.7;
+                              background-color: black;
+                              overflow: hidden;">
+</div>
+
+<div id="provincia" style="position: absolute; top: 0px; left: 0px; width: 1024px; height: 653px; display: none;" >
+    
+        <OBJECT classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000"
+         codebase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=6,0,0,0"
+         WIDTH="1024" HEIGHT="653" id="ComuniPescaresiok">
+         <PARAM NAME=movie VALUE="images/ComuniPescaresiok.swf">
+         <PARAM NAME=quality VALUE=high>
+         <PARAM name="WMODE" value="transparent">
+
+         <EMBED src="images/ComuniPescaresiok.swf"
+                quality=high
+                WIDTH="1024"
+                HEIGHT="653"
+                WMODE="TRANSPARENT"
+                NAME="ComuniPescaresiok" ALIGN="center"
+                TYPE="application/x-shockwave-flash"
+                PLUGINSPAGE="http://www.macromedia.com/go/getflashplayer"></EMBED>
+        </OBJECT>
+</div>
+
+
+
+
+
+
+
+
+<!-- HEADER -->
+	<DIV id="header" style="position: absolute;
+                                          left: 0px; top: 0px;
+                                          z-index: 1;
+                                          margin: 0px;">
+		<OBJECT classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000"
+		 		codebase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=6,0,0,0"
+		 		WIDTH="1024" 
+		 		HEIGHT="195"
+		 		id="swf_header" 
+		 		ALIGN="">
+		 
+		 	<PARAM NAME=movie VALUE="images/header.swf" />
+		 	<PARAM NAME=quality VALUE=high />
+                        <PARAM NAME=wmode VALUE=transparent />
+		 	<PARAM NAME=bgcolor VALUE="#ffffff""/>
+		 
+		 	<EMBED src="images/header.swf" 
+		    	    quality=high bgcolor="#ffffff"  
+		        	WIDTH="1024" 
+		        	HEIGHT="195"
+		        	NAME="swf_header" 
+		        	ALIGN=""
+                                WMODE="TRANSPARENT"
+		        	TYPE="application/x-shockwave-flash" 
+		        	PLUGINSPAGE="http://www.macromedia.com/go/getflashplayer"
+		 	/>
+		 
+		</OBJECT>
+	</DIV>
+
+<!-- GOOGLE MAP 13 over anything -->
+<DIV id="map_canvas" style=" width: 1024px;	height: 310px; 
+                             z-index: 13;
+                             position: absolute;
+                             top: 195px; left: 0px;
+                             margin: 0px;" ></DIV>
+
+<!-- Bottom green strip 16  -->
+<div id="greenStrip" style="position: absolute;
+                            top: 505px; left: 0px;
+                            margin: 0px;
+                            z-index: 16; ">
+    <img src="images/bottom.png" >
+</div>
+
+<div id="show_room" style="position: absolute;
+                           height: 65px; width: 450px;
+                           top: 512px; left: 525px;
+                           margin: 0px;
+                           z-index: 30;
+                           overflow: hidden;">
+                               
+    <div id="gallery" style="width: 1024px; height: 65px;
+                             position: relative;
+                             margin: 10px; text-align: left;">
+        <a href="javascript:fn_playVideo(1)"><img src="test_media/uno.jpg" alt="descrizione mancante"></a>
+        <a href="javascript:fn_playVideo(2)"><img src="test_media/uno.jpg" alt="descrizione mancante"></a>
+        <a href="javascript:fn_playVideo(3)"><img src="test_media/uno.jpg" alt="descrizione mancante"></a>
+        <a href="javascript:fn_playVideo(4)"><img src="test_media/uno.jpg" alt="descrizione mancante"></a>
+        <a href="javascript:fn_playVideo(5)"><img src="test_media/uno.jpg" alt="descrizione mancante"></a>
+        <a href="javascript:fn_playVideo(6)"><img src="test_media/uno.jpg" alt="descrizione mancante"></a>
+    </div>
+</div>
+
+<!-- scene container ( just a box with clipping enabled 27 -->
+<div id="map_container" style="position: absolute; 
+                               top: 195px; left: 0px;
+                               width: 1024px; height: 386px;
+                               margin: 0px;
+                               z-index: 27;
+                               display: none;
+                               overflow: hidden;">
+   
+<!-- Slider ( on the TV right ) 15 -->
+	<div id="slider" style ="position: absolute;
+                             top: 200px; left: 500px;
+                             visibility: hidden;
+                             margin: 0px;
+                             z-index: 15;" >
+                                 
+	    <img src="images/left.png">       
+    </div>
+
+<!-- TV 19 -->
+    <div id="tv" style ="position: absolute;
+                         top: 0px; left: 424px;
+                         margin: 0px;
+                         z-index: 19;" >
+        <img src="images/tvsup.png">
+        <div id="player" style="position: absolute; left:60px; top: 85px;" >
+            <OBJECT classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000"
+                    codebase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=6,0,0,0"
+                    WIDTH="320"
+                    HEIGHT="236"
+                    id="demo"
+                    ALIGN="" >
+
+                <PARAM NAME=movie VALUE="test_media/demo.swf" />
+                <PARAM NAME=quality VALUE=high />
+                <PARAM NAME=bgcolor VALUE="#ffffff""/>
+                <PARAM NAME=wmode VALUE=transparent>
+                <EMBED src="test_media/demo.swf"
+                        quality=high bgcolor="#ffffff"
+                        WIDTH="320"
+                        HEIGHT="236"
+                        NAME="swf_header"
+                        ALIGN=""
+                        WMODE="trasparent"
+                        TYPE="application/x-shockwave-flash"
+                        PLUGINSPAGE="http://www.macromedia.com/go/getflashplayer"
+                />
+            </OBJECT>
+        </div>
+<!-- amin closing button -->
+        <div style="position: absolute;
+            top: 320px; left: 90px;
+        z-index: 17;"><button id="demo-run-2">close</button></div>
+
+    </div>
+
+</div>
+
+<!-- TEXTs and building slider -->
+
+<div id="building_counter" style="position: absolute;
+                                  top: 245px; left: 560px;
+                                  z-index: 30;
+                                  display: none;
+                                  margin: 0px;">00
+</div>
+
+<div id="building_list" style="position: absolute;
+                               top: 265px; left: 444px;
+                               width: 188px; height: 240px;
+                               overflow: auto;
+                               display: none;
+                               z-index: 30;">
+                        Related videos..
+</div>
+
+<div id="building_description" style="position: absolute;
+                                      top: 265px; left: 644px;
+                                      width: 370px; height: 235px;
+                                      overflow: auto;
+                                      display: none;
+                                      margin: 5;
+                                      text-align: left;
+                                      z-index: 30;">
+                        Descrizione immobile
+</div>
+
+<!-- WHERE THE FORMS TAKE PLACE -->
+
+<div id="form_overlay" style="position: absolute;
+                                      top: 189px; left: 0px;
+                                      width: 1024px; height: 386px;
+                                      overflow: auto;
+                                      display: none;
+                                      margin: 0px;
+                                      opacity : 1;
+                                      background-color: #A4D2BD;
+                                      text-align: left;
+                                      z-index: 90;">
+    <iframe
+        id="inner_iframe" src=""
+        frameborder="0" width="100%" height="100%" >
+
+    </iframe>
+</div>
+
+
+<!-- green background 2 -->
+
+<div id="bg" style ="position: relative;
+                     top: 390px; left: 0px;
+                     margin: 0px;" ><img src="images/bg.png"></div>
+</div>
+
+<!-- SPONSORS -->
+
+    <DIV id="banners" style=" width: 1024px; height: 72px;
+                              z-index: 30;
+                              position: absolute;
+                              margin: 0px;
+                              top: 581px; left: 0px;" >
+    </DIV>    
+
+
+
+    
+
+
+</BODY>
+</html>

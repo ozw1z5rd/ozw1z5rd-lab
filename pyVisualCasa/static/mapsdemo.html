@@ -1,0 +1,105 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+   <head>
+     <title>MAPS Esempio 2 </title>
+    <script src="http://maps.google.com/maps?file=api&amp;v=2&amp;key=ABQIAAAAg-WVcB-LDOiYHUnRgA30JhTGtcs1KrCtqnNtYTpxN6F8phtu9xSMmOo5VPZaniH6PiS1RNa9blCfFg"
+      type="text/javascript"></script>
+<script type="text/javascript">
+	function marker_onClick (map,point){
+		var info = "<b>Immobile #1231</b><br/>tutta la descrizione che si vuole<br/><br/>Clicca per i video <a href=\"\">qui</a><br/>";
+		map.openInfoWindowHtml (point,info);
+	}
+
+	function marker2_onClick (map,point){
+		var info = "<b>Immobile #6666</b><br/>tutta la descrizione che si vuole<br/><br/>Clicca per i video <a href=\"\">qui</a><br/>";
+		map.openInfoWindowHtml (point,info);
+	}
+
+
+//dichiarazione nuovo oggetto TextualZoomControl
+function TextualZoomControl() {}
+
+//assegnazione all'istanza GControl
+TextualZoomControl.prototype = new GControl();
+
+//ridefinizione del metodo initialize (di GControl)
+TextualZoomControl.prototype.initialize = function(map) {  
+	var container = document.createElement("div");  
+	var zoomInDiv = document.createElement("div");  
+	this.setButtonStyle_(zoomInDiv);  
+	container.appendChild(zoomInDiv);  
+	zoomInDiv.appendChild(document.createTextNode("Ingrandisci"));  
+	GEvent.addDomListener(zoomInDiv, "click", function() {    
+	map.zoomIn();  
+	});  
+	var zoomOutDiv = document.createElement("div");  
+	this.setButtonStyle_(zoomOutDiv);  
+	container.appendChild(zoomOutDiv);  
+	zoomOutDiv.appendChild(document.createTextNode("Riduci"));  
+	GEvent.addDomListener(zoomOutDiv, "click", function() {    
+		map.zoomOut();  });  
+	map.getContainer().appendChild(container);  
+	return container;
+}
+//ridefinizione del metodo getDefaultPosition (di GControl)
+TextualZoomControl.prototype.getDefaultPosition = function() {  
+	return new GControlPosition(G_ANCHOR_TOP_LEFT, new GSize(10, 40));
+}
+//definizione del metodo setButtonStyle_ usato in initialize
+TextualZoomControl.prototype.setButtonStyle_ = function(button) {  
+	button.style.textDecoration = "underline";  
+	button.style.color = "#0000cc";  
+	button.style.backgroundColor = "white";  
+	button.style.font = "small Arial";  
+	button.style.border = "1px solid black";  
+	button.style.padding = "2px";  
+	button.style.marginBottom = "3px";  
+	button.style.textAlign = "center";  
+	button.style.width = "6em";  
+	button.style.cursor = "pointer";
+}
+
+
+	
+    function load() {      
+		if (GBrowserIsCompatible()) {        
+			var map = new GMap2(document.getElementById("map_canvas"));  
+			var point2 = new GLatLng(42.391300,14.10);
+			var point  = new GLatLng(42.391341,14.105952);
+			map.setCenter(point, 17); 
+			var markerIcon = new GIcon(G_DEFAULT_ICON);     
+			markerIcon.image = "marker.png";
+			markerIcon.shadow = "shadow.png";
+			var markerOptions = { icon:markerIcon };
+			var marker = new GMarker(point,markerOptions);
+			var marker2=new  GMarker(point2,markerOptions);
+			map.addOverlay(marker2);			
+			map.addOverlay(marker);			
+			GEvent.addListener(marker2,"click",function (){ marker2_onClick(map,point2)});
+			GEvent.addListener(marker,"click",function (){ marker_onClick(map,point)});
+
+
+			var topRight = new GControlPosition(G_ANCHOR_TOP_RIGHT, new GSize(10,10));
+			var topLeft = new GControlPosition(G_ANCHOR_TOP_LEFT, new GSize(10,10));
+			map.addControl(new GMapTypeControl(),topLeft);
+			map.addControl(new GLargeMapControl (),topRight);
+			map.addControl(new TextualZoomControl ());
+			map.addControl(new GOverviewMapControl ());
+		}   			 
+	}    
+</script>
+<style>
+#map_canvas {
+	width: 640px; 
+	height: 480px
+}
+</style>
+   </head>
+   <body onload="load()" onunload="GUnload()">
+      <div id="map_canvas" >
+      </div>
+   </body>
+</html>
+
+

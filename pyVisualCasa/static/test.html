@@ -1,0 +1,120 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" >
+<head>
+    <title>Untitled Page</title>
+</head>
+
+<body style="{ background: gray; }" >
+
+<link rel="stylesheet" type="text/css" href="yui/build/fonts/fonts-min.css" />
+<script type="text/javascript" src="yui/build/yahoo-dom-event/yahoo-dom-event.js"></script>
+<script type="text/javascript" src="yui/build/animation/animation-min.js"></script>
+
+<style type="text/css">
+#demo {
+    height:30px;
+    width:30px;
+    top:  600px;
+    left: 100px;
+
+}
+</style>
+
+
+<div id="puppa" style="position : absolute:
+                       top: 0px; left: 0px; width: 1024px; height: 400px;
+                       background-color: yellow; border-width: thin; border-style: solid;
+                       overflow: hidden;">
+     test1
+
+
+
+    <div id="greenStrip" style="position: relative; top: 350px; left: 0px; z-index: 1;">
+          <img src="images/bottom.png" />
+    </div>
+    
+	<div id="slider" style ="position: relative;  top: 42px; left: 0px; z-index: 2;" >
+	    <img src="images/left.png">
+    </div>
+
+    <div id="demo" style ="position: relative;  top: 42px; left: 200px; z-index: 3;">
+	    <img src="images/tvsup.png">
+    </div>
+
+</div>
+
+
+
+<!-- Controllor --->
+
+<button id="demo-run">open</button>
+<button id="demo-run-2">close</button>
+
+
+<script type="text/javascript">
+
+    var attributes = {
+        points: { from: [ 100, 400], to: [100, 0] }
+    };
+
+    var slider_attrib = {
+	    points: { from: [250, 42], to: [ 482, 42 ] }
+    };
+
+
+    var attributes_r = {
+        points: { from: [ 100, 0], to: [100, 400] }
+    };
+
+    var slider_attrib_r = {
+	    points: { from: [482, 42], to: [ 250, 42 ] }
+    };
+
+
+sl = document.getElementById('slider');
+sl.style.visibility ="hidden";
+
+var anim = new YAHOO.util.Motion('demo', attributes);
+var extract = new YAHOO.util.Motion('slider', slider_attrib);
+anim.onComplete.subscribe( function() { pass() });
+
+var anim_r = new YAHOO.util.Motion('demo', attributes_r);
+var extract_r = new YAHOO.util.Motion('slider', slider_attrib_r);
+extract_r.onComplete.subscribe( function() { pass_r() });
+
+YAHOO.util.Event.on('demo-run', 'click', function() {
+    pass_0();
+});
+
+YAHOO.util.Event.on('demo-run-2', 'click', function() {
+    pass_0_r();
+});
+
+function pass() {
+    sl = document.getElementById('slider');
+    sl.style.visibility = "visible";
+    extract.animate()
+}
+
+function pass_0() {
+    sl = document.getElementById('slider');
+    sl.style.visibility ="hidden";
+    anim.animate();
+}
+
+
+function pass_r() {
+    sl = document.getElementById('slider');
+    sl.style.visibility = "hidden";
+    anim_r.animate()
+}
+
+function pass_0_r() {
+    extract_r.animate();
+}
+
+</script>
+
+
+</body>
+</html>

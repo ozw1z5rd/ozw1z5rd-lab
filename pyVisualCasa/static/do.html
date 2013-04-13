@@ -1,0 +1,346 @@
+<html>
+
+<head>
+	<title>VisualCasa di Sergio</title>
+
+<link rel="stylesheet" type="text/css" href="build/assets/skins/sam/layout.css">
+<script src="yui/build/yahoo/yahoo.js"></script>
+<script src="yui/build/event/event.js"></script>
+<script src="yui/build/dom/dom-min.js"></script>
+<script src="yui/build/element/element-min.js"></script>
+<script src="yui/build/connection/connection.js"></script>
+<script src="yui/build/imageloader/imageloader.js"></script>
+<script src="yui/build/animation/animation-min.js"></script>
+<script src="yui/build/layout/layout-min.js"></script>
+
+
+<script type="text/javascript">
+
+    var sUrl_base = "http://127.0.0.1/rest/"
+    var sUrl_get_buildings_n        =  sUrl_base + "get_buildings_n/";
+    var sUrl_get_buildings_by_query =  sUrl_base + "get_buildings_by_query/";
+    var sUrl_get_banners_by_cap     =  sUrl_base + "get_banners_by_cap/";
+
+//  it's used to track the used cap value
+    var current_cap="";
+
+    var video_start  = [ 0, 700];
+    var video_end    = [ 0 , 187];
+    var slider_start = [ 30 , 232];
+    var slider_end   = [ 390  ,  232];
+    var bg_start     = [   0,  600];
+    var bg_end       = [   0,  268];
+
+
+    var s_start = 10;
+    var s_end   = 400;
+    var s_y     = 520;
+    var s_attrib   = { points : { from: [s_start, s_y] , to: [s_end, s_y ] } };
+    var s_attrib_r = { points : { from: [s_end, s_y ] ,  to: [s_start, s_y]} };
+
+    var attributes      = { points: { from: video_start,  to: video_end    } };
+    var attributes_r    = { points: { from: video_end,    to: video_start  } };
+    var slider_attrib   = { points: { from: slider_start, to: slider_end   } };
+    var slider_attrib_r = { points: { from: slider_end,   to: slider_start } };
+    var bg_attrib       = { points: { from: bg_start,     to: bg_end       } };
+    var bg_attrib_r     = { points: { from: bg_end,       to: bg_start     } };
+
+    var obj_sl    = undefined;
+    var obj_tv    = undefined;
+    var obj_bg    = undefined;
+
+    var anim      = undefined;
+    var anim_r    = undefined;
+    var extract   = undefined;
+    var extract_r = undefined;
+    var bg        = undefined;
+    var bg_r      = undefined;
+
+function init_anim () {
+    obj_sl      = document.getElementById('slider');
+    obj_images  = document.getElementById('images')
+    obj_tv      = document.getElementById('tv');
+    obj_bg      = document.getElementById('bg');
+    obj_gallery = document.getElementById('gallery');
+
+    obj_sl.style.visibility ="hidden";
+
+    anim = new YAHOO.util.Motion( obj_tv, attributes,1);
+    anim.onComplete.subscribe( pass );
+
+    anim_r = new YAHOO.util.Motion( obj_tv, attributes_r,1);
+
+
+    extract = new YAHOO.util.Motion( obj_sl, slider_attrib,1);
+    extract.onComplete.subscribe( pass_1 )
+
+    extract_r = new YAHOO.util.Motion( obj_sl, slider_attrib_r,1);
+
+
+    bg_r = new YAHOO.util.Motion( obj_bg, bg_attrib_r,1);
+    bg_r.onComplete.subscribe( pass_0_r );
+
+    bg   = new YAHOO.util.Motion( obj_bg, bg_attrib );
+
+    gallery_left  = new YAHOO.util.Motion( obj_gallery, s_attrib )
+    gallery_right = new YAHOO.util.Motion( obj_gallery, s_attrib_r )
+    gallery_left.onComplete.subscribe( s_reload_attrib );
+    gallery_right.onComplete.subscribe( s_reload_attrib );
+
+    YAHOO.util.Event.on('demo-run', 'click', pass_0 ); // OPEN
+    YAHOO.util.Event.on('demo-run-2', 'click', pass_1_r ); //CLOSE
+
+    YAHOO.util.Event.on('demo-run-a', 'click', show_room_left ); //CLOSE
+    YAHOO.util.Event.on('demo-run-a-2', 'click', show_room_right ); //CLOSE
+}
+
+//
+function pass()   { obj_sl.style.visibility = "visible";  extract.animate() }
+function pass_r() { obj_sl.style.visibility = "hidden"; anim_r.animate() }
+
+//
+function pass_0()   { obj_sl.style.visibility ="hidden"; anim.animate();  }
+function pass_0_r() { extract_r.animate(); obj_images.style.visibility = "hidden" }
+
+// Backgound
+function pass_1()   { bg.animate() ; obj_images.style.visibility="visible"}
+function pass_1_r() { bg_r.animate();  }
+
+
+function show_room_left()  { gallery_left.animate();  }
+function show_room_right() { gallery_right.animate();  }
+
+
+function s_reload_attrib() {
+   // alert( obj_gallery.style.left + " " + obj_gallery.style.top )
+    /*
+    var s_current_x =  obj_gallery.style.left;
+    alert( "s_current " + s_current_x )
+    s_attrib   = { points : { from : s_current_x, to: s_current_x + 20  } };
+    s_attrib_r = { points : { from : s_current_x, to: s_current_x - 20 } };
+    */
+}
+
+
+
+function testKo () { alert("KO, nothing to do")}
+
+function fn_publish() {
+    alert("un")
+}
+
+function fn_login() {
+    alert("due")
+}
+
+// update the MAP and the banner below the map
+
+function fn_search( queryString ) {
+}
+
+//////////////////////////////////////////////////// YAHOO /////////////////////////////////////////////////
+
+/*
+ * page setup
+ */
+		(function() {
+		    var Dom = YAHOO.util.Dom;
+		    var Event = YAHOO.util.Event;
+
+		    Event.onDOMReady(function() {
+		        var layout = new YAHOO.widget.Layout('doc', {
+		            height: 768,
+		            width: 1024, //Width of the outer element
+		            minHeight: 150, //So it doesn't get too small
+		            units: [
+		                { position: 'top', height: 270, body: 'header' },
+		                { position: 'bottom', height: 125, body: 'footer' },
+		                { position: 'center', height: 200, body: 'center' }
+		            ]
+		        });
+		        layout.on('beforeResize', function() {
+		            Dom.setStyle('doc', 'height', Dom.getClientHeight() + 'px');
+		        });
+
+		        layout.render();
+
+		        //Handle the resizing of the window
+		        Event.on(window, 'resize', layout.resize, layout, true);
+		    });
+		})();
+
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////
+//////////////////////////////////////////////////// GOOGLE  /////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+/*
+ * Redraw the map and loads the images.
+ */
+
+function paint_map( o ) {
+}
+
+function handleKo( o ) {
+    alert("Non è stato possibile cominicare con il server oppure " +
+          "il tuo navigatore internet è obsoleto, prova ad aggiornarlo " +
+          "quindi riprova a navigare ")
+}
+
+
+// Start painting the map with some data from the db and also display some random
+// banners
+
+function main() {
+}
+
+/////////////////////////////////
+
+function load() {
+        main()
+        init_anim()
+}
+
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////// BANNERS   /////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+function paint_banner( o ) {
+}
+
+	</script>
+</head>
+
+<BODY onload="load()" bgcolor="#ffffff" TOPMARGIN="0" LEFTMARTGIN="0"  MARGINHEIGHT="0" MARGINWIDTH="0" >
+<!-- HEADER -->
+
+<!-- HEADER -->
+	<DIV id="header" name="header" style="position: absolute; left: 0px; top: 0px; z-index: 1;">
+		<OBJECT classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000"
+		 		codebase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=6,0,0,0"
+		 		WIDTH="1024"
+		 		HEIGHT="195"
+		 		id="swf_header"
+		 		ALIGN="">
+
+		 	<PARAM NAME=movie VALUE="images/header.swf" />
+		 	<PARAM NAME=quality VALUE=high />
+		 	<PARAM NAME=bgcolor VALUE="#ffffff""/>
+
+		 	<EMBED src="images/header.swf"
+		    	    quality=high bgcolor="#ffffff"
+		        	WIDTH="1024"
+		        	HEIGHT="195"
+		        	NAME="swf_header"
+		        	ALIGN=""
+		        	TYPE="application/x-shockwave-flash"
+		        	PLUGINSPAGE="http://www.macromedia.com/go/getflashplayer"
+		 	/>
+
+		</OBJECT>
+	</DIV>
+	
+<!-- MAPPA - posizione centrale -->
+
+<div id="map_container" style="position : absolute; top: 195px; left: 0px; width: 1024px; height: 386px; "> <!-- "overflow: hidden;"> -->
+
+    <div style="position: absolute; top: 10px; left: 512px; z-index: 4;">
+        <button id="demo-run">open</button>
+        <button id="demo-run-2">close</button>
+    </div>
+
+    <DIV id="map_canvas" style=" width: 1024px;	height: 310px; z-index: 1; position: relative; top: 0px; left: 0px;" >
+    </DIV>
+
+    <div id="greenStrip" style="position: relative; top: 0px; left: 0px; z-index: 2;">
+
+        <div style="position: absolute; top: 10px; left: 10px; z-index: 4;">
+            <button id="demo-run-a">destra</button>
+            <button id="demo-run-a-2">sinistra</button>
+        </div>
+
+        <img src="images/bottom.png" >
+
+<!-- show room -->
+
+<!--  450 al posto di 1024  overflow: hidden; -->
+            <div id="show_room" style="position: absolute;
+                                       height: 65px; width: 450px; top: 8px; left: 525px;
+                                       overflow: hidden;
+                                       ">
+
+<!-- questo scrolla dentro il riquadro di sopra -->
+            <div id="gallery" style="width: 1024px; height: 65px;">
+                <img src="test_media/uno.jpg"><img src="test_media/uno.jpg"><img src="test_media/uno.jpg"><img src="test_media/uno.jpg"><img src="test_media/uno.jpg"><img src="test_media/uno.jpg"><img src="test_media/uno.jpg"><img src="test_media/uno.jpg"><img src="test_media/uno.jpg">
+                <img src="test_media/uno.jpg"><img src="test_media/uno.jpg"><img src="test_media/uno.jpg"><img src="test_media/uno.jpg"><img src="test_media/uno.jpg"><img src="test_media/uno.jpg">
+            </div>
+
+
+            </div>
+    </div>
+
+	<div id="slider" style ="position: relative;  top: 0px; left: 0px; z-index: 3;" >
+	    <img src="images/left.png">
+        <div id="video_n" style="position: absolute; top: 15px; left: 145px;">00</div>
+    </div>
+
+        <div id="images" style="position: absolute; top: 72px; left: 420px;
+                                width: 188px; height: 239px;
+                                overflow: auto;
+                                visibility: hidden;
+                                z-index: 10; ">
+
+                                piro piro piro piro piro <br>
+                                piro piro piro piro piro <br>
+                                piro piro piro piro piro <br>
+                                piro piro piro piro piro <br>
+                                piro piro piro piro piro <br>
+                                piro piro piro piro piro <br>
+                                piro piro piro piro piro <br>
+        </div>
+
+
+
+    <div id="tv" style ="position: relative;  top: 0px; left: 0px; z-index: 4; 
+                         overflow: hidden; " >
+	    <img src="images/tvsup.png" >
+        <div id="player" style="position: absolute; left:60px; top: 85px; visibility: hidden;">
+
+<!--
+		<OBJECT classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000"
+		 		codebase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=6,0,0,0"
+		 		WIDTH="320"
+		 		HEIGHT="236"
+                id="demo"
+		 		ALIGN="" >
+
+		 	<PARAM NAME=movie VALUE="test_media/demo.swf" />
+		 	<PARAM NAME=quality VALUE=high />
+		 	<PARAM NAME=bgcolor VALUE="#ffffff""/>
+
+		 	<EMBED src="test_media/demo.swf"
+		    	    quality=high bgcolor="#ffffff"
+		        	WIDTH="320"
+		        	HEIGHT="236"
+		        	NAME="swf_header"
+		        	ALIGN=""
+		        	TYPE="application/x-shockwave-flash"
+		        	PLUGINSPAGE="http://www.macromedia.com/go/getflashplayer"
+		 	/>
+
+        </OBJECT>
+-->
+        </div> 
+    </div>
+
+    <div id="bg" style ="position: relative;  top: 0px; left: 0px; z-index: 1;" >
+	    <img src="images/bg.png">
+    </div>
+
+</div>
+<DIV id="banners" style=" width: 1024px; height: 72px; z-index: 1; position: absolute; top: 952px; left: 0px;" >
+
+    </DIV>    
+</BODY>
+</html>
+

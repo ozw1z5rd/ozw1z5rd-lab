@@ -1,0 +1,586 @@
+2009-11-20 09:47:22 - INFO - user authenticated for NO REFERER
+2009-11-20 09:47:25 - INFO - user authenticated for http://127.0.0.1:8000/frm_banner/Insert/
+2009-11-20 09:47:25 - INFO - Building the form from the post data
+2009-11-20 09:50:46 - INFO - user authenticated for http://127.0.0.1:8000/frm_banner/Insert/
+2009-11-20 09:50:46 - INFO - Building the form from the post data
+2009-11-20 09:51:20 - INFO - user authenticated for http://127.0.0.1:8000/frm_banner/Insert/
+2009-11-20 09:51:20 - INFO - Building the form from the post data
+2009-11-20 09:52:44 - INFO - user authenticated for http://127.0.0.1:8000/frm_banner/Insert/
+2009-11-20 09:52:44 - INFO - Building the form from the post data
+2009-11-20 09:52:44 - INFO - Form is not valid, restarting
+2009-11-20 09:53:28 - INFO - user authenticated for http://127.0.0.1:8000/frm_banner/Insert/
+2009-11-20 09:53:28 - INFO - Building the form from the post data
+2009-11-20 09:53:28 - INFO - Form is not valid, restarting
+2009-11-20 09:54:29 - INFO - user authenticated for NO REFERER
+2009-11-20 09:54:31 - INFO - user authenticated for http://127.0.0.1:8000/frm_contatto/Insert/
+2009-11-20 09:54:31 - INFO - Building the form from the post data
+2009-11-20 09:54:31 - INFO - Form is not valid, restarting
+2009-11-20 09:54:45 - INFO - user authenticated for http://127.0.0.1:8000/frm_contatto/Insert/
+2009-11-20 09:54:45 - INFO - Building the form from the post data
+2009-11-20 09:54:45 - INFO - Form is not valid, restarting
+2009-11-20 09:54:55 - INFO - user authenticated for http://127.0.0.1:8000/frm_contatto/Insert/
+2009-11-20 09:54:55 - INFO - Building the form from the post data
+2009-11-20 10:57:51 - INFO - Building the form from the post data
+2009-11-20 10:57:51 - INFO - Form is valid, saving data
+2009-11-20 11:03:44 - INFO - Building the form from the post data
+2009-11-20 11:03:44 - INFO - Form is not valid, restarting
+2009-11-20 11:03:51 - INFO - Building the form from the post data
+2009-11-20 11:03:51 - INFO - Form is not valid, restarting
+2009-11-20 11:04:00 - INFO - Building the form from the post data
+2009-11-20 11:04:00 - INFO - Form is valid, saving data
+2009-11-20 11:05:02 - INFO - Building the form from the post data
+2009-11-20 11:05:02 - DEBUG - <QueryDict: {u'fax': [u'1'], u'via': [u'1'], u'provincia': [u'1'], u'nome': [u'1'], u'cognome': [u'1'], u'mobile1': [u'1'], u'CAP': [u'1'], u'utente_id': [u'1'], u'n': [u'1'], u'interno': [u'1'], u'tel': [u'1'], u'citta': [u'1'], u'email': [u'alessiop@khet.net'], u'mobile2': [u'1']}>
+2009-11-20 11:05:02 - INFO - Form is valid, saving data
+2009-11-20 11:05:57 - INFO - Building the form from the post data
+2009-11-20 11:05:57 - INFO - Form is valid, saving data
+2009-11-20 11:06:31 - INFO - Building the form from the post data
+2009-11-20 11:06:31 - INFO - Form is valid, saving data
+2009-11-20 11:06:38 - INFO - Building the form from the post data
+2009-11-20 11:06:38 - INFO - Form is valid, saving data
+2009-11-20 11:09:44 - INFO - Building the form from the post data
+2009-11-20 11:09:44 - INFO - Form is not valid, restarting
+2009-11-20 11:09:58 - INFO - Building the form from the post data
+2009-11-20 11:09:58 - INFO - Form is not valid, restarting
+2009-11-20 11:10:31 - INFO - Building the form from the post data
+2009-11-20 11:10:31 - DEBUG - utente_id 1
+2009-11-20 11:10:31 - INFO - Form is not valid, restarting
+2009-11-20 11:10:46 - INFO - Building the form from the post data
+2009-11-20 11:10:46 - DEBUG - utente_id 1
+2009-11-20 11:10:46 - INFO - Form is valid, saving data
+2009-11-20 11:46:11 - INFO - Getting the user object
+2009-11-20 11:46:46 - INFO - Getting the user object
+2009-11-20 11:46:46 - INFO - Building the form from the post data
+2009-11-20 11:46:56 - INFO - Getting the user object
+2009-11-20 11:46:56 - INFO - Building the form from the post data
+2009-11-20 11:46:56 - INFO - Form is valid, saving data
+2009-11-20 11:46:56 - INFO - Data recorded
+2009-11-20 11:47:00 - INFO - Getting the user object
+2009-11-20 11:47:00 - INFO - Building the form from the post data
+2009-11-20 11:47:00 - INFO - Form is valid, saving data
+2009-11-20 11:47:00 - INFO - Data recorded
+2009-11-20 11:47:01 - INFO - Getting the user object
+2009-11-20 11:47:01 - INFO - Building the form from the post data
+2009-11-20 11:47:01 - INFO - Form is valid, saving data
+2009-11-20 11:47:01 - INFO - Data recorded
+2009-11-20 11:47:02 - INFO - Getting the user object
+2009-11-20 11:47:02 - INFO - Building the form from the post data
+2009-11-20 11:47:02 - INFO - Form is valid, saving data
+2009-11-20 11:47:02 - INFO - Data recorded
+2009-11-20 11:48:28 - INFO - user home :: user authenticated
+2009-11-20 11:48:28 - INFO - pippo
+2009-11-20 12:56:20 - INFO - Getting the user object
+2009-11-20 12:56:20 - INFO - Building the form from the post data
+2009-11-20 12:56:20 - INFO - Form is valid, saving data
+2009-11-20 12:56:20 - INFO - Data recorded
+2009-11-20 12:56:28 - INFO - Getting the user object
+2009-11-20 12:56:28 - INFO - Building the form from the post data
+2009-11-20 12:56:28 - INFO - Form is valid, saving data
+2009-11-20 12:56:28 - INFO - Data recorded
+2009-11-20 14:26:00 - INFO - Getting the user object
+2009-11-20 14:26:00 - INFO - Building the form from the post data
+2009-11-20 14:26:00 - INFO - Form is not valid, restarting
+2009-11-20 14:26:04 - INFO - Getting the user object
+2009-11-20 14:26:04 - INFO - Building the form from the post data
+2009-11-20 14:26:04 - INFO - Form is valid, saving data
+2009-11-20 14:26:04 - INFO - Data recorded
+2009-11-20 14:26:05 - INFO - Getting the user object
+2009-11-20 14:26:05 - INFO - Building the form from the post data
+2009-11-20 14:26:05 - INFO - Form is valid, saving data
+2009-11-20 14:26:05 - INFO - Data recorded
+2009-11-20 14:26:09 - INFO - Getting the user object
+2009-11-20 14:26:09 - INFO - Building the form from the post data
+2009-11-20 14:26:09 - INFO - Form is valid, saving data
+2009-11-20 14:26:09 - INFO - Data recorded
+2009-11-20 14:26:10 - INFO - Getting the user object
+2009-11-20 14:26:10 - INFO - Building the form from the post data
+2009-11-20 14:26:10 - INFO - Form is valid, saving data
+2009-11-20 14:26:10 - INFO - Data recorded
+2009-11-20 14:26:10 - INFO - Getting the user object
+2009-11-20 14:26:10 - INFO - Building the form from the post data
+2009-11-20 14:26:10 - INFO - Form is valid, saving data
+2009-11-20 14:26:10 - INFO - Data recorded
+2009-11-20 14:26:11 - INFO - Getting the user object
+2009-11-20 14:26:11 - INFO - Building the form from the post data
+2009-11-20 14:26:11 - INFO - Form is valid, saving data
+2009-11-20 14:26:11 - INFO - Data recorded
+2009-11-20 14:57:59 - INFO - user home :: user authenticated
+2009-11-20 14:57:59 - INFO - pippo
+2009-11-20 14:59:02 - INFO - user home :: user authenticated
+2009-11-20 14:59:02 - INFO - pippo
+2009-11-20 21:41:49 - INFO - user home :: user authenticated
+2009-11-20 21:41:49 - INFO - q
+2009-11-20 21:46:02 - INFO - User not authenticated
+2009-11-20 22:31:42 - CRITICAL - No profile has been defined for this user
+2009-11-20 22:48:57 - CRITICAL - No profile has been defined for this user
+2009-11-20 22:49:30 - CRITICAL - No profile has been defined for this user
+2009-11-20 22:52:30 - CRITICAL - No profile has been defined for this user
+2009-11-20 22:53:12 - CRITICAL - No profile has been defined for this user
+2009-11-20 22:53:48 - CRITICAL - No profile has been defined for this user
+2009-11-20 23:11:31 - CRITICAL - No profile has been defined for this user
+2009-11-20 23:30:39 - CRITICAL - No profile has been defined for this user
+2009-11-20 23:32:29 - INFO - pippo   
+2009-11-20 23:33:42 - INFO - 1
+2009-11-20 23:37:35 - INFO - <class 'pyVisualCasa.models.Profilo'>
+2009-11-20 23:43:51 - CRITICAL - No profile has been defined for this user
+2009-11-20 23:44:44 - INFO - Getting the user object
+2009-11-20 23:48:13 - INFO - Getting the user object
+2009-11-20 23:48:13 - INFO - Building the form from the post data
+2009-11-20 23:48:13 - INFO - Form is not valid, restarting
+2009-11-20 23:48:19 - INFO - Getting the user object
+2009-11-20 23:48:19 - INFO - Building the form from the post data
+2009-11-20 23:48:19 - INFO - Form is valid, saving data
+2009-11-20 23:48:19 - INFO - Data recorded
+2009-11-20 23:54:23 - INFO - Getting the user object
+2009-11-20 23:54:23 - INFO - Building the form from the post data
+2009-11-20 23:54:23 - INFO - Form is not valid, restarting
+2009-11-20 23:54:27 - INFO - Getting the user object
+2009-11-20 23:54:27 - INFO - Building the form from the post data
+2009-11-20 23:54:27 - INFO - Form is valid, saving data
+2009-11-20 23:54:27 - INFO - Data recorded
+2009-11-21 00:04:20 - INFO - Getting the user object
+2009-11-21 00:04:20 - INFO - Building the form from the post data
+2009-11-21 00:04:20 - INFO - Form is not valid, restarting
+2009-11-21 00:05:06 - INFO - Getting the user object
+2009-11-21 00:05:34 - INFO - Getting the user object
+2009-11-21 00:06:14 - INFO - Getting the user object
+2009-11-21 00:06:14 - INFO - Building the form from the post data
+2009-11-21 00:06:14 - INFO - Form is not valid, restarting
+2009-11-21 00:28:30 - INFO - [<CategoriaMerceologica: test 1>, <CategoriaMerceologica: test 2>, <CategoriaMerceologica: test 5 >]
+2009-11-21 00:29:22 - INFO - [<CategoriaMerceologica: test 1>, <CategoriaMerceologica: test 2>, <CategoriaMerceologica: test 5 >]
+2009-11-21 00:30:14 - INFO - [<CategoriaMerceologica: test 1>, <CategoriaMerceologica: test 2>, <CategoriaMerceologica: test 5 >]
+2009-11-21 00:31:14 - INFO - [<CategoriaMerceologica: test 1>, <CategoriaMerceologica: test 2>, <CategoriaMerceologica: test 5 >]
+2009-11-21 00:36:21 - INFO - [<CategoriaMerceologica: test 1>, <CategoriaMerceologica: test 2>, <CategoriaMerceologica: test 5 >]
+2009-11-21 01:09:29 - WARNING - Insert immobile has 2 as categoria merceologica
+2009-11-21 01:09:37 - WARNING - Insert immobile has 1 as categoria merceologica
+2009-11-21 01:10:18 - WARNING - Insert immobile has 1 as categoria merceologica
+2009-11-21 01:10:18 - INFO - (u'1',)
+2009-11-21 12:37:44 - WARNING - Insert immobile has 1 as categoria merceologica
+2009-11-21 12:37:44 - INFO - (u'1',)
+2009-11-22 09:21:12 - WARNING - Insert immobile has 1 as categoria merceologica
+2009-11-22 09:21:13 - INFO - (u'1',)
+2009-11-22 09:57:02 - WARNING - Insert immobile has 1 as categoria merceologica
+2009-11-22 10:11:23 - WARNING - Insert immobile has 1 as categoria merceologica
+2009-11-22 10:11:27 - WARNING - Insert immobile has 1 as categoria merceologica
+2009-11-22 10:12:41 - WARNING - Insert immobile has 1 as categoria merceologica
+2009-11-22 10:13:25 - WARNING - Insert immobile has 1 as categoria merceologica
+2009-11-22 10:15:00 - WARNING - Insert immobile has 1 as categoria merceologica
+2009-11-22 10:24:02 - WARNING - Insert immobile has 1 as categoria merceologica
+2009-11-22 10:24:07 - WARNING - Insert immobile has 2 as categoria merceologica
+2009-11-22 10:24:21 - WARNING - Insert immobile has 3 as categoria merceologica
+2009-11-22 10:24:24 - WARNING - Insert immobile has 2 as categoria merceologica
+2009-11-22 10:24:29 - WARNING - Insert immobile has 1 as categoria merceologica
+2009-11-22 10:24:31 - WARNING - Insert immobile has 3 as categoria merceologica
+2009-11-22 10:26:30 - WARNING - Insert immobile has 2 as categoria merceologica
+2009-11-22 10:26:47 - WARNING - Insert immobile has  as categoria merceologica
+2009-11-22 10:27:58 - WARNING - Insert immobile has  as categoria merceologica
+2009-11-22 10:28:30 - WARNING - Insert immobile has  as categoria merceologica
+2009-11-22 10:29:12 - WARNING - Insert immobile has  as categoria merceologica
+2009-11-22 10:29:54 - WARNING - Insert immobile has  as categoria merceologica
+2009-11-22 10:30:05 - WARNING - Insert immobile has  as categoria merceologica
+2009-11-22 10:36:05 - WARNING - Insert immobile has 1 as categoria merceologica
+2009-11-22 10:36:09 - WARNING - Insert immobile has  as categoria merceologica
+2009-11-22 10:37:19 - INFO - Getting the user object
+2009-11-22 10:37:19 - INFO - Building the form from the post data
+2009-11-22 10:37:19 - INFO - Form is not valid, restarting
+2009-11-22 10:37:25 - INFO - Getting the user object
+2009-11-22 10:37:25 - INFO - Building the form from the post data
+2009-11-22 10:37:25 - INFO - Form is not valid, restarting
+2009-11-22 10:37:33 - INFO - Getting the user object
+2009-11-22 10:37:33 - INFO - Building the form from the post data
+2009-11-22 10:37:33 - INFO - Form is not valid, restarting
+2009-11-22 10:38:37 - INFO - Getting the user object
+2009-11-22 10:38:37 - INFO - Building the form from the post data
+2009-11-22 10:38:37 - INFO - Form is not valid, restarting
+2009-11-22 10:38:41 - INFO - Getting the user object
+2009-11-22 10:38:41 - INFO - Building the form from the post data
+2009-11-22 10:38:41 - INFO - Form is valid, saving data
+2009-11-22 10:38:41 - INFO - Data recorded
+2009-11-22 10:39:01 - INFO - Getting the user object
+2009-11-22 10:39:01 - INFO - Building the form from the post data
+2009-11-22 10:39:01 - INFO - Form is not valid, restarting
+2009-11-22 10:39:23 - INFO - Getting the user object
+2009-11-22 10:39:23 - INFO - Building the form from the post data
+2009-11-22 10:39:23 - INFO - Form is valid, saving data
+2009-11-22 10:39:23 - INFO - Data recorded
+2009-11-22 10:39:25 - INFO - Getting the user object
+2009-11-22 10:39:25 - INFO - Building the form from the post data
+2009-11-22 10:39:25 - INFO - Form is valid, saving data
+2009-11-22 10:39:25 - INFO - Data recorded
+2009-11-22 14:51:31 - INFO - Getting the user object
+2009-11-22 14:51:31 - INFO - Building the form from the post data
+2009-11-22 14:52:09 - INFO - Getting the user object
+2009-11-22 14:52:09 - INFO - Building the form from the post data
+2009-11-22 14:52:09 - INFO - Form is not valid, restarting
+2009-11-22 14:52:30 - INFO - Getting the user object
+2009-11-22 14:52:30 - INFO - Building the form from the post data
+2009-11-22 14:52:30 - INFO - Form is not valid, restarting
+2009-11-22 14:53:23 - INFO - <WSGIRequest
+GET:<QueryDict: {}>,
+POST:<QueryDict: {u'data_fine': [u'12/12/2010'], u'CAP': [u'65100'], u'Immagine_Spot': [u'0000.jpg'], u'data_inizio': [u'12/12/2009'], u'numero_click': [u'0'], u'utente_id': [u'1']}>,
+COOKIES:{'sessionid': '26d443fdcbb663b66c0825b23aff7c89'},
+META:{'ALLUSERSPROFILE': 'C:\\ProgramData',
+ 'APPDATA': 'C:\\Users\\Pippo\\AppData\\Roaming',
+ 'COMMONPROGRAMFILES': 'C:\\Program Files (x86)\\Common Files',
+ 'COMMONPROGRAMFILES(X86)': 'C:\\Program Files (x86)\\Common Files',
+ 'COMMONPROGRAMW6432': 'C:\\Program Files\\Common Files',
+ 'COMPUTERNAME': 'PC-EMANUELA',
+ 'COMSPEC': 'C:\\Windows\\system32\\cmd.exe',
+ 'CONTENT_LENGTH': '111',
+ 'CONTENT_TYPE': 'application/x-www-form-urlencoded',
+ 'DFSTRACINGON': 'FALSE',
+ 'DJANGO_SETTINGS_MODULE': 'pyVisualCasa.settings',
+ 'FP_NO_HOST_CHECK': 'NO',
+ 'GATEWAY_INTERFACE': 'CGI/1.1',
+ 'HOMEDRIVE': 'C:',
+ 'HOMEPATH': '\\Users\\Pippo',
+ 'HTTP_ACCEPT': 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+ 'HTTP_ACCEPT_CHARSET': 'ISO-8859-1,utf-8;q=0.7,*;q=0.7',
+ 'HTTP_ACCEPT_ENCODING': 'gzip,deflate',
+ 'HTTP_ACCEPT_LANGUAGE': 'it-it,it;q=0.8,en-us;q=0.5,en;q=0.3',
+ 'HTTP_CACHE_CONTROL': 'max-age=0',
+ 'HTTP_CONNECTION': 'keep-alive',
+ 'HTTP_COOKIE': 'sessionid=26d443fdcbb663b66c0825b23aff7c89',
+ 'HTTP_HOST': '127.0.0.1:8000',
+ 'HTTP_KEEP_ALIVE': '300',
+ 'HTTP_REFERER': 'http://127.0.0.1:8000/banner/Insert/',
+ 'HTTP_USER_AGENT': 'Mozilla/5.0 (Windows; U; Windows NT 6.0; it; rv:1.9.1.5) Gecko/20091102 Firefox/3.5.5 GTB5 (.NET CLR 3.5.30729)',
+ 'LOCALAPPDATA': 'C:\\Users\\Pippo\\AppData\\Local',
+ 'LOGONSERVER': '\\\\PC-EMANUELA',
+ 'NUMBER_OF_PROCESSORS': '2',
+ 'ONLINESERVICES': 'Online Services',
+ 'OS': 'Windows_NT',
+ 'PATH': 'C:\\Program Files (x86)\\CollabNet\\Subversion Client;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Program Files (x86)\\CyberLink\\Power2Go;C:\\Program Files\\MySQL\\MySQL Server 5.0\\bin;C:\\Program Files (x86)\\Tail4win',
+ 'PATHEXT': '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC',
+ 'PATH_INFO': u'/banner/Insert/',
+ 'PCBRAND': 'Pavilion',
+ 'PLATFORM': 'MCD',
+ 'PROCESSOR_ARCHITECTURE': 'x86',
+ 'PROCESSOR_ARCHITEW6432': 'AMD64',
+ 'PROCESSOR_IDENTIFIER': 'Intel64 Family 6 Model 23 Stepping 6, GenuineIntel',
+ 'PROCESSOR_LEVEL': '6',
+ 'PROCESSOR_REVISION': '1706',
+ 'PROGRAMDATA': 'C:\\ProgramData',
+ 'PROGRAMFILES': 'C:\\Program Files (x86)',
+ 'PROGRAMFILES(X86)': 'C:\\Program Files (x86)',
+ 'PROGRAMW6432': 'C:\\Program Files',
+ 'PROMPT': '$P$G',
+ 'PUBLIC': 'C:\\Users\\Public',
+ 'QUERY_STRING': '',
+ 'REMOTE_ADDR': '127.0.0.1',
+ 'REMOTE_HOST': '',
+ 'REQUEST_METHOD': 'POST',
+ 'RUN_MAIN': 'true',
+ 'SCRIPT_NAME': u'',
+ 'SERVER_NAME': 'PC-Pippo',
+ 'SERVER_PORT': '8000',
+ 'SERVER_PROTOCOL': 'HTTP/1.1',
+ 'SERVER_SOFTWARE': 'WSGIServer/0.1 Python/2.5',
+ 'SESSIONNAME': 'Console',
+ 'SYSTEMDRIVE': 'C:',
+ 'SYSTEMROOT': 'C:\\Windows',
+ 'TEMP': 'C:\\Users\\Pippo\\AppData\\Local\\Temp',
+ 'TMP': 'C:\\Users\\Pippo\\AppData\\Local\\Temp',
+ 'TRACE_FORMAT_SEARCH_PATH': '\\\\NTREL202.ntdev.corp.microsoft.com\\34FB5F65-FFEB-4B61-BF0E-A6A76C450FAA\\TraceFormat',
+ 'USERDOMAIN': 'PC-Pippo',
+ 'USERNAME': 'Pippo',
+ 'USERPROFILE': 'C:\\Users\\Pippo',
+ 'WINDIR': 'C:\\Windows',
+ 'wsgi.errors': <open file '<stderr>', mode 'w' at 0x0209F0B0>,
+ 'wsgi.file_wrapper': <class 'django.core.servers.basehttp.FileWrapper'>,
+ 'wsgi.input': <socket._fileobject object at 0x03208618>,
+ 'wsgi.multiprocess': False,
+ 'wsgi.multithread': True,
+ 'wsgi.run_once': False,
+ 'wsgi.url_scheme': 'http',
+ 'wsgi.version': (1, 0)}>
+2009-11-22 14:53:23 - INFO - Getting the user object
+2009-11-22 14:53:23 - INFO - Building the form from the post data
+2009-11-22 14:53:23 - INFO - Form is not valid, restarting
+2009-11-22 15:32:13 - INFO - <WSGIRequest
+GET:<QueryDict: {}>,
+POST:<QueryDict: {u'data_fine': [u'12/12/2010'], u'CAP': [u'65100'], u'Immagine_Spot': [u'0000.jpg'], u'data_inizio': [u'12/12/2009'], u'numero_click': [u'0'], u'utente_id': [u'1']}>,
+COOKIES:{'sessionid': '26d443fdcbb663b66c0825b23aff7c89'},
+META:{'ALLUSERSPROFILE': 'C:\\ProgramData',
+ 'APPDATA': 'C:\\Users\\Pippo\\AppData\\Roaming',
+ 'COMMONPROGRAMFILES': 'C:\\Program Files (x86)\\Common Files',
+ 'COMMONPROGRAMFILES(X86)': 'C:\\Program Files (x86)\\Common Files',
+ 'COMMONPROGRAMW6432': 'C:\\Program Files\\Common Files',
+ 'COMPUTERNAME': 'PC-EMANUELA',
+ 'COMSPEC': 'C:\\Windows\\system32\\cmd.exe',
+ 'CONTENT_LENGTH': '111',
+ 'CONTENT_TYPE': 'application/x-www-form-urlencoded',
+ 'DFSTRACINGON': 'FALSE',
+ 'DJANGO_SETTINGS_MODULE': 'pyVisualCasa.settings',
+ 'FP_NO_HOST_CHECK': 'NO',
+ 'GATEWAY_INTERFACE': 'CGI/1.1',
+ 'HOMEDRIVE': 'C:',
+ 'HOMEPATH': '\\Users\\Pippo',
+ 'HTTP_ACCEPT': 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+ 'HTTP_ACCEPT_CHARSET': 'ISO-8859-1,utf-8;q=0.7,*;q=0.7',
+ 'HTTP_ACCEPT_ENCODING': 'gzip,deflate',
+ 'HTTP_ACCEPT_LANGUAGE': 'it-it,it;q=0.8,en-us;q=0.5,en;q=0.3',
+ 'HTTP_CACHE_CONTROL': 'max-age=0',
+ 'HTTP_CONNECTION': 'keep-alive',
+ 'HTTP_COOKIE': 'sessionid=26d443fdcbb663b66c0825b23aff7c89',
+ 'HTTP_HOST': '127.0.0.1:8000',
+ 'HTTP_KEEP_ALIVE': '300',
+ 'HTTP_REFERER': 'http://127.0.0.1:8000/banner/Insert/',
+ 'HTTP_USER_AGENT': 'Mozilla/5.0 (Windows; U; Windows NT 6.0; it; rv:1.9.1.5) Gecko/20091102 Firefox/3.5.5 GTB5 (.NET CLR 3.5.30729)',
+ 'LOCALAPPDATA': 'C:\\Users\\Pippo\\AppData\\Local',
+ 'LOGONSERVER': '\\\\PC-EMANUELA',
+ 'NUMBER_OF_PROCESSORS': '2',
+ 'ONLINESERVICES': 'Online Services',
+ 'OS': 'Windows_NT',
+ 'PATH': 'C:\\Program Files (x86)\\CollabNet\\Subversion Client;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Program Files (x86)\\CyberLink\\Power2Go;C:\\Program Files\\MySQL\\MySQL Server 5.0\\bin;C:\\Program Files (x86)\\Tail4win',
+ 'PATHEXT': '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC',
+ 'PATH_INFO': u'/banner/Insert/',
+ 'PCBRAND': 'Pavilion',
+ 'PLATFORM': 'MCD',
+ 'PROCESSOR_ARCHITECTURE': 'x86',
+ 'PROCESSOR_ARCHITEW6432': 'AMD64',
+ 'PROCESSOR_IDENTIFIER': 'Intel64 Family 6 Model 23 Stepping 6, GenuineIntel',
+ 'PROCESSOR_LEVEL': '6',
+ 'PROCESSOR_REVISION': '1706',
+ 'PROGRAMDATA': 'C:\\ProgramData',
+ 'PROGRAMFILES': 'C:\\Program Files (x86)',
+ 'PROGRAMFILES(X86)': 'C:\\Program Files (x86)',
+ 'PROGRAMW6432': 'C:\\Program Files',
+ 'PROMPT': '$P$G',
+ 'PUBLIC': 'C:\\Users\\Public',
+ 'QUERY_STRING': '',
+ 'REMOTE_ADDR': '127.0.0.1',
+ 'REMOTE_HOST': '',
+ 'REQUEST_METHOD': 'POST',
+ 'RUN_MAIN': 'true',
+ 'SCRIPT_NAME': u'',
+ 'SERVER_NAME': 'PC-Pippo',
+ 'SERVER_PORT': '8000',
+ 'SERVER_PROTOCOL': 'HTTP/1.1',
+ 'SERVER_SOFTWARE': 'WSGIServer/0.1 Python/2.5',
+ 'SESSIONNAME': 'Console',
+ 'SYSTEMDRIVE': 'C:',
+ 'SYSTEMROOT': 'C:\\Windows',
+ 'TEMP': 'C:\\Users\\Pippo\\AppData\\Local\\Temp',
+ 'TMP': 'C:\\Users\\Pippo\\AppData\\Local\\Temp',
+ 'TRACE_FORMAT_SEARCH_PATH': '\\\\NTREL202.ntdev.corp.microsoft.com\\34FB5F65-FFEB-4B61-BF0E-A6A76C450FAA\\TraceFormat',
+ 'USERDOMAIN': 'PC-Pippo',
+ 'USERNAME': 'Pippo',
+ 'USERPROFILE': 'C:\\Users\\Pippo',
+ 'WINDIR': 'C:\\Windows',
+ 'wsgi.errors': <open file '<stderr>', mode 'w' at 0x0209F0B0>,
+ 'wsgi.file_wrapper': <class 'django.core.servers.basehttp.FileWrapper'>,
+ 'wsgi.input': <socket._fileobject object at 0x03208768>,
+ 'wsgi.multiprocess': False,
+ 'wsgi.multithread': True,
+ 'wsgi.run_once': False,
+ 'wsgi.url_scheme': 'http',
+ 'wsgi.version': (1, 0)}>
+2009-11-22 15:32:13 - INFO - Getting the user object
+2009-11-22 15:32:13 - INFO - Building the form from the post data
+2009-11-22 15:32:13 - INFO - Form is not valid, restarting
+2009-11-22 15:34:32 - INFO - <WSGIRequest
+GET:<QueryDict: {}>,
+POST:<QueryDict: {u'data_fine': [u'12/12/2010'], u'CAP': [u'65100'], u'Immagine_Spot': [u''], u'data_inizio': [u'12/12/2009'], u'numero_click': [u'0'], u'utente_id': [u'1']}>,
+COOKIES:{'sessionid': 'ef915a8d6193dafad964355f74fd6448'},
+META:{'ALLUSERSPROFILE': 'C:\\ProgramData',
+ 'APPDATA': 'C:\\Users\\Pippo\\AppData\\Roaming',
+ 'COMMONPROGRAMFILES': 'C:\\Program Files (x86)\\Common Files',
+ 'COMMONPROGRAMFILES(X86)': 'C:\\Program Files (x86)\\Common Files',
+ 'COMMONPROGRAMW6432': 'C:\\Program Files\\Common Files',
+ 'COMPUTERNAME': 'PC-EMANUELA',
+ 'COMSPEC': 'C:\\Windows\\system32\\cmd.exe',
+ 'CONTENT_LENGTH': '103',
+ 'CONTENT_TYPE': 'application/x-www-form-urlencoded',
+ 'DFSTRACINGON': 'FALSE',
+ 'DJANGO_SETTINGS_MODULE': 'pyVisualCasa.settings',
+ 'FP_NO_HOST_CHECK': 'NO',
+ 'GATEWAY_INTERFACE': 'CGI/1.1',
+ 'HOMEDRIVE': 'C:',
+ 'HOMEPATH': '\\Users\\Pippo',
+ 'HTTP_ACCEPT': 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+ 'HTTP_ACCEPT_CHARSET': 'ISO-8859-1,utf-8;q=0.7,*;q=0.7',
+ 'HTTP_ACCEPT_ENCODING': 'gzip,deflate',
+ 'HTTP_ACCEPT_LANGUAGE': 'it-it,it;q=0.8,en-us;q=0.5,en;q=0.3',
+ 'HTTP_CONNECTION': 'keep-alive',
+ 'HTTP_COOKIE': 'sessionid=ef915a8d6193dafad964355f74fd6448',
+ 'HTTP_HOST': '127.0.0.1:8000',
+ 'HTTP_KEEP_ALIVE': '300',
+ 'HTTP_REFERER': 'http://127.0.0.1:8000/banner/Insert/',
+ 'HTTP_USER_AGENT': 'Mozilla/5.0 (Windows; U; Windows NT 6.0; it; rv:1.9.1.5) Gecko/20091102 Firefox/3.5.5 GTB5 (.NET CLR 3.5.30729)',
+ 'LOCALAPPDATA': 'C:\\Users\\Pippo\\AppData\\Local',
+ 'LOGONSERVER': '\\\\PC-EMANUELA',
+ 'NUMBER_OF_PROCESSORS': '2',
+ 'ONLINESERVICES': 'Online Services',
+ 'OS': 'Windows_NT',
+ 'PATH': 'C:\\Program Files (x86)\\CollabNet\\Subversion Client;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Program Files (x86)\\CyberLink\\Power2Go;C:\\Program Files\\MySQL\\MySQL Server 5.0\\bin;C:\\Program Files (x86)\\Tail4win',
+ 'PATHEXT': '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC',
+ 'PATH_INFO': u'/banner/Insert/',
+ 'PCBRAND': 'Pavilion',
+ 'PLATFORM': 'MCD',
+ 'PROCESSOR_ARCHITECTURE': 'x86',
+ 'PROCESSOR_ARCHITEW6432': 'AMD64',
+ 'PROCESSOR_IDENTIFIER': 'Intel64 Family 6 Model 23 Stepping 6, GenuineIntel',
+ 'PROCESSOR_LEVEL': '6',
+ 'PROCESSOR_REVISION': '1706',
+ 'PROGRAMDATA': 'C:\\ProgramData',
+ 'PROGRAMFILES': 'C:\\Program Files (x86)',
+ 'PROGRAMFILES(X86)': 'C:\\Program Files (x86)',
+ 'PROGRAMW6432': 'C:\\Program Files',
+ 'PROMPT': '$P$G',
+ 'PUBLIC': 'C:\\Users\\Public',
+ 'QUERY_STRING': '',
+ 'REMOTE_ADDR': '127.0.0.1',
+ 'REMOTE_HOST': '',
+ 'REQUEST_METHOD': 'POST',
+ 'RUN_MAIN': 'true',
+ 'SCRIPT_NAME': u'',
+ 'SERVER_NAME': 'PC-Pippo',
+ 'SERVER_PORT': '8000',
+ 'SERVER_PROTOCOL': 'HTTP/1.1',
+ 'SERVER_SOFTWARE': 'WSGIServer/0.1 Python/2.5',
+ 'SESSIONNAME': 'Console',
+ 'SYSTEMDRIVE': 'C:',
+ 'SYSTEMROOT': 'C:\\Windows',
+ 'TEMP': 'C:\\Users\\Pippo\\AppData\\Local\\Temp',
+ 'TMP': 'C:\\Users\\Pippo\\AppData\\Local\\Temp',
+ 'TRACE_FORMAT_SEARCH_PATH': '\\\\NTREL202.ntdev.corp.microsoft.com\\34FB5F65-FFEB-4B61-BF0E-A6A76C450FAA\\TraceFormat',
+ 'USERDOMAIN': 'PC-Pippo',
+ 'USERNAME': 'Pippo',
+ 'USERPROFILE': 'C:\\Users\\Pippo',
+ 'WINDIR': 'C:\\Windows',
+ 'wsgi.errors': <open file '<stderr>', mode 'w' at 0x0209F0B0>,
+ 'wsgi.file_wrapper': <class 'django.core.servers.basehttp.FileWrapper'>,
+ 'wsgi.input': <socket._fileobject object at 0x03304C00>,
+ 'wsgi.multiprocess': False,
+ 'wsgi.multithread': True,
+ 'wsgi.run_once': False,
+ 'wsgi.url_scheme': 'http',
+ 'wsgi.version': (1, 0)}>
+2009-11-22 15:34:32 - INFO - Getting the user object
+2009-11-22 15:34:32 - INFO - Building the form from the post data
+2009-11-22 15:34:32 - INFO - Form is not valid, restarting
+2009-11-22 15:34:44 - INFO - <WSGIRequest
+GET:<QueryDict: {}>,
+POST:<QueryDict: {u'data_inizio': [u'12/12/2009'], u'numero_click': [u'0'], u'CAP': [u'65100'], u'utente_id': [u'1'], u'data_fine': [u'12/12/2010']}>,
+COOKIES:{'sessionid': 'ef915a8d6193dafad964355f74fd6448'},
+META:{'ALLUSERSPROFILE': 'C:\\ProgramData',
+ 'APPDATA': 'C:\\Users\\Pippo\\AppData\\Roaming',
+ 'COMMONPROGRAMFILES': 'C:\\Program Files (x86)\\Common Files',
+ 'COMMONPROGRAMFILES(X86)': 'C:\\Program Files (x86)\\Common Files',
+ 'COMMONPROGRAMW6432': 'C:\\Program Files\\Common Files',
+ 'COMPUTERNAME': 'PC-EMANUELA',
+ 'COMSPEC': 'C:\\Windows\\system32\\cmd.exe',
+ 'CONTENT_LENGTH': '5591',
+ 'CONTENT_TYPE': 'multipart/form-data; boundary=---------------------------712921615535',
+ 'DFSTRACINGON': 'FALSE',
+ 'DJANGO_SETTINGS_MODULE': 'pyVisualCasa.settings',
+ 'FP_NO_HOST_CHECK': 'NO',
+ 'GATEWAY_INTERFACE': 'CGI/1.1',
+ 'HOMEDRIVE': 'C:',
+ 'HOMEPATH': '\\Users\\Pippo',
+ 'HTTP_ACCEPT': 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+ 'HTTP_ACCEPT_CHARSET': 'ISO-8859-1,utf-8;q=0.7,*;q=0.7',
+ 'HTTP_ACCEPT_ENCODING': 'gzip,deflate',
+ 'HTTP_ACCEPT_LANGUAGE': 'it-it,it;q=0.8,en-us;q=0.5,en;q=0.3',
+ 'HTTP_CONNECTION': 'keep-alive',
+ 'HTTP_COOKIE': 'sessionid=ef915a8d6193dafad964355f74fd6448',
+ 'HTTP_HOST': '127.0.0.1:8000',
+ 'HTTP_KEEP_ALIVE': '300',
+ 'HTTP_REFERER': 'http://127.0.0.1:8000/banner/Insert/',
+ 'HTTP_USER_AGENT': 'Mozilla/5.0 (Windows; U; Windows NT 6.0; it; rv:1.9.1.5) Gecko/20091102 Firefox/3.5.5 GTB5 (.NET CLR 3.5.30729)',
+ 'LOCALAPPDATA': 'C:\\Users\\Pippo\\AppData\\Local',
+ 'LOGONSERVER': '\\\\PC-EMANUELA',
+ 'NUMBER_OF_PROCESSORS': '2',
+ 'ONLINESERVICES': 'Online Services',
+ 'OS': 'Windows_NT',
+ 'PATH': 'C:\\Program Files (x86)\\CollabNet\\Subversion Client;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Program Files (x86)\\CyberLink\\Power2Go;C:\\Program Files\\MySQL\\MySQL Server 5.0\\bin;C:\\Program Files (x86)\\Tail4win',
+ 'PATHEXT': '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC',
+ 'PATH_INFO': u'/banner/Insert/',
+ 'PCBRAND': 'Pavilion',
+ 'PLATFORM': 'MCD',
+ 'PROCESSOR_ARCHITECTURE': 'x86',
+ 'PROCESSOR_ARCHITEW6432': 'AMD64',
+ 'PROCESSOR_IDENTIFIER': 'Intel64 Family 6 Model 23 Stepping 6, GenuineIntel',
+ 'PROCESSOR_LEVEL': '6',
+ 'PROCESSOR_REVISION': '1706',
+ 'PROGRAMDATA': 'C:\\ProgramData',
+ 'PROGRAMFILES': 'C:\\Program Files (x86)',
+ 'PROGRAMFILES(X86)': 'C:\\Program Files (x86)',
+ 'PROGRAMW6432': 'C:\\Program Files',
+ 'PROMPT': '$P$G',
+ 'PUBLIC': 'C:\\Users\\Public',
+ 'QUERY_STRING': '',
+ 'REMOTE_ADDR': '127.0.0.1',
+ 'REMOTE_HOST': '',
+ 'REQUEST_METHOD': 'POST',
+ 'RUN_MAIN': 'true',
+ 'SCRIPT_NAME': u'',
+ 'SERVER_NAME': 'PC-Pippo',
+ 'SERVER_PORT': '8000',
+ 'SERVER_PROTOCOL': 'HTTP/1.1',
+ 'SERVER_SOFTWARE': 'WSGIServer/0.1 Python/2.5',
+ 'SESSIONNAME': 'Console',
+ 'SYSTEMDRIVE': 'C:',
+ 'SYSTEMROOT': 'C:\\Windows',
+ 'TEMP': 'C:\\Users\\Pippo\\AppData\\Local\\Temp',
+ 'TMP': 'C:\\Users\\Pippo\\AppData\\Local\\Temp',
+ 'TRACE_FORMAT_SEARCH_PATH': '\\\\NTREL202.ntdev.corp.microsoft.com\\34FB5F65-FFEB-4B61-BF0E-A6A76C450FAA\\TraceFormat',
+ 'USERDOMAIN': 'PC-Pippo',
+ 'USERNAME': 'Pippo',
+ 'USERPROFILE': 'C:\\Users\\Pippo',
+ 'WINDIR': 'C:\\Windows',
+ 'wsgi.errors': <open file '<stderr>', mode 'w' at 0x0209F0B0>,
+ 'wsgi.file_wrapper': <class 'django.core.servers.basehttp.FileWrapper'>,
+ 'wsgi.input': <socket._fileobject object at 0x03304C00>,
+ 'wsgi.multiprocess': False,
+ 'wsgi.multithread': True,
+ 'wsgi.run_once': False,
+ 'wsgi.url_scheme': 'http',
+ 'wsgi.version': (1, 0)}>
+2009-11-22 15:34:44 - INFO - Getting the user object
+2009-11-22 15:34:44 - INFO - Building the form from the post data
+2009-11-22 15:34:44 - INFO - Form is not valid, restarting
+2009-11-22 15:35:24 - INFO - <MultiValueDict: {u'Immagine_Spot': [<InMemoryUploadedFile: 0000.jpg (image/jpeg)>]}>
+2009-11-22 15:35:24 - INFO - Getting the user object
+2009-11-22 15:35:24 - INFO - Building the form from the post data
+2009-11-22 15:35:24 - INFO - Form is not valid, restarting
+2009-11-22 15:38:28 - INFO - Getting the user object
+2009-11-22 15:38:28 - INFO - Building the form from the post data
+2009-11-22 15:38:28 - INFO - Form is valid, saving data
+2009-11-22 15:38:28 - CRITICAL - Can't store data
+2009-11-22 15:43:42 - INFO - Getting the user object
+2009-11-22 15:43:42 - INFO - Building the form from the post data
+2009-11-22 15:43:42 - INFO - Form is valid, saving data
+2009-11-22 15:44:58 - INFO - Getting the user object
+2009-11-22 15:44:58 - INFO - Building the form from the post data
+2009-11-22 15:44:58 - INFO - Form is valid, saving data
+2009-11-22 15:45:00 - CRITICAL - Can't store data
+2009-11-22 15:45:58 - INFO - Getting the user object
+2009-11-22 15:45:58 - INFO - Building the form from the post data
+2009-11-22 15:45:58 - INFO - Form is valid, saving data
+2009-11-22 15:45:58 - CRITICAL - Can't store data
+2009-11-22 15:47:44 - INFO - Getting the user object
+2009-11-22 15:47:44 - INFO - Building the form from the post data
+2009-11-22 15:47:44 - INFO - Form is valid, saving data
+2009-11-22 15:47:44 - CRITICAL - Can't store data
+2009-11-22 15:48:31 - INFO - Getting the user object
+2009-11-22 15:48:31 - INFO - Building the form from the post data
+2009-11-22 15:48:31 - INFO - Form is valid, saving data
+2009-11-22 15:48:31 - INFO - Data recorded
+2009-11-22 15:51:19 - INFO - Getting the user object
+2009-11-22 15:51:19 - INFO - Building the form from the post data
+2009-11-22 15:51:19 - INFO - Form is valid, saving data
+2009-11-22 15:51:19 - INFO - Data recorded
+2009-11-22 15:51:19 - INFO - Returning to home 
+2009-11-22 17:26:56 - INFO - Returning to home 
+2009-11-22 17:27:12 - INFO - Returning to home 
+2009-11-22 17:27:21 - INFO - Returning to home 
+2009-11-22 19:12:59 - WARNING - Insert immobile has 1 as categoria merceologica
+2009-11-22 19:27:53 - WARNING - Insert immobile has 2 as categoria merceologica
+2009-11-22 19:29:29 - WARNING - Insert immobile has 2 as categoria merceologica
+2009-11-22 19:29:43 - WARNING - Insert immobile has  as categoria merceologica
+2009-11-22 19:30:29 - WARNING - Insert immobile has  as categoria merceologica
+2009-11-22 19:31:08 - WARNING - Insert immobile has  as categoria merceologica
+2009-11-22 19:49:04 - WARNING - Insert immobile has 1 as categoria merceologica
+2009-11-22 19:49:08 - WARNING - Insert immobile has 2 as categoria merceologica
+2009-11-22 19:49:10 - WARNING - Insert immobile has 3 as categoria merceologica

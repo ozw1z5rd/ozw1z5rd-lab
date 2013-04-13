@@ -1,0 +1,112 @@
+<!--
+To change this template, choose Tools | Templates
+and open the template in the editor.
+-->
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+  <head>
+    <title></title>
+    <meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+    <link href="/vc.css" rel="stylesheet" type="text/css">
+  </head>
+
+  <body>
+    <p>Benvenuto <span class="valore">{{ nome }} </span>hai inserito <span class="valore">{{ numero_annunci }}</span> annunci
+    {% if livello_poweruser %}
+  <p>Livello utente : Business
+    {% endif %}
+  <p>Hai {{ annunci_pending }} annunci che devono essere controllati
+  <p>Hai {{ annunci_ko }} annunci che non sono stati approvati
+  <p>Puoi inserire ancora {{ annunci_disponibili }} annunci
+  <p>Hai {{ ricerche_salvate }} ricerche salvate
+
+{% if livello_poweruser %}
+  <p>Hai inserito {{ numero_contatti }} contatti,
+  <p>Hai attivi {{ numero_banner }} banner pubblicitari,
+  <p>Hai {{ banner_scaduti }} banner fuori periodo oppure con click terminati
+  <p>LOGO miniatura <img src="{{url_logo_miniatura}}">
+  <p>LOGO <img src="{{ url_logo }}">
+{% endif %}
+
+    {% if messages %}
+  <p>Messaggi da parte dell'amministrazione
+  <ul>
+        {% for message in messages %}
+        <li>{{ message }}</li>
+        {% endfor %}
+  </ul>
+    {% endif %}
+    <hr>
+    <a href="">modifica dati personali</a>
+    <hr>
+    <p>Clicca sulla lista per modificare la registrazione.
+   
+
+    <hr>
+<!-- RICERCA -->
+    <p><a href="/ricerca/Insert">aggiungi</a> ricerca<br>
+
+    {% if l_ricerche %}
+    <ul>
+       {% for ricerca in l_ricerche %}
+       <li>{{ ricerca.descrizione }}<a href="/ricerca/Delete/{{ ricerca.id }}">cancella</a> <a href="/ricerca/Edit/{{ ricerca.id }}">modifica</a>
+       {% endfor %}
+    </ul>
+    {% else %}
+       Nessuna ricerca
+    {% endif %}
+    
+    <hr>
+<!-- ANNUNCI  -->
+    {% if annunci_disponibili %}
+    <p>Clicca sulla categoria mercologica per inserire un nuovo immobile <br>
+
+    <ul>
+    {% for categoria in l_categorie_merceologiche %}
+        <li><a href="/immobile/Insert/{{ categoria.id }}">{{ categoria.descrizione }}</a>
+        {% endfor %}
+    </ul>
+
+    {% endif %}
+
+    {% if l_annunci %}
+    <ul>
+        {% for annuncio in l_annunci %}
+        <li>{{ annuncio.descrizione }}<a href="/immobile/Delete/{{ annuncio.id }}">cancella</a> <a href="/immobile/Edit/{{ annuncio.id }}">modifica</a>
+        {% endfor %}
+    </ul>
+    {% else %}
+        Nessun annuncio
+    {% endif %}
+
+{% if livello_poweruser  %}
+
+    <hr>
+<!-- BANNER -->
+    <p><a href="/banner/Insert">aggiungi</a> banner<br>
+    {% if l_banners %}
+    <ul>
+        {% for banner in l_banners %}
+        <li><img src="{{ banner.url }}">{{ banner.descrizione }}<a href="/banner/Delete/{{ banner.id }}">cancella</a> <a href="/banner/Edit/{{ banner.id }}">modifica</a>
+        {% endfor %}
+    </ul>
+    {% else %}
+        Nessun banner
+    {% endif %}
+
+    <hr>
+<!-- CONTATTI -->
+    <p><a href="/contatto/Insert">aggiungi</a> contatto<br>
+    {% if l_contatti %}
+    <ul>
+       {% for contatto in l_contatti %}
+        <li>
+       {{ contatto.descrizione }} <a href="/contatto/Delete/{{ contatto.id }}">cancella</a> <a href="/contatto/Edit/{{ contatto.id }}">modifica</a>
+       {% endfor %}
+    </ul>
+    {% endif %}
+
+
+{% endif %}
+  </body>
+</html>
