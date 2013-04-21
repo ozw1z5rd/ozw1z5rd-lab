@@ -1,0 +1,198 @@
+/* 
+================================================================
+ Tiny Scrollbar  questa viene usata nella catalogo 
+=================================================================
+*/
+
+/* 2 x z-index   */
+#scrollbar3 { width: 826px; margin: 0px; z-index: 3; top: 42px; position: absolute; background-color: #e7d6ae; z-index: 10;}
+
+#scrollbar3 .viewport { width: 700x; height: 580px; overflow: hidden; position: relative; z-index: 10;  }
+
+#scrollbar3 .overview { list-style: none; position: absolute; left: 0px; top: 0px; padding: 0; margin: 0; z-index:10; }
+
+#scrollbar3 .scrollbar { background: transparent url(/AppImg/bg-scrollbar-track-y.png) no-repeat 0 0; position: relative; background-position: 0 0; float: right; width: 1px; z-index: 10; }
+
+/* #79b51c  colore linea slider */
+
+#scrollbar3 .track { background-color: red; height: 100%; width: 1px; position: relative; padding: 0 1px; z-index: 10;  }
+
+#scrollbar3  .thumb { background: transparent url(/AppImg/bg-scrollbar-thumb-y.png);  width: 27px; cursor: pointer; overflow: hidden; position: absolute; top: 0px; left: -12px; z-index: 10;}
+
+
+#scrollbar3 .thumb .end { background: transparent url(/AppImg/images/bg-scrollbar-thumb-y.png) no-repeat 50% 0; overflow: hidden; height: 5px; width: 25px; }
+
+#scrollbar3 .disable { display: none; }
+
+
+
+
+/* 
+================================================================
+ Tiny Scrollbar  questa viene usata nella pagina dei prodotti
+=================================================================
+*/
+
+#scrollbar2 { width: 430px; margin: 0px; z-index: 3; top: 0px; position: absolute; left: 400px; }
+
+#scrollbar2 .viewport { width: 400px; height: 550px; overflow: hidden; position: relative; z-index: 10; background-color: yellow; }
+#scrollbar2 .overview { list-style: none; position: absolute; left: 0px; top: 0px; padding: 0; margin: 0; z-index:3; }
+
+#scrollbar2 .scrollbar{ background: transparent url(/AppImg/bg-scrollbar-track-y.png) no-repeat 0 0; position: relative; background-position: 0 0; float: right; width: 1px; }
+
+#scrollbar2 .track { background-color: #79b51c; height: 100%; width: 1px; position: relative; padding: 0 1px; z-index: 3; }
+
+#scrollbar2  .thumb { background: transparent url(/AppImg/bg-scrollbar-thumb-y.png);  width: 27px; cursor: pointer; overflow: hidden; position: absolute; top: 0px; left: -12px; z-index: 3;}
+
+
+#scrollbar2 .thumb .end { background: transparent url(/AppImg/images/bg-scrollbar-thumb-y.png) no-repeat 50% 0; overflow: hidden; height: 5px; width: 25px; }
+
+#scrollbar2 .disable { display: none; }
+
+
+
+
+
+
+a { font-family: arial; text-decoration: none; } 
+p { font-family: tahoma, verdana, arial; text-decoration:none; font-size: 10px; margin: 20px; line-height: 13px; margin-top: 17px; } 
+
+a:link {color:#1c6434;} /* unvisited link */ 
+a:visited {color:#1c6434;} /* visited link */ 
+a:hover {color:#1c6434;} /* mouse over link */ 
+a:active {color:#1c6434;} /* selected link */ 
+
+/* =================================
+    menu sinistro delle categorie.
+=================================== */ 
+.catDesc { 
+      font-family: arial; 
+      font-size: 13px;  
+      margin-top: 1px; 
+      margin-left: 2px;
+      letter-spacing: 0px; 
+} 
+
+/* ===========================================================
+   nome del prodotto nella pagina del catalogo per categoria
+   ==============================================================
+ */ 
+.proDesc      { 
+      font-family: arial; 
+      font-size: 10px; 
+      color: #796855; 
+      margin-left: 10px; 
+      margin-right: 10px; 
+      font-weight: bold; 
+      margin-top: 3px; 
+      letter-spacing: 0px;  
+}
+
+/* ===========================================================
+  come appare il nome del prodotto nella pagina del prodotto 
+  ============================================================
+ */ 
+.prodName     { 
+      font-family: Arial; 
+      font-size: 18px; 
+      margin-top: -2px; 
+      margin-left: -3px;  
+      font-weight: bold 
+}
+
+
+/* ===========================================================
+   come appare il nome della categoria nelle strisce colorate 
+   ===========================================================
+ */ 
+.catName      { 
+      font-family: Arial; 
+      font-size: 21px; 
+      letter-spacing:1px; 
+      margin-top: -2px; 
+}
+
+
+.proName      { 
+      font-family: verdana, arial; 
+      font-size: 10px; 
+      color: green; 
+}
+
+/* ===========================================================
+   definizione della tabella
+
+   
+   ===========================================================
+ */ 
+
+.tableprod { 
+      border-width : 3px; 
+      border-style:  solid;
+      border-color:  #a58a77;
+      width:         393px; 
+      padding:       0px; 
+      border-collapse: collapse; 
+} 
+
+.trprod { 
+      border: 1px solid #a58a77; 
+}
+
+.thprod { 
+      background-color:#fff6b1; 
+      color:white; 
+      height: 21px; 
+      border: 3px solid #a58a77; 
+      border-right: 2px solid #a58a77; 
+      border-left: 2px solid #a58a77; 
+      color: #796753; 
+      font-family : verdana, arial;
+      font-size: 10px;
+} 
+
+.tdprod { 
+      background-color:white; 
+      color: #796753; 
+      height: 25px; 
+      border: 2px solid #a58a77; 
+      text-align: center; 
+      vertical-align: middle; 
+      font-family : verdana, arial;
+      font-size: 9px;
+} 
+
+                             
+                             
+                             
+/* 
+===================================================================
+ Tiny Scrollbar - questa viene usata nella pagina dei chi siamo
+===================================================================
+*/
+
+
+#scrollbar1 { position: absolute; width: 680px; margin: 20px 0 10px; top: 62px; left: 72px; }
+
+/* 
+      DIMENSIONE DELL'AREA CHE SCORRE 
+*/
+#scrollbar1 .viewport { width: 680px; height: 500px; overflow: hidden; position: absolute; }
+
+#scrollbar1 .overview { list-style: none; position: absolute; padding: 0; margin: 0; }
+
+
+/* 
+      posizione della scrollbar 
+*/
+#scrollbar1 .scrollbar { background: transparent url(/AppImg/bg-scrollbar-track-y.png) no-repeat 0 0; position: relative; background-position: 0 0; float: right; width: 15px; z-index: 10;}
+
+#scrollbar1 .track { background: transparent url(/AppImg/bg-scrollbar-trackend-y.png) no-repeat 0 100%; height: 100%; width:13px; position: relative; padding: 0 1px; }
+
+#scrollbar1 .thumb { background: transparent url(/AppImg/bg-scrollbar-thumb-y.png) no-repeat 50% 100%; height: 20px; width: 30px; cursor: pointer; overflow: hidden; position: absolute; top: 0; left: -5px; }
+
+#scrollbar1 .thumb .end { background: transparent url(/AppImg/bg-scrollbar-thumb-y.png) no-repeat 50% 0; overflow: hidden; height: 5px; width: 22px; }
+
+#scrollbar1 .disable { display: none; }         
+                           
+                

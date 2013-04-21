@@ -1,0 +1,39 @@
+application: cisasas
+version: 3
+runtime: python27
+api_version: 1
+threadsafe: no
+
+handlers:
+- url: /favicon.ico
+  static_files: favicon.ico
+  upload: favicon.ico
+
+- url: /test.scroller.html
+  static_files: Static/test.scroller.html
+  upload: Static/test.scroller.html
+
+- url: /iepngfix.htc
+  static_files: Static/iepngfix.htc
+  upload: Static/iepngfix.htc
+
+- url: /index.html
+  static_files: Static/index.html
+  upload: Static/index.html
+
+- url: /enter.html
+  static_files: Static/enter.html
+  upload: Static/enter.html
+
+- url: /audioFrame.html
+  static_files: Static/audioFrame.html
+  upload: Static/audioFrame.html
+
+- url: /AppImg
+  static_dir: AppImg
+  
+- url: /Static
+  static_dir: Static
+
+- url: /.*
+  script: cisa.app

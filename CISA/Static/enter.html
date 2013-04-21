@@ -1,0 +1,99 @@
+<html>
+    <head>
+
+    <title></title>
+    <style>
+
+    @-webkit-keyframes pulse1 {
+          0% { opacity: 0; }
+         50% { opacity: 1; }
+        100% { opacity: 0; }
+    }
+    @-webkit-keyframes pulse2 {
+          0% { opacity: 1; }
+         50% { opacity: 0; }
+        100% { opacity: 1; }
+    }
+    @-webkit-keyframes pulse3 {
+          0% { opacity: 0; }
+         20% { opacity: 1; }
+         50% { opacity: 0; }
+         75% { opacity: 1; }
+        100% { opacity: 0; }
+    }
+    @-moz-keyframes pulse1 {
+          0% { opacity: 0; }
+         50% { opacity: 1; }
+        100% { opacity: 0; }
+    }
+    @-moz-keyframes pulse2 {
+          0% { opacity: 1; }
+         50% { opacity: 0; }
+        100% { opacity: 1; }
+    }
+    @-moz-keyframes pulse3 {
+          0% { opacity: 0; }
+         20% { opacity: 1; }
+         50% { opacity: 0; }
+         75% { opacity: 1; }
+        100% { opacity: 0; }
+    }
+    @-ms-keyframes pulse1 {
+          0% { opacity: 0; }
+         50% { opacity: 1; }
+        100% { opacity: 0; }
+    }
+    @-ms-keyframes pulse2 {
+          0% { opacity: 1; }
+         50% { opacity: 0; }
+        100% { opacity: 1; }
+    }
+    @-ms-keyframes pulse3 {
+          0% { opacity: 0; }
+         20% { opacity: 1; }
+         50% { opacity: 0; }
+         75% { opacity: 1; }
+        100% { opacity: 0; }
+    }
+
+    #foglia1 { 
+        -webkit-animation: pulse1 2s infinite; 
+        -ms-animation: pulse1 2s infinite; 
+        -moz-animation: pulse1 2s infinite; 
+        position: absolute; top: 162px; left: 468px;
+    } 
+    #foglia2 { 
+        -webkit-animation: pulse2 3s infinite; 
+        -ms-animation: pulse2 3s infinite; 
+        -moz-animation: pulse2 3s infinite; 
+        position: absolute; top: 177px; left: 497px;
+    } 
+    #foglia3 { 
+        -webkit-animation: pulse3 4s infinite; 
+        -ms-animation: pulse3 4s infinite; 
+        -moz-animation: pulse3 4s infinite; 
+        position: absolute; top: 207px; left: 472px;
+    } 
+    #enter   { 
+        -webkit-animation: pulse1 1s infinite; 
+        -ms-animation: pulse1 1s infinite; 
+        -moz-animation: pulse1 1s infinite; 
+        position: absolute; top: 235px; left: 830px;
+    }
+
+    </style>
+
+    </head>
+
+    <body>
+        <div style="width: 1100px; margin-left: auto; margin-right: auto;" >
+                <div style="position: absolute;">
+                    <img src="AppImg/frontImg.png" id="background" name="background" >
+                    <img src="AppImg/f1.png" id="foglia1" name="foglia1" >
+                    <img src="AppImg/f2.png" id="foglia2" name="foglia2">
+                    <img src="AppImg/f3.png" id="foglia3" name="foglia3">
+                    <a href="http://2.cisasas.appspot.com/Catalogo"><img src="AppImg/bntEnter.png" id="enter" name="enter" border="0"></a>
+                </div>
+        </div>
+    </body>
+</html>
